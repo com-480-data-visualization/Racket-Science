@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100%; 
+    background-image: url(https://media.lacote.ch/media/image/108/nf_medium_16_9/federer-218697.jpg);
+
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;        /* Let the body fill the viewport height */
+    display: flex;
+    flex-direction: column;
+}
+header {
+    background-color: rgb(195,75,54);
+    padding: 1rem;
+    text-align: center;
+}
+
+footer {
+    background: #A54F3C; /* for example */
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    padding: 1rem;
+    flex: 1; 
+
+}
+
+nav {
+    width: 100%;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+}
+
+/* Style of the list of links in the navbar */
+nav ul {
+	/* Clear defaults */
+	margin: 0;
+	padding: 0;
+
+	/* Remove list bullet points */
+	list-style-type: none;
+
+	/*
+	Flexbox is a modern mechanism for arranging elements
+		https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+	This will arrange the elements in a row
+	*/
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+}
+
+/* Space between links */
+nav li {
+	margin-right: 3rem;
+}
+
+/* Style the container wrapping both charts */
+.charts-wrapper {
+    /* If you want a horizontal swipe, you can use a parent with overflow hidden
+       and place the two charts side by side. Example:
+       
+       width: 100vw;  (viewport width)
+       height: 100vh; (viewport height, if desired)
+       overflow: hidden;
+       white-space: nowrap;
+    */
+    display: flex;           /* show them side by side by default */
+    gap: 2rem;               /* space between charts */
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  
+  /* Each chart container */
+  .chart-container {
+    min-width: 300px;        /* or a suitable width */
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    flex-shrink: 0;          /* keep them from shrinking if we do horizontal scrolling */
+    position: relative;      /* for any absolute-positioned elements, if needed */
+    flex: 1 1 auto; /* or flex-grow: 1; */
+    width: 100%;
+}
+  
+  /* The chart header (with the dropdowns) */
+  .chart-header {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .chart-header label {
+    font-weight: bold;
+    margin-right: 0.5rem;
+  }
+  
+  /* Where the actual chart or placeholder text goes */
+  .chart-content {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* Navigation dots at the bottom */
+  .nav-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    background-color: #aaa;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #333;
+  }
+  

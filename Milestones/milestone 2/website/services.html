@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Visualization Project</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+    <ul class="width-limited">
+        <li><a href="index.html">Global</a></li>
+        <li><a href="doubles.html">Doubles</a></li>
+        <li><a href="surfaces.html">Surfaces</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="net.html">Net</a></li>
+        <li><a href="tournois.html">Tournois</a></li>
+        <li><a href="compare.html">Compare</a></li>
+    </ul>
+</nav>
+<header>
+    <h1>Racket Science - Services</h1>
+</header>
+
+<main>
+</main>
+
+<main class="charts-wrapper">
+
+<section class="chart-container" id="chart1">
+    <div class="chart-header">
+    <select id="year-select">
+        <option value="Overall years">Overall years</option>
+        <option value="2024">2024</option>
+        <option value="2023">2023</option>
+        <option value="2022">2022</option>
+        <option value="2021">2021</option>
+        <option value="2020">2020</option>
+        <option value="2019">2019</option>
+        <option value="2018">2018</option>
+        <option value="2017">2017</option>
+        <option value="2016">2016</option>
+        <option value="2015">2015</option>
+        <option value="2014">2014</option>
+        <option value="2013">2013</option>
+        <option value="2012">2012</option>
+    </select>
+
+    
+    <select id="tournament-select">
+        <option value="Overall tournaments">Overall tournaments</option>
+        <option>tournament1</option>
+        <option>tournament2</option>
+        <option>tournament3</option>
+    </select>
+    </div>
+
+    <div class="chart-content">
+    <h2>Chart 1</h2>
+    <!-- Here is where you'd embed your actual chart (e.g. using D3 or Chart.js) -->
+    <p>This is the placeholder for Chart 1.</p>
+    </div>
+
+    <div class="nav-dots">
+    <!-- “Active” dot for chart1, inactive dot for chart2 -->
+    <span class="dot active" onclick="goToChart(1)"></span>
+    <span class="dot" onclick="goToChart(2)"></span>
+    </div>
+</section>
+
+<!-- Chart 2 Container -->
+<section class="chart-container" id="chart2">
+    <div class="chart-header">
+    <label for="year-select-2">Year:</label>
+    <select id="year-select-2">
+        <option>2020</option>
+        <option>2021</option>
+        <option>2022</option>
+    </select>
+
+    <label for="t-select-2">T:</label>
+    <select id="t-select-2">
+        <option>T1</option>
+        <option>T2</option>
+        <option>T3</option>
+    </select>
+    </div>
+
+    <div class="chart-content">
+    <h2>Chart 2</h2>
+    <p>This is the placeholder for Chart 2.</p>
+    </div>
+
+    <div class="nav-dots">
+    <span class="dot" onclick="goToChart(1)"></span>
+    <span class="dot active" onclick="goToChart(2)"></span>
+    </div>
+</section>
+</main>
+
+
+
+<footer>
+    <p>&copy; 2025 - We hope this site is an ace. Proudly served with love by Réza Machraoui, Luna Ralet & Leila Sidjanski.</p>
+</footer>
+
+<!-- Optionally load a library like D3.js or Chart.js -->
+<!-- <script src="https://d3js.org/d3.v7.min.js"></script> -->
+
+<script src="js/main.js"></script>
+</body>
+</html>
