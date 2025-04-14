@@ -1,130 +1,141 @@
+/* Reset and general layout */
 body {
     margin: 0;
     font-family: sans-serif;
+    background-color:rgb(243, 194, 182);
     height: 100%; 
-    background-image: url(https://media.lacote.ch/media/image/108/nf_medium_16_9/federer-218697.jpg);
-
 }
 
 html {
     margin: 0;
     padding: 0;
-    height: 100%;        /* Let the body fill the viewport height */
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
+
+/* Header & Footer stick to top/bottom by default */
 header {
-    background-color: rgb(195,75,54);
+    background-color: #BB4915b3;
     padding: 1rem;
     text-align: center;
+    border-radius: 20px;
+
+    background-color: rgba(179, 71, 46, 0.2); /* semi-transparent background */
+    border: 2px solid #b3472e;
+    border-radius: 12px;
+    padding: 0rem 2rem;
+    margin: 1rem auto;
+    text-align: center;
+    width: fit-content;
+    max-width: 80%;
 }
 
 footer {
-    background: #A54F3C; /* for example */
-    text-align: center;
+    background-color: #407664;
     padding: 1rem;
+    text-align: center;
 }
 
 main {
     padding: 1rem;
     flex: 1; 
+}
+
+.width-limited {
+	max-width: 55rem;
+
+	margin-left: auto;
+	margin-right: auto;
 
 }
 
 nav {
-    width: 100%;
-
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    
+    width: fit-content;
+    margin: 1rem auto;        
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+    background-color: #BB4915; 
+    border-radius: 12px;
+    text-align: center; 
 }
 
-/* Style of the list of links in the navbar */
+nav a {
+	font-weight: bold;
+    text-decoration: none;
+    color: rgba(244,125,95);
+
+}
+
 nav ul {
-	/* Clear defaults */
-	margin: 0;
-	padding: 0;
-
-	/* Remove list bullet points */
-	list-style-type: none;
-
-	/*
-	Flexbox is a modern mechanism for arranging elements
-		https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-	This will arrange the elements in a row
-	*/
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: flex-start;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
 }
 
-/* Space between links */
+/* Spacing between nav links */
 nav li {
-	margin-right: 3rem;
+    margin-right: 3rem;
 }
 
-/* Style the container wrapping both charts */
+/* Wrapper that holds both the top row and bottom row */
 .charts-wrapper {
-    /* If you want a horizontal swipe, you can use a parent with overflow hidden
-       and place the two charts side by side. Example:
-       
-       width: 100vw;  (viewport width)
-       height: 100vh; (viewport height, if desired)
-       overflow: hidden;
-       white-space: nowrap;
-    */
-    display: flex;           /* show them side by side by default */
-    gap: 2rem;               /* space between charts */
+    display: block;       /* BLOCK so top-row & bottom-row stack vertically */
     padding: 1rem;
     box-sizing: border-box;
-  }
-  
-  /* Each chart container */
-  .chart-container {
-    min-width: 300px;        /* or a suitable width */
+}
+
+/* TOP ROW: two charts side by side */
+.top-row {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Each chart in the top row */
+.chart-container {
+    flex: 1;                 /* let two top-row charts share available space */
+    min-width: 300px;
     border: 2px solid #ccc;
     border-radius: 8px;
     padding: 1rem;
-    flex-shrink: 0;          /* keep them from shrinking if we do horizontal scrolling */
-    position: relative;      /* for any absolute-positioned elements, if needed */
-    flex: 1 1 auto; /* or flex-grow: 1; */
-    width: 100%;
 }
-  
-  /* The chart header (with the dropdowns) */
-  .chart-header {
+
+.bottom-row {}
+ 
+
+/* The chart header (for dropdowns, etc.) */
+.chart-header {
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;
-  }
-  
-  .chart-header label {
+}
+
+.chart-header label {
     font-weight: bold;
     margin-right: 0.5rem;
-  }
-  
-  /* Where the actual chart or placeholder text goes */
-  .chart-content {
+}
+
+/* Chart content in each container */
+.chart-content {
     text-align: center;
     margin-bottom: 1rem;
-  }
-  
-  /* Navigation dots at the bottom */
-  .nav-dots {
+}
+
+/* Optional nav-dots styling */
+.nav-dots {
     display: flex;
     justify-content: center;
     gap: 0.5rem;
-  }
-  
-  .dot {
+}
+
+.dot {
     width: 12px;
     height: 12px;
     background-color: #aaa;
     border-radius: 50%;
     cursor: pointer;
-  }
-  
-  .dot.active {
+}
+
+.dot.active {
     background-color: #333;
-  }
-  
+}

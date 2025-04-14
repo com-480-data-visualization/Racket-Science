@@ -15,15 +15,92 @@
         <li><a href="surfaces.html">Surfaces</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="net.html">Net</a></li>
-        <li><a href="tournois.html">Tournois</a></li>
+        <li><a href="tournament.html">Tournament</a></li>
         <li><a href="compare.html">Compare</a></li>
     </ul>
 </nav>
 <header>
-    <h1>Racket Science - Net</h1>
+    <h1>Net GOAT</h1>
 </header>
 
-<main>
+
+<main class="charts-wrapper">
+
+    <section class="chart-container" id="podium">
+        <div class="chart-header">
+        <select id="year-select">
+            <option value="Overall years">Overall years</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+            <option value="2013">2013</option>
+            <option value="2012">2012</option>
+        </select>
+    
+        
+        <select id="tournament-select">
+            <option value="Overall tournaments">Overall tournaments</option>
+            <option>tournament1</option>
+            <option>tournament2</option>
+            <option>tournament3</option>
+        </select>
+        </div>
+    
+        <div class="chart-content">
+            <h2>Visualisation n°# - Podium Net</h2>
+        </div>
+    
+        <div class="nav-dots">
+        <!-- “Active” dot for chart1, inactive dot for chart2 -->
+        <span class="dot active" onclick="goToChart(1)"></span>
+        <span class="dot" onclick="goToChart(2)"></span>
+        </div>
+    </section>
+    
+    <section class="chart-container" id="over_the_years">
+        <div class="chart-header">
+            <select id="year-select2">
+                <option value="Overall years">Overall years</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+            </select>
+        
+            <select id="tournament-select2">
+                <option value="Overall tournaments">Overall tournaments</option>
+                <option>tournament1</option>
+                <option>tournament2</option>
+                <option>tournament3</option>
+            </select>
+        </div>
+    
+        <div class="chart-content">
+            <h2>Visualisation n°# - over the years</h2>
+        </div>
+    
+        <div class="nav-dots">
+        <span class="dot" onclick="goToChart(1)"></span>
+        <span class="dot active" onclick="goToChart(2)"></span>
+        </div>
+    </section>
 </main>
 
 <footer>
