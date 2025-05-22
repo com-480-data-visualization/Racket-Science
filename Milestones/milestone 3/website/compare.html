@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Visualization Project</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+    <ul class="width-limited">
+        <li><a href="index.html">Global</a></li>
+        <li><a href="doubles.html">Doubles</a></li>
+        <li><a href="surfaces.html">Surfaces</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="net.html">Net</a></li>
+        <li><a href="tournament.html">Tournament</a></li>
+        <li><a href="compare.html"class="active">Compare</a></li>
+    </ul>
+</nav>
+<header>
+    <h1>Which GOAT are you ?</h1>
+</header>
+
+<main>
+    <section class="quiz-container">
+        <form id="goat-quiz">
+          <h2>Discover Your Inner GOAT</h2>
+      
+          <label>1. Would you like to be compared with:</label>
+          <select name="gender">
+            <option value="men">Men players</option>
+            <option value="women">Female players</option>
+            <option value="surprise">Surprise me</option>
+          </select>
+      
+          <label>2. What type of court do you enjoy playing the most?</label>
+          <select name="court">
+            <option value="clay">Clay</option>
+            <option value="grass">Grass</option>
+            <option value="hard">Hard</option>
+            <option value="dont_know">I don’t know</option>
+          </select>
+      
+          <label>3. Do you like rushing at the net or staying at the baseline?</label>
+          <select name="net_play">
+            <option value="yes">Yes (net-rusher)</option>
+            <option value="no">No (baseliner)</option>
+          </select>
+      
+          <label>4. Service performance:</label>
+            <div class="slider-group">
+            <span>1 = Real weakness</span>
+            <input type="range" name="serve_strength" min="1" max="5" step="1">
+            <span>5 = Real weapon</span>
+            </div>
+      
+          <label>5. Your second serve is:</label>
+          <select name="second_serve">
+            <option value="same">The same as my first</option>
+            <option value="safe">Safe, I just need to land it</option>
+          </select>
+      
+          <label>6. Balance between forehand and backhand:</label>
+            <div class="slider-group">
+            <span>1 = Backhand much better</span>
+            <input type="range" name="stroke_balance" min="1" max="5" step="1">
+            <span>5 = Forehand much better</span>
+            </div>
+      
+          <label>7. Choose your tennis vibe:</label>
+          <select name="vibe">
+            <option value="elegant">Elegant</option>
+            <option value="relentless">Relentless</option>
+            <option value="passionate">Passionate</option>
+            <option value="cool-headed">Cool-headed</option>
+            <option value="flashy">Flashy</option>
+          </select>
+      
+          <button type="submit" class="vote-button">Find Your GOAT</button>
+        </form>
+      </section>
+      
+</main>
+
+<footer>
+    <p>&copy; 2025 - We hope this site is an ace. Proudly served with love by Réza Machraoui, Luna Ralet & Leila Sidjanski.</p>
+</footer>
+
+<!-- Optionally load a library like D3.js or Chart.js -->
+<!-- <script src="https://d3js.org/d3.v7.min.js"></script> -->
+
+<script src="js/main.js"></script>
+</body>
+</html>

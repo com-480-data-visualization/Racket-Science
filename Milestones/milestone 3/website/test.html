@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vote for Your Favorite Tennis Player</title>
+  <link rel="stylesheet" href="css/test.css">
+</head>
+<body>
+
+  <div class="vote-form">
+    <select id="player-category">
+      <option value="all">All Players</option>
+      <option value="men">Men</option>
+      <option value="women">Women</option>
+    </select>
+
+    <select id="player-select"></select>
+    <input type="text" id="player-name" placeholder="Enter your GOAT's name" style="display:none;">
+    <button id="vote-button" type="button">Vote 🎾</button>
+  </div>
+
+  <div class="bottom-charts">
+    <section class="chart-container">
+      <div class="chart-content">
+        <h2>Let the users vote</h2>
+        <canvas id="voteChart" width="600" height="300"></canvas>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+  <script src="js/test.js"></script>
+</body>
+</html>
