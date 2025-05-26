@@ -359,3 +359,33 @@ nav a.active {
     font-size: 0.9em;
     white-space: nowrap;
   }
+
+  #transition-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #BB4915b3; /* or your desired transition color */
+  z-index: 9999;
+  display: none;
+  overflow: hidden;
+}
+
+#bouncing-ball {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  z-index: 10000; /* Ensure it's above everything */
+  pointer-events: none; /* Prevent accidental clicks */
+}
+
+#drag-broom {
+  position: fixed;
+  bottom: 20px;
+  left: -200px; /* start off screen */
+  height: 100px;
+  z-index: 9999;
+  transition: left 0.8s ease-in-out;
+}
+
