@@ -4,39 +4,9 @@
   <meta charset="UTF-8">
   <title>Data Visualization Project</title>
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    #transition-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: white;
-      z-index: 9999;
-      display: none;
-      overflow: hidden;
-    }
-
-    #bouncing-ball {
-      position: absolute;
-      width: 60px;
-      height: 60px;
-      z-index: 10000;
-    }
-
-    #drag-broom {
-      position: fixed;
-      bottom: 20px;
-      left: -300px;
-      height: 100px;
-      z-index: 9998;
-      display: none;
-      transition: left 1s ease-in-out;
-    }
-  </style>
 </head>
 <body>
-  <div id="transition-overlay">
+  <div id="transition-overlay" style="display: none;">
     <img src="images/tennis-ball.png" id="bouncing-ball" />
   </div>
   <img src="images/drag-broom.png" id="drag-broom" />
@@ -83,89 +53,48 @@
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="js/main.js"></script>
   <script>
-    // Tennis ball bounce transition
-    const overlay = document.getElementById('transition-overlay');
-    const ball = document.getElementById('bouncing-ball');
+  const overlay = document.getElementById('transition-overlay');
+  const ball = document.getElementById('bouncing-ball');
 
-    function animateBounceAndNavigate(url) {
-      overlay.style.display = 'block';
+  function animateBounceAndNavigate(url) {
+    overlay.style.display = 'block';
 
-      let x = 0;
-      let y = 0;
-      let speed = 12;
-      let angle = Math.random() * 2 * Math.PI;
-      let vx = Math.cos(angle) * speed;
-      let vy = Math.sin(angle) * speed;
-      const ballSize = 60;
-      const screenW = window.innerWidth;
-      const screenH = window.innerHeight;
+    let x = 0;
+    let y = 0;
+    let vx = 12; // X speed
+    let vy = 9; // Y speed
+    const ballSize = 60;
 
-      const interval = setInterval(() => {
-        x += vx;
-        y += vy;
+    const screenW = window.innerWidth;
+    const screenH = window.innerHeight;
 
-        if (x + ballSize >= screenW || x <= 0) vx *= -1;
-        if (y + ballSize >= screenH || y <= 0) vy *= -1;
+    const interval = setInterval(() => {
+      x += vx;
+      y += vy;
 
-        ball.style.left = `${x}px`;
-        ball.style.top = `${y}px`;
-      }, 16);
+      if (x + ballSize >= screenW || x <= 0) vx *= -1;
+      if (y + ballSize >= screenH || y <= 0) vy *= -1;
 
-      setTimeout(() => {
-        clearInterval(interval);
-        window.location.href = url;
-      }, 2000);
-    }
+      ball.style.left = `${x}px`;
+      ball.style.top = `${y}px`;
+    }, 16); // ~60fps
 
-    document.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', function (e) {
-        const url = this.href;
-        if (url.startsWith(window.location.origin)) {
-          e.preventDefault();
-          animateBounceAndNavigate(url);
-        }
-      });
-    });
+    // Stop after 2 seconds and navigate
+    setTimeout(() => {
+      clearInterval(interval);
+      window.location.href = url;
+    }, 2000);
+  }
 
-    // Swipe and broom logic
-    const swiper = document.getElementById('chart-swiper');
-    const broom = document.getElementById('drag-broom');
-    let startX = 0;
-    let endX = 0;
-
-    swiper.addEventListener('touchstart', e => {
-      startX = e.changedTouches[0].screenX;
-    });
-
-    swiper.addEventListener('touchend', e => {
-      endX = e.changedTouches[0].screenX;
-      handleSwipe();
-    });
-
-    function handleSwipe() {
-      if (endX < startX - 50) {
-        triggerBroom('left');
-      } else if (endX > startX + 50) {
-        triggerBroom('right');
+  document.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', function (e) {
+      const url = this.href;
+      if (url.startsWith(window.location.origin)) {
+        e.preventDefault();
+        animateBounceAndNavigate(url);
       }
-    }
-
-    function triggerBroom(direction) {
-      broom.style.display = 'block';
-      broom.style.left = direction === 'left' ? '-300px' : '100vw';
-      void broom.offsetWidth;
-      broom.style.left = direction === 'left' ? '100vw' : '-300px';
-
-      setTimeout(() => {
-        broom.style.display = 'none';
-        switchChart(); // TODO: Replace with your actual chart-switching logic
-      }, 1000);
-    }
-
-    function switchChart() {
-      // You can toggle chart visibility here
-      console.log("Switched chart after broom swipe");
-    }
-  </script>
+    });
+  });
+</script>
 </body>
 </html>
