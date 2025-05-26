@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           align: 'start',
           clamp: true,
           color: 'white',
-          font: { weight: 'bold', size: 14 },
+          font: { weight: 'bold', size: 18 },
           formatter: (value, ctx) => ctx.chart.data.labels[ctx.dataIndex]
         }
       },

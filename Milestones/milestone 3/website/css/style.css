@@ -119,10 +119,14 @@ nav a:hover:not(.active) {
 .chart-container {
     flex: 1;
     min-width: 300px;
+    max-width: 1000px;
+    width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
     border: 2px solid #ccc;
     border-radius: 8px;
     padding: 1rem;
-    height: 450px; /* consistent height */
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -185,14 +189,16 @@ nav a:hover:not(.active) {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    height: 300px;
-    margin-top: 0.5rem;
+    height: auto;
+    margin: 2rem auto;
+    max-width: 1000px;
   }
   
   .scoreboard__podiums {
     display: flex;
+    justify-content: space-around;
     align-items: flex-end;
-    gap: 1rem;
+    width: 100%;
   }
   
   .scoreboard__podium {
@@ -202,7 +208,7 @@ nav a:hover:not(.active) {
   }
   
   .scoreboard__podium-base {
-    width: 80px;
+    width: 100px;
     background-color: #BB4915;
     color: white;
     display: flex;
@@ -412,3 +418,4 @@ nav a:hover:not(.active) {
 #main-content {
     margin-top: 6rem;  /* or try padding-top: 3rem; */
 }
+
