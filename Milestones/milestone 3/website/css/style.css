@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: sans-serif;
-    background-color:rgb(243, 194, 182);
+    background-color:rgb(255, 255, 255);
     height: 100%; 
 }
 
@@ -51,36 +51,56 @@ main {
 }
 
 nav {
-    width: fit-content;
+    height: 60px;   
+    width: 90%;        /* take full width! */
+    max-width: 1100px;  /* optional, makes it look nice on big screens */
     margin: 1rem auto;        
-    padding: 0.5rem 1rem 0.5rem 0.5rem;
+    padding: 0.5rem 1rem;
     background-color: #BB4915; 
-    border-radius: 12px;
+    border-radius: 20px;
     text-align: center; 
 }
 
-nav a {
-	font-weight: bold;
-    text-decoration: none;
-    color: rgba(244,125,95);
-
-}
-
 nav ul {
+    height: 100%;
     margin: 0;
+    padding: 0;
     list-style-type: none;
     display: flex;
+    align-items: center;
+    justify-content: center; /* or space-between for edge-to-edge */
+    gap: 0rem;               /* nice consistent spacing */
 }
 
-/* Spacing between nav links */
 nav li {
-    margin-right: 3rem;
+    margin-right: 0.5rem;
+    height: 100%;
+    display: flex;
+    align-items: center; /* Vertically center links in li */
+}
+
+nav a {
+    font-weight: bold;
+    text-decoration: none;
+    color: rgba(244,125,95);
+    font-size: 1.5rem;              /* MAKE TEXT BIGGER */
+    height: 100%;                 /* FILL VERTICALLY */
+    display: flex;
+    align-items: center;          /* Center text vertically */
+    padding: 0 1.5rem;            /* More horizontal space */
+    transition: color 0.2s, background 0.2s;
+    border-radius: 8px;
 }
 
 nav a.active {
     color: white !important;
     cursor: default;
 }
+
+nav a:hover:not(.active) {
+    background: rgba(255,255,255,0.12);
+}
+
 
 /* Wrapper that holds both the top row and bottom row */
 .charts-wrapper {
@@ -389,3 +409,6 @@ nav a.active {
   transition: left 0.8s ease-in-out;
 }
 
+#main-content {
+    margin-top: 6rem;  /* or try padding-top: 3rem; */
+}
