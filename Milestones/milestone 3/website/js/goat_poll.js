@@ -1,17 +1,19 @@
-// ✅ Supabase Client Initialization
+Chart.register(ChartDataLabels);
+
+// Supabase Client Initialization
 const supabase = window.supabase.createClient(
   'https://ebzahmiawwwtjoiryrma.supabase.co',
   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImViemFobWlhd3d3dGpvaXJ5cm1hIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDgyNzY0ODEsImV4cCI6MjA2Mzg1MjQ4MX0.9IQES_ZYUwWyoViTPsVgLgfN3H-1gPI1NSrKzWTPXOE'
 );
 
-// ✅ Player presets
+// Player presets
 const presets = {
   men: ['Roger Federer','Rafael Nadal','Novak Djokovic','Pete Sampras','Andre Agassi', 'Jimmy Connors', 'Ivan Lendl', 'John McEnroe', 'Bjorn Borg', 'Rod Laver'],
   women: ['Serena Williams','Steffi Graf','Martina Navratilova','Margaret Court','Chris Evert', 'Monica Seles', 'Billie Jean King', 'Venus Williams', 'Justine Henin', 'Martina Hingis']
 };
 presets.all = [...presets.men, ...presets.women];
 
-// ✅ For vote population and reset (safe to keep for dev)
+// For vote population and reset (safe to keep for dev)
 async function populateInitialVotes() {
   const cats = ['men', 'women', 'all'];
   for (const cat of cats) {
@@ -34,7 +36,7 @@ async function populateInitialVotes() {
       }
     }
   }
-  console.log("✅ Done populating.");
+  console.log("Done populating.");
 }
 // Run once to populate:
 //populateInitialVotes();
@@ -54,12 +56,12 @@ async function resetAllVotesToZero() {
       .eq('id', vote.id);
   }
 
-  console.log("✅ All votes reset to 0.");
+  console.log("All votes reset to 0.");
 }
 // Run once to reset:
 //resetAllVotesToZero();
 
-// ✅ Voting and chart logic
+// Voting and chart logic
 const votes = { all: {}, men: {}, women: {} };
 const COLOR_PALETTE = ['#ffbe0b','#fb5607','#ff006e','#8338ec','#3a86ff','#0356fc','#d972ff','#F564A9','#5409DA','#4E71FF','#8DD8FF','#BBFBFF'];
 const playerColors = {};
@@ -77,7 +79,10 @@ function fillPlayerSelect(category) {
 
 function updateChart() {
   const cat = document.getElementById('player-category').value;
-  const arr = Object.entries(votes[cat]).map(([name, count]) => ({ name, count }));
+  const arr = Object.entries(votes[cat])
+    .filter(([_, count]) => count > 0) // only those with votes
+    .map(([name, count]) => ({ name, count }));
+
   const top5 = arr.sort((a, b) => b.count - a.count).slice(0, 5);
 
   const colors = top5.map(d => {
@@ -99,7 +104,8 @@ async function loadVotes(category = 'all') {
   const { data, error } = await supabase
     .from('votes')
     .select('name, count')
-    .eq('category', category);
+    .eq('category', category)
+    .neq('count', 0); // ignore zero-vote rows
 
   if (error) {
     console.error('Failed to load votes:', error);
@@ -108,8 +114,10 @@ async function loadVotes(category = 'all') {
 
   votes[category] = {};
   data.forEach(row => votes[category][row.name] = row.count);
+
   updateChart();
 }
+
 
 async function saveVote(category, name) {
   const { data, error } = await supabase
@@ -132,7 +140,7 @@ async function saveVote(category, name) {
   }
 }
 
-// ✅ Initialize after DOM is ready
+// Initialize after DOM is ready
 document.addEventListener('DOMContentLoaded', async () => {
   fillPlayerSelect('all');
 
@@ -154,8 +162,8 @@ document.addEventListener('DOMContentLoaded', async () => {
       plugins: {
         legend: { display: false },
         datalabels: {
-          anchor: 'center',
-          align: 'center',
+          anchor: 'start',
+          align: 'start',
           clamp: true,
           color: 'white',
           font: { weight: 'bold', size: 14 },
@@ -169,11 +177,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     },
     plugins: [ChartDataLabels]
   });
-
   await loadVotes('all');
 });
 
-// ✅ Handle category change
+// Handle category change
 document.getElementById('player-category').addEventListener('change', async e => {
   const cat = e.target.value;
   fillPlayerSelect(cat);
@@ -181,14 +188,14 @@ document.getElementById('player-category').addEventListener('change', async e =>
   await loadVotes(cat);
 });
 
-// ✅ Show/hide text input for custom name
+// Show/hide text input for custom name
 document.getElementById('player-select').addEventListener('change', e => {
   const txt = document.getElementById('player-name');
   txt.style.display = (e.target.value === 'other') ? '' : 'none';
   if (e.target.value !== 'other') txt.value = '';
 });
 
-// ✅ Vote button handler
+// Vote button handler
 document.getElementById('vote-button').addEventListener('click', async () => {
   const cat = document.getElementById('player-category').value;
   const selVal = document.getElementById('player-select').value;
