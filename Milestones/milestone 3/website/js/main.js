@@ -15,7 +15,7 @@ function goToChart(chartIndex, section) {
         } else if (section === "doubles") {
           drawBubbleChart(svgEl, bubbleDataDoubles);
         } else if (section === "surfaces") {
-          drawBubbleChart(svgEl, bubbleDataDoubles);
+          drawBubbleChart(svgEl, bubbleDataDoubles, "surfaces");
         } else if (section === "services") {
           drawBubbleChart(svgEl, bubbleDataDoubles);
         } else if (section === "net") {
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }]
       },
       options: {
-        indexAxis: 'y', // horizontal
+        indexAxis: 'y', 
         responsive: true,
         scales: {
           x: {
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         plugins: {
           legend: {
-            display: false  // 👈 Hides the legend
+            display: false  
           }
         }
       }
@@ -111,7 +111,7 @@ const bubbleDataDoubles = {
   ]
 };
 
-function drawBubbleChart(svgEl, data) {
+function drawBubbleChart(svgEl, data, section) {
   console.log(svgEl)
   const width = +svgEl.getAttribute("width") || 500;
   const height = +svgEl.getAttribute("height") || 400;
@@ -125,9 +125,10 @@ function drawBubbleChart(svgEl, data) {
     .size([width, height])
     .padding(5);
 
-  const root = d3.hierarchy(data).sum(d => d.value);
+  const root = d3.hierarchy(data).sum(d => Math.pow(d.value, 2));
   const nodes = pack(root).leaves();
   const color = d3.scaleOrdinal(d3.schemeSet2);
+  const tooltip = d3.select("#tooltip");
 
   const node = svg.selectAll("g")
     .data(nodes)
@@ -136,7 +137,49 @@ function drawBubbleChart(svgEl, data) {
 
   node.append("circle")
     .attr("r", d => d.r)
-    .attr("fill", d => color(d.data.name));
+    .attr("fill", d => color(d.data.name))
+    .on("mouseover", function (event, d) {
+        // Move parent group to the end so it's on top
+        d3.select(this.parentNode).raise();
+
+        // Animate the bubble
+        d3.select(this)
+          .transition()
+          .duration(200)
+          .attr("r", d.r * 1.5);
+
+        const currentYear = document.getElementById("year-select-surfaces-bubble").value;
+        const currentSurface = document.getElementById("surface-select-bubble").value;
+
+        console.log('test')
+        console.log(section)
+        let tooltipText = '';
+        if (section === "surfaces") {
+          console.log(section)
+          console.log
+          tooltipText = `<strong>${d.data.name}</strong><br>
+                         won <strong>${d.data.value}</strong> matches on <strong>${currentSurface}</strong> in <strong>${currentYear}</strong>`;
+        } else if (section === "services") {
+          tooltipText = `<strong>${d.data.name}</strong><br>
+                         served <strong>${d.data.value}</strong> aces in <strong>${currentYear}</strong>`;
+        } else {
+          tooltipText = `<strong>${d.data.name}</strong>: ${d.data.value}`;
+        }
+
+        tooltip.style("display", "block").html(tooltipText);
+    })
+    .on("mousemove", function(event) {
+      tooltip.style("left", (event.pageX + 12) + "px")
+             .style("top",  (event.pageY - 24) + "px");
+    })
+    .on("mouseout", function (event, d) {
+        d3.select(this)
+          .transition()
+          .duration(200)
+          .attr("r", d.r);
+        tooltip.style("display", "none");
+    });
+
 
   node.append("text")
     .text(d => d.data.name)
@@ -144,6 +187,7 @@ function drawBubbleChart(svgEl, data) {
     .attr("dy", "0.3em")
     .style("font-size", d => d.r / 3)
     .style("fill", "white");
+
 }
 
   // Call the function on load
@@ -197,3 +241,40 @@ function drawRadarChart() {
   });
 }
 
+function csvToBubbleData(csv, valueCol) {
+  return {
+    name: "Players",
+    children: csv
+    .slice(0, 15)
+    .map(d => ({
+      name: d.Winner,
+      value: +d[valueCol]
+    }))
+  };
+}
+
+function getSurfaceCsvPath(year, surface) {
+  let surfaceLower = surface.toLowerCase();
+  return `results/surfaces/${year}/atp/overall_goat_surfaces/wins_${surfaceLower}_${year}.csv`;
+}
+
+function updateBubbleChartForSurface() {
+  const year = document.getElementById("year-select-surfaces-bubble").value; 
+  const surface = document.getElementById("surface-select-bubble").value;
+
+  if (year === 'Overall years' || surface === 'Overall Surfaces') {
+    return;
+  }
+
+  const csvPath = getSurfaceCsvPath(year, surface);
+  d3.csv(csvPath).then(function(data) {
+    const bubbleData = csvToBubbleData(data, surface);
+    console.log('hello')
+    console.log(bubbleData)
+    const svgEl = document.getElementById('bubbleChart-surfaces');
+        drawBubbleChart(svgEl, bubbleData, "surfaces");
+  });
+}
+
+document.getElementById("year-select-surfaces-bubble").addEventListener("change", updateBubbleChartForSurface);
+document.getElementById("surface-select-bubble").addEventListener("change", updateBubbleChartForSurface);
