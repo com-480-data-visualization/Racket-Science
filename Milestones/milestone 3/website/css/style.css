@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: sans-serif;
-    background-color:rgb(255, 255, 255);
+    background-color:rgba(228, 228, 228, 0.753);
     height: 100%; 
 }
 
@@ -32,7 +32,7 @@ header {
 }
 
 footer {
-    background-color: #407664;
+    background-color: rgba(228, 228, 228, 0.753);
     padding: 1rem;
     text-align: center;
 }
@@ -56,7 +56,7 @@ nav {
     max-width: 1100px;  /* optional, makes it look nice on big screens */
     margin: 1rem auto;        
     padding: 0.5rem 1rem;
-    background-color: #BB4915; 
+    background-color: #bb1591b3; 
     border-radius: 20px;
     text-align: center; 
 }
@@ -419,3 +419,6 @@ nav a:hover:not(.active) {
     margin-top: 6rem;  /* or try padding-top: 3rem; */
 }
 
+html {
+  scroll-behavior: smooth;
+}

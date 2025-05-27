@@ -27,24 +27,191 @@
     <img src="images/tennis-ball.png" id="bouncing-ball" />
   </div>
 <nav>
-    <ul class="width-limited">
-        <li><a href="index.html"class="active">Global</a></li>
-        <li><a href="doubles.html">Doubles</a></li>
-        <li><a href="surfaces.html">Surfaces</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="net.html">Net</a></li>
-        <li><a href="tournament.html">Tournament</a></li>
-        <li><a href="compare.html">Compare</a></li>
-    </ul>
+  <ul>
+    <li><a href="#index">Global</a></li>
+    <li><a href="#doubles">Doubles</a></li>
+    <li><a href="#surfaces">Surfaces</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#net">Net</a></li>
+    <li><a href="#tournament">Tournament</a></li>
+    <li><a href="#compare">Compare</a></li>
+  </ul>
 </nav>
-<header>
+
+
+<section id="global">
+  <header>
     <h1>Overall GOAT</h1>
-</header>
+  </header>
+  <main class="charts-wrapper">
+      <div class="top-charts">
+          <section class="chart-container top-chart" id="podium-global">
+              <div class="chart-header">
+              <select id="year-select">
+                  <option value="Overall years">Overall years</option>
+                  <option value="2024">2024</option>
+                  <option value="2023">2023</option>
+                  <option value="2022">2022</option>
+                  <option value="2021">2021</option>
+                  <option value="2020">2020</option>
+                  <option value="2019">2019</option>
+                  <option value="2018">2018</option>
+                  <option value="2017">2017</option>
+                  <option value="2016">2016</option>
+                  <option value="2015">2015</option>
+                  <option value="2014">2014</option>
+                  <option value="2013">2013</option>
+                  <option value="2012">2012</option>
+              </select>
+          
+              <select id="tournament-select">
+                  <option value="Overall tournaments">Overall tournaments</option>
+                  <option>tournament1</option>
+                  <option>tournament2</option>
+                  <option>tournament3</option>
+              </select>
+              </div>
+          
+              <div class="chart-content">
+              <h2>Podium</h2>
+              <div class="scoreboard">
+                  <div class="scoreboard__podiums" id="scoreboard-global">
+                    <div class="scoreboard__podium js-podium" data-height="200px">
+                      <div class="scoreboard__podium-base scoreboard__podium-base--second">
+                        <div class="scoreboard__podium-rank">2</div>
+                      </div>
+                      <div class="scoreboard__podium-number">
+                        Novak Djokovic
+                        <small><span class="js-podium-data">160</span></small>
+                      </div>
+                    </div>
+                    <div class="scoreboard__podium js-podium" data-height="250px">
+                      <div class="scoreboard__podium-base scoreboard__podium-base--first">
+                        <div class="scoreboard__podium-rank">1</div>
+                      </div>
+                      <div class="scoreboard__podium-number">
+                        Roger Federer
+                        <small><span class="js-podium-data">195</span></small>
+                      </div>
+                    </div>
+                    <div class="scoreboard__podium js-podium" data-height="150px">
+                      <div class="scoreboard__podium-base scoreboard__podium-base--third">
+                        <div class="scoreboard__podium-rank">3</div>
+                      </div>
+                      <div class="scoreboard__podium-number">
+                        Rafael Nadal
+                        <small><span class="js-podium-data">100</span></small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </section>
 
+          <section class="chart-container top-chart" id="over_the_years-global">
+              <div class="chart-header">
+                  <select id="year-select2">
+                      <option value="Overall years">Overall years</option>
+                      <option value="2024">2024</option>
+                      <option value="2023">2023</option>
+                      <option value="2022">2022</option>
+                      <option value="2021">2021</option>
+                      <option value="2020">2020</option>
+                      <option value="2019">2019</option>
+                      <option value="2018">2018</option>
+                      <option value="2017">2017</option>
+                      <option value="2016">2016</option>
+                      <option value="2015">2015</option>
+                      <option value="2014">2014</option>
+                      <option value="2013">2013</option>
+                      <option value="2012">2012</option>
+                  </select>
+              
+                  <select id="tournament-select2">
+                      <option value="Overall tournaments">Overall tournaments</option>
+                      <option>tournament1</option>
+                      <option>tournament2</option>
+                      <option>tournament3</option>
+                  </select>
+              </div>
 
-<main class="charts-wrapper">
+          
+              <div class="chart-content">
+                  <h2>Evolution over the years</h2>
+                  <svg class="bubbleChart" id="bubbleChart-global" width="500" height="400"></svg>
+              </div>
+          </section>
+
+          <section class="chart-container top-chart" id="radar-chart-section-global">
+              <div class="chart-header">
+                  <select id="year-select2">
+                      <option value="Overall years">Overall years</option>
+                      <option value="2024">2024</option>
+                      <option value="2023">2023</option>
+                      <option value="2022">2022</option>
+                      <option value="2021">2021</option>
+                      <option value="2020">2020</option>
+                      <option value="2019">2019</option>
+                      <option value="2018">2018</option>
+                      <option value="2017">2017</option>
+                      <option value="2016">2016</option>
+                      <option value="2015">2015</option>
+                      <option value="2014">2014</option>
+                      <option value="2013">2013</option>
+                      <option value="2012">2012</option>
+                  </select>
+              </div>
+
+              <div class="chart-content">
+                  <h2>Top Players' Performance</h2>
+                  <canvas id="radarCanvas" width="350" height="350"></canvas>
+              </div>
+            </section>
+
+            <div class="nav-dots">
+              <span class="dot" onclick="goToChart(1, 'global')"></span>
+              <span class="dot" onclick="goToChart(2, 'global')"></span>
+              <span class="dot" onclick="goToChart(3, 'global')"></span>
+          </div>
+      </div>
+
+      
+
+      <h2 style="text-align:center;"> You do not agree with the above ranking ? Vote for your GOAT!</h2>
+
+      <div class="vote-form">
+      <select id="player-category">
+        <option value="all">All Players</option>
+        <option value="men">Men</option>
+        <option value="women">Women</option>
+      </select>
+
+      <select id="player-select"></select>
+      <input type="text" id="player-name" placeholder="Enter your GOAT's name" style="display:none;">
+      <button id="vote-button" type="button">Vote 🎾</button>
+    </div>
+    <div id="vote-feedback" style="margin-top:0.5em; font-weight:500;"></div>
+
+    <div class="bottom-charts">
+      <section class="chart-container">
+        <div class="chart-content">
+          <h2>Let the users vote</h2>
+          <canvas id="goatVoteChart" width="650" height="300"></canvas>
+        </div>
+      </section>
+    </div>
+  </main>
+  </div>
+</section>
+
+<section id="doubles">  
+  <header>
+    <h1>Doubles GOAT</h1>
+  </header>
+
+  <main class="charts-wrapper">
     <div class="top-charts">
-        <section class="chart-container top-chart" id="podium">
+        <section class="chart-container top-chart" id="podium-doubles">
             <div class="chart-header">
             <select id="year-select">
                 <option value="Overall years">Overall years</option>
@@ -73,6 +240,129 @@
         
             <div class="chart-content">
             <h2>Podium</h2>
+            <div class="scoreboard">
+                <div class="scoreboard__podiums" id="scoreboard-doubles">
+                  <div class="scoreboard__podium js-podium" data-height="200px">
+                    <div class="scoreboard__podium-base scoreboard__podium-base--second">
+                      <div class="scoreboard__podium-rank">2</div>
+                    </div>
+                    <div class="scoreboard__podium-number">
+                      Roger Federer
+                      <small><span class="js-podium-data">160</span></small>
+                    </div>
+                  </div>
+                  <div class="scoreboard__podium js-podium" data-height="250px">
+                    <div class="scoreboard__podium-base scoreboard__podium-base--first">
+                      <div class="scoreboard__podium-rank">1</div>
+                    </div>
+                    <div class="scoreboard__podium-number">
+                      Novak Djokovic
+                      <small><span class="js-podium-data">195</span></small>
+                    </div>
+                  </div>
+                  <div class="scoreboard__podium js-podium" data-height="150px">
+                    <div class="scoreboard__podium-base scoreboard__podium-base--third">
+                      <div class="scoreboard__podium-rank">3</div>
+                    </div>
+                    <div class="scoreboard__podium-number">
+                      Rafael Nadal
+                      <small><span class="js-podium-data">100</span></small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </section>
+
+        <section class="chart-container top-chart" id="over_the_years-doubles">
+            <div class="chart-header">
+                <select id="year-select2">
+                    <option value="Overall years">Overall years</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                    <option value="2013">2013</option>
+                    <option value="2012">2012</option>
+                </select>
+            
+                <select id="tournament-select2">
+                    <option value="Overall tournaments">Overall tournaments</option>
+                    <option>tournament1</option>
+                    <option>tournament2</option>
+                    <option>tournament3</option>
+                </select>
+            </div>
+
+        
+            <div class="chart-content">
+                <h2>Evolution over the years</h2>
+                <svg class="bubbleChart" id="bubbleChart-doubles" width="500" height="400"></svg>
+            </div>
+        </section>
+    </div>
+    <div class="nav-dots">
+      <span class="dot" onclick="goToChart(1, 'doubles')"></span>
+      <span class="dot" onclick="goToChart(2, 'doubles')"></span>
+    </div>
+  </main>
+</section>
+
+<section id="surfaces">
+<header>
+    <h1>Surfaces GOAT</h1>
+</header>
+
+
+<main class="charts-wrapper">
+
+    <section class="chart-container top-chart" id="podium-surfaces">
+        <div class="chart-header">
+
+        <select id="surface-select">
+            <option value="Overall Surfaces">Overall Surfaces</option>
+            <option value="Grass">Grass</option>
+            <option value="Hard">Hard</option>
+            <option value="Clay">Clay</option>
+            <option value="Carpet">Carpet</option>
+        </select>
+
+        <select id="year-select">
+            <option value="Overall years">Overall years</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+            <option value="2013">2013</option>
+            <option value="2012">2012</option>
+        </select>
+    
+        
+        <select id="tournament-select">
+            <option value="Overall tournaments">Overall tournaments</option>
+            <option>tournament1</option>
+            <option>tournament2</option>
+            <option>tournament3</option>
+        </select>
+        </div>
+    
+        <div class="chart-content">
+            <h2>Podium Surfaces</h2>
             <div class="scoreboard">
                 <div class="scoreboard__podiums">
                   <div class="scoreboard__podium js-podium" data-height="200px">
@@ -105,103 +395,467 @@
                 </div>
               </div>
             </div>
-        </section>
-
-        <section class="chart-container top-chart" id="over_the_years ">
-            <div class="chart-header">
-                <select id="year-select2">
-                    <option value="Overall years">Overall years</option>
-                    <option value="2024">2024</option>
-                    <option value="2023">2023</option>
-                    <option value="2022">2022</option>
-                    <option value="2021">2021</option>
-                    <option value="2020">2020</option>
-                    <option value="2019">2019</option>
-                    <option value="2018">2018</option>
-                    <option value="2017">2017</option>
-                    <option value="2016">2016</option>
-                    <option value="2015">2015</option>
-                    <option value="2014">2014</option>
-                    <option value="2013">2013</option>
-                    <option value="2012">2012</option>
-                </select>
-            
-                <select id="tournament-select2">
-                    <option value="Overall tournaments">Overall tournaments</option>
-                    <option>tournament1</option>
-                    <option>tournament2</option>
-                    <option>tournament3</option>
-                </select>
-            </div>
-
-        
-            <div class="chart-content">
-                <h2>Evolution over the years</h2>
-                <svg id="bubble-chart" width="500" height="400"></svg>
-            </div>
-        </section>
-
-        <section class="chart-container top-chart" id="radar-chart-section">
-            <div class="chart-header">
-                <select id="year-select2">
-                    <option value="Overall years">Overall years</option>
-                    <option value="2024">2024</option>
-                    <option value="2023">2023</option>
-                    <option value="2022">2022</option>
-                    <option value="2021">2021</option>
-                    <option value="2020">2020</option>
-                    <option value="2019">2019</option>
-                    <option value="2018">2018</option>
-                    <option value="2017">2017</option>
-                    <option value="2016">2016</option>
-                    <option value="2015">2015</option>
-                    <option value="2014">2014</option>
-                    <option value="2013">2013</option>
-                    <option value="2012">2012</option>
-                </select>
-            </div>
-
-            <div class="chart-content">
-                <h2>Top Players' Performance</h2>
-                <canvas id="radarCanvas" width="350" height="350"></canvas>
-            </div>
-          </section>
-
-          <div class="nav-dots">
-            <span class="dot" onclick="goToChart(1)"></span>
-            <span class="dot" onclick="goToChart(2)"></span>
-            <span class="dot" onclick="goToChart(3)"></span>
         </div>
-    </div>
-
-    
-
-    <h2 style="text-align:center;"> You do not agree with the above ranking ? Vote for your GOAT!</h2>
-
-    <div class="vote-form">
-    <select id="player-category">
-      <option value="all">All Players</option>
-      <option value="men">Men</option>
-      <option value="women">Women</option>
-    </select>
-
-    <select id="player-select"></select>
-    <input type="text" id="player-name" placeholder="Enter your GOAT's name" style="display:none;">
-    <button id="vote-button" type="button">Vote 🎾</button>
-  </div>
-  <div id="vote-feedback" style="margin-top:0.5em; font-weight:500;"></div>
-
-  <div class="bottom-charts">
-    <section class="chart-container">
-      <div class="chart-content">
-        <h2>Let the users vote</h2>
-        <canvas id="goatVoteChart" width="650" height="300"></canvas>
-      </div>
     </section>
-  </div>
-</main>
-</div>
+    
+    <section class="chart-container top-chart" id="over_the_years-surfaces">
+        <div class="chart-header">
 
+        <select id="surface-select2">
+            <option value="Overall Surfaces">Overall Surfaces</option>
+            <option value="Grass">Grass</option>
+            <option value="Hard">Hard</option>
+            <option value="Clay">Clay</option>
+            <option value="Carpet">Carpet</option>
+        </select>
+
+        <select id="year-select2">
+            <option value="Overall years">Overall years</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+            <option value="2013">2013</option>
+            <option value="2012">2012</option>
+        </select>
+    
+        <select id="tournament-select2">
+            <option value="Overall tournaments">Overall tournaments</option>
+            <option>tournament1</option>
+            <option>tournament2</option>
+            <option>tournament3</option>
+        </select>
+        </div>
+    
+        <div class="chart-content">
+            <h2>Surfaces Evolution over the years</h2>
+            <svg class="bubbleChart" id="bubbleChart-surfaces" width="500" height="400"></svg>
+        </div>
+    
+      </section>
+      <div class="nav-dots">
+      <span class="dot" onclick="goToChart(1, 'surfaces')"></span>
+      <span class="dot active" onclick="goToChart(2, 'surfaces')"></span>
+      </div>
+</main>
+
+</section>
+
+<section id="services">
+  <header>
+    <h1>Services GOAT</h1>
+  </header>
+
+  <main class="charts-wrapper">
+
+  <section class="chart-container top-chart" id="podium-services">
+      <div class="chart-header">
+      <select id="year-select">
+          <option value="Overall years">Overall years</option>
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+          <option value="2018">2018</option>
+          <option value="2017">2017</option>
+          <option value="2016">2016</option>
+          <option value="2015">2015</option>
+          <option value="2014">2014</option>
+          <option value="2013">2013</option>
+          <option value="2012">2012</option>
+      </select>
+
+      
+      <select id="tournament-select">
+          <option value="Overall tournaments">Overall tournaments</option>
+          <option>tournament1</option>
+          <option>tournament2</option>
+          <option>tournament3</option>
+      </select>
+      </div>
+
+      <div class="chart-content">
+          <h2>Podium Services</h2>
+          <div class="scoreboard">
+              <div class="scoreboard__podiums">
+                <div class="scoreboard__podium js-podium" data-height="200px">
+                  <div class="scoreboard__podium-base scoreboard__podium-base--second">
+                    <div class="scoreboard__podium-rank">2</div>
+                  </div>
+                  <div class="scoreboard__podium-number">
+                    Novak Djokovic
+                    <small><span class="js-podium-data">160</span></small>
+                  </div>
+                </div>
+                <div class="scoreboard__podium js-podium" data-height="250px">
+                  <div class="scoreboard__podium-base scoreboard__podium-base--first">
+                    <div class="scoreboard__podium-rank">1</div>
+                  </div>
+                  <div class="scoreboard__podium-number">
+                    Roger Federer
+                    <small><span class="js-podium-data">195</span></small>
+                  </div>
+                </div>
+                <div class="scoreboard__podium js-podium" data-height="150px">
+                  <div class="scoreboard__podium-base scoreboard__podium-base--third">
+                    <div class="scoreboard__podium-rank">3</div>
+                  </div>
+                  <div class="scoreboard__podium-number">
+                    Rafael Nadal
+                    <small><span class="js-podium-data">100</span></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="chart-container top-chart" id="over_the_years-services">
+      <div class="chart-header">
+          <select id="year-select2">
+              <option value="Overall years">Overall years</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+              <option value="2012">2012</option>
+          </select>
+      
+          <select id="tournament-select2">
+              <option value="Overall tournaments">Overall tournaments</option>
+              <option>tournament1</option>
+              <option>tournament2</option>
+              <option>tournament3</option>
+          </select>
+      </div>
+
+      <div class="chart-content">
+          <h2>Services Evolution over the years</h2>
+          <svg class="bubbleChart" id="bubbleChart-services" width="500" height="400"></svg>
+
+      </div>
+
+    </section>
+    <div class="nav-dots">
+    <span class="dot" onclick="goToChart(1, 'services')"></span>
+    <span class="dot" onclick="goToChart(2, 'services')"></span>
+    </div>
+  </main>
+</section>
+
+<section id="net"> 
+  <header>
+    <h1>Net GOAT</h1>
+</header>
+
+
+  <main class="charts-wrapper">
+
+      <section class="chart-container top-chart" id="podium-net">
+          <div class="chart-header">
+          <select id="year-select">
+              <option value="Overall years">Overall years</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+              <option value="2012">2012</option>
+          </select>
+      
+          
+          <select id="tournament-select">
+              <option value="Overall tournaments">Overall tournaments</option>
+              <option>tournament1</option>
+              <option>tournament2</option>
+              <option>tournament3</option>
+          </select>
+          </div>
+      
+          <div class="chart-content">
+              <h2>Podium Net</h2>
+              <div class="scoreboard">
+                  <div class="scoreboard__podiums">
+                    <div class="scoreboard__podium js-podium" data-height="200px">
+                      <div class="scoreboard__podium-base scoreboard__podium-base--second">
+                        <div class="scoreboard__podium-rank">2</div>
+                      </div>
+                      <div class="scoreboard__podium-number">
+                        Novak Djokovic
+                        <small><span class="js-podium-data">160</span></small>
+                      </div>
+                    </div>
+                    <div class="scoreboard__podium js-podium" data-height="250px">
+                      <div class="scoreboard__podium-base scoreboard__podium-base--first">
+                        <div class="scoreboard__podium-rank">1</div>
+                      </div>
+                      <div class="scoreboard__podium-number">
+                        Roger Federer
+                        <small><span class="js-podium-data">195</span></small>
+                      </div>
+                    </div>
+                    <div class="scoreboard__podium js-podium" data-height="150px">
+                      <div class="scoreboard__podium-base scoreboard__podium-base--third">
+                        <div class="scoreboard__podium-rank">3</div>
+                      </div>
+                      <div class="scoreboard__podium-number">
+                        Rafael Nadal
+                        <small><span class="js-podium-data">100</span></small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </section>
+      
+      <section class="chart-container top-chart" id="over_the_years-net">
+          <div class="chart-header">
+              <select id="year-select2">
+                  <option value="Overall years">Overall years</option>
+                  <option value="2024">2024</option>
+                  <option value="2023">2023</option>
+                  <option value="2022">2022</option>
+                  <option value="2021">2021</option>
+                  <option value="2020">2020</option>
+                  <option value="2019">2019</option>
+                  <option value="2018">2018</option>
+                  <option value="2017">2017</option>
+                  <option value="2016">2016</option>
+                  <option value="2015">2015</option>
+                  <option value="2014">2014</option>
+                  <option value="2013">2013</option>
+                  <option value="2012">2012</option>
+              </select>
+          
+              <select id="tournament-select2">
+                  <option value="Overall tournaments">Overall tournaments</option>
+                  <option>tournament1</option>
+                  <option>tournament2</option>
+                  <option>tournament3</option>
+              </select>
+          </div>
+      
+          <div class="chart-content">
+              <h2>Net Evolution over the years</h2>
+              <svg class="bubbleChart" id="bubbleChart-net" width="500" height="400"></svg>
+          </div>
+      
+        </section>
+        <div class="nav-dots">
+        <span class="dot" onclick="goToChart(1, 'net')"></span>
+        <span class="dot" onclick="goToChart(2, 'net')"></span>
+        </div>
+  </main>
+</section>
+
+<section id="tournament">
+  <header>
+    <h1>Tournament GOAT</h1>
+  </header>
+
+
+  <main class="charts-wrapper">
+
+      <section class="chart-container top-chart" id="podium-tournament">
+          <div class="chart-header">
+          <select id="year-select">
+              <option value="Overall years">Overall years</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+              <option value="2012">2012</option>
+          </select>
+      
+          
+          <select id="tournament-select">
+              <option value="Overall tournaments">Overall tournaments</option>
+              <option>tournament1</option>
+              <option>tournament2</option>
+              <option>tournament3</option>
+          </select>
+          </div>
+      
+          <div class="chart-content">
+              <h2>Podium Tournament</h2>
+              <div class="scoreboard">
+                  <div class="scoreboard__podiums">
+                    <div class="scoreboard__podium js-podium" data-height="200px">
+                      <div class="scoreboard__podium-base scoreboard__podium-base--second">
+                        <div class="scoreboard__podium-rank">2</div>
+                      </div>
+                      <div class="scoreboard__podium-number">
+                        Novak Djokovic
+                        <small><span class="js-podium-data">160</span></small>
+                      </div>
+                    </div>
+                    <div class="scoreboard__podium js-podium" data-height="250px">
+                      <div class="scoreboard__podium-base scoreboard__podium-base--first">
+                        <div class="scoreboard__podium-rank">1</div>
+                      </div>
+                      <div class="scoreboard__podium-number">
+                        Roger Federer
+                        <small><span class="js-podium-data">195</span></small>
+                      </div>
+                    </div>
+                    <div class="scoreboard__podium js-podium" data-height="150px">
+                      <div class="scoreboard__podium-base scoreboard__podium-base--third">
+                        <div class="scoreboard__podium-rank">3</div>
+                      </div>
+                      <div class="scoreboard__podium-number">
+                        Rafael Nadal
+                        <small><span class="js-podium-data">100</span></small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </section>
+      
+      <!-- Chart 2 Container -->
+      <section class="chart-container top-chart" id="over_the_years-tournament">
+          <div class="chart-header">
+              <select id="year-select2">
+                  <option value="Overall years">Overall years</option>
+                  <option value="2024">2024</option>
+                  <option value="2023">2023</option>
+                  <option value="2022">2022</option>
+                  <option value="2021">2021</option>
+                  <option value="2020">2020</option>
+                  <option value="2019">2019</option>
+                  <option value="2018">2018</option>
+                  <option value="2017">2017</option>
+                  <option value="2016">2016</option>
+                  <option value="2015">2015</option>
+                  <option value="2014">2014</option>
+                  <option value="2013">2013</option>
+                  <option value="2012">2012</option>
+              </select>
+          
+              <select id="tournament-select2">
+                  <option value="Overall tournaments">Overall tournaments</option>
+                  <option>tournament1</option>
+                  <option>tournament2</option>
+                  <option>tournament3</option>
+              </select>
+          </div>
+      
+          <div class="chart-content">
+              <h2>Tournament Evolution over the years</h2>
+              <svg class="bubbleChart" id="bubbleChart-tournament" width="500" height="400"></svg>
+          </div>
+          
+      
+        </section>
+        <div class="nav-dots">
+        <span class="dot" onclick="goToChart(1, 'tournament')"></span>
+        <span class="dot" onclick="goToChart(2, 'tournament')"></span>
+        </div>
+  </main>
+</section>
+
+<section id="compare">
+  <header>
+    <h1>Which GOAT are you ?</h1>
+  </header>
+
+  <main>
+      <section class="quiz-container">
+          <form id="goat-quiz">
+            <h2>Discover Your Inner GOAT</h2>
+        
+            <label>1. Would you like to be compared with:</label>
+            <select name="gender">
+              <option value="men">Men players</option>
+              <option value="women">Female players</option>
+              <option value="surprise">Surprise me</option>
+            </select>
+        
+            <label>2. What type of court do you enjoy playing the most?</label>
+            <select name="court">
+              <option value="clay">Clay</option>
+              <option value="grass">Grass</option>
+              <option value="hard">Hard</option>
+              <option value="dont_know">I don’t know</option>
+            </select>
+        
+            <label>3. Do you like rushing at the net or staying at the baseline?</label>
+            <select name="net_play">
+              <option value="yes">Yes (net-rusher)</option>
+              <option value="no">No (baseliner)</option>
+            </select>
+        
+            <label>4. Service performance:</label>
+              <div class="slider-group">
+              <span>1 = Real weakness</span>
+              <input type="range" name="serve_strength" min="1" max="5" step="1">
+              <span>5 = Real weapon</span>
+              </div>
+        
+            <label>5. Your second serve is:</label>
+            <select name="second_serve">
+              <option value="same">The same as my first</option>
+              <option value="safe">Safe, I just need to land it</option>
+            </select>
+        
+            <label>6. Balance between forehand and backhand:</label>
+              <div class="slider-group">
+              <span>1 = Backhand much better</span>
+              <input type="range" name="stroke_balance" min="1" max="5" step="1">
+              <span>5 = Forehand much better</span>
+              </div>
+        
+            <label>7. Choose your tennis vibe:</label>
+            <select name="vibe">
+              <option value="elegant">Elegant</option>
+              <option value="relentless">Relentless</option>
+              <option value="passionate">Passionate</option>
+              <option value="cool-headed">Cool-headed</option>
+              <option value="flashy">Flashy</option>
+            </select>
+        
+            <button type="submit" class="vote-button">Find Your GOAT</button>
+          </form>
+        </section>
+        
+  </main>
+
+</section>
 <footer>
     
     <p>&copy; 2025 - We hope this site is an ace. Proudly served with love by Réza Machraoui, Luna Ralet & Leila Sidjanski.</p>

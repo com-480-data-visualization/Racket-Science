@@ -1,26 +1,53 @@
-function goToChart(chartIndex) {
-  const charts = document.querySelectorAll('.top-chart');
-  const dots = document.querySelectorAll('.dot');
+function goToChart(chartIndex, section) {
+  // Only find .top-chart inside the right section
+  console.log(chartIndex, section)
+  const charts = document.querySelectorAll(`#${section} .top-chart`);
+  const dots = document.querySelectorAll(`#${section} .dot`);
 
   charts.forEach((chart, index) => {
-      chart.style.display = (index === chartIndex - 1) ? 'flex' : 'none';
-  });
+    chart.style.display = (index === chartIndex - 1) ? 'flex' : 'none';
 
-  dots.forEach((dot, index) => {
-      dot.classList.toggle('active', index === chartIndex - 1);
-  });
-}
-document.addEventListener("DOMContentLoaded", function () {
-  goToChart(1);  // always start with first chart
-  const podiums = document.querySelectorAll(".js-podium");
-
-  podiums.forEach(function (podium) {
-    const height = podium.getAttribute("data-height");
-    const base = podium.querySelector(".scoreboard__podium-base");
-    if (base && height) {
-      base.style.height = height;
+    if (index === chartIndex - 1) {
+      chart.querySelectorAll('.bubbleChart').forEach(svgEl => {
+        d3.select(svgEl).selectAll("*").remove();
+        if (section === "global") {
+          drawBubbleChart(svgEl, bubbleDataGlobal);
+        } else if (section === "doubles") {
+          drawBubbleChart(svgEl, bubbleDataDoubles);
+        } else if (section === "surfaces") {
+          drawBubbleChart(svgEl, bubbleDataDoubles);
+        } else if (section === "services") {
+          drawBubbleChart(svgEl, bubbleDataDoubles);
+        } else if (section === "net") {
+          drawBubbleChart(svgEl, bubbleDataDoubles);
+        } else if (section === "tournament") {
+          drawBubbleChart(svgEl, bubbleDataDoubles);
+        }
+      });
+      chart.querySelectorAll('.js-podium').forEach(function(podium) {
+        const height = podium.getAttribute("data-height");
+        const base = podium.querySelector(".scoreboard__podium-base");
+        if (base && height) {
+          base.style.height = height;
+        }
+      });
     }
   });
+
+
+  dots.forEach((dot, index) => {
+    dot.classList.toggle('active', index === chartIndex - 1);
+  });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  goToChart(1, 'global');
+  goToChart(1, 'doubles')  
+  goToChart(1, 'surfaces') 
+  goToChart(1, 'services') 
+  goToChart(1, 'net') 
+  goToChart(1, 'tournament') 
+
 
   // Render horizontal vote chart after DOM is ready
   const ctx = document.getElementById('voteChart');
@@ -62,58 +89,65 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-  const bubbleData = {
-    name: "Players",
-    children: [
-      { name: "Roger", value: 100 },
-      { name: "Rafa", value: 80 },
-      { name: "Novak", value: 90 },
-      { name: "Andy", value: 60 },
-      { name: "Stan", value: 50 },
-    ]
-  };
-  
-  function drawBubbleChart(data) {
-    const width = 300;
-  const height = 300;
+const bubbleDataGlobal = {
+  name: "Players",
+  children: [
+    { name: "Roger", value: 100 },
+    { name: "Rafa", value: 80 },
+    { name: "Novak", value: 90 },
+    { name: "Andy", value: 60 },
+    { name: "Stan", value: 50 }
+  ]
+};
 
-  const svg = d3.select("#bubble-chart")
+const bubbleDataDoubles = {
+  name: "Players",
+  children: [
+    { name: "Novak", value: 100 },
+    { name: "Rafa", value: 80 },
+    { name: "Roger", value: 90 },
+    { name: "Andy", value: 60 },
+    { name: "Stan", value: 50 }
+  ]
+};
+
+function drawBubbleChart(svgEl, data) {
+  console.log(svgEl)
+  const width = +svgEl.getAttribute("width") || 500;
+  const height = +svgEl.getAttribute("height") || 400;
+  d3.select(svgEl).selectAll("*").remove();
+
+  const svg = d3.select(svgEl)
     .attr("width", width)
-    .attr("height", height)
-    .style("max-width", "100%")
-    .style("height", "auto");
-  
-    const pack = data => d3.pack()
-      .size([width, height])
-      .padding(5)(
-        d3.hierarchy(data)
-          .sum(d => d.value)
-      );
-  
-    const root = pack(data);
-  
-    const color = d3.scaleOrdinal(d3.schemeSet2);
-  
-    const node = svg.selectAll("g")
-      .data(root.leaves())
-      .join("g")
-      .attr("transform", d => `translate(${d.x},${d.y})`);
-  
-    node.append("circle")
-      .attr("r", d => d.r)
-      .attr("fill", d => color(d.data.name));
-  
-    node.append("text")
-      .text(d => d.data.name)
-      .attr("text-anchor", "middle")
-      .attr("dy", "0.3em")
-      .style("font-size", d => d.r / 3)
-      .style("fill", "white");
-  }
-  
+    .attr("height", height);
+
+  const pack = d3.pack()
+    .size([width, height])
+    .padding(5);
+
+  const root = d3.hierarchy(data).sum(d => d.value);
+  const nodes = pack(root).leaves();
+  const color = d3.scaleOrdinal(d3.schemeSet2);
+
+  const node = svg.selectAll("g")
+    .data(nodes)
+    .join("g")
+    .attr("transform", d => `translate(${d.x},${d.y})`);
+
+  node.append("circle")
+    .attr("r", d => d.r)
+    .attr("fill", d => color(d.data.name));
+
+  node.append("text")
+    .text(d => d.data.name)
+    .attr("text-anchor", "middle")
+    .attr("dy", "0.3em")
+    .style("font-size", d => d.r / 3)
+    .style("fill", "white");
+}
+
   // Call the function on load
   window.addEventListener('DOMContentLoaded', () => {
-    drawBubbleChart(bubbleData);
     drawRadarChart()
   });
   
@@ -163,5 +197,3 @@ function drawRadarChart() {
   });
 }
 
-
-  
