@@ -111,7 +111,7 @@ const bubbleDataDoubles = {
   ]
 };
 
-function drawBubbleChart(svgEl, data, section) {
+function drawBubbleChart(svgEl, data, section, tournament) {
   console.log(svgEl)
   const width = +svgEl.getAttribute("width") || 500;
   const height = +svgEl.getAttribute("height") || 400;
@@ -151,17 +151,19 @@ function drawBubbleChart(svgEl, data, section) {
         const currentYear = document.getElementById("year-select-surfaces-bubble").value;
         const currentSurface = document.getElementById("surface-select-bubble").value;
 
-        console.log('test')
-        console.log(section)
         let tooltipText = '';
         if (section === "surfaces") {
-          console.log(section)
-          console.log
-          tooltipText = `<strong>${d.data.name}</strong><br>
+          
+          if (!tournament){
+            tooltipText = `<strong>${d.data.name}</strong><br>
                          won <strong>${d.data.value}</strong> matches on <strong>${currentSurface}</strong> in <strong>${currentYear}</strong>`;
+          } else {
+            console.log(tournament)
+            tooltipText = `<strong>${d.data.name}</strong><br>
+                         won <strong>${d.data.value}</strong> matches on <strong>${currentSurface}</strong> in <strong>${currentYear}</strong> at </strong>${tournament}</strong>`;
+          }
         } else if (section === "services") {
-          tooltipText = `<strong>${d.data.name}</strong><br>
-                         served <strong>${d.data.value}</strong> aces in <strong>${currentYear}</strong>`;
+          tooltipText = 'something'
         } else {
           tooltipText = `<strong>${d.data.name}</strong>: ${d.data.value}`;
         }
@@ -253,34 +255,3 @@ function csvToBubbleData(csv, valueCol) {
   };
 }
 
-function getSurfaceCsvPath(year, surface, circuit) {
-  let surfaceLower = surface.toLowerCase();
-  return `results/surfaces/${year}/${circuit}/overall_goat_surfaces/wins_${surfaceLower}_${year}.csv`;
-}
-
-function updateBubbleChartForSurface() {
-  const year = document.getElementById("year-select-surfaces-bubble").value; 
-  const surface = document.getElementById("surface-select-bubble").value;
-  const circuit = document.getElementById("circuit-select-bubble").value;
-  const prompt = document.getElementById('bubble-prompt');
-  const svgEl = document.getElementById('bubbleChart-surfaces');
-
-  if (year === 'Overall years' || surface === 'Select Surface' || circuit === 'Select Circuit') {
-    prompt.style.display = 'flex';
-    svgEl.style.display = 'none';
-    return;
-  }
-
-  prompt.style.display = 'none';
-  svgEl.style.display = 'block';
-
-  const csvPath = getSurfaceCsvPath(year, surface, circuit);
-  d3.csv(csvPath).then(function(data) {
-    const bubbleData = csvToBubbleData(data, surface);
-    drawBubbleChart(svgEl, bubbleData, "surfaces");
-  });
-}
-
-document.getElementById("year-select-surfaces-bubble").addEventListener("change", updateBubbleChartForSurface);
-document.getElementById("surface-select-bubble").addEventListener("change", updateBubbleChartForSurface);
-document.getElementById("circuit-select-bubble").addEventListener("change", updateBubbleChartForSurface);

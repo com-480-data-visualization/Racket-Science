@@ -23,8 +23,8 @@ document.querySelectorAll('nav a').forEach(link => {
         </video>
         <div class="cover-content">
             <h1>Racket Science</h1>
-            <p>Welcome! Scroll and discover who is the GOAT 🐐</p>
-            <a href="#main-content" class="scroll-down">▼</a>
+            <p>Welcome! Scroll and discover who is the 🐐Greatest Of All Time 🐐</p>
+            <a href="#main-content" class="scroll-down">🎾</a>
         </div>
         <div class="cover-fade"></div>
     
@@ -449,10 +449,7 @@ document.querySelectorAll('nav a').forEach(link => {
         </select>
     
         <select id="tournament-select-surfaces-bubbles">
-            <option value="Overall tournaments">Overall tournaments</option>
-            <option>tournament1</option>
-            <option>tournament2</option>
-            <option>tournament3</option>
+          <option value="Overall tournaments">Overall tournaments</option>
         </select>
         </div>
     
@@ -462,6 +459,11 @@ document.querySelectorAll('nav a').forEach(link => {
               <span role="img" aria-label="Trophy" style="font-size:2.2rem;">🏆</span>
               Let’s see who are the <b>top 15 players</b> in the chosen surface!
             </div>
+            <div id="bubble-prompt-no-data" class="bubble-prompt" style="display:none;">
+              <span role="img" aria-label="Sad face" style="font-size:2.2rem;">😔</span>
+              Sorry, we don’t have data for the requested selection.
+            </div>
+
             <svg class="bubbleChart" id="bubbleChart-surfaces" width="500" height="400" style="display: none;"></svg>
         </div>
 
@@ -901,6 +903,7 @@ document.querySelectorAll('nav a').forEach(link => {
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
 <script src="js/goat_poll.js"></script>
 <script src="js/main.js"></script>
+<script src="js/surface.js"></script>
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 

@@ -431,7 +431,7 @@ nav a:hover:not(.active) {
   justify-content: center;
   margin: 3rem auto 2rem auto;
   max-width: 420px;
-  background: #fff6ef;
+  background: #f1ebe6d7;
   border: 2px dashed #bb4915;
   border-radius: 20px;
   font-size: 1.45rem;
@@ -442,3 +442,38 @@ nav a:hover:not(.active) {
   text-align: center;
   transition: opacity 0.4s;
 }
+
+.cover-content {
+  position: absolute;  /* Or relative/fixed as needed */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  color: white;
+  text-shadow: 0 4px 30px rgba(0,0,0,0.28), 0 1px 1px #000;
+  z-index: 2;  
+}
+
+.cover-content h1 {
+  font-size: 3rem;   
+  font-weight: 900;
+  margin-bottom: 1.1rem;
+  letter-spacing: 2px;
+}
+
+.cover-content p {
+  font-size: 1.5rem;     
+  font-weight: 600;
+  margin: 0.7rem 0;
+  letter-spacing: 1px;
+}
+
+.cover-content .scroll-down {
+  display: inline-block;
+  margin-top: 2.2rem;
+  font-size: 2.5rem;
+  text-decoration: none;
+  animation: bounce 1.2s infinite alternate;
+}
+
