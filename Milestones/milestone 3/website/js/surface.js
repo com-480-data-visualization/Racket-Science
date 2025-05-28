@@ -103,3 +103,82 @@ document.getElementById('year-select-surfaces-bubble').addEventListener('change'
 document.getElementById('tournament-select-surfaces-bubbles').addEventListener('change', updateTournaments);
 
 document.getElementById('year-select-surfaces-bubble').dispatchEvent(new Event('change'));
+
+
+/**
+ * Surface-Specific Theming 
+ * Dynamically applies themed backgrounds and podium styles for:
+ * - Clay
+ * - Grass
+ * - Hard
+ *
+ * Also rotates these themes every 4 seconds by default
+ * until the user makes a surface selection.
+ */
+
+document.addEventListener('DOMContentLoaded', function () {
+  const surfaceDropdown = document.getElementById('surface-select-podiums');
+  const surfacesSection = document.getElementById('surfaces');
+  const podiumBases = document.querySelectorAll('#podium-surfaces .scoreboard__podium-base');
+
+  let surfaceRotationInterval;
+  let userHasSelectedSurface = false;
+
+  // List of themes and their CSS class suffixes
+  const surfaceThemes = [
+    { name: 'Clay', class: 'clay-theme', podiumClass: 'scoreboard__podium-base--clay' },
+    { name: 'Grass', class: 'grass-theme', podiumClass: 'scoreboard__podium-base--grass' },
+    { name: 'Hard', class: 'hard-theme', podiumClass: 'scoreboard__podium-base--hard' }
+  ];
+
+  /**
+   * Rotate background and podium themes every 4 seconds until user selection
+   */
+  function rotateSurfaceBackground() {
+    let index = 0;
+
+    surfaceRotationInterval = setInterval(() => {
+      if (userHasSelectedSurface) {
+        clearInterval(surfaceRotationInterval);
+        return;
+      }
+
+      // Remove all themed classes
+      surfacesSection.classList.remove(...surfaceThemes.map(t => t.class));
+      podiumBases.forEach(podium =>
+        podium.classList.remove(...surfaceThemes.map(t => t.podiumClass))
+      );
+
+      // Apply the current theme
+      const current = surfaceThemes[index];
+      surfacesSection.classList.add(current.class);
+      podiumBases.forEach(podium => podium.classList.add(current.podiumClass));
+
+      index = (index + 1) % surfaceThemes.length;
+    }, 4000);
+  }
+
+  rotateSurfaceBackground(); // Start rotation on page load
+
+  /**
+   * When user selects a surface manually, stop rotation and apply theme
+   */
+  surfaceDropdown.addEventListener('change', function () {
+    const selectedSurface = this.value;
+    userHasSelectedSurface = true; // 🛑 Stop the rotation
+    clearInterval(surfaceRotationInterval);
+
+    // Reset all classes first
+    surfacesSection.classList.remove(...surfaceThemes.map(t => t.class));
+    podiumBases.forEach(podium =>
+      podium.classList.remove(...surfaceThemes.map(t => t.podiumClass))
+    );
+
+    // Apply selected theme
+    const selectedTheme = surfaceThemes.find(t => t.name === selectedSurface);
+    if (selectedTheme) {
+      surfacesSection.classList.add(selectedTheme.class);
+      podiumBases.forEach(podium => podium.classList.add(selectedTheme.podiumClass));
+    }
+  });
+});
