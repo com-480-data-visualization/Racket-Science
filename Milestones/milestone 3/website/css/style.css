@@ -10,18 +10,17 @@ html {
     margin: 0;
     padding: 0;
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    scroll-behavior: smooth;
+
 }
 
-/* Header & Footer stick to top/bottom by default */
 header {
     background-color: #BB4915b3;
     padding: 1rem;
     text-align: center;
     border-radius: 20px;
 
-    background-color: rgba(179, 71, 46, 0.2); /* semi-transparent background */
+    background-color: rgba(179, 71, 46, 0.2); 
     border: 2px solid #b3472e;
     border-radius: 12px;
     padding: 0rem 2rem;
@@ -51,14 +50,22 @@ main {
 }
 
 nav {
-    height: 60px;   
-    width: 90%;        /* take full width! */
-    max-width: 1100px;  /* optional, makes it look nice on big screens */
-    margin: 1rem auto;        
-    padding: 0.5rem 1rem;
-    background-color: #bb1591b3; 
-    border-radius: 20px;
-    text-align: center; 
+  height: 60px;
+  width: 70%;
+  max-width: 1100px;
+  margin: 2rem; 
+  padding: 0rem 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  text-align: center;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
 }
 
 nav ul {
@@ -82,7 +89,7 @@ nav li {
 nav a {
     font-weight: bold;
     text-decoration: none;
-    color: rgba(244,125,95);
+    color: rgb(15, 15, 15);
     font-size: 1.5rem;              /* MAKE TEXT BIGGER */
     height: 100%;                 /* FILL VERTICALLY */
     display: flex;
@@ -93,7 +100,7 @@ nav a {
 }
 
 nav a.active {
-    color: white !important;
+    color: rgb(173, 40, 40) !important;
     cursor: default;
 }
 
@@ -417,8 +424,4 @@ nav a:hover:not(.active) {
 
 #main-content {
     margin-top: 6rem;  /* or try padding-top: 3rem; */
-}
-
-html {
-  scroll-behavior: smooth;
 }
