@@ -253,28 +253,34 @@ function csvToBubbleData(csv, valueCol) {
   };
 }
 
-function getSurfaceCsvPath(year, surface) {
+function getSurfaceCsvPath(year, surface, circuit) {
   let surfaceLower = surface.toLowerCase();
-  return `results/surfaces/${year}/atp/overall_goat_surfaces/wins_${surfaceLower}_${year}.csv`;
+  return `results/surfaces/${year}/${circuit}/overall_goat_surfaces/wins_${surfaceLower}_${year}.csv`;
 }
 
 function updateBubbleChartForSurface() {
   const year = document.getElementById("year-select-surfaces-bubble").value; 
   const surface = document.getElementById("surface-select-bubble").value;
+  const circuit = document.getElementById("circuit-select-bubble").value;
+  const prompt = document.getElementById('bubble-prompt');
+  const svgEl = document.getElementById('bubbleChart-surfaces');
 
-  if (year === 'Overall years' || surface === 'Overall Surfaces') {
+  if (year === 'Overall years' || surface === 'Select Surface' || circuit === 'Select Circuit') {
+    prompt.style.display = 'flex';
+    svgEl.style.display = 'none';
     return;
   }
 
-  const csvPath = getSurfaceCsvPath(year, surface);
+  prompt.style.display = 'none';
+  svgEl.style.display = 'block';
+
+  const csvPath = getSurfaceCsvPath(year, surface, circuit);
   d3.csv(csvPath).then(function(data) {
     const bubbleData = csvToBubbleData(data, surface);
-    console.log('hello')
-    console.log(bubbleData)
-    const svgEl = document.getElementById('bubbleChart-surfaces');
-        drawBubbleChart(svgEl, bubbleData, "surfaces");
+    drawBubbleChart(svgEl, bubbleData, "surfaces");
   });
 }
 
 document.getElementById("year-select-surfaces-bubble").addEventListener("change", updateBubbleChartForSurface);
 document.getElementById("surface-select-bubble").addEventListener("change", updateBubbleChartForSurface);
+document.getElementById("circuit-select-bubble").addEventListener("change", updateBubbleChartForSurface);

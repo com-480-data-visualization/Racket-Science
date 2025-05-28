@@ -15,14 +15,12 @@ html {
 }
 
 header {
-    background-color: #BB4915b3;
-    padding: 1rem;
-    text-align: center;
-    border-radius: 20px;
+    margin-top: 80px;
 
-    background-color: rgba(179, 71, 46, 0.2); 
+
+    background-color: rgba(179, 70, 46, 0.624); 
     border: 2px solid #b3472e;
-    border-radius: 12px;
+    border-radius: 20px;
     padding: 0rem 2rem;
     margin: 1rem auto;
     text-align: center;
@@ -424,4 +422,23 @@ nav a:hover:not(.active) {
 
 #main-content {
     margin-top: 6rem;  /* or try padding-top: 3rem; */
+}
+
+.bubble-prompt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem auto 2rem auto;
+  max-width: 420px;
+  background: #fff6ef;
+  border: 2px dashed #bb4915;
+  border-radius: 20px;
+  font-size: 1.45rem;
+  color: #ad3720;
+  font-family: 'Montserrat', Arial, sans-serif;
+  padding: 2rem 1rem 1.5rem 1rem;
+  box-shadow: 0 4px 20px rgba(179,73,21,0.08);
+  text-align: center;
+  transition: opacity 0.4s;
 }

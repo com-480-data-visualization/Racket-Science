@@ -49,6 +49,7 @@ document.querySelectorAll('nav a').forEach(link => {
 
 
 <section id="global">
+  <div style="height: 95px"></div>
   <header>
     <h1>Overall GOAT</h1>
   </header>
@@ -214,6 +215,7 @@ document.querySelectorAll('nav a').forEach(link => {
 </section>
 
 <section id="doubles">  
+  <div style="height: 95px"></div>
   <header>
     <h1>Doubles GOAT</h1>
   </header>
@@ -326,6 +328,7 @@ document.querySelectorAll('nav a').forEach(link => {
 </section>
 
 <section id="surfaces">
+<div style="height: 95px"></div>
 <header>
     <h1>Surfaces GOAT</h1>
 </header>
@@ -336,12 +339,17 @@ document.querySelectorAll('nav a').forEach(link => {
     <section class="chart-container top-chart" id="podium-surfaces">
         <div class="chart-header">
 
+        <select id="players-select-podiums">
+            <option value="Select Surface">Select a circuit</option>
+            <option value="wta">WTA - Women</option>
+            <option value="apt">ATP - Men</option>
+        </select>
+
         <select id="surface-select-podiums">
-            <option value="Overall Surfaces">Overall Surfaces</option>
+            <option value="Select Surface">Select Surface</option>
             <option value="Grass">Grass</option>
             <option value="Hard">Hard</option>
             <option value="Clay">Clay</option>
-            <option value="Carpet">Carpet</option>
         </select>
 
         <select id="year-select-surfaces-podiums">
@@ -410,8 +418,14 @@ document.querySelectorAll('nav a').forEach(link => {
     <section class="chart-container top-chart" id="over_the_years-surfaces">
         <div class="chart-header">
 
+        <select id="circuit-select-bubble">
+            <option value="Select Circuit">Select a circuit</option>
+            <option value="wta">WTA - Women</option>
+            <option value="atp">ATP - Men</option>
+        </select>
+
         <select id="surface-select-bubble">
-            <option value="Overall Surfaces">Overall Surfaces</option>
+            <option value="Select Surface">Select Surface</option>
             <option value="Grass">Grass</option>
             <option value="Hard">Hard</option>
             <option value="Clay">Clay</option>
@@ -444,8 +458,13 @@ document.querySelectorAll('nav a').forEach(link => {
     
         <div class="chart-content">
             <h2>Surfaces Evolution over the years</h2>
-            <svg class="bubbleChart" id="bubbleChart-surfaces" width="500" height="400"></svg>
+            <div id="bubble-prompt" class="bubble-prompt">
+              <span role="img" aria-label="Trophy" style="font-size:2.2rem;">🏆</span>
+              Let’s see who are the <b>top 15 players</b> in the chosen surface!
+            </div>
+            <svg class="bubbleChart" id="bubbleChart-surfaces" width="500" height="400" style="display: none;"></svg>
         </div>
+
     
       </section>
       <div class="nav-dots">
@@ -457,6 +476,7 @@ document.querySelectorAll('nav a').forEach(link => {
 </section>
 
 <section id="services">
+  <div style="height: 95px"></div>
   <header>
     <h1>Services GOAT</h1>
   </header>
@@ -570,6 +590,7 @@ document.querySelectorAll('nav a').forEach(link => {
 </section>
 
 <section id="net"> 
+  <div style="height: 95px"></div>
   <header>
     <h1>Net GOAT</h1>
 </header>
@@ -683,6 +704,7 @@ document.querySelectorAll('nav a').forEach(link => {
 </section>
 
 <section id="tournament">
+  <div style="height: 95px"></div>
   <header>
     <h1>Tournament GOAT</h1>
   </header>
@@ -798,6 +820,7 @@ document.querySelectorAll('nav a').forEach(link => {
 </section>
 
 <section id="compare">
+  <div style="height: 95px"></div>
   <header>
     <h1>Which GOAT are you ?</h1>
   </header>
