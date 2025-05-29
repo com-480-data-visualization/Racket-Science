@@ -114,54 +114,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // Call the function on load
   window.addEventListener('DOMContentLoaded', () => {
     drawBubbleChart(bubbleData);
-    drawRadarChart()
   });
   
-  // Radar chart (Chart.js)
-function drawRadarChart() {
-  const ctx = document.getElementById('radarCanvas').getContext('2d');
-  new Chart(ctx, {
-    type: 'radar',
-    data: {
-      labels: ['Serve %', 'Grand Slams', 'Win %', '5-Set Win %', 'Weeks #1', 'Masters 1000'],
-      datasets: [
-        {
-          label: 'Roger Federer',
-          data: [85, 20, 82, 72, 310, 28],
-          fill: true,
-          backgroundColor: 'rgba(255, 99, 132, 0.2)',
-          borderColor: 'rgb(255, 99, 132)',
-          pointBackgroundColor: 'rgb(255, 99, 132)'
-        },
-        {
-          label: 'Rafael Nadal',
-          data: [83, 22, 83, 75, 209, 36],
-          fill: true,
-          backgroundColor: 'rgba(54, 162, 235, 0.2)',
-          borderColor: 'rgb(54, 162, 235)',
-          pointBackgroundColor: 'rgb(54, 162, 235)'
-        },
-        {
-          label: 'Novak Djokovic',
-          data: [87, 24, 84, 80, 420, 40],
-          fill: true,
-          backgroundColor: 'rgba(75, 192, 192, 0.2)',
-          borderColor: 'rgb(75, 192, 192)',
-          pointBackgroundColor: 'rgb(75, 192, 192)'
-        }
-      ]
-    },
-    options: {
-      responsive: true,
-      scales: {
-        r: {
-          suggestedMin: 0,
-          suggestedMax: 100
-        }
-      }
-    }
-  });
-}
+  
 
 
   

@@ -355,8 +355,8 @@ nav a:hover:not(.active) {
   }
 
 #radarCanvas {
-    width: 300px !important;
-    height: 300px !important;
+    width: 450px !important;
+    height: 450px !important;
   }
 
   .vote-form {

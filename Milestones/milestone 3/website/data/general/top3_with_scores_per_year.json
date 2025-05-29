@@ -1,0 +1,674 @@
+{
+  "global": {
+    "2000": {
+      "overall": [
+        {
+          "name": "Andre Agassi",
+          "scores": {
+            "slam_win_ratio": 0.8235294117647058,
+            "slam_titles_ratio": 0.25,
+            "fifth_set_ratio": 0.7142857142857143,
+            "weeks_at_no1": 0.6730769230769231,
+            "general_win_ratio": 0.7222222222222222
+          }
+        },
+        {
+          "name": "Pete Sampras",
+          "scores": {
+            "slam_win_ratio": 0.8571428571428571,
+            "slam_titles_ratio": 0.25,
+            "fifth_set_ratio": 0.7777777777777778,
+            "weeks_at_no1": 0.19230769230769232,
+            "general_win_ratio": 0.7592592592592593
+          }
+        },
+        {
+          "name": "Marat Safin",
+          "scores": {
+            "slam_win_ratio": 0.8,
+            "slam_titles_ratio": 0.25,
+            "fifth_set_ratio": 0.875,
+            "weeks_at_no1": 0.038461538461538464,
+            "general_win_ratio": 0.7311827956989247
+          }
+        }
+      ]
+    },
+    "2001": {
+      "overall": [
+        {
+          "name": "Gustavo Kuerten",
+          "scores": {
+            "slam_win_ratio": 0.8571428571428571,
+            "slam_titles_ratio": 0.25,
+            "fifth_set_ratio": 0.875,
+            "weeks_at_no1": 0.75,
+            "general_win_ratio": 0.7692307692307693
+          }
+        },
+        {
+          "name": "Lleyton Hewitt",
+          "scores": {
+            "slam_win_ratio": 0.8421052631578947,
+            "slam_titles_ratio": 0.25,
+            "fifth_set_ratio": 0.8,
+            "weeks_at_no1": 0.1346153846153846,
+            "general_win_ratio": 0.8229166666666666
+          }
+        },
+        {
+          "name": "Goran Ivanisevic",
+          "scores": {
+            "slam_win_ratio": 0.9,
+            "slam_titles_ratio": 0.25,
+            "fifth_set_ratio": 1.0,
+            "weeks_at_no1": 0.0,
+            "general_win_ratio": 0.5769230769230769
+          }
+        }
+      ]
+    },
+    "2002": {
+      "overall": [
+        {
+          "name": "Lleyton Hewitt",
+          "scores": {
+            "slam_win_ratio": 0.8333333333333334,
+            "slam_titles_ratio": 0.25,
+            "fifth_set_ratio": 0.625,
+            "weeks_at_no1": 1.0,
+            "general_win_ratio": 0.7948717948717948
+          }
+        },
+        {
+          "name": "Albert Costa",
+          "scores": {
+            "slam_win_ratio": 0.8461538461538461,
+            "slam_titles_ratio": 0.25,
+            "fifth_set_ratio": 0.75,
+            "weeks_at_no1": 0.0,
+            "general_win_ratio": 0.6140350877192983
+          }
+        },
+        {
+          "name": "Thomas Johansson",
+          "scores": {
+            "slam_win_ratio": 0.8,
+            "slam_titles_ratio": 0.25,
+            "fifth_set_ratio": 0.8571428571428571,
+            "weeks_at_no1": 0.0,
+            "general_win_ratio": 0.5576923076923077
+          }
+        }
+      ]
+    },
+    "2003": {
+      "overall": [
+        {
+          "name": "Juan Carlos Ferrero",
+          "scores": {
+            "slam_win_ratio": 0.8695652173913043,
+            "slam_titles_ratio": 0.25,
+            "fifth_set_ratio": 0.9090909090909091,
+            "weeks_at_no1": 0.15384615384615385,
+            "general_win_ratio": 0.7613636363636364
+          }
+        },
+        {
+          "name": "Andy Roddick",
+          "scores": {
+            "slam_win_ratio": 0.85,
+            "slam_titles_ratio": 0.25,
+            "fifth_set_ratio": 0.75,
+            "weeks_at_no1": 0.17307692307692307,
+            "general_win_ratio": 0.7912087912087912
+          }
+        },
+        {
+          "name": "Andre Agassi",
+          "scores": {
+            "slam_win_ratio": 0.8636363636363636,
+            "slam_titles_ratio": 0.25,
+            "fifth_set_ratio": 0.5714285714285714,
+            "weeks_at_no1": 0.2692307692307692,
+            "general_win_ratio": 0.8245614035087719
+          }
+        }
+      ]
+    },
+    "2004": {
+      "overall": [
+        {
+          "name": "Roger Federer",
+          "scores": {
+            "slam_win_ratio": 0.9583333333333334,
+            "slam_titles_ratio": 0.75,
+            "fifth_set_ratio": 1.0,
+            "weeks_at_no1": 0.9230769230769231,
+            "general_win_ratio": 0.9259259259259259
+          }
+        },
+        {
+          "name": "Gaston Gaudio",
+          "scores": {
+            "slam_win_ratio": 0.8181818181818182,
+            "slam_titles_ratio": 0.25,
+            "fifth_set_ratio": 0.8333333333333334,
+            "weeks_at_no1": 0.0,
+            "general_win_ratio": 0.6065573770491803
+          }
+        },
+        {
+          "name": "Lleyton Hewitt",
+          "scores": {
+            "slam_win_ratio": 0.8095238095238095,
+            "slam_titles_ratio": 0.0,
+            "fifth_set_ratio": 0.7142857142857143,
+            "weeks_at_no1": 0.0,
+            "general_win_ratio": 0.7906976744186046
+          }
+        }
+      ]
+    },
+    "2005": {
+      "overall": [
+        {
+          "name": "Roger Federer",
+          "scores": {
+            "slam_win_ratio": 0.9230769230769231,
+            "slam_titles_ratio": 0.5,
+            "fifth_set_ratio": 0.6666666666666666,
+            "weeks_at_no1": 1.0,
+            "general_win_ratio": 0.9529411764705882
+          }
+        },
+        {
+          "name": "Marat Safin",
+          "scores": {
+            "slam_win_ratio": 0.8571428571428571,
+            "slam_titles_ratio": 0.25,
+            "fifth_set_ratio": 0.875,
+            "weeks_at_no1": 0.0,
+            "general_win_ratio": 0.7105263157894737
+          }
+        },
+        {
+          "name": "Rafael Nadal",
+          "scores": {
+            "slam_win_ratio": 0.8125,
+            "slam_titles_ratio": 0.25,
+            "fifth_set_ratio": 0.5714285714285714,
+            "weeks_at_no1": 0.0,
+            "general_win_ratio": 0.8876404494382022
+          }
+        }
+      ]
+    },
+    "2006": {
+      "overall": [
+        {
+          "name": "Roger Federer",
+          "scores": {
+            "slam_win_ratio": 0.9642857142857143,
+            "slam_titles_ratio": 0.75,
+            "fifth_set_ratio": 0.8888888888888888,
+            "weeks_at_no1": 1.0,
+            "general_win_ratio": 0.9484536082474226
+          }
+        },
+        {
+          "name": "Rafael Nadal",
+          "scores": {
+            "slam_win_ratio": 0.8947368421052632,
+            "slam_titles_ratio": 0.25,
+            "fifth_set_ratio": 0.7142857142857143,
+            "weeks_at_no1": 0.0,
+            "general_win_ratio": 0.8333333333333334
+          }
+        },
+        {
+          "name": "Mario Ancic",
+          "scores": {
+            "slam_win_ratio": 0.7692307692307693,
+            "slam_titles_ratio": 0.0,
+            "fifth_set_ratio": 1.0,
+            "weeks_at_no1": 0.0,
+            "general_win_ratio": 0.7464788732394366
+          }
+        }
+      ]
+    },
+    "2007": {
+      "overall": [
+        {
+          "name": "Roger Federer",
+          "scores": {
+            "slam_win_ratio": 0.9642857142857143,
+            "slam_titles_ratio": 0.75,
+            "fifth_set_ratio": 0.8333333333333334,
+            "weeks_at_no1": 1.0192307692307692,
+            "general_win_ratio": 0.8846153846153846
+          }
+        },
+        {
+          "name": "Rafael Nadal",
+          "scores": {
+            "slam_win_ratio": 0.8695652173913043,
+            "slam_titles_ratio": 0.25,
+            "fifth_set_ratio": 0.75,
+            "weeks_at_no1": 0.0,
+            "general_win_ratio": 0.8255813953488372
+          }
+        },
+        {
+          "name": "Novak Djokovic",
+          "scores": {
+            "slam_win_ratio": 0.8260869565217391,
+            "slam_titles_ratio": 0.0,
+            "fifth_set_ratio": 1.0,
+            "weeks_at_no1": 0.0,
+            "general_win_ratio": 0.7816091954022989
+          }
+        }
+      ]
+    },
+    "2008": {
+      "overall": [
+        {
+          "name": "Rafael Nadal",
+          "scores": {
+            "slam_win_ratio": 0.9230769230769231,
+            "slam_titles_ratio": 0.5,
+            "fifth_set_ratio": 0.8,
+            "weeks_at_no1": 0.38461538461538464,
+            "general_win_ratio": 0.8817204301075269
+          }
+        },
+        {
+          "name": "Roger Federer",
+          "scores": {
+            "slam_win_ratio": 0.8888888888888888,
+            "slam_titles_ratio": 0.25,
+            "fifth_set_ratio": 0.8571428571428571,
+            "weeks_at_no1": 0.6153846153846154,
+            "general_win_ratio": 0.8072289156626506
+          }
+        },
+        {
+          "name": "Novak Djokovic",
+          "scores": {
+            "slam_win_ratio": 0.8571428571428571,
+            "slam_titles_ratio": 0.25,
+            "fifth_set_ratio": 0.8571428571428571,
+            "weeks_at_no1": 0.0,
+            "general_win_ratio": 0.7901234567901234
+          }
+        }
+      ]
+    },
+    "2009": {
+      "overall": [
+        {
+          "name": "Roger Federer",
+          "scores": {
+            "slam_win_ratio": 0.9285714285714286,
+            "slam_titles_ratio": 0.5,
+            "fifth_set_ratio": 0.8181818181818182,
+            "weeks_at_no1": 0.5,
+            "general_win_ratio": 0.8356164383561644
+          }
+        },
+        {
+          "name": "Rafael Nadal",
+          "scores": {
+            "slam_win_ratio": 0.8823529411764706,
+            "slam_titles_ratio": 0.25,
+            "fifth_set_ratio": 0.8,
+            "weeks_at_no1": 0.5,
+            "general_win_ratio": 0.8292682926829268
+          }
+        },
+        {
+          "name": "Nikolay Davydenko",
+          "scores": {
+            "slam_win_ratio": 0.75,
+            "slam_titles_ratio": 0.0,
+            "fifth_set_ratio": 1.0,
+            "weeks_at_no1": 0.0,
+            "general_win_ratio": 0.75
+          }
+        }
+      ]
+    },
+    "2010": {
+      "overall": [
+        {
+          "name": "Rafael Nadal",
+          "scores": {
+            "slam_win_ratio": 0.9615384615384616,
+            "slam_titles_ratio": 0.75,
+            "fifth_set_ratio": 1.0,
+            "weeks_at_no1": 0.5769230769230769,
+            "general_win_ratio": 0.8765432098765432
+          }
+        },
+        {
+          "name": "Roger Federer",
+          "scores": {
+            "slam_win_ratio": 0.8695652173913043,
+            "slam_titles_ratio": 0.25,
+            "fifth_set_ratio": 0.5714285714285714,
+            "weeks_at_no1": 0.4230769230769231,
+            "general_win_ratio": 0.8354430379746836
+          }
+        },
+        {
+          "name": "Novak Djokovic",
+          "scores": {
+            "slam_win_ratio": 0.8260869565217391,
+            "slam_titles_ratio": 0.0,
+            "fifth_set_ratio": 0.7272727272727273,
+            "weeks_at_no1": 0.0,
+            "general_win_ratio": 0.7777777777777778
+          }
+        }
+      ]
+    },
+    "2011": {
+      "overall": [
+        {
+          "name": "Novak Djokovic",
+          "scores": {
+            "slam_win_ratio": 0.9629629629629629,
+            "slam_titles_ratio": 0.75,
+            "fifth_set_ratio": 0.9,
+            "weeks_at_no1": 0.4807692307692308,
+            "general_win_ratio": 0.9113924050632911
+          }
+        },
+        {
+          "name": "Rafael Nadal",
+          "scores": {
+            "slam_win_ratio": 0.8846153846153846,
+            "slam_titles_ratio": 0.25,
+            "fifth_set_ratio": 0.75,
+            "weeks_at_no1": 0.40384615384615385,
+            "general_win_ratio": 0.8235294117647058
+          }
+        },
+        {
+          "name": "Andy Murray",
+          "scores": {
+            "slam_win_ratio": 0.84,
+            "slam_titles_ratio": 0.0,
+            "fifth_set_ratio": 0.7777777777777778,
+            "weeks_at_no1": 0.0,
+            "general_win_ratio": 0.8169014084507042
+          }
+        }
+      ]
+    },
+    "2012": {
+      "overall": [
+        {
+          "name": "Novak Djokovic",
+          "scores": {
+            "slam_win_ratio": 0.8888888888888888,
+            "slam_titles_ratio": 0.25,
+            "fifth_set_ratio": 0.7,
+            "weeks_at_no1": 0.5961538461538461,
+            "general_win_ratio": 0.8620689655172413
+          }
+        },
+        {
+          "name": "Roger Federer",
+          "scores": {
+            "slam_win_ratio": 0.875,
+            "slam_titles_ratio": 0.25,
+            "fifth_set_ratio": 0.8,
+            "weeks_at_no1": 0.3076923076923077,
+            "general_win_ratio": 0.8505747126436781
+          }
+        },
+        {
+          "name": "Andy Murray",
+          "scores": {
+            "slam_win_ratio": 0.88,
+            "slam_titles_ratio": 0.25,
+            "fifth_set_ratio": 0.7857142857142857,
+            "weeks_at_no1": 0.0,
+            "general_win_ratio": 0.7763157894736842
+          }
+        }
+      ]
+    },
+    "2013": {
+      "overall": [
+        {
+          "name": "Rafael Nadal",
+          "scores": {
+            "slam_win_ratio": 0.9333333333333333,
+            "slam_titles_ratio": 0.5,
+            "fifth_set_ratio": 1.0,
+            "weeks_at_no1": 0.25,
+            "general_win_ratio": 0.9156626506024096
+          }
+        },
+        {
+          "name": "Novak Djokovic",
+          "scores": {
+            "slam_win_ratio": 0.8888888888888888,
+            "slam_titles_ratio": 0.25,
+            "fifth_set_ratio": 0.7777777777777778,
+            "weeks_at_no1": 0.6346153846153846,
+            "general_win_ratio": 0.891566265060241
+          }
+        },
+        {
+          "name": "Andy Murray",
+          "scores": {
+            "slam_win_ratio": 0.8947368421052632,
+            "slam_titles_ratio": 0.25,
+            "fifth_set_ratio": 0.8333333333333334,
+            "weeks_at_no1": 0.0,
+            "general_win_ratio": 0.8431372549019608
+          }
+        }
+      ]
+    },
+    "2014": {
+      "overall": [
+        {
+          "name": "Novak Djokovic",
+          "scores": {
+            "slam_win_ratio": 0.88,
+            "slam_titles_ratio": 0.25,
+            "fifth_set_ratio": 0.7,
+            "weeks_at_no1": 0.4807692307692308,
+            "general_win_ratio": 0.8904109589041096
+          }
+        },
+        {
+          "name": "Rafael Nadal",
+          "scores": {
+            "slam_win_ratio": 0.8888888888888888,
+            "slam_titles_ratio": 0.25,
+            "fifth_set_ratio": 0.75,
+            "weeks_at_no1": 0.40384615384615385,
+            "general_win_ratio": 0.8166666666666667
+          }
+        },
+        {
+          "name": "Marin Cilic",
+          "scores": {
+            "slam_win_ratio": 0.8235294117647058,
+            "slam_titles_ratio": 0.25,
+            "fifth_set_ratio": 0.6666666666666666,
+            "weeks_at_no1": 0.0,
+            "general_win_ratio": 0.72
+          }
+        }
+      ]
+    },
+    "2015": {
+      "overall": [
+        {
+          "name": "Novak Djokovic",
+          "scores": {
+            "slam_win_ratio": 0.9642857142857143,
+            "slam_titles_ratio": 0.75,
+            "fifth_set_ratio": 0.8888888888888888,
+            "weeks_at_no1": 0.8846153846153846,
+            "general_win_ratio": 0.9325842696629213
+          }
+        },
+        {
+          "name": "Richard Gasquet",
+          "scores": {
+            "slam_win_ratio": 0.7777777777777778,
+            "slam_titles_ratio": 0.0,
+            "fifth_set_ratio": 1.0,
+            "weeks_at_no1": 0.0,
+            "general_win_ratio": 0.7166666666666667
+          }
+        },
+        {
+          "name": "Andy Murray",
+          "scores": {
+            "slam_win_ratio": 0.8260869565217391,
+            "slam_titles_ratio": 0.0,
+            "fifth_set_ratio": 0.75,
+            "weeks_at_no1": 0.0,
+            "general_win_ratio": 0.8255813953488372
+          }
+        }
+      ]
+    },
+    "2016": {
+      "overall": [
+        {
+          "name": "Novak Djokovic",
+          "scores": {
+            "slam_win_ratio": 0.0,
+            "slam_titles_ratio": 0.0,
+            "fifth_set_ratio": 0.0,
+            "weeks_at_no1": 0.7307692307692307,
+            "general_win_ratio": 0.0
+          }
+        },
+        {
+          "name": "Andy Murray",
+          "scores": {
+            "slam_win_ratio": 0.0,
+            "slam_titles_ratio": 0.0,
+            "fifth_set_ratio": 0.0,
+            "weeks_at_no1": 0.15384615384615385,
+            "general_win_ratio": 0.0
+          }
+        }
+      ]
+    },
+    "2017": {
+      "overall": [
+        {
+          "name": "Rafael Nadal",
+          "scores": {
+            "slam_win_ratio": 0.92,
+            "slam_titles_ratio": 0.5,
+            "fifth_set_ratio": 0.75,
+            "weeks_at_no1": 0.34615384615384615,
+            "general_win_ratio": 0.8395061728395061
+          }
+        },
+        {
+          "name": "Roger Federer",
+          "scores": {
+            "slam_win_ratio": 0.9473684210526315,
+            "slam_titles_ratio": 0.5,
+            "fifth_set_ratio": 0.8571428571428571,
+            "weeks_at_no1": 0.0,
+            "general_win_ratio": 0.9166666666666666
+          }
+        },
+        {
+          "name": "Andy Murray",
+          "scores": {
+            "slam_win_ratio": 0.8,
+            "slam_titles_ratio": 0.0,
+            "fifth_set_ratio": 0.5714285714285714,
+            "weeks_at_no1": 0.5576923076923077,
+            "general_win_ratio": 0.7222222222222222
+          }
+        }
+      ]
+    },
+    "2018": {
+      "overall": [
+        {
+          "name": "Novak Djokovic",
+          "scores": {
+            "slam_win_ratio": 0.9130434782608695,
+            "slam_titles_ratio": 0.5,
+            "fifth_set_ratio": 0.875,
+            "weeks_at_no1": 0.17307692307692307,
+            "general_win_ratio": 0.803030303030303
+          }
+        },
+        {
+          "name": "Rafael Nadal",
+          "scores": {
+            "slam_win_ratio": 0.875,
+            "slam_titles_ratio": 0.25,
+            "fifth_set_ratio": 0.75,
+            "weeks_at_no1": 0.6153846153846154,
+            "general_win_ratio": 0.9183673469387755
+          }
+        },
+        {
+          "name": "Roger Federer",
+          "scores": {
+            "slam_win_ratio": 0.875,
+            "slam_titles_ratio": 0.25,
+            "fifth_set_ratio": 0.3333333333333333,
+            "weeks_at_no1": 0.11538461538461539,
+            "general_win_ratio": 0.8360655737704918
+          }
+        }
+      ]
+    },
+    "2019": {
+      "overall": [
+        {
+          "name": "Novak Djokovic",
+          "scores": {
+            "slam_win_ratio": 0.9166666666666666,
+            "slam_titles_ratio": 0.5,
+            "fifth_set_ratio": 0.8333333333333334,
+            "weeks_at_no1": 0.7307692307692307,
+            "general_win_ratio": 0.8405797101449275
+          }
+        },
+        {
+          "name": "Rafael Nadal",
+          "scores": {
+            "slam_win_ratio": 0.9259259259259259,
+            "slam_titles_ratio": 0.5,
+            "fifth_set_ratio": 0.8333333333333334,
+            "weeks_at_no1": 0.17307692307692307,
+            "general_win_ratio": 0.8695652173913043
+          }
+        },
+        {
+          "name": "Roger Federer",
+          "scores": {
+            "slam_win_ratio": 0.8181818181818182,
+            "slam_titles_ratio": 0.0,
+            "fifth_set_ratio": 0.6666666666666666,
+            "weeks_at_no1": 0.0,
+            "general_win_ratio": 0.8333333333333334
+          }
+        }
+      ]
+    }
+  }
+}

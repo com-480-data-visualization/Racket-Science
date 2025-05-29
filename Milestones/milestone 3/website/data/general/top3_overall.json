@@ -1,0 +1,18 @@
+{
+  "global": {
+    "overall": [
+      {
+        "name": "Roger Federer",
+        "img": "images/federer.png"
+      },
+      {
+        "name": "Rafael Nadal",
+        "img": "images/nadal.png"
+      },
+      {
+        "name": "Novak Djokovic",
+        "img": "images/djokovic.png"
+      }
+    ]
+  }
+}
