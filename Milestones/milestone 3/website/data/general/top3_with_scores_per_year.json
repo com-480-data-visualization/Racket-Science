@@ -549,21 +549,31 @@
         {
           "name": "Novak Djokovic",
           "scores": {
-            "slam_win_ratio": 0.0,
-            "slam_titles_ratio": 0.0,
-            "fifth_set_ratio": 0.0,
+            "slam_win_ratio": 0.9166666666666666,
+            "slam_titles_ratio": 0.5,
+            "fifth_set_ratio": 0.75,
             "weeks_at_no1": 0.7307692307692307,
-            "general_win_ratio": 0.0
+            "general_win_ratio": 0.88
           }
         },
         {
           "name": "Andy Murray",
           "scores": {
-            "slam_win_ratio": 0.0,
-            "slam_titles_ratio": 0.0,
-            "fifth_set_ratio": 0.0,
+            "slam_win_ratio": 0.8846153846153846,
+            "slam_titles_ratio": 0.25,
+            "fifth_set_ratio": 0.8181818181818182,
             "weeks_at_no1": 0.15384615384615385,
-            "general_win_ratio": 0.0
+            "general_win_ratio": 0.898876404494382
+          }
+        },
+        {
+          "name": "Tomas Berdych",
+          "scores": {
+            "slam_win_ratio": 0.8125,
+            "slam_titles_ratio": 0.0,
+            "fifth_set_ratio": 1.0,
+            "weeks_at_no1": 0.0,
+            "general_win_ratio": 0.6666666666666666
           }
         }
       ]

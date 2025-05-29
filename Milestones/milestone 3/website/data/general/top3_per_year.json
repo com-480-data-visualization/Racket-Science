@@ -265,6 +265,10 @@
         {
           "name": "Andy Murray",
           "img": "images/murray.png"
+        },
+        {
+          "name": "Tomas Berdych",
+          "img": "images/berdych.png"
         }
       ]
     },

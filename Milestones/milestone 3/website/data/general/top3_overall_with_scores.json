@@ -5,33 +5,33 @@
         "name": "Roger Federer",
         "img": "images/federer.png",
         "scores": {
-          "slam_win_ratio": 0.8457071035881141,
-          "slam_titles_ratio": 0.2631578947368421,
-          "fifth_set_ratio": 0.7055726437305384,
-          "weeks_at_no1": 0.3107287449392713,
-          "general_win_ratio": 0.8259720434885487
-        }
-      },
-      {
-        "name": "Rafael Nadal",
-        "img": "images/nadal.png",
-        "scores": {
-          "slam_win_ratio": 0.7988157206697228,
-          "slam_titles_ratio": 0.27941176470588236,
-          "fifth_set_ratio": 0.7452380952380953,
-          "weeks_at_no1": 0.21493212669683256,
-          "general_win_ratio": 0.8007419914050989
+          "slam_win_ratio": 0.8450884150753749,
+          "slam_titles_ratio": 0.25,
+          "fifth_set_ratio": 0.6952940115440115,
+          "weeks_at_no1": 0.2951923076923077,
+          "general_win_ratio": 0.8221734413141212
         }
       },
       {
         "name": "Novak Djokovic",
         "img": "images/djokovic.png",
         "scores": {
-          "slam_win_ratio": 0.7319618938883813,
-          "slam_titles_ratio": 0.21875,
-          "fifth_set_ratio": 0.6712729978354979,
+          "slam_win_ratio": 0.7892535605550479,
+          "slam_titles_ratio": 0.25,
+          "fifth_set_ratio": 0.7181479978354979,
           "weeks_at_no1": 0.29447115384615385,
-          "general_win_ratio": 0.7299875149929826
+          "general_win_ratio": 0.7849875149929826
+        }
+      },
+      {
+        "name": "Rafael Nadal",
+        "img": "images/nadal.png",
+        "scores": {
+          "slam_win_ratio": 0.7891592917436271,
+          "slam_titles_ratio": 0.2638888888888889,
+          "fifth_set_ratio": 0.7038359788359788,
+          "weeks_at_no1": 0.202991452991453,
+          "general_win_ratio": 0.7966603656199671
         }
       }
     ]
