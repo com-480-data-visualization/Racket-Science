@@ -148,6 +148,10 @@ document.querySelectorAll('nav a').forEach(link => {
           
               <div class="chart-content">
                   <h2>Evolution over the years</h2>
+                  <div id="bubble-prompt-global" class="bubble-prompt">
+                    <span role="img" aria-label="Trophy" style="font-size:2.2rem;">🏆</span>
+                    Let’s see who are the <b>top 15 players</b> !
+                  </div>
                   <svg class="bubbleChart" id="bubbleChart-global" width="500" height="400"></svg>
               </div>
           </section>
@@ -316,6 +320,10 @@ document.querySelectorAll('nav a').forEach(link => {
         
             <div class="chart-content">
                 <h2>Evolution over the years</h2>
+                <div id="bubble-prompt-doubles" class="bubble-prompt">
+                  <span role="img" aria-label="Trophy" style="font-size:2.2rem;">🏆</span>
+                  Let’s see who are the <b>top 15 players</b> in the Doubles!
+                </div>
                 <svg class="bubbleChart" id="bubbleChart-doubles" width="500" height="400"></svg>
             </div>
         </section>
@@ -455,11 +463,11 @@ document.querySelectorAll('nav a').forEach(link => {
     
         <div class="chart-content">
             <h2>Surfaces Evolution over the years</h2>
-            <div id="bubble-prompt" class="bubble-prompt">
+            <div id="bubble-prompt-surfaces" class="bubble-prompt">
               <span role="img" aria-label="Trophy" style="font-size:2.2rem;">🏆</span>
               Let’s see who are the <b>top 15 players</b> in the chosen surface!
             </div>
-            <div id="bubble-prompt-no-data" class="bubble-prompt" style="display:none;">
+            <div id="bubble-prompt-no-data-surfaces" class="bubble-prompt" style="display:none;">
               <span role="img" aria-label="Sad face" style="font-size:2.2rem;">😔</span>
               Sorry, we don’t have data for the requested selection.
             </div>
@@ -579,6 +587,10 @@ document.querySelectorAll('nav a').forEach(link => {
 
       <div class="chart-content">
           <h2>Services Evolution over the years</h2>
+          <div id="bubble-prompt-services" class="bubble-prompt">
+              <span role="img" aria-label="Trophy" style="font-size:2.2rem;">🏆</span>
+              Let’s see who are the <b>top 15 players</b> in Services!
+          </div>
           <svg class="bubbleChart" id="bubbleChart-services" width="500" height="400"></svg>
 
       </div>
@@ -622,9 +634,6 @@ document.querySelectorAll('nav a').forEach(link => {
           
           <select id="tournament-select">
               <option value="Overall tournaments">Overall tournaments</option>
-              <option>tournament1</option>
-              <option>tournament2</option>
-              <option>tournament3</option>
           </select>
           </div>
       
@@ -665,43 +674,48 @@ document.querySelectorAll('nav a').forEach(link => {
           </div>
       </section>
       
-      <section class="chart-container top-chart" id="over_the_years-net">
-          <div class="chart-header">
-              <select id="year-select2">
-                  <option value="Overall years">Overall years</option>
-                  <option value="2024">2024</option>
-                  <option value="2023">2023</option>
-                  <option value="2022">2022</option>
-                  <option value="2021">2021</option>
-                  <option value="2020">2020</option>
-                  <option value="2019">2019</option>
-                  <option value="2018">2018</option>
-                  <option value="2017">2017</option>
-                  <option value="2016">2016</option>
-                  <option value="2015">2015</option>
-                  <option value="2014">2014</option>
-                  <option value="2013">2013</option>
-                  <option value="2012">2012</option>
-              </select>
-          
-              <select id="tournament-select2">
-                  <option value="Overall tournaments">Overall tournaments</option>
-                  <option>tournament1</option>
-                  <option>tournament2</option>
-                  <option>tournament3</option>
-              </select>
-          </div>
-      
-          <div class="chart-content">
-              <h2>Net Evolution over the years</h2>
-              <svg class="bubbleChart" id="bubbleChart-net" width="500" height="400"></svg>
-          </div>
-      
-        </section>
-        <div class="nav-dots">
-        <span class="dot" onclick="goToChart(1, 'net')"></span>
-        <span class="dot" onclick="goToChart(2, 'net')"></span>
+    <section class="chart-container top-chart" id="over_the_years-net">
+      <div class="chart-header">
+        <select id="circuit-select-net">
+          <option value="Select Circuit">Select a circuit</option>
+          <option value="w">WTA - Women</option>
+          <option value="m">ATP - Men</option>
+        </select>
+        <select id="category-select-net">
+          <option value="net points">Net Points</option>
+          <option value="approach">Approach</option>
+          <option value="net points rallies">Net Points Rallies</option>
+          <option value="approach rallies">Approach Rallies</option>
+        </select>
+        <select id="subcategory-select-net">
+          <option value="net_efficiency">Net Efficiency</option>
+          <option value="passing_shot">Passing Shot</option>
+        </select>
+        <select id="year-select-net">
+          <option value="Overall years">Overall years</option>
+        </select>
+        <select id="tournament-select-net">
+          <option value="Overall tournaments">Overall tournaments</option>
+        </select>
+      </div>
+
+      <div class="chart-content">
+        <h2>Net Evolution over the years</h2>
+        <div id="bubble-prompt-net" class="bubble-prompt">
+          <span role="img" aria-label="Trophy" style="font-size:2.2rem;">🏆</span>
+          Let’s see who are the <b>top 15 players</b> in Net!
         </div>
+        <div id="bubble-prompt-no-data-net" class="bubble-prompt" style="display:none;">
+          <span role="img" aria-label="Sad face" style="font-size:2.2rem;">😔</span>
+          Sorry, we don’t have data for the requested selection.
+        </div>
+        <svg class="bubbleChart" id="bubbleChart-net" width="500" height="400"></svg>
+      </div>
+    </section>
+      <div class="nav-dots">
+      <span class="dot" onclick="goToChart(1, 'net')"></span>
+      <span class="dot" onclick="goToChart(2, 'net')"></span>
+      </div>
   </main>
 </section>
 
@@ -809,6 +823,10 @@ document.querySelectorAll('nav a').forEach(link => {
       
           <div class="chart-content">
               <h2>Tournament Evolution over the years</h2>
+              <div id="bubble-prompt-tournament" class="bubble-prompt">
+                  <span role="img" aria-label="Trophy" style="font-size:2.2rem;">🏆</span>
+                  Let’s see who are the <b>top 15 players</b> in the tournaments!
+              </div>
               <svg class="bubbleChart" id="bubbleChart-tournament" width="500" height="400"></svg>
           </div>
           
@@ -904,6 +922,7 @@ document.querySelectorAll('nav a').forEach(link => {
 <script src="js/goat_poll.js"></script>
 <script src="js/main.js"></script>
 <script src="js/surface.js"></script>
+<script src="js/net.js"></script>
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 

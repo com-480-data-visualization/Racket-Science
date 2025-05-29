@@ -17,7 +17,7 @@ function goToChart(chartIndex, section) {
         } else if (section === "surfaces") {
           drawBubbleChart(svgEl, bubbleDataDoubles, "surfaces");
         } else if (section === "services") {
-          drawBubbleChart(svgEl, bubbleDataDoubles);
+          drawBubbleChart(svgEl, bubbleDataDoubles, 'services');
         } else if (section === "net") {
           drawBubbleChart(svgEl, bubbleDataDoubles);
         } else if (section === "tournament") {
@@ -111,7 +111,8 @@ const bubbleDataDoubles = {
   ]
 };
 
-function drawBubbleChart(svgEl, data, section, tournament) {
+
+function drawBubbleChart(svgEl, data, section, tournament, subcategory) {
   console.log(svgEl)
   const width = +svgEl.getAttribute("width") || 500;
   const height = +svgEl.getAttribute("height") || 400;
@@ -164,6 +165,16 @@ function drawBubbleChart(svgEl, data, section, tournament) {
           }
         } else if (section === "services") {
           tooltipText = 'something'
+        } else if (section === 'net') {
+          let subcategory = d.data.valueCol.replace(/_/g, ' '); 
+          if (!tournament || tournament === 'Overall tournaments'){
+            tooltipText = `<strong>${d.data.name}</strong><br>
+                         has <strong>${d.data.value}</strong>% of success in ${subcategory}`;
+          } else {
+            console.log(tournament)
+            tooltipText = `<strong>${d.data.name}</strong><br>
+                         has <strong>${d.data.value}</strong>% of success in ${subcategory} at ${tournament}`;
+          } 
         } else {
           tooltipText = `<strong>${d.data.name}</strong>: ${d.data.value}`;
         }
@@ -193,9 +204,9 @@ function drawBubbleChart(svgEl, data, section, tournament) {
 }
 
   // Call the function on load
-  window.addEventListener('DOMContentLoaded', () => {
-    drawRadarChart()
-  });
+window.addEventListener('DOMContentLoaded', () => {
+  drawRadarChart()
+});
   
   // Radar chart (Chart.js)
 function drawRadarChart() {
@@ -241,17 +252,5 @@ function drawRadarChart() {
       }
     }
   });
-}
-
-function csvToBubbleData(csv, valueCol) {
-  return {
-    name: "Players",
-    children: csv
-    .slice(0, 15)
-    .map(d => ({
-      name: d.Winner,
-      value: +d[valueCol]
-    }))
-  };
 }
 

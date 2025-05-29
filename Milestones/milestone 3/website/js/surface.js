@@ -12,8 +12,8 @@ function updateBubbleChartForSurface() {
   console.log('hey')
   console.log(tournament)
   console.log('hey')
-  const prompt = document.getElementById('bubble-prompt');
-  const noDataPrompt = document.getElementById('bubble-prompt-no-data');
+  const prompt = document.getElementById('bubble-prompt-surfaces');
+  const noDataPrompt = document.getElementById('bubble-prompt-no-data-surfaces');
   const svgEl = document.getElementById('bubbleChart-surfaces');
 
   if (year === 'Overall years' || surface === 'Select Surface' || circuit === 'Select Circuit') {
@@ -103,6 +103,18 @@ document.getElementById('year-select-surfaces-bubble').addEventListener('change'
 document.getElementById('tournament-select-surfaces-bubbles').addEventListener('change', updateTournaments);
 
 document.getElementById('year-select-surfaces-bubble').dispatchEvent(new Event('change'));
+
+function csvToBubbleData(csv, valueCol) {
+  return {
+    name: "Players",
+    children: csv
+    .slice(0, 15)
+    .map(d => ({
+      name: d.Winner,
+      value: +d[valueCol]
+    }))
+  };
+}
 
 
 /**
