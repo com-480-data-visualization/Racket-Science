@@ -42,7 +42,7 @@ function updateBubbleChartForNet() {
   d3.csv(csvPath)
     .then(function(data) {
       if (!data || data.length === 0) throw new Error("No data found");
-      const bubbleData = csvToBubbleData(data, subcategory); 
+      const bubbleData = csvToBubbleDataNet(data, subcategory); 
       drawBubbleChart(svgEl, bubbleData, "net", tournament);
       svgEl.style.display = 'block';
       noDataPrompt.style.display = 'none';
@@ -64,7 +64,7 @@ document.getElementById("tournament-select-net").addEventListener("change", upda
 document.getElementById('year-select-net').dispatchEvent(new Event('change'));
 
 
-function csvToBubbleData(csv, valueCol) {
+function csvToBubbleDataNet(csv, valueCol) {
 
     console.log('csv to data', valueCol)
     return {

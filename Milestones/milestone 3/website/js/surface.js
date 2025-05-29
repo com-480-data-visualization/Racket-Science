@@ -7,8 +7,8 @@ function getSurfaceCsvPath(year, surface, circuit) {
 function updateBubbleChartForSurface() {
   const year = document.getElementById("year-select-surfaces-bubble").value; 
   const surface = document.getElementById("surface-select-bubble").value;
-  const circuit = document.getElementById("circuit-select-bubble").value;
-  const tournament = document.getElementById("tournament-select-surfaces-bubbles").value;
+  const circuit = document.getElementById("circuit-select-surfaces-bubble").value;
+  const tournament = document.getElementById("tournament-select-surfaces-bubble").value;
   console.log('hey')
   console.log(tournament)
   console.log('hey')
@@ -39,7 +39,7 @@ function updateBubbleChartForSurface() {
       if (!data || data.length === 0) {
         throw new Error("No data found");
       }
-      const bubbleData = csvToBubbleData(data, surface);
+      const bubbleData = csvToBubbleDataSurface(data, surface);
       console.log(tournament)
       drawBubbleChart(svgEl, bubbleData, "surfaces", tournament);
       svgEl.style.display = 'block';
@@ -56,15 +56,15 @@ function updateBubbleChartForSurface() {
 
 document.getElementById("year-select-surfaces-bubble").addEventListener("change", updateBubbleChartForSurface);
 document.getElementById("surface-select-bubble").addEventListener("change", updateBubbleChartForSurface);
-document.getElementById("circuit-select-bubble").addEventListener("change", updateBubbleChartForSurface);
-document.getElementById("tournament-select-surfaces-bubbles").addEventListener("change", updateBubbleChartForSurface);
+document.getElementById("circuit-select-surfaces-bubble").addEventListener("change", updateBubbleChartForSurface);
+document.getElementById("tournament-select-surfaces-bubble").addEventListener("change", updateBubbleChartForSurface);
 
 
 
 function updateTournaments() {
   const year = document.getElementById('year-select-surfaces-bubble').value;
-  const circuit = document.getElementById('circuit-select-bubble').value;
-  const tournamentSelect = document.getElementById('tournament-select-surfaces-bubbles');
+  const circuit = document.getElementById('circuit-select-surfaces-bubble').value;
+  const tournamentSelect = document.getElementById('tournament-select-surfaces-bubble');
 
   // Save the current selection
   const previousValue = tournamentSelect.value;
@@ -99,12 +99,13 @@ function updateTournaments() {
     });
 }
 
+document.getElementById('circuit-select-surfaces-bubble').addEventListener('change', updateTournaments);
 document.getElementById('year-select-surfaces-bubble').addEventListener('change', updateTournaments);
-document.getElementById('tournament-select-surfaces-bubbles').addEventListener('change', updateTournaments);
+document.getElementById('tournament-select-surfaces-bubble').addEventListener('change', updateTournaments);
 
 document.getElementById('year-select-surfaces-bubble').dispatchEvent(new Event('change'));
 
-function csvToBubbleData(csv, valueCol) {
+function csvToBubbleDataSurface(csv, valueCol) {
   return {
     name: "Players",
     children: csv
