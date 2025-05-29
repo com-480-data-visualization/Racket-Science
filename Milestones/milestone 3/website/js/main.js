@@ -17,9 +17,9 @@ function goToChart(chartIndex, section) {
         } else if (section === "surfaces") {
           drawBubbleChart(svgEl, bubbleDataDoubles, "surfaces");
         } else if (section === "services") {
-          drawBubbleChart(svgEl, bubbleDataDoubles, 'services');
+          updateBubbleChartForServices(); 
         } else if (section === "net") {
-          drawBubbleChart(svgEl, bubbleDataDoubles);
+          updateBubbleChartForNet(); 
         } else if (section === "tournament") {
           drawBubbleChart(svgEl, bubbleDataDoubles);
         }
@@ -164,17 +164,15 @@ function drawBubbleChart(svgEl, data, section, tournament, subcategory) {
                          won <strong>${d.data.value}</strong> matches on <strong>${currentSurface}</strong> in <strong>${currentYear}</strong> at </strong>${tournament}</strong>`;
           }
         } else if (section === "services") {
-          tooltipText = 'something'
+          let category = d.data.category.replace('%', '').toLowerCase()
+            tooltipText = `<strong>${d.data.name}</strong><br>
+                    has <strong>${d.data.percentage}</strong>% of success in ${category} counting ${d.data.nb_matches} matches`;
         } else if (section === 'net') {
           let subcategory = d.data.valueCol.replace(/_/g, ' '); 
-          if (!tournament || tournament === 'Overall tournaments'){
-            tooltipText = `<strong>${d.data.name}</strong><br>
-                         has <strong>${d.data.value}</strong>% of success in ${subcategory}`;
-          } else {
-            console.log(tournament)
-            tooltipText = `<strong>${d.data.name}</strong><br>
-                         has <strong>${d.data.value}</strong>% of success in ${subcategory} at ${tournament}`;
-          } 
+          
+          tooltipText = `<strong>${d.data.name}</strong><br>
+                    has <strong>${d.data.percentage}</strong>% of success in ${subcategory}`;
+
         } else {
           tooltipText = `<strong>${d.data.name}</strong>: ${d.data.value}`;
         }
@@ -199,7 +197,11 @@ function drawBubbleChart(svgEl, data, section, tournament, subcategory) {
     .attr("text-anchor", "middle")
     .attr("dy", "0.3em")
     .style("font-size", d => d.r / 3)
-    .style("fill", "white");
+    .style("fill", "white")
+    .style("font-weight", "bold")
+    .style("font-size", d => Math.max(10, d.r / 2.8)) // never below 10px, scales with bubble
+    .style("display", d => d.r > 40 ? "block" : "none");
+
 
 }
 

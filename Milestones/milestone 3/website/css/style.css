@@ -199,19 +199,44 @@ nav a:hover:not(.active) {
   height: auto;
 }
 
+
 .scoreboard__podium {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 120px;
+  box-sizing: border-box;
 }
+
+.scoreboard__podium-base {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 8px 8px 0 0;
+  box-sizing: border-box;
+}
+
+.scoreboard__podium-number {
+  margin-top: 0.4rem;
+  text-align: center;
+  font-weight: bold;
+  min-height: 2.5rem; /* Ensures consistent spacing no matter name length */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-wrap: wrap;
+}
+
 
 .scoreboard__podiums {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  gap: 2rem;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2rem; /* consistent spacing */
 }
+
+
 
 .scoreboard__podium-base {
     width: 100px;
@@ -627,3 +652,49 @@ nav a:hover:not(.active) {
 }
 
 
+.doubles-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem;
+}
+
+.doubles-header-inner {
+  text-align: center;
+  padding: 10px 30px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.4s;
+}
+
+/* Surface colors */
+.doubles-header-inner.clay { background-color: #d86f45; color: #fff; }
+.doubles-header-inner.grass { background-color: #4caf50; color: white; }
+.doubles-header-inner.hard { background-color: #1e88e5; color: white; }
+
+
+/* Clay */
+.podium-clay .scoreboard__podium-base--first { background-color: #d86f45; }
+.podium-clay .scoreboard__podium-base--second { background-color: #e8a87c; }
+.podium-clay .scoreboard__podium-base--third { background-color: #c97a63; }
+
+/* Grass */
+.podium-grass .scoreboard__podium-base--first { background-color: #4caf50; }
+.podium-grass .scoreboard__podium-base--second { background-color: #81c784; }
+.podium-grass .scoreboard__podium-base--third { background-color: #388e3c; }
+
+/* Hard */
+.podium-hard .scoreboard__podium-base--first { background-color: #1e88e5; }
+.podium-hard .scoreboard__podium-base--second { background-color: #64b5f6; }
+.podium-hard .scoreboard__podium-base--third { background-color: #1565c0; }
+
+/* Force podium column order - 2nd (left), 1st (middle), 3rd (right) */
+.scoreboard__podium--second { order: 1; }   /* Left */
+.scoreboard__podium--first  { order: 2; }   /* Middle */
+.scoreboard__podium--third  { order: 3; }   /* Right */
+
+
+.scoreboard__podium-base--first  { height: 250px; }
+.scoreboard__podium-base--second { height: 200px; }
+.scoreboard__podium-base--third  { height: 150px; }
