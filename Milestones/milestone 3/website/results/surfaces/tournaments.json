@@ -1,0 +1,5742 @@
+[
+  {
+    "name": "Astana Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Astana Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Korea Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Korea Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Adelaide International 2",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Adelaide International 2_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Open 13",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Open 13_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Gijon Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Gijon Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Millennium Estoril Open",
+    "surface": "Clay",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Millennium Estoril Open_goat_players_on_Clay_2022.csv"
+  },
+  {
+    "name": "European Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "European Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Open Sud de France",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Open Sud de France_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Dubai Tennis Championships",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Dubai Tennis Championships_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Monte Carlo Masters",
+    "surface": "Clay",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Monte Carlo Masters_goat_players_on_Clay_2022.csv"
+  },
+  {
+    "name": "Eastbourne International",
+    "surface": "Grass",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Eastbourne International_goat_players_on_Grass_2022.csv"
+  },
+  {
+    "name": "Tel Aviv Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Tel Aviv Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Croatia Open",
+    "surface": "Clay",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Croatia Open_goat_players_on_Clay_2022.csv"
+  },
+  {
+    "name": "BNP Paribas Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "BNP Paribas Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Barcelona Open",
+    "surface": "Clay",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Barcelona Open_goat_players_on_Clay_2022.csv"
+  },
+  {
+    "name": "U.S. Men's Clay Court Championships",
+    "surface": "Clay",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "U.S. Men's Clay Court Championships_goat_players_on_Clay_2022.csv"
+  },
+  {
+    "name": "Maharashtra Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Maharashtra Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Lyon Open",
+    "surface": "Clay",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Lyon Open_goat_players_on_Clay_2022.csv"
+  },
+  {
+    "name": "Chile Open",
+    "surface": "Clay",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Chile Open_goat_players_on_Clay_2022.csv"
+  },
+  {
+    "name": "BNP Paribas Masters",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "BNP Paribas Masters_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Sydney Tennis Classic",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Sydney Tennis Classic_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Generali Open",
+    "surface": "Clay",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Generali Open_goat_players_on_Clay_2022.csv"
+  },
+  {
+    "name": "Geneva Open",
+    "surface": "Clay",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Geneva Open_goat_players_on_Clay_2022.csv"
+  },
+  {
+    "name": "Suisse Open Gstaad",
+    "surface": "Clay",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Suisse Open Gstaad_goat_players_on_Clay_2022.csv"
+  },
+  {
+    "name": "Wimbledon",
+    "surface": "Grass",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Wimbledon_goat_players_on_Grass_2022.csv"
+  },
+  {
+    "name": "Halle Open",
+    "surface": "Grass",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Halle Open_goat_players_on_Grass_2022.csv"
+  },
+  {
+    "name": "ABN AMRO World Tennis Tournament",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "ABN AMRO World Tennis Tournament_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Los Cabos Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Los Cabos Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "European Open",
+    "surface": "Clay",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "European Open_goat_players_on_Clay_2022.csv"
+  },
+  {
+    "name": "Queen's Club Championships",
+    "surface": "Grass",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Queen's Club Championships_goat_players_on_Grass_2022.csv"
+  },
+  {
+    "name": "BMW Open",
+    "surface": "Clay",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "BMW Open_goat_players_on_Clay_2022.csv"
+  },
+  {
+    "name": "Hall of Fame Championships",
+    "surface": "Grass",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Hall of Fame Championships_goat_players_on_Grass_2022.csv"
+  },
+  {
+    "name": "Dallas Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Dallas Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Firenze Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Firenze Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Internazionali BNL d'Italia",
+    "surface": "Clay",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Internazionali BNL d'Italia_goat_players_on_Clay_2022.csv"
+  },
+  {
+    "name": "Serbia Open",
+    "surface": "Clay",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Serbia Open_goat_players_on_Clay_2022.csv"
+  },
+  {
+    "name": "Mallorca Championships",
+    "surface": "Grass",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Mallorca Championships_goat_players_on_Grass_2022.csv"
+  },
+  {
+    "name": "Australian Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Australian Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Grand Prix Hassan II",
+    "surface": "Clay",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Grand Prix Hassan II_goat_players_on_Clay_2022.csv"
+  },
+  {
+    "name": "Atlanta Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Atlanta Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Citi Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Citi Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Argentina Open",
+    "surface": "Clay",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Argentina Open_goat_players_on_Clay_2022.csv"
+  },
+  {
+    "name": "US Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "US Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Melbourne Summer Set",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Melbourne Summer Set_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Rio Open",
+    "surface": "Clay",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Rio Open_goat_players_on_Clay_2022.csv"
+  },
+  {
+    "name": "Swiss Indoors",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Swiss Indoors_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Masters Cup",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Masters Cup_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Sofia Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Sofia Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Canadian Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Canadian Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "San Diego Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "San Diego Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Open de Moselle",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Open de Moselle_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Stockholm Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Stockholm Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Mercedes Cup",
+    "surface": "Grass",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Mercedes Cup_goat_players_on_Grass_2022.csv"
+  },
+  {
+    "name": "Nordea Open",
+    "surface": "Clay",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Nordea Open_goat_players_on_Clay_2022.csv"
+  },
+  {
+    "name": "Western & Southern Financial Group Masters",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Western & Southern Financial Group Masters_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Qatar Exxon Mobil Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Qatar Exxon Mobil Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Rosmalen Grass Court Championships",
+    "surface": "Grass",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Rosmalen Grass Court Championships_goat_players_on_Grass_2022.csv"
+  },
+  {
+    "name": "Winston-Salem Open at Wake Forest University",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Winston-Salem Open at Wake Forest University_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Miami Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Miami Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Rakuten Japan Open Tennis Championships",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Rakuten Japan Open Tennis Championships_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Napoli Cup",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Napoli Cup_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Mutua Madrid Open",
+    "surface": "Clay",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Mutua Madrid Open_goat_players_on_Clay_2022.csv"
+  },
+  {
+    "name": "Adelaide International 1",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Adelaide International 1_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "French Open",
+    "surface": "Clay",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "French Open_goat_players_on_Clay_2022.csv"
+  },
+  {
+    "name": "Delray Beach Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Delray Beach Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Cordoba Open",
+    "surface": "Clay",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Cordoba Open_goat_players_on_Clay_2022.csv"
+  },
+  {
+    "name": "Vienna Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Vienna Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Abierto Mexicano",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "atp",
+    "filename": "Abierto Mexicano_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Grand Prix SAR Lalla Meryem",
+    "surface": "Clay",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Grand Prix SAR Lalla Meryem_goat_players_on_Clay_2022.csv"
+  },
+  {
+    "name": "Western & Southern Financial Group Women's Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Western & Southern Financial Group Women's Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Korea Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Korea Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Parma Ladies Open",
+    "surface": "Clay",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Parma Ladies Open_goat_players_on_Clay_2022.csv"
+  },
+  {
+    "name": "Poland Open",
+    "surface": "Clay",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Poland Open_goat_players_on_Clay_2022.csv"
+  },
+  {
+    "name": "Ladies Trophy",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Ladies Trophy_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Transylvania Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Transylvania Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Lyon Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Lyon Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Bett1Open",
+    "surface": "Grass",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Bett1Open_goat_players_on_Grass_2022.csv"
+  },
+  {
+    "name": "WTA Finals",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "WTA Finals_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Eastbourne International",
+    "surface": "Grass",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Eastbourne International_goat_players_on_Grass_2022.csv"
+  },
+  {
+    "name": "Bad Homburg Open",
+    "surface": "Grass",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Bad Homburg Open_goat_players_on_Grass_2022.csv"
+  },
+  {
+    "name": "Nottingham Open",
+    "surface": "Grass",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Nottingham Open_goat_players_on_Grass_2022.csv"
+  },
+  {
+    "name": "BNP Paribas Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "BNP Paribas Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Qatar Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Qatar Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Toray Pan Pacific Open Tennis Tournament",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Toray Pan Pacific Open Tennis Tournament_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Tallinn Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Tallinn Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Sydney Tennis Classic",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Sydney Tennis Classic_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Melbourne Summer Set 2",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Melbourne Summer Set 2_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Jasmin Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Jasmin Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Monterrey Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Monterrey Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Wimbledon",
+    "surface": "Grass",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Wimbledon_goat_players_on_Grass_2022.csv"
+  },
+  {
+    "name": "European Open",
+    "surface": "Clay",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "European Open_goat_players_on_Clay_2022.csv"
+  },
+  {
+    "name": "Slovenia Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Slovenia Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Melbourne Summer Set 1",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Melbourne Summer Set 1_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Prague Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Prague Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Chennai Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Chennai Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Internazionali BNL d'Italia",
+    "surface": "Clay",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Internazionali BNL d'Italia_goat_players_on_Clay_2022.csv"
+  },
+  {
+    "name": "Australian Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Australian Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Abierto Zapopan",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Abierto Zapopan_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Citi Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Citi Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "US Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "US Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Mubadala Silicon Valley Classic",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Mubadala Silicon Valley Classic_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Charleston Open",
+    "surface": "Clay",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Charleston Open_goat_players_on_Clay_2022.csv"
+  },
+  {
+    "name": "Ladies Open Lausanne",
+    "surface": "Clay",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Ladies Open Lausanne_goat_players_on_Clay_2022.csv"
+  },
+  {
+    "name": "Porsche Tennis Grand Prix",
+    "surface": "Clay",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Porsche Tennis Grand Prix_goat_players_on_Clay_2022.csv"
+  },
+  {
+    "name": "Internationaux de Strasbourg",
+    "surface": "Clay",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Internationaux de Strasbourg_goat_players_on_Clay_2022.csv"
+  },
+  {
+    "name": "Canadian Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Canadian Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "San Diego Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "San Diego Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Tennis in the Land",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Tennis in the Land_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Dubai Duty Free Tennis Championships",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Dubai Duty Free Tennis Championships_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Rosmalen Grass Court Championships",
+    "surface": "Grass",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Rosmalen Grass Court Championships_goat_players_on_Grass_2022.csv"
+  },
+  {
+    "name": "Budapest Open",
+    "surface": "Clay",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Budapest Open_goat_players_on_Clay_2022.csv"
+  },
+  {
+    "name": "Miami Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Miami Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Internazionali Femminili di Palermo",
+    "surface": "Clay",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Internazionali Femminili di Palermo_goat_players_on_Clay_2022.csv"
+  },
+  {
+    "name": "Championnats de Granby",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Championnats de Granby_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Copa Colsanitas",
+    "surface": "Clay",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Copa Colsanitas_goat_players_on_Clay_2022.csv"
+  },
+  {
+    "name": "Ostrava Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Ostrava Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Mutua Madrid Open",
+    "surface": "Clay",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Mutua Madrid Open_goat_players_on_Clay_2022.csv"
+  },
+  {
+    "name": "Adelaide International 1",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Adelaide International 1_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "French Open",
+    "surface": "Clay",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "French Open_goat_players_on_Clay_2022.csv"
+  },
+  {
+    "name": "Guadalajara Open",
+    "surface": "Hard",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Guadalajara Open_goat_players_on_Hard_2022.csv"
+  },
+  {
+    "name": "Rothesay Classic ",
+    "surface": "Grass",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Rothesay Classic _goat_players_on_Grass_2022.csv"
+  },
+  {
+    "name": "Istanbul Cup",
+    "surface": "Clay",
+    "year": "2022",
+    "circuit": "wta",
+    "filename": "Istanbul Cup_goat_players_on_Clay_2022.csv"
+  },
+  {
+    "name": "Brisbane International",
+    "surface": "Hard",
+    "year": "2025",
+    "circuit": "atp",
+    "filename": "Brisbane International_goat_players_on_Hard_2025.csv"
+  },
+  {
+    "name": "Open Sud de France",
+    "surface": "Hard",
+    "year": "2025",
+    "circuit": "atp",
+    "filename": "Open Sud de France_goat_players_on_Hard_2025.csv"
+  },
+  {
+    "name": "Dubai Tennis Championships",
+    "surface": "Hard",
+    "year": "2025",
+    "circuit": "atp",
+    "filename": "Dubai Tennis Championships_goat_players_on_Hard_2025.csv"
+  },
+  {
+    "name": "BNP Paribas Open",
+    "surface": "Hard",
+    "year": "2025",
+    "circuit": "atp",
+    "filename": "BNP Paribas Open_goat_players_on_Hard_2025.csv"
+  },
+  {
+    "name": "Open 13",
+    "surface": "Hard",
+    "year": "2025",
+    "circuit": "atp",
+    "filename": "Open 13_goat_players_on_Hard_2025.csv"
+  },
+  {
+    "name": "ABN AMRO World Tennis Tournament",
+    "surface": "Hard",
+    "year": "2025",
+    "circuit": "atp",
+    "filename": "ABN AMRO World Tennis Tournament_goat_players_on_Hard_2025.csv"
+  },
+  {
+    "name": "Chile Open",
+    "surface": "Clay",
+    "year": "2025",
+    "circuit": "atp",
+    "filename": "Chile Open_goat_players_on_Clay_2025.csv"
+  },
+  {
+    "name": "Adelaide International",
+    "surface": "Hard",
+    "year": "2025",
+    "circuit": "atp",
+    "filename": "Adelaide International_goat_players_on_Hard_2025.csv"
+  },
+  {
+    "name": "Argentina Open",
+    "surface": "Clay",
+    "year": "2025",
+    "circuit": "atp",
+    "filename": "Argentina Open_goat_players_on_Clay_2025.csv"
+  },
+  {
+    "name": "Rio Open",
+    "surface": "Clay",
+    "year": "2025",
+    "circuit": "atp",
+    "filename": "Rio Open_goat_players_on_Clay_2025.csv"
+  },
+  {
+    "name": "ASB Classic",
+    "surface": "Hard",
+    "year": "2025",
+    "circuit": "atp",
+    "filename": "ASB Classic_goat_players_on_Hard_2025.csv"
+  },
+  {
+    "name": "Australian Open",
+    "surface": "Hard",
+    "year": "2025",
+    "circuit": "atp",
+    "filename": "Australian Open_goat_players_on_Hard_2025.csv"
+  },
+  {
+    "name": "Hong Kong Tennis Open",
+    "surface": "Hard",
+    "year": "2025",
+    "circuit": "atp",
+    "filename": "Hong Kong Tennis Open_goat_players_on_Hard_2025.csv"
+  },
+  {
+    "name": "Dallas Open",
+    "surface": "Hard",
+    "year": "2025",
+    "circuit": "atp",
+    "filename": "Dallas Open_goat_players_on_Hard_2025.csv"
+  },
+  {
+    "name": "Abierto Mexicano",
+    "surface": "Hard",
+    "year": "2025",
+    "circuit": "atp",
+    "filename": "Abierto Mexicano_goat_players_on_Hard_2025.csv"
+  },
+  {
+    "name": "Delray Beach Open",
+    "surface": "Hard",
+    "year": "2025",
+    "circuit": "atp",
+    "filename": "Delray Beach Open_goat_players_on_Hard_2025.csv"
+  },
+  {
+    "name": "Qatar Exxon Mobil Open",
+    "surface": "Hard",
+    "year": "2025",
+    "circuit": "atp",
+    "filename": "Qatar Exxon Mobil Open_goat_players_on_Hard_2025.csv"
+  },
+  {
+    "name": "Brisbane International",
+    "surface": "Hard",
+    "year": "2025",
+    "circuit": "wta",
+    "filename": "Brisbane International_goat_players_on_Hard_2025.csv"
+  },
+  {
+    "name": "Merida Open",
+    "surface": "Hard",
+    "year": "2025",
+    "circuit": "wta",
+    "filename": "Merida Open_goat_players_on_Hard_2025.csv"
+  },
+  {
+    "name": "Qatar Open",
+    "surface": "Hard",
+    "year": "2025",
+    "circuit": "wta",
+    "filename": "Qatar Open_goat_players_on_Hard_2025.csv"
+  },
+  {
+    "name": "BNP Paribas Open",
+    "surface": "Hard",
+    "year": "2025",
+    "circuit": "wta",
+    "filename": "BNP Paribas Open_goat_players_on_Hard_2025.csv"
+  },
+  {
+    "name": "Transylvania Open",
+    "surface": "Hard",
+    "year": "2025",
+    "circuit": "wta",
+    "filename": "Transylvania Open_goat_players_on_Hard_2025.csv"
+  },
+  {
+    "name": "ATX Open",
+    "surface": "Hard",
+    "year": "2025",
+    "circuit": "wta",
+    "filename": "ATX Open_goat_players_on_Hard_2025.csv"
+  },
+  {
+    "name": "Hobart International",
+    "surface": "Hard",
+    "year": "2025",
+    "circuit": "wta",
+    "filename": "Hobart International_goat_players_on_Hard_2025.csv"
+  },
+  {
+    "name": "Abu Dhabi WTA Women's Tennis Open",
+    "surface": "Hard",
+    "year": "2025",
+    "circuit": "wta",
+    "filename": "Abu Dhabi WTA Women's Tennis Open_goat_players_on_Hard_2025.csv"
+  },
+  {
+    "name": "Adelaide International",
+    "surface": "Hard",
+    "year": "2025",
+    "circuit": "wta",
+    "filename": "Adelaide International_goat_players_on_Hard_2025.csv"
+  },
+  {
+    "name": "Ladies Linz Open",
+    "surface": "Hard",
+    "year": "2025",
+    "circuit": "wta",
+    "filename": "Ladies Linz Open_goat_players_on_Hard_2025.csv"
+  },
+  {
+    "name": "Singapore Open",
+    "surface": "Hard",
+    "year": "2025",
+    "circuit": "wta",
+    "filename": "Singapore Open_goat_players_on_Hard_2025.csv"
+  },
+  {
+    "name": "ASB Classic",
+    "surface": "Hard",
+    "year": "2025",
+    "circuit": "wta",
+    "filename": "ASB Classic_goat_players_on_Hard_2025.csv"
+  },
+  {
+    "name": "Australian Open",
+    "surface": "Hard",
+    "year": "2025",
+    "circuit": "wta",
+    "filename": "Australian Open_goat_players_on_Hard_2025.csv"
+  },
+  {
+    "name": "Dubai Duty Free Tennis Championships",
+    "surface": "Hard",
+    "year": "2025",
+    "circuit": "wta",
+    "filename": "Dubai Duty Free Tennis Championships_goat_players_on_Hard_2025.csv"
+  },
+  {
+    "name": "Open Sud de France",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Open Sud de France_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Dubai Tennis Championships",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Dubai Tennis Championships_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Monte Carlo Masters",
+    "surface": "Clay",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Monte Carlo Masters_goat_players_on_Clay_2024.csv"
+  },
+  {
+    "name": "China Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "China Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Eastbourne International",
+    "surface": "Grass",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Eastbourne International_goat_players_on_Grass_2024.csv"
+  },
+  {
+    "name": "Brisbane International",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Brisbane International_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Croatia Open",
+    "surface": "Clay",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Croatia Open_goat_players_on_Clay_2024.csv"
+  },
+  {
+    "name": "BNP Paribas Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "BNP Paribas Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Barcelona Open",
+    "surface": "Clay",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Barcelona Open_goat_players_on_Clay_2024.csv"
+  },
+  {
+    "name": "Open 13",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Open 13_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Estoril Open",
+    "surface": "Clay",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Estoril Open_goat_players_on_Clay_2024.csv"
+  },
+  {
+    "name": "Nordic Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Nordic Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "European Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "European Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Chengdu Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Chengdu Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Japan Open Tennis Championships",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Japan Open Tennis Championships_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Generali Open",
+    "surface": "Clay",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Generali Open_goat_players_on_Clay_2024.csv"
+  },
+  {
+    "name": "Geneva Open",
+    "surface": "Clay",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Geneva Open_goat_players_on_Clay_2024.csv"
+  },
+  {
+    "name": "Suisse Open Gstaad",
+    "surface": "Clay",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Suisse Open Gstaad_goat_players_on_Clay_2024.csv"
+  },
+  {
+    "name": "Wimbledon",
+    "surface": "Grass",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Wimbledon_goat_players_on_Grass_2024.csv"
+  },
+  {
+    "name": "Halle Open",
+    "surface": "Grass",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Halle Open_goat_players_on_Grass_2024.csv"
+  },
+  {
+    "name": "ABN AMRO World Tennis Tournament",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "ABN AMRO World Tennis Tournament_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Los Cabos Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Los Cabos Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "European Open",
+    "surface": "Clay",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "European Open_goat_players_on_Clay_2024.csv"
+  },
+  {
+    "name": "Queen's Club Championships",
+    "surface": "Grass",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Queen's Club Championships_goat_players_on_Grass_2024.csv"
+  },
+  {
+    "name": "U.S. Men's Clay Court Championships",
+    "surface": "Clay",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "U.S. Men's Clay Court Championships_goat_players_on_Clay_2024.csv"
+  },
+  {
+    "name": "Lyon Open",
+    "surface": "Clay",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Lyon Open_goat_players_on_Clay_2024.csv"
+  },
+  {
+    "name": "Chile Open",
+    "surface": "Clay",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Chile Open_goat_players_on_Clay_2024.csv"
+  },
+  {
+    "name": "BNP Paribas Masters",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "BNP Paribas Masters_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Citi Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Citi Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Argentina Open",
+    "surface": "Clay",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Argentina Open_goat_players_on_Clay_2024.csv"
+  },
+  {
+    "name": "Tiriac Open",
+    "surface": "Clay",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Tiriac Open_goat_players_on_Clay_2024.csv"
+  },
+  {
+    "name": "US Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "US Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Adelaide International",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Adelaide International_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Rio Open",
+    "surface": "Clay",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Rio Open_goat_players_on_Clay_2024.csv"
+  },
+  {
+    "name": "Swiss Indoors",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Swiss Indoors_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Masters Cup",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Masters Cup_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Canadian Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Canadian Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Open de Moselle",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Open de Moselle_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "BMW Open",
+    "surface": "Clay",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "BMW Open_goat_players_on_Clay_2024.csv"
+  },
+  {
+    "name": "ASB Classic",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "ASB Classic_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Hall of Fame Championships",
+    "surface": "Grass",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Hall of Fame Championships_goat_players_on_Grass_2024.csv"
+  },
+  {
+    "name": "Dallas Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Dallas Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Internazionali BNL d'Italia",
+    "surface": "Clay",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Internazionali BNL d'Italia_goat_players_on_Clay_2024.csv"
+  },
+  {
+    "name": "Hong Kong Tennis Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Hong Kong Tennis Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Mallorca Championships",
+    "surface": "Grass",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Mallorca Championships_goat_players_on_Grass_2024.csv"
+  },
+  {
+    "name": "Grand Prix Hassan II",
+    "surface": "Clay",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Grand Prix Hassan II_goat_players_on_Clay_2024.csv"
+  },
+  {
+    "name": "Stuttgart Open",
+    "surface": "Grass",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Stuttgart Open_goat_players_on_Grass_2024.csv"
+  },
+  {
+    "name": "Australian Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Australian Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Almaty Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Almaty Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Atlanta Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Atlanta Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Mutua Madrid Open",
+    "surface": "Clay",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Mutua Madrid Open_goat_players_on_Clay_2024.csv"
+  },
+  {
+    "name": "Shanghai Masters",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Shanghai Masters_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "French Open",
+    "surface": "Clay",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "French Open_goat_players_on_Clay_2024.csv"
+  },
+  {
+    "name": "Delray Beach Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Delray Beach Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Hangzhou Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Hangzhou Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Cordoba Open",
+    "surface": "Clay",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Cordoba Open_goat_players_on_Clay_2024.csv"
+  },
+  {
+    "name": "Vienna Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Vienna Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Abierto Mexicano",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Abierto Mexicano_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Nordea Open",
+    "surface": "Clay",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Nordea Open_goat_players_on_Clay_2024.csv"
+  },
+  {
+    "name": "Western & Southern Financial Group Masters",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Western & Southern Financial Group Masters_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Qatar Exxon Mobil Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Qatar Exxon Mobil Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Belgrade Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Belgrade Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Rosmalen Grass Court Championships",
+    "surface": "Grass",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Rosmalen Grass Court Championships_goat_players_on_Grass_2024.csv"
+  },
+  {
+    "name": "Winston-Salem Open at Wake Forest University",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Winston-Salem Open at Wake Forest University_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Miami Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "atp",
+    "filename": "Miami Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Thailand Open 2",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Thailand Open 2_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "WTA Finals",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "WTA Finals_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "China Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "China Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Thailand Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Thailand Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Merida Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Merida Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Brisbane International",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Brisbane International_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Bad Homburg Open",
+    "surface": "Grass",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Bad Homburg Open_goat_players_on_Grass_2024.csv"
+  },
+  {
+    "name": "Nottingham Open",
+    "surface": "Grass",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Nottingham Open_goat_players_on_Grass_2024.csv"
+  },
+  {
+    "name": "BNP Paribas Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "BNP Paribas Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Qatar Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Qatar Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Toray Pan Pacific Open Tennis Tournament",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Toray Pan Pacific Open Tennis Tournament_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Western & Southern Financial Group Women's Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Western & Southern Financial Group Women's Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Korea Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Korea Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Transylvania Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Transylvania Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Hobart International",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Hobart International_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "German Open",
+    "surface": "Grass",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "German Open_goat_players_on_Grass_2024.csv"
+  },
+  {
+    "name": "Ningbo Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Ningbo Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "ATX Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "ATX Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Jasmin Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Jasmin Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Iasi Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Iasi Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Monterrey Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Monterrey Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Wimbledon",
+    "surface": "Grass",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Wimbledon_goat_players_on_Grass_2024.csv"
+  },
+  {
+    "name": "Guangzhou Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Guangzhou Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Abu Dhabi WTA Women's Tennis Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Abu Dhabi WTA Women's Tennis Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Rothesay International",
+    "surface": "Grass",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Rothesay International_goat_players_on_Grass_2024.csv"
+  },
+  {
+    "name": "Citi Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Citi Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Ladies Linz Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Ladies Linz Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "US Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "US Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Adelaide International",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Adelaide International_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Wuhan Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Wuhan Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Charleston Open",
+    "surface": "Clay",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Charleston Open_goat_players_on_Clay_2024.csv"
+  },
+  {
+    "name": "Porsche Tennis Grand Prix",
+    "surface": "Clay",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Porsche Tennis Grand Prix_goat_players_on_Clay_2024.csv"
+  },
+  {
+    "name": "Morocco Open",
+    "surface": "Clay",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Morocco Open_goat_players_on_Clay_2024.csv"
+  },
+  {
+    "name": "Canadian Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Canadian Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "San Diego Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "San Diego Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Internationaux de Strasbourg",
+    "surface": "Clay",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Internationaux de Strasbourg_goat_players_on_Clay_2024.csv"
+  },
+  {
+    "name": "Open de Rouen",
+    "surface": "Clay",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Open de Rouen_goat_players_on_Clay_2024.csv"
+  },
+  {
+    "name": "Jiangxi Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Jiangxi Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "ASB Classic",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "ASB Classic_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Prague Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Prague Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Internazionali BNL d'Italia",
+    "surface": "Clay",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Internazionali BNL d'Italia_goat_players_on_Clay_2024.csv"
+  },
+  {
+    "name": "Hong Kong Tennis Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Hong Kong Tennis Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Australian Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Australian Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Copa Colsanitas",
+    "surface": "Clay",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Copa Colsanitas_goat_players_on_Clay_2024.csv"
+  },
+  {
+    "name": "Mutua Madrid Open",
+    "surface": "Clay",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Mutua Madrid Open_goat_players_on_Clay_2024.csv"
+  },
+  {
+    "name": "French Open",
+    "surface": "Clay",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "French Open_goat_players_on_Clay_2024.csv"
+  },
+  {
+    "name": "Guadalajara Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Guadalajara Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Rothesay Classic ",
+    "surface": "Grass",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Rothesay Classic _goat_players_on_Grass_2024.csv"
+  },
+  {
+    "name": "Japan Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Japan Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Tennis in the Land",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Tennis in the Land_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Dubai Duty Free Tennis Championships",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Dubai Duty Free Tennis Championships_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Rosmalen Grass Court Championships",
+    "surface": "Grass",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Rosmalen Grass Court Championships_goat_players_on_Grass_2024.csv"
+  },
+  {
+    "name": "Budapest Open",
+    "surface": "Clay",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Budapest Open_goat_players_on_Clay_2024.csv"
+  },
+  {
+    "name": "Miami Open",
+    "surface": "Hard",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Miami Open_goat_players_on_Hard_2024.csv"
+  },
+  {
+    "name": "Internazionali Femminili di Palermo",
+    "surface": "Clay",
+    "year": "2024",
+    "circuit": "wta",
+    "filename": "Internazionali Femminili di Palermo_goat_players_on_Clay_2024.csv"
+  },
+  {
+    "name": "Estoril Open",
+    "surface": "Clay",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Estoril Open_goat_players_on_Clay_2023.csv"
+  },
+  {
+    "name": "Open 13",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Open 13_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Adelaide International 2",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Adelaide International 2_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Astana Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Astana Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Chengdu Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Chengdu Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Nordic Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Nordic Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "European Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "European Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Eastbourne International",
+    "surface": "Grass",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Eastbourne International_goat_players_on_Grass_2023.csv"
+  },
+  {
+    "name": "China Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "China Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Monte Carlo Masters",
+    "surface": "Clay",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Monte Carlo Masters_goat_players_on_Clay_2023.csv"
+  },
+  {
+    "name": "Srpska Open",
+    "surface": "Clay",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Srpska Open_goat_players_on_Clay_2023.csv"
+  },
+  {
+    "name": "Open Sud de France",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Open Sud de France_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Dubai Tennis Championships",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Dubai Tennis Championships_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Barcelona Open",
+    "surface": "Clay",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Barcelona Open_goat_players_on_Clay_2023.csv"
+  },
+  {
+    "name": "BNP Paribas Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "BNP Paribas Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Croatia Open",
+    "surface": "Clay",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Croatia Open_goat_players_on_Clay_2023.csv"
+  },
+  {
+    "name": "Lyon Open",
+    "surface": "Clay",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Lyon Open_goat_players_on_Clay_2023.csv"
+  },
+  {
+    "name": "Maharashtra Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Maharashtra Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "U.S. Men's Clay Court Championships",
+    "surface": "Clay",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "U.S. Men's Clay Court Championships_goat_players_on_Clay_2023.csv"
+  },
+  {
+    "name": "BNP Paribas Masters",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "BNP Paribas Masters_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Chile Open",
+    "surface": "Clay",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Chile Open_goat_players_on_Clay_2023.csv"
+  },
+  {
+    "name": "Geneva Open",
+    "surface": "Clay",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Geneva Open_goat_players_on_Clay_2023.csv"
+  },
+  {
+    "name": "Generali Open",
+    "surface": "Clay",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Generali Open_goat_players_on_Clay_2023.csv"
+  },
+  {
+    "name": "Japan Open Tennis Championships",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Japan Open Tennis Championships_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Queen's Club Championships",
+    "surface": "Grass",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Queen's Club Championships_goat_players_on_Grass_2023.csv"
+  },
+  {
+    "name": "European Open",
+    "surface": "Clay",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "European Open_goat_players_on_Clay_2023.csv"
+  },
+  {
+    "name": "Los Cabos Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Los Cabos Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "ABN AMRO World Tennis Tournament",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "ABN AMRO World Tennis Tournament_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Zhuhai Championships",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Zhuhai Championships_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Halle Open",
+    "surface": "Grass",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Halle Open_goat_players_on_Grass_2023.csv"
+  },
+  {
+    "name": "Wimbledon",
+    "surface": "Grass",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Wimbledon_goat_players_on_Grass_2023.csv"
+  },
+  {
+    "name": "Suisse Open Gstaad",
+    "surface": "Clay",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Suisse Open Gstaad_goat_players_on_Clay_2023.csv"
+  },
+  {
+    "name": "ASB Classic",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "ASB Classic_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "BMW Open",
+    "surface": "Clay",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "BMW Open_goat_players_on_Clay_2023.csv"
+  },
+  {
+    "name": "Atlanta Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Atlanta Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Grand Prix Hassan II",
+    "surface": "Clay",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Grand Prix Hassan II_goat_players_on_Clay_2023.csv"
+  },
+  {
+    "name": "Stuttgart Open",
+    "surface": "Grass",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Stuttgart Open_goat_players_on_Grass_2023.csv"
+  },
+  {
+    "name": "Australian Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Australian Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Mallorca Championships",
+    "surface": "Grass",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Mallorca Championships_goat_players_on_Grass_2023.csv"
+  },
+  {
+    "name": "Internazionali BNL d'Italia",
+    "surface": "Clay",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Internazionali BNL d'Italia_goat_players_on_Clay_2023.csv"
+  },
+  {
+    "name": "Dallas Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Dallas Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Hall of Fame Championships",
+    "surface": "Grass",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Hall of Fame Championships_goat_players_on_Grass_2023.csv"
+  },
+  {
+    "name": "US Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "US Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Argentina Open",
+    "surface": "Clay",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Argentina Open_goat_players_on_Clay_2023.csv"
+  },
+  {
+    "name": "Citi Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Citi Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Open de Moselle",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Open de Moselle_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Canadian Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Canadian Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Sofia Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Sofia Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Masters Cup",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Masters Cup_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Swiss Indoors",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Swiss Indoors_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Rio Open",
+    "surface": "Clay",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Rio Open_goat_players_on_Clay_2023.csv"
+  },
+  {
+    "name": "Qatar Exxon Mobil Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Qatar Exxon Mobil Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Western & Southern Financial Group Masters",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Western & Southern Financial Group Masters_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Nordea Open",
+    "surface": "Clay",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Nordea Open_goat_players_on_Clay_2023.csv"
+  },
+  {
+    "name": "Winston-Salem Open at Wake Forest University",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Winston-Salem Open at Wake Forest University_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Miami Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Miami Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Rosmalen Grass Court Championships",
+    "surface": "Grass",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Rosmalen Grass Court Championships_goat_players_on_Grass_2023.csv"
+  },
+  {
+    "name": "Shanghai Masters",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Shanghai Masters_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Adelaide International 1",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Adelaide International 1_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "French Open",
+    "surface": "Clay",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "French Open_goat_players_on_Clay_2023.csv"
+  },
+  {
+    "name": "Mutua Madrid Open",
+    "surface": "Clay",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Mutua Madrid Open_goat_players_on_Clay_2023.csv"
+  },
+  {
+    "name": "Abierto Mexicano",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Abierto Mexicano_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Vienna Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Vienna Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Cordoba Open",
+    "surface": "Clay",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Cordoba Open_goat_players_on_Clay_2023.csv"
+  },
+  {
+    "name": "Delray Beach Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "atp",
+    "filename": "Delray Beach Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "WTA Elite Trophy",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "WTA Elite Trophy_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Adelaide International 2",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Adelaide International 2_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Korea Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Korea Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Western & Southern Financial Group Women's Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Western & Southern Financial Group Women's Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Transylvania Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Transylvania Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Poland Open",
+    "surface": "Clay",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Poland Open_goat_players_on_Clay_2023.csv"
+  },
+  {
+    "name": "Bad Homburg Open",
+    "surface": "Grass",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Bad Homburg Open_goat_players_on_Grass_2023.csv"
+  },
+  {
+    "name": "Thailand Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Thailand Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Eastbourne International",
+    "surface": "Grass",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Eastbourne International_goat_players_on_Grass_2023.csv"
+  },
+  {
+    "name": "Merida Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Merida Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "WTA Finals",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "WTA Finals_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "China Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "China Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Lyon Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Lyon Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Toray Pan Pacific Open Tennis Tournament",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Toray Pan Pacific Open Tennis Tournament_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Qatar Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Qatar Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "BNP Paribas Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "BNP Paribas Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Nottingham Open",
+    "surface": "Grass",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Nottingham Open_goat_players_on_Grass_2023.csv"
+  },
+  {
+    "name": "Abu Dhabi WTA Women's Tennis Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Abu Dhabi WTA Women's Tennis Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Guangzhou Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Guangzhou Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Jasmin Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Jasmin Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "ATX Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "ATX Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Ningbo Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Ningbo Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Zhengzhou Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Zhengzhou Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "German Open",
+    "surface": "Grass",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "German Open_goat_players_on_Grass_2023.csv"
+  },
+  {
+    "name": "Hobart International",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Hobart International_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "European Open",
+    "surface": "Clay",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "European Open_goat_players_on_Clay_2023.csv"
+  },
+  {
+    "name": "Wimbledon",
+    "surface": "Grass",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Wimbledon_goat_players_on_Grass_2023.csv"
+  },
+  {
+    "name": "Monterrey Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Monterrey Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Prague Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Prague Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "ASB Classic",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "ASB Classic_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Australian Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Australian Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Hong Kong Tennis Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Hong Kong Tennis Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Internazionali BNL d'Italia",
+    "surface": "Clay",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Internazionali BNL d'Italia_goat_players_on_Clay_2023.csv"
+  },
+  {
+    "name": "Jiangxi Tennis Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Jiangxi Tennis Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "US Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "US Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Ladies Linz Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Ladies Linz Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Citi Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Citi Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Canadian Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Canadian Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "San Diego Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "San Diego Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Internationaux de Strasbourg",
+    "surface": "Clay",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Internationaux de Strasbourg_goat_players_on_Clay_2023.csv"
+  },
+  {
+    "name": "Morocco Open",
+    "surface": "Clay",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Morocco Open_goat_players_on_Clay_2023.csv"
+  },
+  {
+    "name": "Porsche Tennis Grand Prix",
+    "surface": "Clay",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Porsche Tennis Grand Prix_goat_players_on_Clay_2023.csv"
+  },
+  {
+    "name": "Ladies Open Lausanne",
+    "surface": "Clay",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Ladies Open Lausanne_goat_players_on_Clay_2023.csv"
+  },
+  {
+    "name": "Charleston Open",
+    "surface": "Clay",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Charleston Open_goat_players_on_Clay_2023.csv"
+  },
+  {
+    "name": "Dubai Duty Free Tennis Championships",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Dubai Duty Free Tennis Championships_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Tennis in the Land",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Tennis in the Land_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Japan Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Japan Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Internazionali Femminili di Palermo",
+    "surface": "Clay",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Internazionali Femminili di Palermo_goat_players_on_Clay_2023.csv"
+  },
+  {
+    "name": "Miami Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Miami Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Budapest Open",
+    "surface": "Clay",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Budapest Open_goat_players_on_Clay_2023.csv"
+  },
+  {
+    "name": "Rosmalen Grass Court Championships",
+    "surface": "Grass",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Rosmalen Grass Court Championships_goat_players_on_Grass_2023.csv"
+  },
+  {
+    "name": "Guadalajara Open",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Guadalajara Open_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "Adelaide International 1",
+    "surface": "Hard",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Adelaide International 1_goat_players_on_Hard_2023.csv"
+  },
+  {
+    "name": "French Open",
+    "surface": "Clay",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "French Open_goat_players_on_Clay_2023.csv"
+  },
+  {
+    "name": "Mutua Madrid Open",
+    "surface": "Clay",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Mutua Madrid Open_goat_players_on_Clay_2023.csv"
+  },
+  {
+    "name": "Copa Colsanitas",
+    "surface": "Clay",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Copa Colsanitas_goat_players_on_Clay_2023.csv"
+  },
+  {
+    "name": "Rothesay Classic ",
+    "surface": "Grass",
+    "year": "2023",
+    "circuit": "wta",
+    "filename": "Rothesay Classic _goat_players_on_Grass_2023.csv"
+  },
+  {
+    "name": "Rakuten Japan Open Tennis Championships",
+    "surface": "Hard",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Rakuten Japan Open Tennis Championships_goat_players_on_Hard_2015.csv"
+  },
+  {
+    "name": "Winston-Salem Open at Wake Forest University",
+    "surface": "Hard",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Winston-Salem Open at Wake Forest University_goat_players_on_Hard_2015.csv"
+  },
+  {
+    "name": "BRD Nastase Tiriac Trophy",
+    "surface": "Clay",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "BRD Nastase Tiriac Trophy_goat_players_on_Clay_2015.csv"
+  },
+  {
+    "name": "Erste Bank Open",
+    "surface": "Hard",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Erste Bank Open_goat_players_on_Hard_2015.csv"
+  },
+  {
+    "name": "Qatar Exxon Mobil Open",
+    "surface": "Hard",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Qatar Exxon Mobil Open_goat_players_on_Hard_2015.csv"
+  },
+  {
+    "name": "Ecuador Open",
+    "surface": "Clay",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Ecuador Open_goat_players_on_Clay_2015.csv"
+  },
+  {
+    "name": "Western & Southern Financial Group Masters",
+    "surface": "Hard",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Western & Southern Financial Group Masters_goat_players_on_Hard_2015.csv"
+  },
+  {
+    "name": "Malaysian Open",
+    "surface": "Hard",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Malaysian Open_goat_players_on_Hard_2015.csv"
+  },
+  {
+    "name": "Mercedes Cup",
+    "surface": "Grass",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Mercedes Cup_goat_players_on_Grass_2015.csv"
+  },
+  {
+    "name": "Stockholm Open",
+    "surface": "Hard",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Stockholm Open_goat_players_on_Hard_2015.csv"
+  },
+  {
+    "name": "PBZ Zagreb Indoors",
+    "surface": "Hard",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "PBZ Zagreb Indoors_goat_players_on_Hard_2015.csv"
+  },
+  {
+    "name": "Gerry Weber Open",
+    "surface": "Grass",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Gerry Weber Open_goat_players_on_Grass_2015.csv"
+  },
+  {
+    "name": "Abierto Mexicano",
+    "surface": "Hard",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Abierto Mexicano_goat_players_on_Hard_2015.csv"
+  },
+  {
+    "name": "Delray Beach Open",
+    "surface": "Hard",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Delray Beach Open_goat_players_on_Hard_2015.csv"
+  },
+  {
+    "name": "Shanghai Masters",
+    "surface": "Hard",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Shanghai Masters_goat_players_on_Hard_2015.csv"
+  },
+  {
+    "name": "French Open",
+    "surface": "Clay",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "French Open_goat_players_on_Clay_2015.csv"
+  },
+  {
+    "name": "Mutua Madrid Open",
+    "surface": "Clay",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Mutua Madrid Open_goat_players_on_Clay_2015.csv"
+  },
+  {
+    "name": "Millenium Estoril Open",
+    "surface": "Clay",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Millenium Estoril Open_goat_players_on_Clay_2015.csv"
+  },
+  {
+    "name": "Grand Prix Hassan II",
+    "surface": "Clay",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Grand Prix Hassan II_goat_players_on_Clay_2015.csv"
+  },
+  {
+    "name": "Australian Open",
+    "surface": "Hard",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Australian Open_goat_players_on_Hard_2015.csv"
+  },
+  {
+    "name": "Internazionali BNL d'Italia",
+    "surface": "Clay",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Internazionali BNL d'Italia_goat_players_on_Clay_2015.csv"
+  },
+  {
+    "name": "Hall of Fame Championships",
+    "surface": "Grass",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Hall of Fame Championships_goat_players_on_Grass_2015.csv"
+  },
+  {
+    "name": "Chennai Open",
+    "surface": "Hard",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Chennai Open_goat_players_on_Hard_2015.csv"
+  },
+  {
+    "name": "Apia International",
+    "surface": "Hard",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Apia International_goat_players_on_Hard_2015.csv"
+  },
+  {
+    "name": "BMW Open",
+    "surface": "Clay",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "BMW Open_goat_players_on_Clay_2015.csv"
+  },
+  {
+    "name": "Open de Moselle",
+    "surface": "Hard",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Open de Moselle_goat_players_on_Hard_2015.csv"
+  },
+  {
+    "name": "Masters Cup",
+    "surface": "Hard",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Masters Cup_goat_players_on_Hard_2015.csv"
+  },
+  {
+    "name": "Swiss Indoors",
+    "surface": "Hard",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Swiss Indoors_goat_players_on_Hard_2015.csv"
+  },
+  {
+    "name": "Rio Open",
+    "surface": "Clay",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Rio Open_goat_players_on_Clay_2015.csv"
+  },
+  {
+    "name": "Claro Open Colombia",
+    "surface": "Clay",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Claro Open Colombia_goat_players_on_Clay_2015.csv"
+  },
+  {
+    "name": "US Open",
+    "surface": "Hard",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "US Open_goat_players_on_Hard_2015.csv"
+  },
+  {
+    "name": "Argentina Open",
+    "surface": "Clay",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Argentina Open_goat_players_on_Clay_2015.csv"
+  },
+  {
+    "name": "Citi Open",
+    "surface": "Hard",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Citi Open_goat_players_on_Hard_2015.csv"
+  },
+  {
+    "name": "AEGON Championships",
+    "surface": "Grass",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "AEGON Championships_goat_players_on_Grass_2015.csv"
+  },
+  {
+    "name": "AEGON Open",
+    "surface": "Grass",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "AEGON Open_goat_players_on_Grass_2015.csv"
+  },
+  {
+    "name": "BNP Paribas Masters",
+    "surface": "Hard",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "BNP Paribas Masters_goat_players_on_Hard_2015.csv"
+  },
+  {
+    "name": "Rogers Masters",
+    "surface": "Hard",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Rogers Masters_goat_players_on_Hard_2015.csv"
+  },
+  {
+    "name": "U.S. Men's Clay Court Championships",
+    "surface": "Clay",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "U.S. Men's Clay Court Championships_goat_players_on_Clay_2015.csv"
+  },
+  {
+    "name": "Heineken Open",
+    "surface": "Hard",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Heineken Open_goat_players_on_Hard_2015.csv"
+  },
+  {
+    "name": "ABN AMRO World Tennis Tournament",
+    "surface": "Hard",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "ABN AMRO World Tennis Tournament_goat_players_on_Hard_2015.csv"
+  },
+  {
+    "name": "Wimbledon",
+    "surface": "Grass",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Wimbledon_goat_players_on_Grass_2015.csv"
+  },
+  {
+    "name": "Suisse Open Gstaad",
+    "surface": "Clay",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Suisse Open Gstaad_goat_players_on_Clay_2015.csv"
+  },
+  {
+    "name": "Memphis Open",
+    "surface": "Hard",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Memphis Open_goat_players_on_Hard_2015.csv"
+  },
+  {
+    "name": "Geneva Open",
+    "surface": "Clay",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Geneva Open_goat_players_on_Clay_2015.csv"
+  },
+  {
+    "name": "Kremlin Cup",
+    "surface": "Hard",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Kremlin Cup_goat_players_on_Hard_2015.csv"
+  },
+  {
+    "name": "Generali Open",
+    "surface": "Clay",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Generali Open_goat_players_on_Clay_2015.csv"
+  },
+  {
+    "name": "Istanbul Open",
+    "surface": "Clay",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Istanbul Open_goat_players_on_Clay_2015.csv"
+  },
+  {
+    "name": "SkiStar Swedish Open",
+    "surface": "Clay",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "SkiStar Swedish Open_goat_players_on_Clay_2015.csv"
+  },
+  {
+    "name": "Brasil Open",
+    "surface": "Clay",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Brasil Open_goat_players_on_Clay_2015.csv"
+  },
+  {
+    "name": "Open de Nice C\u00f4te d\u2019Azur",
+    "surface": "Clay",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Open de Nice C\u00f4te d\u2019Azur_goat_players_on_Clay_2015.csv"
+  },
+  {
+    "name": "Sony Ericsson Open",
+    "surface": "Hard",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Sony Ericsson Open_goat_players_on_Hard_2015.csv"
+  },
+  {
+    "name": "Konzum Croatia Open",
+    "surface": "Clay",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Konzum Croatia Open_goat_players_on_Clay_2015.csv"
+  },
+  {
+    "name": "Open 13",
+    "surface": "Hard",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Open 13_goat_players_on_Hard_2015.csv"
+  },
+  {
+    "name": "BB&T Atlanta Open",
+    "surface": "Hard",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "BB&T Atlanta Open_goat_players_on_Hard_2015.csv"
+  },
+  {
+    "name": "Topshelf Open",
+    "surface": "Grass",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Topshelf Open_goat_players_on_Grass_2015.csv"
+  },
+  {
+    "name": "St. Petersburg Open",
+    "surface": "Hard",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "St. Petersburg Open_goat_players_on_Hard_2015.csv"
+  },
+  {
+    "name": "BNP Paribas Open",
+    "surface": "Hard",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "BNP Paribas Open_goat_players_on_Hard_2015.csv"
+  },
+  {
+    "name": "Brisbane International",
+    "surface": "Hard",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Brisbane International_goat_players_on_Hard_2015.csv"
+  },
+  {
+    "name": "Valencia Open 500",
+    "surface": "Hard",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Valencia Open 500_goat_players_on_Hard_2015.csv"
+  },
+  {
+    "name": "China Open",
+    "surface": "Hard",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "China Open_goat_players_on_Hard_2015.csv"
+  },
+  {
+    "name": "Open Banco Sabadell",
+    "surface": "Clay",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Open Banco Sabadell_goat_players_on_Clay_2015.csv"
+  },
+  {
+    "name": "Monte Carlo Masters",
+    "surface": "Clay",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Monte Carlo Masters_goat_players_on_Clay_2015.csv"
+  },
+  {
+    "name": "bet-at-home Open",
+    "surface": "Clay",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "bet-at-home Open_goat_players_on_Clay_2015.csv"
+  },
+  {
+    "name": "Open Sud de France",
+    "surface": "Hard",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Open Sud de France_goat_players_on_Hard_2015.csv"
+  },
+  {
+    "name": "Dubai Tennis Championships",
+    "surface": "Hard",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Dubai Tennis Championships_goat_players_on_Hard_2015.csv"
+  },
+  {
+    "name": "Shenzhen Open",
+    "surface": "Hard",
+    "year": "2015",
+    "circuit": "atp",
+    "filename": "Shenzhen Open_goat_players_on_Hard_2015.csv"
+  },
+  {
+    "name": "Stockholm Open",
+    "surface": "Hard",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Stockholm Open_goat_players_on_Hard_2017.csv"
+  },
+  {
+    "name": "Mercedes Cup",
+    "surface": "Grass",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Mercedes Cup_goat_players_on_Grass_2017.csv"
+  },
+  {
+    "name": "Western & Southern Financial Group Masters",
+    "surface": "Hard",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Western & Southern Financial Group Masters_goat_players_on_Hard_2017.csv"
+  },
+  {
+    "name": "Ecuador Open",
+    "surface": "Clay",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Ecuador Open_goat_players_on_Clay_2017.csv"
+  },
+  {
+    "name": "Qatar Exxon Mobil Open",
+    "surface": "Hard",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Qatar Exxon Mobil Open_goat_players_on_Hard_2017.csv"
+  },
+  {
+    "name": "Erste Bank Open",
+    "surface": "Hard",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Erste Bank Open_goat_players_on_Hard_2017.csv"
+  },
+  {
+    "name": "German Tennis Championships",
+    "surface": "Clay",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "German Tennis Championships_goat_players_on_Clay_2017.csv"
+  },
+  {
+    "name": "Winston-Salem Open at Wake Forest University",
+    "surface": "Hard",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Winston-Salem Open at Wake Forest University_goat_players_on_Hard_2017.csv"
+  },
+  {
+    "name": "Rakuten Japan Open Tennis Championships",
+    "surface": "Hard",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Rakuten Japan Open Tennis Championships_goat_players_on_Hard_2017.csv"
+  },
+  {
+    "name": "Gazprom Hungarian Open",
+    "surface": "Clay",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Gazprom Hungarian Open_goat_players_on_Clay_2017.csv"
+  },
+  {
+    "name": "AEGON International",
+    "surface": "Grass",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "AEGON International_goat_players_on_Grass_2017.csv"
+  },
+  {
+    "name": "Millenium Estoril Open",
+    "surface": "Clay",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Millenium Estoril Open_goat_players_on_Clay_2017.csv"
+  },
+  {
+    "name": "Mutua Madrid Open",
+    "surface": "Clay",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Mutua Madrid Open_goat_players_on_Clay_2017.csv"
+  },
+  {
+    "name": "Shanghai Masters",
+    "surface": "Hard",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Shanghai Masters_goat_players_on_Hard_2017.csv"
+  },
+  {
+    "name": "French Open",
+    "surface": "Clay",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "French Open_goat_players_on_Clay_2017.csv"
+  },
+  {
+    "name": "Delray Beach Open",
+    "surface": "Hard",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Delray Beach Open_goat_players_on_Hard_2017.csv"
+  },
+  {
+    "name": "Garanti Koza Sofia Open",
+    "surface": "Hard",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Garanti Koza Sofia Open_goat_players_on_Hard_2017.csv"
+  },
+  {
+    "name": "Abierto Mexicano",
+    "surface": "Hard",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Abierto Mexicano_goat_players_on_Hard_2017.csv"
+  },
+  {
+    "name": "Gerry Weber Open",
+    "surface": "Grass",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Gerry Weber Open_goat_players_on_Grass_2017.csv"
+  },
+  {
+    "name": "BMW Open",
+    "surface": "Clay",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "BMW Open_goat_players_on_Clay_2017.csv"
+  },
+  {
+    "name": "Apia International",
+    "surface": "Hard",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Apia International_goat_players_on_Hard_2017.csv"
+  },
+  {
+    "name": "ASB Classic",
+    "surface": "Hard",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "ASB Classic_goat_players_on_Hard_2017.csv"
+  },
+  {
+    "name": "Chennai Open",
+    "surface": "Hard",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Chennai Open_goat_players_on_Hard_2017.csv"
+  },
+  {
+    "name": "Hall of Fame Championships",
+    "surface": "Grass",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Hall of Fame Championships_goat_players_on_Grass_2017.csv"
+  },
+  {
+    "name": "Internazionali BNL d'Italia",
+    "surface": "Clay",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Internazionali BNL d'Italia_goat_players_on_Clay_2017.csv"
+  },
+  {
+    "name": "Abierto Mexicano Mifel",
+    "surface": "Hard",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Abierto Mexicano Mifel_goat_players_on_Hard_2017.csv"
+  },
+  {
+    "name": "Australian Open",
+    "surface": "Hard",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Australian Open_goat_players_on_Hard_2017.csv"
+  },
+  {
+    "name": "Grand Prix Hassan II",
+    "surface": "Clay",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Grand Prix Hassan II_goat_players_on_Clay_2017.csv"
+  },
+  {
+    "name": "AEGON Championships",
+    "surface": "Grass",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "AEGON Championships_goat_players_on_Grass_2017.csv"
+  },
+  {
+    "name": "Citi Open",
+    "surface": "Hard",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Citi Open_goat_players_on_Hard_2017.csv"
+  },
+  {
+    "name": "Argentina Open",
+    "surface": "Clay",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Argentina Open_goat_players_on_Clay_2017.csv"
+  },
+  {
+    "name": "US Open",
+    "surface": "Hard",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "US Open_goat_players_on_Hard_2017.csv"
+  },
+  {
+    "name": "Antalya Open",
+    "surface": "Grass",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Antalya Open_goat_players_on_Grass_2017.csv"
+  },
+  {
+    "name": "Rio Open",
+    "surface": "Clay",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Rio Open_goat_players_on_Clay_2017.csv"
+  },
+  {
+    "name": "Swiss Indoors",
+    "surface": "Hard",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Swiss Indoors_goat_players_on_Hard_2017.csv"
+  },
+  {
+    "name": "Masters Cup",
+    "surface": "Hard",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Masters Cup_goat_players_on_Hard_2017.csv"
+  },
+  {
+    "name": "Open de Moselle",
+    "surface": "Hard",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Open de Moselle_goat_players_on_Hard_2017.csv"
+  },
+  {
+    "name": "U.S. Men's Clay Court Championships",
+    "surface": "Clay",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "U.S. Men's Clay Court Championships_goat_players_on_Clay_2017.csv"
+  },
+  {
+    "name": "Lyon Open",
+    "surface": "Clay",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Lyon Open_goat_players_on_Clay_2017.csv"
+  },
+  {
+    "name": "Rogers Masters",
+    "surface": "Hard",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Rogers Masters_goat_players_on_Hard_2017.csv"
+  },
+  {
+    "name": "Open Banco Sabadell ",
+    "surface": "Clay",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Open Banco Sabadell _goat_players_on_Clay_2017.csv"
+  },
+  {
+    "name": "BNP Paribas Masters",
+    "surface": "Hard",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "BNP Paribas Masters_goat_players_on_Hard_2017.csv"
+  },
+  {
+    "name": "Istanbul Open",
+    "surface": "Clay",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Istanbul Open_goat_players_on_Clay_2017.csv"
+  },
+  {
+    "name": "SkiStar Swedish Open",
+    "surface": "Clay",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "SkiStar Swedish Open_goat_players_on_Clay_2017.csv"
+  },
+  {
+    "name": "Generali Open",
+    "surface": "Clay",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Generali Open_goat_players_on_Clay_2017.csv"
+  },
+  {
+    "name": "Kremlin Cup",
+    "surface": "Hard",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Kremlin Cup_goat_players_on_Hard_2017.csv"
+  },
+  {
+    "name": "Geneva Open",
+    "surface": "Clay",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Geneva Open_goat_players_on_Clay_2017.csv"
+  },
+  {
+    "name": "Memphis Open",
+    "surface": "Hard",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Memphis Open_goat_players_on_Hard_2017.csv"
+  },
+  {
+    "name": "Suisse Open Gstaad",
+    "surface": "Clay",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Suisse Open Gstaad_goat_players_on_Clay_2017.csv"
+  },
+  {
+    "name": "Wimbledon",
+    "surface": "Grass",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Wimbledon_goat_players_on_Grass_2017.csv"
+  },
+  {
+    "name": "ABN AMRO World Tennis Tournament",
+    "surface": "Hard",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "ABN AMRO World Tennis Tournament_goat_players_on_Hard_2017.csv"
+  },
+  {
+    "name": "Ricoh Open",
+    "surface": "Grass",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Ricoh Open_goat_players_on_Grass_2017.csv"
+  },
+  {
+    "name": "BB&T Atlanta Open",
+    "surface": "Hard",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "BB&T Atlanta Open_goat_players_on_Hard_2017.csv"
+  },
+  {
+    "name": "Open 13",
+    "surface": "Hard",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Open 13_goat_players_on_Hard_2017.csv"
+  },
+  {
+    "name": "Sony Ericsson Open",
+    "surface": "Hard",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Sony Ericsson Open_goat_players_on_Hard_2017.csv"
+  },
+  {
+    "name": "European Open",
+    "surface": "Hard",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "European Open_goat_players_on_Hard_2017.csv"
+  },
+  {
+    "name": "Brasil Open",
+    "surface": "Clay",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Brasil Open_goat_players_on_Clay_2017.csv"
+  },
+  {
+    "name": "Chengdu Open",
+    "surface": "Hard",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Chengdu Open_goat_players_on_Hard_2017.csv"
+  },
+  {
+    "name": "Shenzhen Open",
+    "surface": "Hard",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Shenzhen Open_goat_players_on_Hard_2017.csv"
+  },
+  {
+    "name": "Dubai Tennis Championships",
+    "surface": "Hard",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Dubai Tennis Championships_goat_players_on_Hard_2017.csv"
+  },
+  {
+    "name": "Open Sud de France",
+    "surface": "Hard",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Open Sud de France_goat_players_on_Hard_2017.csv"
+  },
+  {
+    "name": "Monte Carlo Masters",
+    "surface": "Clay",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Monte Carlo Masters_goat_players_on_Clay_2017.csv"
+  },
+  {
+    "name": "China Open",
+    "surface": "Hard",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "China Open_goat_players_on_Hard_2017.csv"
+  },
+  {
+    "name": "Brisbane International",
+    "surface": "Hard",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Brisbane International_goat_players_on_Hard_2017.csv"
+  },
+  {
+    "name": "Croatia Open",
+    "surface": "Clay",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "Croatia Open_goat_players_on_Clay_2017.csv"
+  },
+  {
+    "name": "BNP Paribas Open",
+    "surface": "Hard",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "BNP Paribas Open_goat_players_on_Hard_2017.csv"
+  },
+  {
+    "name": "St. Petersburg Open",
+    "surface": "Hard",
+    "year": "2017",
+    "circuit": "atp",
+    "filename": "St. Petersburg Open_goat_players_on_Hard_2017.csv"
+  },
+  {
+    "name": "Brisbane International",
+    "surface": "Hard",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Brisbane International_goat_players_on_Hard_2019.csv"
+  },
+  {
+    "name": "Eastbourne International",
+    "surface": "Grass",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Eastbourne International_goat_players_on_Grass_2019.csv"
+  },
+  {
+    "name": "China Open",
+    "surface": "Hard",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "China Open_goat_players_on_Hard_2019.csv"
+  },
+  {
+    "name": "Monte Carlo Masters",
+    "surface": "Clay",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Monte Carlo Masters_goat_players_on_Clay_2019.csv"
+  },
+  {
+    "name": "Open Sud de France",
+    "surface": "Hard",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Open Sud de France_goat_players_on_Hard_2019.csv"
+  },
+  {
+    "name": "Dubai Tennis Championships",
+    "surface": "Hard",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Dubai Tennis Championships_goat_players_on_Hard_2019.csv"
+  },
+  {
+    "name": "St. Petersburg Open",
+    "surface": "Hard",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "St. Petersburg Open_goat_players_on_Hard_2019.csv"
+  },
+  {
+    "name": "BNP Paribas Open",
+    "surface": "Hard",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "BNP Paribas Open_goat_players_on_Hard_2019.csv"
+  },
+  {
+    "name": "Croatia Open",
+    "surface": "Clay",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Croatia Open_goat_players_on_Clay_2019.csv"
+  },
+  {
+    "name": "Open 13",
+    "surface": "Hard",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Open 13_goat_players_on_Hard_2019.csv"
+  },
+  {
+    "name": "BB&T Atlanta Open",
+    "surface": "Hard",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "BB&T Atlanta Open_goat_players_on_Hard_2019.csv"
+  },
+  {
+    "name": "Chengdu Open",
+    "surface": "Hard",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Chengdu Open_goat_players_on_Hard_2019.csv"
+  },
+  {
+    "name": "Brasil Open",
+    "surface": "Clay",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Brasil Open_goat_players_on_Clay_2019.csv"
+  },
+  {
+    "name": "European Open",
+    "surface": "Hard",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "European Open_goat_players_on_Hard_2019.csv"
+  },
+  {
+    "name": "Millennium Estoril Open",
+    "surface": "Clay",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Millennium Estoril Open_goat_players_on_Clay_2019.csv"
+  },
+  {
+    "name": "Sony Ericsson Open",
+    "surface": "Hard",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Sony Ericsson Open_goat_players_on_Hard_2019.csv"
+  },
+  {
+    "name": "Geneva Open",
+    "surface": "Clay",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Geneva Open_goat_players_on_Clay_2019.csv"
+  },
+  {
+    "name": "Kremlin Cup",
+    "surface": "Hard",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Kremlin Cup_goat_players_on_Hard_2019.csv"
+  },
+  {
+    "name": "Generali Open",
+    "surface": "Clay",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Generali Open_goat_players_on_Clay_2019.csv"
+  },
+  {
+    "name": "SkiStar Swedish Open",
+    "surface": "Clay",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "SkiStar Swedish Open_goat_players_on_Clay_2019.csv"
+  },
+  {
+    "name": "Queen's Club Championships",
+    "surface": "Grass",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Queen's Club Championships_goat_players_on_Grass_2019.csv"
+  },
+  {
+    "name": "ABN AMRO World Tennis Tournament",
+    "surface": "Hard",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "ABN AMRO World Tennis Tournament_goat_players_on_Hard_2019.csv"
+  },
+  {
+    "name": "Halle Open",
+    "surface": "Grass",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Halle Open_goat_players_on_Grass_2019.csv"
+  },
+  {
+    "name": "Wimbledon",
+    "surface": "Grass",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Wimbledon_goat_players_on_Grass_2019.csv"
+  },
+  {
+    "name": "Suisse Open Gstaad",
+    "surface": "Clay",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Suisse Open Gstaad_goat_players_on_Clay_2019.csv"
+  },
+  {
+    "name": "Lyon Open",
+    "surface": "Clay",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Lyon Open_goat_players_on_Clay_2019.csv"
+  },
+  {
+    "name": "Sydney International",
+    "surface": "Hard",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Sydney International_goat_players_on_Hard_2019.csv"
+  },
+  {
+    "name": "Maharashtra Open",
+    "surface": "Hard",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Maharashtra Open_goat_players_on_Hard_2019.csv"
+  },
+  {
+    "name": "U.S. Men's Clay Court Championships",
+    "surface": "Clay",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "U.S. Men's Clay Court Championships_goat_players_on_Clay_2019.csv"
+  },
+  {
+    "name": "Zhuhai Open",
+    "surface": "Hard",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Zhuhai Open_goat_players_on_Hard_2019.csv"
+  },
+  {
+    "name": "BNP Paribas Masters",
+    "surface": "Hard",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "BNP Paribas Masters_goat_players_on_Hard_2019.csv"
+  },
+  {
+    "name": "Open Banco Sabadell ",
+    "surface": "Clay",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Open Banco Sabadell _goat_players_on_Clay_2019.csv"
+  },
+  {
+    "name": "Rogers Masters",
+    "surface": "Hard",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Rogers Masters_goat_players_on_Hard_2019.csv"
+  },
+  {
+    "name": "US Open",
+    "surface": "Hard",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "US Open_goat_players_on_Hard_2019.csv"
+  },
+  {
+    "name": "Argentina Open",
+    "surface": "Clay",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Argentina Open_goat_players_on_Clay_2019.csv"
+  },
+  {
+    "name": "Citi Open",
+    "surface": "Hard",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Citi Open_goat_players_on_Hard_2019.csv"
+  },
+  {
+    "name": "Hungarian Open",
+    "surface": "Clay",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Hungarian Open_goat_players_on_Clay_2019.csv"
+  },
+  {
+    "name": "Open de Moselle",
+    "surface": "Hard",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Open de Moselle_goat_players_on_Hard_2019.csv"
+  },
+  {
+    "name": "Sofia Open",
+    "surface": "Hard",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Sofia Open_goat_players_on_Hard_2019.csv"
+  },
+  {
+    "name": "Masters Cup",
+    "surface": "Hard",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Masters Cup_goat_players_on_Hard_2019.csv"
+  },
+  {
+    "name": "Swiss Indoors",
+    "surface": "Hard",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Swiss Indoors_goat_players_on_Hard_2019.csv"
+  },
+  {
+    "name": "Rio Open",
+    "surface": "Clay",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Rio Open_goat_players_on_Clay_2019.csv"
+  },
+  {
+    "name": "Antalya Open",
+    "surface": "Grass",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Antalya Open_goat_players_on_Grass_2019.csv"
+  },
+  {
+    "name": "New York Open",
+    "surface": "Hard",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "New York Open_goat_players_on_Hard_2019.csv"
+  },
+  {
+    "name": "ASB Classic",
+    "surface": "Hard",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "ASB Classic_goat_players_on_Hard_2019.csv"
+  },
+  {
+    "name": "BMW Open",
+    "surface": "Clay",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "BMW Open_goat_players_on_Clay_2019.csv"
+  },
+  {
+    "name": "Grand Prix Hassan II",
+    "surface": "Clay",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Grand Prix Hassan II_goat_players_on_Clay_2019.csv"
+  },
+  {
+    "name": "Australian Open",
+    "surface": "Hard",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Australian Open_goat_players_on_Hard_2019.csv"
+  },
+  {
+    "name": "Abierto Mexicano Mifel",
+    "surface": "Hard",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Abierto Mexicano Mifel_goat_players_on_Hard_2019.csv"
+  },
+  {
+    "name": "Internazionali BNL d'Italia",
+    "surface": "Clay",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Internazionali BNL d'Italia_goat_players_on_Clay_2019.csv"
+  },
+  {
+    "name": "Hall of Fame Championships",
+    "surface": "Grass",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Hall of Fame Championships_goat_players_on_Grass_2019.csv"
+  },
+  {
+    "name": "French Open",
+    "surface": "Clay",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "French Open_goat_players_on_Clay_2019.csv"
+  },
+  {
+    "name": "Shanghai Masters",
+    "surface": "Hard",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Shanghai Masters_goat_players_on_Hard_2019.csv"
+  },
+  {
+    "name": "Mutua Madrid Open",
+    "surface": "Clay",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Mutua Madrid Open_goat_players_on_Clay_2019.csv"
+  },
+  {
+    "name": "Abierto Mexicano",
+    "surface": "Hard",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Abierto Mexicano_goat_players_on_Hard_2019.csv"
+  },
+  {
+    "name": "Cordoba Open",
+    "surface": "Clay",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Cordoba Open_goat_players_on_Clay_2019.csv"
+  },
+  {
+    "name": "Delray Beach Open",
+    "surface": "Hard",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Delray Beach Open_goat_players_on_Hard_2019.csv"
+  },
+  {
+    "name": "Qatar Exxon Mobil Open",
+    "surface": "Hard",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Qatar Exxon Mobil Open_goat_players_on_Hard_2019.csv"
+  },
+  {
+    "name": "Western & Southern Financial Group Masters",
+    "surface": "Hard",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Western & Southern Financial Group Masters_goat_players_on_Hard_2019.csv"
+  },
+  {
+    "name": "Mercedes Cup",
+    "surface": "Grass",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Mercedes Cup_goat_players_on_Grass_2019.csv"
+  },
+  {
+    "name": "Stockholm Open",
+    "surface": "Hard",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Stockholm Open_goat_players_on_Hard_2019.csv"
+  },
+  {
+    "name": "Rakuten Japan Open Tennis Championships",
+    "surface": "Hard",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Rakuten Japan Open Tennis Championships_goat_players_on_Hard_2019.csv"
+  },
+  {
+    "name": "Winston-Salem Open at Wake Forest University",
+    "surface": "Hard",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Winston-Salem Open at Wake Forest University_goat_players_on_Hard_2019.csv"
+  },
+  {
+    "name": "Rosmalen Grass Court Championships",
+    "surface": "Grass",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Rosmalen Grass Court Championships_goat_players_on_Grass_2019.csv"
+  },
+  {
+    "name": "German Tennis Championships",
+    "surface": "Clay",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "German Tennis Championships_goat_players_on_Clay_2019.csv"
+  },
+  {
+    "name": "Erste Bank Open",
+    "surface": "Hard",
+    "year": "2019",
+    "circuit": "atp",
+    "filename": "Erste Bank Open_goat_players_on_Hard_2019.csv"
+  },
+  {
+    "name": "Millennium Estoril Open",
+    "surface": "Clay",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Millennium Estoril Open_goat_players_on_Clay_2021.csv"
+  },
+  {
+    "name": "European Open",
+    "surface": "Hard",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "European Open_goat_players_on_Hard_2021.csv"
+  },
+  {
+    "name": "Viking International",
+    "surface": "Grass",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Viking International_goat_players_on_Grass_2021.csv"
+  },
+  {
+    "name": "Murray River Open",
+    "surface": "Hard",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Murray River Open_goat_players_on_Hard_2021.csv"
+  },
+  {
+    "name": "Astana Open",
+    "surface": "Hard",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Astana Open_goat_players_on_Hard_2021.csv"
+  },
+  {
+    "name": "BB&T Atlanta Open",
+    "surface": "Hard",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "BB&T Atlanta Open_goat_players_on_Hard_2021.csv"
+  },
+  {
+    "name": "Open 13",
+    "surface": "Hard",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Open 13_goat_players_on_Hard_2021.csv"
+  },
+  {
+    "name": "Croatia Open",
+    "surface": "Clay",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Croatia Open_goat_players_on_Clay_2021.csv"
+  },
+  {
+    "name": "BNP Paribas Open",
+    "surface": "Hard",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "BNP Paribas Open_goat_players_on_Hard_2021.csv"
+  },
+  {
+    "name": "St. Petersburg Open",
+    "surface": "Hard",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "St. Petersburg Open_goat_players_on_Hard_2021.csv"
+  },
+  {
+    "name": "Barcelona Open",
+    "surface": "Clay",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Barcelona Open_goat_players_on_Clay_2021.csv"
+  },
+  {
+    "name": "Dubai Tennis Championships",
+    "surface": "Hard",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Dubai Tennis Championships_goat_players_on_Hard_2021.csv"
+  },
+  {
+    "name": "Open Sud de France",
+    "surface": "Hard",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Open Sud de France_goat_players_on_Hard_2021.csv"
+  },
+  {
+    "name": "Monte Carlo Masters",
+    "surface": "Clay",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Monte Carlo Masters_goat_players_on_Clay_2021.csv"
+  },
+  {
+    "name": "Chile Open",
+    "surface": "Clay",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Chile Open_goat_players_on_Clay_2021.csv"
+  },
+  {
+    "name": "BNP Paribas Masters",
+    "surface": "Hard",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "BNP Paribas Masters_goat_players_on_Hard_2021.csv"
+  },
+  {
+    "name": "Sardegna Open",
+    "surface": "Hard",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Sardegna Open_goat_players_on_Hard_2021.csv"
+  },
+  {
+    "name": "Lyon Open",
+    "surface": "Clay",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Lyon Open_goat_players_on_Clay_2021.csv"
+  },
+  {
+    "name": "Suisse Open Gstaad",
+    "surface": "Clay",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Suisse Open Gstaad_goat_players_on_Clay_2021.csv"
+  },
+  {
+    "name": "Wimbledon",
+    "surface": "Grass",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Wimbledon_goat_players_on_Grass_2021.csv"
+  },
+  {
+    "name": "Halle Open",
+    "surface": "Grass",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Halle Open_goat_players_on_Grass_2021.csv"
+  },
+  {
+    "name": "ABN AMRO World Tennis Tournament",
+    "surface": "Hard",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "ABN AMRO World Tennis Tournament_goat_players_on_Hard_2021.csv"
+  },
+  {
+    "name": "European Open",
+    "surface": "Clay",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "European Open_goat_players_on_Clay_2021.csv"
+  },
+  {
+    "name": "Queen's Club Championships",
+    "surface": "Grass",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Queen's Club Championships_goat_players_on_Grass_2021.csv"
+  },
+  {
+    "name": "Generali Open",
+    "surface": "Clay",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Generali Open_goat_players_on_Clay_2021.csv"
+  },
+  {
+    "name": "Kremlin Cup",
+    "surface": "Hard",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Kremlin Cup_goat_players_on_Hard_2021.csv"
+  },
+  {
+    "name": "Geneva Open",
+    "surface": "Clay",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Geneva Open_goat_players_on_Clay_2021.csv"
+  },
+  {
+    "name": "Hall of Fame Championships",
+    "surface": "Grass",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Hall of Fame Championships_goat_players_on_Grass_2021.csv"
+  },
+  {
+    "name": "Internazionali BNL d'Italia",
+    "surface": "Clay",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Internazionali BNL d'Italia_goat_players_on_Clay_2021.csv"
+  },
+  {
+    "name": "Serbia Open",
+    "surface": "Clay",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Serbia Open_goat_players_on_Clay_2021.csv"
+  },
+  {
+    "name": "Mallorca Championships",
+    "surface": "Grass",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Mallorca Championships_goat_players_on_Grass_2021.csv"
+  },
+  {
+    "name": "Australian Open",
+    "surface": "Hard",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Australian Open_goat_players_on_Hard_2021.csv"
+  },
+  {
+    "name": "BMW Open",
+    "surface": "Clay",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "BMW Open_goat_players_on_Clay_2021.csv"
+  },
+  {
+    "name": "Great Ocean Road Open",
+    "surface": "Hard",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Great Ocean Road Open_goat_players_on_Hard_2021.csv"
+  },
+  {
+    "name": "Singapore Open",
+    "surface": "Hard",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Singapore Open_goat_players_on_Hard_2021.csv"
+  },
+  {
+    "name": "Belgrade Open",
+    "surface": "Clay",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Belgrade Open_goat_players_on_Clay_2021.csv"
+  },
+  {
+    "name": "Masters Cup",
+    "surface": "Hard",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Masters Cup_goat_players_on_Hard_2021.csv"
+  },
+  {
+    "name": "Sofia Open",
+    "surface": "Hard",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Sofia Open_goat_players_on_Hard_2021.csv"
+  },
+  {
+    "name": "San Diego Open",
+    "surface": "Hard",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "San Diego Open_goat_players_on_Hard_2021.csv"
+  },
+  {
+    "name": "Canadian Open",
+    "surface": "Hard",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Canadian Open_goat_players_on_Hard_2021.csv"
+  },
+  {
+    "name": "Open de Moselle",
+    "surface": "Hard",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Open de Moselle_goat_players_on_Hard_2021.csv"
+  },
+  {
+    "name": "Citi Open",
+    "surface": "Hard",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Citi Open_goat_players_on_Hard_2021.csv"
+  },
+  {
+    "name": "Argentina Open",
+    "surface": "Clay",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Argentina Open_goat_players_on_Clay_2021.csv"
+  },
+  {
+    "name": "Emilia-Romagna Open",
+    "surface": "Clay",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Emilia-Romagna Open_goat_players_on_Clay_2021.csv"
+  },
+  {
+    "name": "AnyTech365 Andalucia Open",
+    "surface": "Hard",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "AnyTech365 Andalucia Open_goat_players_on_Hard_2021.csv"
+  },
+  {
+    "name": "US Open",
+    "surface": "Hard",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "US Open_goat_players_on_Hard_2021.csv"
+  },
+  {
+    "name": "Miami Open",
+    "surface": "Hard",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Miami Open_goat_players_on_Hard_2021.csv"
+  },
+  {
+    "name": "Winston-Salem Open at Wake Forest University",
+    "surface": "Hard",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Winston-Salem Open at Wake Forest University_goat_players_on_Hard_2021.csv"
+  },
+  {
+    "name": "Stockholm Open",
+    "surface": "Hard",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Stockholm Open_goat_players_on_Hard_2021.csv"
+  },
+  {
+    "name": "Mercedes Cup",
+    "surface": "Grass",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Mercedes Cup_goat_players_on_Grass_2021.csv"
+  },
+  {
+    "name": "Nordea Open",
+    "surface": "Clay",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Nordea Open_goat_players_on_Clay_2021.csv"
+  },
+  {
+    "name": "Western & Southern Financial Group Masters",
+    "surface": "Hard",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Western & Southern Financial Group Masters_goat_players_on_Hard_2021.csv"
+  },
+  {
+    "name": "Qatar Exxon Mobil Open",
+    "surface": "Hard",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Qatar Exxon Mobil Open_goat_players_on_Hard_2021.csv"
+  },
+  {
+    "name": "Delray Beach Open",
+    "surface": "Hard",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Delray Beach Open_goat_players_on_Hard_2021.csv"
+  },
+  {
+    "name": "Cordoba Open",
+    "surface": "Clay",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Cordoba Open_goat_players_on_Clay_2021.csv"
+  },
+  {
+    "name": "Mifel Open",
+    "surface": "Hard",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Mifel Open_goat_players_on_Hard_2021.csv"
+  },
+  {
+    "name": "Vienna Open",
+    "surface": "Hard",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Vienna Open_goat_players_on_Hard_2021.csv"
+  },
+  {
+    "name": "Abierto Mexicano",
+    "surface": "Hard",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Abierto Mexicano_goat_players_on_Hard_2021.csv"
+  },
+  {
+    "name": "Mutua Madrid Open",
+    "surface": "Clay",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Mutua Madrid Open_goat_players_on_Clay_2021.csv"
+  },
+  {
+    "name": "French Open",
+    "surface": "Clay",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "French Open_goat_players_on_Clay_2021.csv"
+  },
+  {
+    "name": "Antalya Open",
+    "surface": "Hard",
+    "year": "2021",
+    "circuit": "atp",
+    "filename": "Antalya Open_goat_players_on_Hard_2021.csv"
+  },
+  {
+    "name": "European Open",
+    "surface": "Hard",
+    "year": "2020",
+    "circuit": "atp",
+    "filename": "European Open_goat_players_on_Hard_2020.csv"
+  },
+  {
+    "name": "Open 13",
+    "surface": "Hard",
+    "year": "2020",
+    "circuit": "atp",
+    "filename": "Open 13_goat_players_on_Hard_2020.csv"
+  },
+  {
+    "name": "Astana Open",
+    "surface": "Hard",
+    "year": "2020",
+    "circuit": "atp",
+    "filename": "Astana Open_goat_players_on_Hard_2020.csv"
+  },
+  {
+    "name": "St. Petersburg Open",
+    "surface": "Hard",
+    "year": "2020",
+    "circuit": "atp",
+    "filename": "St. Petersburg Open_goat_players_on_Hard_2020.csv"
+  },
+  {
+    "name": "Dubai Tennis Championships",
+    "surface": "Hard",
+    "year": "2020",
+    "circuit": "atp",
+    "filename": "Dubai Tennis Championships_goat_players_on_Hard_2020.csv"
+  },
+  {
+    "name": "Open Sud de France",
+    "surface": "Hard",
+    "year": "2020",
+    "circuit": "atp",
+    "filename": "Open Sud de France_goat_players_on_Hard_2020.csv"
+  },
+  {
+    "name": "BNP Paribas Masters",
+    "surface": "Hard",
+    "year": "2020",
+    "circuit": "atp",
+    "filename": "BNP Paribas Masters_goat_players_on_Hard_2020.csv"
+  },
+  {
+    "name": "Chile Open",
+    "surface": "Clay",
+    "year": "2020",
+    "circuit": "atp",
+    "filename": "Chile Open_goat_players_on_Clay_2020.csv"
+  },
+  {
+    "name": "Maharashtra Open",
+    "surface": "Hard",
+    "year": "2020",
+    "circuit": "atp",
+    "filename": "Maharashtra Open_goat_players_on_Hard_2020.csv"
+  },
+  {
+    "name": "ABN AMRO World Tennis Tournament",
+    "surface": "Hard",
+    "year": "2020",
+    "circuit": "atp",
+    "filename": "ABN AMRO World Tennis Tournament_goat_players_on_Hard_2020.csv"
+  },
+  {
+    "name": "Generali Open",
+    "surface": "Clay",
+    "year": "2020",
+    "circuit": "atp",
+    "filename": "Generali Open_goat_players_on_Clay_2020.csv"
+  },
+  {
+    "name": "Australian Open",
+    "surface": "Hard",
+    "year": "2020",
+    "circuit": "atp",
+    "filename": "Australian Open_goat_players_on_Hard_2020.csv"
+  },
+  {
+    "name": "Internazionali BNL d'Italia",
+    "surface": "Clay",
+    "year": "2020",
+    "circuit": "atp",
+    "filename": "Internazionali BNL d'Italia_goat_players_on_Clay_2020.csv"
+  },
+  {
+    "name": "bett1HULKS Championship",
+    "surface": "Hard",
+    "year": "2020",
+    "circuit": "atp",
+    "filename": "bett1HULKS Championship_goat_players_on_Hard_2020.csv"
+  },
+  {
+    "name": "New York Open",
+    "surface": "Hard",
+    "year": "2020",
+    "circuit": "atp",
+    "filename": "New York Open_goat_players_on_Hard_2020.csv"
+  },
+  {
+    "name": "ASB Classic",
+    "surface": "Hard",
+    "year": "2020",
+    "circuit": "atp",
+    "filename": "ASB Classic_goat_players_on_Hard_2020.csv"
+  },
+  {
+    "name": "Sofia Open",
+    "surface": "Hard",
+    "year": "2020",
+    "circuit": "atp",
+    "filename": "Sofia Open_goat_players_on_Hard_2020.csv"
+  },
+  {
+    "name": "Masters Cup",
+    "surface": "Hard",
+    "year": "2020",
+    "circuit": "atp",
+    "filename": "Masters Cup_goat_players_on_Hard_2020.csv"
+  },
+  {
+    "name": "Rio Open",
+    "surface": "Clay",
+    "year": "2020",
+    "circuit": "atp",
+    "filename": "Rio Open_goat_players_on_Clay_2020.csv"
+  },
+  {
+    "name": "Forte Village Sardegna Open",
+    "surface": "Clay",
+    "year": "2020",
+    "circuit": "atp",
+    "filename": "Forte Village Sardegna Open_goat_players_on_Clay_2020.csv"
+  },
+  {
+    "name": "Adelaide International",
+    "surface": "Hard",
+    "year": "2020",
+    "circuit": "atp",
+    "filename": "Adelaide International_goat_players_on_Hard_2020.csv"
+  },
+  {
+    "name": "US Open",
+    "surface": "Hard",
+    "year": "2020",
+    "circuit": "atp",
+    "filename": "US Open_goat_players_on_Hard_2020.csv"
+  },
+  {
+    "name": "Argentina Open",
+    "surface": "Clay",
+    "year": "2020",
+    "circuit": "atp",
+    "filename": "Argentina Open_goat_players_on_Clay_2020.csv"
+  },
+  {
+    "name": "German Tennis Championships",
+    "surface": "Clay",
+    "year": "2020",
+    "circuit": "atp",
+    "filename": "German Tennis Championships_goat_players_on_Clay_2020.csv"
+  },
+  {
+    "name": "Erste Bank Open",
+    "surface": "Hard",
+    "year": "2020",
+    "circuit": "atp",
+    "filename": "Erste Bank Open_goat_players_on_Hard_2020.csv"
+  },
+  {
+    "name": "Qatar Exxon Mobil Open",
+    "surface": "Hard",
+    "year": "2020",
+    "circuit": "atp",
+    "filename": "Qatar Exxon Mobil Open_goat_players_on_Hard_2020.csv"
+  },
+  {
+    "name": "Western & Southern Financial Group Masters",
+    "surface": "Hard",
+    "year": "2020",
+    "circuit": "atp",
+    "filename": "Western & Southern Financial Group Masters_goat_players_on_Hard_2020.csv"
+  },
+  {
+    "name": "Abierto Mexicano",
+    "surface": "Hard",
+    "year": "2020",
+    "circuit": "atp",
+    "filename": "Abierto Mexicano_goat_players_on_Hard_2020.csv"
+  },
+  {
+    "name": "bett1HULKS Indoors",
+    "surface": "Hard",
+    "year": "2020",
+    "circuit": "atp",
+    "filename": "bett1HULKS Indoors_goat_players_on_Hard_2020.csv"
+  },
+  {
+    "name": "Cordoba Open",
+    "surface": "Clay",
+    "year": "2020",
+    "circuit": "atp",
+    "filename": "Cordoba Open_goat_players_on_Clay_2020.csv"
+  },
+  {
+    "name": "Delray Beach Open",
+    "surface": "Hard",
+    "year": "2020",
+    "circuit": "atp",
+    "filename": "Delray Beach Open_goat_players_on_Hard_2020.csv"
+  },
+  {
+    "name": "French Open",
+    "surface": "Clay",
+    "year": "2020",
+    "circuit": "atp",
+    "filename": "French Open_goat_players_on_Clay_2020.csv"
+  },
+  {
+    "name": "Shenzhen Open",
+    "surface": "Hard",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Shenzhen Open_goat_players_on_Hard_2018.csv"
+  },
+  {
+    "name": "Open Sud de France",
+    "surface": "Hard",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Open Sud de France_goat_players_on_Hard_2018.csv"
+  },
+  {
+    "name": "Dubai Tennis Championships",
+    "surface": "Hard",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Dubai Tennis Championships_goat_players_on_Hard_2018.csv"
+  },
+  {
+    "name": "Monte Carlo Masters",
+    "surface": "Clay",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Monte Carlo Masters_goat_players_on_Clay_2018.csv"
+  },
+  {
+    "name": "China Open",
+    "surface": "Hard",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "China Open_goat_players_on_Hard_2018.csv"
+  },
+  {
+    "name": "Eastbourne International",
+    "surface": "Grass",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Eastbourne International_goat_players_on_Grass_2018.csv"
+  },
+  {
+    "name": "Brisbane International",
+    "surface": "Hard",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Brisbane International_goat_players_on_Hard_2018.csv"
+  },
+  {
+    "name": "Croatia Open",
+    "surface": "Clay",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Croatia Open_goat_players_on_Clay_2018.csv"
+  },
+  {
+    "name": "BNP Paribas Open",
+    "surface": "Hard",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "BNP Paribas Open_goat_players_on_Hard_2018.csv"
+  },
+  {
+    "name": "St. Petersburg Open",
+    "surface": "Hard",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "St. Petersburg Open_goat_players_on_Hard_2018.csv"
+  },
+  {
+    "name": "BB&T Atlanta Open",
+    "surface": "Hard",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "BB&T Atlanta Open_goat_players_on_Hard_2018.csv"
+  },
+  {
+    "name": "Open 13",
+    "surface": "Hard",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Open 13_goat_players_on_Hard_2018.csv"
+  },
+  {
+    "name": "Sony Ericsson Open",
+    "surface": "Hard",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Sony Ericsson Open_goat_players_on_Hard_2018.csv"
+  },
+  {
+    "name": "Millennium Estoril Open",
+    "surface": "Clay",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Millennium Estoril Open_goat_players_on_Clay_2018.csv"
+  },
+  {
+    "name": "European Open",
+    "surface": "Hard",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "European Open_goat_players_on_Hard_2018.csv"
+  },
+  {
+    "name": "Brasil Open",
+    "surface": "Clay",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Brasil Open_goat_players_on_Clay_2018.csv"
+  },
+  {
+    "name": "Chengdu Open",
+    "surface": "Hard",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Chengdu Open_goat_players_on_Hard_2018.csv"
+  },
+  {
+    "name": "Istanbul Open",
+    "surface": "Clay",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Istanbul Open_goat_players_on_Clay_2018.csv"
+  },
+  {
+    "name": "SkiStar Swedish Open",
+    "surface": "Clay",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "SkiStar Swedish Open_goat_players_on_Clay_2018.csv"
+  },
+  {
+    "name": "Tata Open",
+    "surface": "Hard",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Tata Open_goat_players_on_Hard_2018.csv"
+  },
+  {
+    "name": "Generali Open",
+    "surface": "Clay",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Generali Open_goat_players_on_Clay_2018.csv"
+  },
+  {
+    "name": "Kremlin Cup",
+    "surface": "Hard",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Kremlin Cup_goat_players_on_Hard_2018.csv"
+  },
+  {
+    "name": "Geneva Open",
+    "surface": "Clay",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Geneva Open_goat_players_on_Clay_2018.csv"
+  },
+  {
+    "name": "Suisse Open Gstaad",
+    "surface": "Clay",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Suisse Open Gstaad_goat_players_on_Clay_2018.csv"
+  },
+  {
+    "name": "Wimbledon",
+    "surface": "Grass",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Wimbledon_goat_players_on_Grass_2018.csv"
+  },
+  {
+    "name": "ABN AMRO World Tennis Tournament",
+    "surface": "Hard",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "ABN AMRO World Tennis Tournament_goat_players_on_Hard_2018.csv"
+  },
+  {
+    "name": "Ricoh Open",
+    "surface": "Grass",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Ricoh Open_goat_players_on_Grass_2018.csv"
+  },
+  {
+    "name": "U.S. Men's Clay Court Championships",
+    "surface": "Clay",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "U.S. Men's Clay Court Championships_goat_players_on_Clay_2018.csv"
+  },
+  {
+    "name": "Sydney International",
+    "surface": "Hard",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Sydney International_goat_players_on_Hard_2018.csv"
+  },
+  {
+    "name": "Lyon Open",
+    "surface": "Clay",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Lyon Open_goat_players_on_Clay_2018.csv"
+  },
+  {
+    "name": "Rogers Masters",
+    "surface": "Hard",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Rogers Masters_goat_players_on_Hard_2018.csv"
+  },
+  {
+    "name": "Open Banco Sabadell ",
+    "surface": "Clay",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Open Banco Sabadell _goat_players_on_Clay_2018.csv"
+  },
+  {
+    "name": "BNP Paribas Masters",
+    "surface": "Hard",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "BNP Paribas Masters_goat_players_on_Hard_2018.csv"
+  },
+  {
+    "name": "AEGON Championships",
+    "surface": "Grass",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "AEGON Championships_goat_players_on_Grass_2018.csv"
+  },
+  {
+    "name": "Citi Open",
+    "surface": "Hard",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Citi Open_goat_players_on_Hard_2018.csv"
+  },
+  {
+    "name": "Argentina Open",
+    "surface": "Clay",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Argentina Open_goat_players_on_Clay_2018.csv"
+  },
+  {
+    "name": "US Open",
+    "surface": "Hard",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "US Open_goat_players_on_Hard_2018.csv"
+  },
+  {
+    "name": "Antalya Open",
+    "surface": "Grass",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Antalya Open_goat_players_on_Grass_2018.csv"
+  },
+  {
+    "name": "Rio Open",
+    "surface": "Clay",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Rio Open_goat_players_on_Clay_2018.csv"
+  },
+  {
+    "name": "Swiss Indoors",
+    "surface": "Hard",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Swiss Indoors_goat_players_on_Hard_2018.csv"
+  },
+  {
+    "name": "Masters Cup",
+    "surface": "Hard",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Masters Cup_goat_players_on_Hard_2018.csv"
+  },
+  {
+    "name": "Open de Moselle",
+    "surface": "Hard",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Open de Moselle_goat_players_on_Hard_2018.csv"
+  },
+  {
+    "name": "BMW Open",
+    "surface": "Clay",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "BMW Open_goat_players_on_Clay_2018.csv"
+  },
+  {
+    "name": "ASB Classic",
+    "surface": "Hard",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "ASB Classic_goat_players_on_Hard_2018.csv"
+  },
+  {
+    "name": "New York Open",
+    "surface": "Hard",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "New York Open_goat_players_on_Hard_2018.csv"
+  },
+  {
+    "name": "Hall of Fame Championships",
+    "surface": "Grass",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Hall of Fame Championships_goat_players_on_Grass_2018.csv"
+  },
+  {
+    "name": "Internazionali BNL d'Italia",
+    "surface": "Clay",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Internazionali BNL d'Italia_goat_players_on_Clay_2018.csv"
+  },
+  {
+    "name": "Abierto Mexicano Mifel",
+    "surface": "Hard",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Abierto Mexicano Mifel_goat_players_on_Hard_2018.csv"
+  },
+  {
+    "name": "Australian Open",
+    "surface": "Hard",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Australian Open_goat_players_on_Hard_2018.csv"
+  },
+  {
+    "name": "Grand Prix Hassan II",
+    "surface": "Clay",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Grand Prix Hassan II_goat_players_on_Clay_2018.csv"
+  },
+  {
+    "name": "Mutua Madrid Open",
+    "surface": "Clay",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Mutua Madrid Open_goat_players_on_Clay_2018.csv"
+  },
+  {
+    "name": "Shanghai Masters",
+    "surface": "Hard",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Shanghai Masters_goat_players_on_Hard_2018.csv"
+  },
+  {
+    "name": "French Open",
+    "surface": "Clay",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "French Open_goat_players_on_Clay_2018.csv"
+  },
+  {
+    "name": "Delray Beach Open",
+    "surface": "Hard",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Delray Beach Open_goat_players_on_Hard_2018.csv"
+  },
+  {
+    "name": "Garanti Koza Sofia Open",
+    "surface": "Hard",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Garanti Koza Sofia Open_goat_players_on_Hard_2018.csv"
+  },
+  {
+    "name": "Abierto Mexicano",
+    "surface": "Hard",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Abierto Mexicano_goat_players_on_Hard_2018.csv"
+  },
+  {
+    "name": "Gerry Weber Open",
+    "surface": "Grass",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Gerry Weber Open_goat_players_on_Grass_2018.csv"
+  },
+  {
+    "name": "Stockholm Open",
+    "surface": "Hard",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Stockholm Open_goat_players_on_Hard_2018.csv"
+  },
+  {
+    "name": "Mercedes Cup",
+    "surface": "Grass",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Mercedes Cup_goat_players_on_Grass_2018.csv"
+  },
+  {
+    "name": "Western & Southern Financial Group Masters",
+    "surface": "Hard",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Western & Southern Financial Group Masters_goat_players_on_Hard_2018.csv"
+  },
+  {
+    "name": "Ecuador Open",
+    "surface": "Clay",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Ecuador Open_goat_players_on_Clay_2018.csv"
+  },
+  {
+    "name": "Qatar Exxon Mobil Open",
+    "surface": "Hard",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Qatar Exxon Mobil Open_goat_players_on_Hard_2018.csv"
+  },
+  {
+    "name": "Erste Bank Open",
+    "surface": "Hard",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Erste Bank Open_goat_players_on_Hard_2018.csv"
+  },
+  {
+    "name": "German Tennis Championships",
+    "surface": "Clay",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "German Tennis Championships_goat_players_on_Clay_2018.csv"
+  },
+  {
+    "name": "Winston-Salem Open at Wake Forest University",
+    "surface": "Hard",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Winston-Salem Open at Wake Forest University_goat_players_on_Hard_2018.csv"
+  },
+  {
+    "name": "Rakuten Japan Open Tennis Championships",
+    "surface": "Hard",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Rakuten Japan Open Tennis Championships_goat_players_on_Hard_2018.csv"
+  },
+  {
+    "name": "Gazprom Hungarian Open",
+    "surface": "Clay",
+    "year": "2018",
+    "circuit": "atp",
+    "filename": "Gazprom Hungarian Open_goat_players_on_Clay_2018.csv"
+  },
+  {
+    "name": "Ecuador Open",
+    "surface": "Clay",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Ecuador Open_goat_players_on_Clay_2016.csv"
+  },
+  {
+    "name": "Qatar Exxon Mobil Open",
+    "surface": "Hard",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Qatar Exxon Mobil Open_goat_players_on_Hard_2016.csv"
+  },
+  {
+    "name": "Western & Southern Financial Group Masters",
+    "surface": "Hard",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Western & Southern Financial Group Masters_goat_players_on_Hard_2016.csv"
+  },
+  {
+    "name": "Mercedes Cup",
+    "surface": "Grass",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Mercedes Cup_goat_players_on_Grass_2016.csv"
+  },
+  {
+    "name": "Stockholm Open",
+    "surface": "Hard",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Stockholm Open_goat_players_on_Hard_2016.csv"
+  },
+  {
+    "name": "Rakuten Japan Open Tennis Championships",
+    "surface": "Hard",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Rakuten Japan Open Tennis Championships_goat_players_on_Hard_2016.csv"
+  },
+  {
+    "name": "Winston-Salem Open at Wake Forest University",
+    "surface": "Hard",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Winston-Salem Open at Wake Forest University_goat_players_on_Hard_2016.csv"
+  },
+  {
+    "name": "BRD Nastase Tiriac Trophy",
+    "surface": "Clay",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "BRD Nastase Tiriac Trophy_goat_players_on_Clay_2016.csv"
+  },
+  {
+    "name": "German Tennis Championships",
+    "surface": "Clay",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "German Tennis Championships_goat_players_on_Clay_2016.csv"
+  },
+  {
+    "name": "Erste Bank Open",
+    "surface": "Hard",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Erste Bank Open_goat_players_on_Hard_2016.csv"
+  },
+  {
+    "name": "French Open",
+    "surface": "Clay",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "French Open_goat_players_on_Clay_2016.csv"
+  },
+  {
+    "name": "Shanghai Masters",
+    "surface": "Hard",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Shanghai Masters_goat_players_on_Hard_2016.csv"
+  },
+  {
+    "name": "Mutua Madrid Open",
+    "surface": "Clay",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Mutua Madrid Open_goat_players_on_Clay_2016.csv"
+  },
+  {
+    "name": "Millenium Estoril Open",
+    "surface": "Clay",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Millenium Estoril Open_goat_players_on_Clay_2016.csv"
+  },
+  {
+    "name": "Gerry Weber Open",
+    "surface": "Grass",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Gerry Weber Open_goat_players_on_Grass_2016.csv"
+  },
+  {
+    "name": "Abierto Mexicano",
+    "surface": "Hard",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Abierto Mexicano_goat_players_on_Hard_2016.csv"
+  },
+  {
+    "name": "Garanti Koza Sofia Open",
+    "surface": "Hard",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Garanti Koza Sofia Open_goat_players_on_Hard_2016.csv"
+  },
+  {
+    "name": "Delray Beach Open",
+    "surface": "Hard",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Delray Beach Open_goat_players_on_Hard_2016.csv"
+  },
+  {
+    "name": "Chennai Open",
+    "surface": "Hard",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Chennai Open_goat_players_on_Hard_2016.csv"
+  },
+  {
+    "name": "ASB Classic",
+    "surface": "Hard",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "ASB Classic_goat_players_on_Hard_2016.csv"
+  },
+  {
+    "name": "Apia International",
+    "surface": "Hard",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Apia International_goat_players_on_Hard_2016.csv"
+  },
+  {
+    "name": "BMW Open",
+    "surface": "Clay",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "BMW Open_goat_players_on_Clay_2016.csv"
+  },
+  {
+    "name": "Grand Prix Hassan II",
+    "surface": "Clay",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Grand Prix Hassan II_goat_players_on_Clay_2016.csv"
+  },
+  {
+    "name": "Australian Open",
+    "surface": "Hard",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Australian Open_goat_players_on_Hard_2016.csv"
+  },
+  {
+    "name": "Abierto Mexicano Mifel",
+    "surface": "Hard",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Abierto Mexicano Mifel_goat_players_on_Hard_2016.csv"
+  },
+  {
+    "name": "Internazionali BNL d'Italia",
+    "surface": "Clay",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Internazionali BNL d'Italia_goat_players_on_Clay_2016.csv"
+  },
+  {
+    "name": "Hall of Fame Championships",
+    "surface": "Grass",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Hall of Fame Championships_goat_players_on_Grass_2016.csv"
+  },
+  {
+    "name": "US Open",
+    "surface": "Hard",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "US Open_goat_players_on_Hard_2016.csv"
+  },
+  {
+    "name": "Argentina Open",
+    "surface": "Clay",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Argentina Open_goat_players_on_Clay_2016.csv"
+  },
+  {
+    "name": "Citi Open",
+    "surface": "Hard",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Citi Open_goat_players_on_Hard_2016.csv"
+  },
+  {
+    "name": "AEGON Championships",
+    "surface": "Grass",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "AEGON Championships_goat_players_on_Grass_2016.csv"
+  },
+  {
+    "name": "Open de Moselle",
+    "surface": "Hard",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Open de Moselle_goat_players_on_Hard_2016.csv"
+  },
+  {
+    "name": "Masters Cup",
+    "surface": "Hard",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Masters Cup_goat_players_on_Hard_2016.csv"
+  },
+  {
+    "name": "Swiss Indoors",
+    "surface": "Hard",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Swiss Indoors_goat_players_on_Hard_2016.csv"
+  },
+  {
+    "name": "Rio Open",
+    "surface": "Clay",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Rio Open_goat_players_on_Clay_2016.csv"
+  },
+  {
+    "name": "U.S. Men's Clay Court Championships",
+    "surface": "Clay",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "U.S. Men's Clay Court Championships_goat_players_on_Clay_2016.csv"
+  },
+  {
+    "name": "BNP Paribas Masters",
+    "surface": "Hard",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "BNP Paribas Masters_goat_players_on_Hard_2016.csv"
+  },
+  {
+    "name": "AEGON Open",
+    "surface": "Grass",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "AEGON Open_goat_players_on_Grass_2016.csv"
+  },
+  {
+    "name": "Rogers Masters",
+    "surface": "Hard",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Rogers Masters_goat_players_on_Hard_2016.csv"
+  },
+  {
+    "name": "Memphis Open",
+    "surface": "Hard",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Memphis Open_goat_players_on_Hard_2016.csv"
+  },
+  {
+    "name": "Geneva Open",
+    "surface": "Clay",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Geneva Open_goat_players_on_Clay_2016.csv"
+  },
+  {
+    "name": "Kremlin Cup",
+    "surface": "Hard",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Kremlin Cup_goat_players_on_Hard_2016.csv"
+  },
+  {
+    "name": "Generali Open",
+    "surface": "Clay",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Generali Open_goat_players_on_Clay_2016.csv"
+  },
+  {
+    "name": "SkiStar Swedish Open",
+    "surface": "Clay",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "SkiStar Swedish Open_goat_players_on_Clay_2016.csv"
+  },
+  {
+    "name": "Istanbul Open",
+    "surface": "Clay",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Istanbul Open_goat_players_on_Clay_2016.csv"
+  },
+  {
+    "name": "ABN AMRO World Tennis Tournament",
+    "surface": "Hard",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "ABN AMRO World Tennis Tournament_goat_players_on_Hard_2016.csv"
+  },
+  {
+    "name": "Wimbledon",
+    "surface": "Grass",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Wimbledon_goat_players_on_Grass_2016.csv"
+  },
+  {
+    "name": "Suisse Open Gstaad",
+    "surface": "Clay",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Suisse Open Gstaad_goat_players_on_Clay_2016.csv"
+  },
+  {
+    "name": "Open 13",
+    "surface": "Hard",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Open 13_goat_players_on_Hard_2016.csv"
+  },
+  {
+    "name": "BB&T Atlanta Open",
+    "surface": "Hard",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "BB&T Atlanta Open_goat_players_on_Hard_2016.csv"
+  },
+  {
+    "name": "Chengdu Open",
+    "surface": "Hard",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Chengdu Open_goat_players_on_Hard_2016.csv"
+  },
+  {
+    "name": "Brasil Open",
+    "surface": "Clay",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Brasil Open_goat_players_on_Clay_2016.csv"
+  },
+  {
+    "name": "Open de Nice C\u00f4te d\u2019Azur",
+    "surface": "Clay",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Open de Nice C\u00f4te d\u2019Azur_goat_players_on_Clay_2016.csv"
+  },
+  {
+    "name": "European Open",
+    "surface": "Hard",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "European Open_goat_players_on_Hard_2016.csv"
+  },
+  {
+    "name": "Sony Ericsson Open",
+    "surface": "Hard",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Sony Ericsson Open_goat_players_on_Hard_2016.csv"
+  },
+  {
+    "name": "Konzum Croatia Open",
+    "surface": "Clay",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Konzum Croatia Open_goat_players_on_Clay_2016.csv"
+  },
+  {
+    "name": "Brisbane International",
+    "surface": "Hard",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Brisbane International_goat_players_on_Hard_2016.csv"
+  },
+  {
+    "name": "China Open",
+    "surface": "Hard",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "China Open_goat_players_on_Hard_2016.csv"
+  },
+  {
+    "name": "Open Banco Sabadell",
+    "surface": "Clay",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Open Banco Sabadell_goat_players_on_Clay_2016.csv"
+  },
+  {
+    "name": "Monte Carlo Masters",
+    "surface": "Clay",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Monte Carlo Masters_goat_players_on_Clay_2016.csv"
+  },
+  {
+    "name": "Dubai Tennis Championships",
+    "surface": "Hard",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Dubai Tennis Championships_goat_players_on_Hard_2016.csv"
+  },
+  {
+    "name": "Open Sud de France",
+    "surface": "Hard",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Open Sud de France_goat_players_on_Hard_2016.csv"
+  },
+  {
+    "name": "Shenzhen Open",
+    "surface": "Hard",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Shenzhen Open_goat_players_on_Hard_2016.csv"
+  },
+  {
+    "name": "Topshelf Open",
+    "surface": "Grass",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "Topshelf Open_goat_players_on_Grass_2016.csv"
+  },
+  {
+    "name": "St. Petersburg Open",
+    "surface": "Hard",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "St. Petersburg Open_goat_players_on_Hard_2016.csv"
+  },
+  {
+    "name": "BNP Paribas Open",
+    "surface": "Hard",
+    "year": "2016",
+    "circuit": "atp",
+    "filename": "BNP Paribas Open_goat_players_on_Hard_2016.csv"
+  }
+]
