@@ -1,0 +1,324 @@
+{
+  "global": {
+    "2000": {
+      "overall": [
+        {
+          "name": "Andre Agassi",
+          "img": "images/agassi.png"
+        },
+        {
+          "name": "Pete Sampras",
+          "img": "images/sampras.png"
+        },
+        {
+          "name": "Marat Safin",
+          "img": "images/safin.png"
+        }
+      ]
+    },
+    "2001": {
+      "overall": [
+        {
+          "name": "Gustavo Kuerten",
+          "img": "images/kuerten.png"
+        },
+        {
+          "name": "Lleyton Hewitt",
+          "img": "images/hewitt.png"
+        },
+        {
+          "name": "Goran Ivanisevic",
+          "img": "images/ivanisevic.png"
+        }
+      ]
+    },
+    "2002": {
+      "overall": [
+        {
+          "name": "Lleyton Hewitt",
+          "img": "images/hewitt.png"
+        },
+        {
+          "name": "Albert Costa",
+          "img": "images/costa.png"
+        },
+        {
+          "name": "Thomas Johansson",
+          "img": "images/johansson.png"
+        }
+      ]
+    },
+    "2003": {
+      "overall": [
+        {
+          "name": "Juan Carlos Ferrero",
+          "img": "images/ferrero.png"
+        },
+        {
+          "name": "Andy Roddick",
+          "img": "images/roddick.png"
+        },
+        {
+          "name": "Andre Agassi",
+          "img": "images/agassi.png"
+        }
+      ]
+    },
+    "2004": {
+      "overall": [
+        {
+          "name": "Roger Federer",
+          "img": "images/federer.png"
+        },
+        {
+          "name": "Gaston Gaudio",
+          "img": "images/gaudio.png"
+        },
+        {
+          "name": "Lleyton Hewitt",
+          "img": "images/hewitt.png"
+        }
+      ]
+    },
+    "2005": {
+      "overall": [
+        {
+          "name": "Roger Federer",
+          "img": "images/federer.png"
+        },
+        {
+          "name": "Marat Safin",
+          "img": "images/safin.png"
+        },
+        {
+          "name": "Rafael Nadal",
+          "img": "images/nadal.png"
+        }
+      ]
+    },
+    "2006": {
+      "overall": [
+        {
+          "name": "Roger Federer",
+          "img": "images/federer.png"
+        },
+        {
+          "name": "Rafael Nadal",
+          "img": "images/nadal.png"
+        },
+        {
+          "name": "Mario Ancic",
+          "img": "images/ancic.png"
+        }
+      ]
+    },
+    "2007": {
+      "overall": [
+        {
+          "name": "Roger Federer",
+          "img": "images/federer.png"
+        },
+        {
+          "name": "Rafael Nadal",
+          "img": "images/nadal.png"
+        },
+        {
+          "name": "Novak Djokovic",
+          "img": "images/djokovic.png"
+        }
+      ]
+    },
+    "2008": {
+      "overall": [
+        {
+          "name": "Rafael Nadal",
+          "img": "images/nadal.png"
+        },
+        {
+          "name": "Roger Federer",
+          "img": "images/federer.png"
+        },
+        {
+          "name": "Novak Djokovic",
+          "img": "images/djokovic.png"
+        }
+      ]
+    },
+    "2009": {
+      "overall": [
+        {
+          "name": "Roger Federer",
+          "img": "images/federer.png"
+        },
+        {
+          "name": "Rafael Nadal",
+          "img": "images/nadal.png"
+        },
+        {
+          "name": "Nikolay Davydenko",
+          "img": "images/davydenko.png"
+        }
+      ]
+    },
+    "2010": {
+      "overall": [
+        {
+          "name": "Rafael Nadal",
+          "img": "images/nadal.png"
+        },
+        {
+          "name": "Roger Federer",
+          "img": "images/federer.png"
+        },
+        {
+          "name": "Novak Djokovic",
+          "img": "images/djokovic.png"
+        }
+      ]
+    },
+    "2011": {
+      "overall": [
+        {
+          "name": "Novak Djokovic",
+          "img": "images/djokovic.png"
+        },
+        {
+          "name": "Rafael Nadal",
+          "img": "images/nadal.png"
+        },
+        {
+          "name": "Andy Murray",
+          "img": "images/murray.png"
+        }
+      ]
+    },
+    "2012": {
+      "overall": [
+        {
+          "name": "Novak Djokovic",
+          "img": "images/djokovic.png"
+        },
+        {
+          "name": "Roger Federer",
+          "img": "images/federer.png"
+        },
+        {
+          "name": "Andy Murray",
+          "img": "images/murray.png"
+        }
+      ]
+    },
+    "2013": {
+      "overall": [
+        {
+          "name": "Rafael Nadal",
+          "img": "images/nadal.png"
+        },
+        {
+          "name": "Novak Djokovic",
+          "img": "images/djokovic.png"
+        },
+        {
+          "name": "Andy Murray",
+          "img": "images/murray.png"
+        }
+      ]
+    },
+    "2014": {
+      "overall": [
+        {
+          "name": "Novak Djokovic",
+          "img": "images/djokovic.png"
+        },
+        {
+          "name": "Rafael Nadal",
+          "img": "images/nadal.png"
+        },
+        {
+          "name": "Marin Cilic",
+          "img": "images/cilic.png"
+        }
+      ]
+    },
+    "2015": {
+      "overall": [
+        {
+          "name": "Novak Djokovic",
+          "img": "images/djokovic.png"
+        },
+        {
+          "name": "Richard Gasquet",
+          "img": "images/gasquet.png"
+        },
+        {
+          "name": "Andy Murray",
+          "img": "images/murray.png"
+        }
+      ]
+    },
+    "2016": {
+      "overall": [
+        {
+          "name": "Novak Djokovic",
+          "img": "images/djokovic.png"
+        },
+        {
+          "name": "Andy Murray",
+          "img": "images/murray.png"
+        },
+        {
+          "name": "Tomas Berdych",
+          "img": "images/berdych.png"
+        }
+      ]
+    },
+    "2017": {
+      "overall": [
+        {
+          "name": "Rafael Nadal",
+          "img": "images/nadal.png"
+        },
+        {
+          "name": "Roger Federer",
+          "img": "images/federer.png"
+        },
+        {
+          "name": "Andy Murray",
+          "img": "images/murray.png"
+        }
+      ]
+    },
+    "2018": {
+      "overall": [
+        {
+          "name": "Novak Djokovic",
+          "img": "images/djokovic.png"
+        },
+        {
+          "name": "Rafael Nadal",
+          "img": "images/nadal.png"
+        },
+        {
+          "name": "Roger Federer",
+          "img": "images/federer.png"
+        }
+      ]
+    },
+    "2019": {
+      "overall": [
+        {
+          "name": "Novak Djokovic",
+          "img": "images/djokovic.png"
+        },
+        {
+          "name": "Rafael Nadal",
+          "img": "images/nadal.png"
+        },
+        {
+          "name": "Roger Federer",
+          "img": "images/federer.png"
+        }
+      ]
+    }
+  }
+}

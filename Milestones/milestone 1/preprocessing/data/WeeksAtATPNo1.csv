@@ -1,0 +1,21 @@
+rank,name,country_name,country_id,active,value
+1,Novak Djokovic,Serbia,SRB,true,428
+2,Roger Federer,Switzerland,SUI,false,310
+3,Pete Sampras,United States,USA,false,286
+4,Ivan Lendl,United States,USA,false,270
+5,Jimmy Connors,United States,USA,false,268
+6,Rafael Nadal,Spain,ESP,true,209
+7,John McEnroe,United States,USA,false,170
+8,Bjorn Borg,Sweden,SWE,false,109
+9,Andre Agassi,United States,USA,false,101
+10,Lleyton Hewitt,Australia,AUS,false,80
+11,Stefan Edberg,Sweden,SWE,false,72
+12,Jim Courier,United States,USA,false,58
+13,Gustavo Kuerten,Brazil,BRA,false,43
+14,Andy Murray,United Kingdom,GBR,true,41
+15,Ilie Nastase,Romania,ROU,false,40
+16,Carlos Alcaraz Garfia,Spain,ESP,true,36
+17,Jannik Sinner,Italy,ITA,true,30
+18,Mats Wilander,Sweden,SWE,false,20
+19,Daniil Medvedev,Russian Federation,RUS,true,16
+20,Andy Roddick,United States,USA,false,13
