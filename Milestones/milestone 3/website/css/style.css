@@ -588,6 +588,14 @@ nav a:hover:not(.active) {
   100% { transform: scale(1); opacity: 1; }
 }
 
+.dropdown {
+  padding: 6px 10px;
+  font-size: 14px;
+  font-family: inherit;
+  border: 1px solid #888;
+  border-radius: 4px;
+  background-color: white;
+}
 .photo-container {
   position: relative;
   display: inline-block;
