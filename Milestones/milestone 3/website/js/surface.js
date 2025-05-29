@@ -33,9 +33,9 @@ function updateBubbleChartForSurface() {
 
   let csvPath;
   if (!tournament || tournament === "" || tournament === "Overall tournaments") {
-    csvPath = `/results/surfaces/${year}/${circuit}/overall_goat_surfaces/wins_${surface.toLowerCase()}_${year}.csv`;
+    csvPath = `/data/surfaces/${year}/${circuit}/overall_goat_surfaces/wins_${surface.toLowerCase()}_${year}.csv`;
   } else {
-    csvPath = `/results/surfaces/${year}/${circuit}/tournament_goat/${tournament}_goat_players_on_${surface}_${year}.csv`;
+    csvPath = `/data/surfaces/${year}/${circuit}/tournament_goat/${tournament}_goat_players_on_${surface}_${year}.csv`;
   }
 
   d3.csv(csvPath)
@@ -65,7 +65,7 @@ document.getElementById("tournament-select-surfaces-bubble").addEventListener("c
 
 let allTournaments = [];
 
-fetch('results/surfaces/tournaments.json')
+fetch('data/surfaces/tournaments.json')
   .then(response => response.json())
   .then(data => {
     allTournaments = data;

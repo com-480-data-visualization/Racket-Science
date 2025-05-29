@@ -15,7 +15,7 @@ function goToChart(chartIndex, section) {
         } else if (section === "doubles") {
           drawBubbleChart(svgEl, bubbleDataDoubles);
         } else if (section === "surfaces") {
-          drawBubbleChart(svgEl, bubbleDataDoubles, "surfaces");
+          updateBubbleChartForSurface();
         } else if (section === "services") {
           updateBubbleChartForServices(); 
         } else if (section === "net") {
@@ -88,29 +88,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
-
-const bubbleDataGlobal = {
-  name: "Players",
-  children: [
-    { name: "Roger", value: 100 },
-    { name: "Rafa", value: 80 },
-    { name: "Novak", value: 90 },
-    { name: "Andy", value: 60 },
-    { name: "Stan", value: 50 }
-  ]
-};
-
-const bubbleDataDoubles = {
-  name: "Players",
-  children: [
-    { name: "Novak", value: 100 },
-    { name: "Rafa", value: 80 },
-    { name: "Roger", value: 90 },
-    { name: "Andy", value: 60 },
-    { name: "Stan", value: 50 }
-  ]
-};
-
 
 function drawBubbleChart(svgEl, data, section, tournament, subcategory) {
   console.log(svgEl)

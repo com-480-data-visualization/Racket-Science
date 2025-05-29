@@ -4,21 +4,21 @@ const serviceYears = [
   "2004","2003","2002","2001","2000"
 ];
 
-const serviceSelect = document.getElementById("year-select-services-bubble");
+const serviceSelectBubble = document.getElementById("year-select-services-bubble");
+const serviceSelectPodium = document.getElementById("year-select-services-bubble");
 serviceYears.forEach(year => {
   const option = document.createElement("option");
   option.value = year;
   option.text = year;
-  serviceSelect.appendChild(option);
+  serviceSelectBubble.appendChild(option);
+  serviceSelectPodium.appendChild(option);
 });
-
-// You already have the category selector in the HTML above
 
 function getServiceCsvPath(year, category) {
   if (year === "Overall years") {
-    return `results/services/overall_years_${category}.csv`;
+    return `data/services/overall_years_${category}.csv`;
   }
-  return `results/services/${year}_${category}.csv`;
+  return `data/services/${year}_${category}.csv`;
 }
 
 function updateBubbleChartForServices() {
@@ -58,21 +58,11 @@ function updateBubbleChartForServices() {
     });
 }
 
-document.getElementById("year-select-services-bubble").addEventListener("change", updateBubbleChartForServices);
-document.getElementById("category-select-services-bubble").addEventListener("change", updateBubbleChartForServices);
-
-document.getElementById('year-select-services-bubble').dispatchEvent(new Event('change'));
-
 function csvToBubbleDataServices(csv, valueCol) {
-    console.log('First row:', csv[0]);
-    console.log('ValueCol:', valueCol);
-
+    
     const values = csv.slice(0, 15).map(d => +d[valueCol]);
-    console.log(values)
     const min = Math.min(...values);
     const max = Math.max(...values);
-    console.log(min)
-    console.log(max)
     return {
         name: "Players",
         children: csv
@@ -88,5 +78,33 @@ function csvToBubbleDataServices(csv, valueCol) {
 }
 
 function amplifyServiceValue(value, min, max) {
-  return 10 + 90 * (value - min) / (max - min);
+    return 10 + 90 * (value - min) / (max - min);
+}
+
+document.getElementById("year-select-services-bubble").addEventListener("change", updateBubbleChartForServices);
+document.getElementById("category-select-services-bubble").addEventListener("change", updateBubbleChartForServices);
+document.getElementById('year-select-services-bubble').dispatchEvent(new Event('change'));
+
+function updatePodiumServices(data, containerId = "scoreboard-podiums-services") {
+  // Ensure there are at least 3 players
+  if (!data || data.length < 3) {
+    document.getElementById(containerId).innerHTML = '<div style="text-align:center;">Not enough data for podium</div>';
+    return;
+  }
+
+  const top3 = [data[1], data[0], data[2]];
+  const classes = ['second', 'first', 'third'];
+  const displayRanks = [2, 1, 3];
+
+  const podiumHTML = top3.map((player, i) => `
+    <div class="scoreboard__podium scoreboard__podium--${classes[i]} js-podium">
+      <div class="scoreboard__podium-base scoreboard__podium-base--${classes[i]}">
+        <div class="scoreboard__podium-rank">${displayRanks[i]}</div>
+      </div>
+      <div class="scoreboard__podium-number">${player.Player || player.name}</div>
+      <div class="scoreboard__podium-value">${player.value !== undefined ? Number(player.value).toFixed(2) : ''}</div>
+    </div>
+  `).join('');
+
+  document.getElementById(containerId).innerHTML = podiumHTML;
 }

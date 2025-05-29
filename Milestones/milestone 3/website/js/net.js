@@ -1,5 +1,5 @@
 function getNetCsvPath(circuit, category, subcategory, year) {
-  let basePath = `results/net_points/${circuit}/${category}/${subcategory}`;
+  let basePath = `data/net_points/${circuit}/${category}/${subcategory}`;
 
   if ((!year || year === "" || year === 'Overall years')) {
     return `${basePath}/overall_net_goats.csv`;
@@ -85,7 +85,7 @@ function updateNetYears() {
     const circuit = document.getElementById('circuit-select-net').value;
     const category = document.getElementById('category-select-net').value; 
     const yearSelect = document.getElementById('year-select-net');
-    fetch(`results/net_points/${circuit}/years.json`)
+    fetch(`data/net_points/${circuit}/years.json`)
     .then(r => r.ok ? r.json() : [])
     .then(years => {
         yearSelect.innerHTML = '<option value="Overall years">Overall years</option>';

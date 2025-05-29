@@ -2,7 +2,7 @@ import os
 import re
 import json
 
-base_path = 'results/surfaces'
+base_path = 'data/surfaces'
 tournament_data = []
 
 for year in os.listdir(base_path):
