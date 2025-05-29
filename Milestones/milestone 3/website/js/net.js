@@ -81,6 +81,7 @@ function csvToBubbleDataNet(csv, valueCol) {
 
 function updateNetYearsAndTournaments() {
     const circuit = document.getElementById('circuit-select-net').value;
+    const category = document.getElementById('category-select-net').value; 
     const yearSelect = document.getElementById('year-select-net');
     const tournamentSelect = document.getElementById('tournament-select-net');
     fetch(`results/net_points/${circuit}/years.json`)
@@ -97,7 +98,7 @@ function updateNetYearsAndTournaments() {
     });
     
     console.log('years mena', `results/net_points/${circuit}/years.json`)
-    fetch(`results/net_points/${circuit}/tournaments.json`)
+    fetch(`results/net_points/${circuit}/${category}/tournaments.json`)
     .then(r => r.ok ? r.json() : [])
     .then(tournaments => {
         tournamentSelect.innerHTML = '<option value="Overall tournaments">Overall tournaments</option>';

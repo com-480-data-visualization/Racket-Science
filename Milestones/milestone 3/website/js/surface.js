@@ -1,3 +1,12 @@
+const years = ["2024","2023","2022","2021","2020","2019","2018","2017","2016","2015","2014","2013","2012","2011","2010","2009","2008","2007","2006","2005","2004","2003","2002","2001","2000","1999","1998","1997","1996","1995","1994","1993","1992"]; 
+const select = document.getElementById("year-select-surfaces-bubble");
+
+years.forEach(year => {
+  const option = document.createElement("option");
+  option.value = year;
+  option.text = year;
+  select.appendChild(option);
+});
 
 function getSurfaceCsvPath(year, surface, circuit) {
   let surfaceLower = surface.toLowerCase();
@@ -59,49 +68,58 @@ document.getElementById("surface-select-bubble").addEventListener("change", upda
 document.getElementById("circuit-select-surfaces-bubble").addEventListener("change", updateBubbleChartForSurface);
 document.getElementById("tournament-select-surfaces-bubble").addEventListener("change", updateBubbleChartForSurface);
 
+let allTournaments = [];
 
+fetch('results/surfaces/tournaments.json')
+  .then(response => response.json())
+  .then(data => {
+    allTournaments = data;
+    updateYearAndTournaments();
+  });
 
-function updateTournaments() {
-  const year = document.getElementById('year-select-surfaces-bubble').value;
-  const circuit = document.getElementById('circuit-select-surfaces-bubble').value;
-  const tournamentSelect = document.getElementById('tournament-select-surfaces-bubble');
+function updateYearAndTournaments() {
+    const year = document.getElementById('year-select-surfaces-bubble').value;
+    const circuit = document.getElementById('circuit-select-surfaces-bubble').value;
+    const surface = document.getElementById('surface-select-bubble').value;
+    const tournamentSelect = document.getElementById('tournament-select-surfaces-bubble');
+    const previousValue = tournamentSelect.value;
 
-  // Save the current selection
-  const previousValue = tournamentSelect.value;
+    tournamentSelect.innerHTML = '<option value="">Overall tournaments</option>';
 
-  tournamentSelect.innerHTML = '<option value="">Overall tournaments</option>';
-  if (!year || !circuit || year === 'Overall years' || circuit === 'Select Circuit') {
-    return; 
-  }
+    if (!year || !circuit || !surface ||
+        year === 'Overall years' ||
+        circuit === 'Select Circuit' ||
+        surface === 'Select Surface') {
+      return;
+    }
 
-  const filePath = `/results/surfaces/${year}/${circuit}/tournament_list/tournaments_${year}.json`;
+    // Filter tournaments based on all three selectors
+    const filtered = allTournaments.filter(t =>
+      t.year === year &&
+      t.circuit === circuit &&
+      t.surface === surface
+    );
 
-  fetch(filePath)
-    .then(response => {
-      if (!response.ok) throw new Error("Tournament file not found");
-      return response.json();
-    })
-    .then(tournaments => {
-      tournaments.forEach(tour => {
-        const opt = document.createElement('option');
-        opt.value = tour;
-        opt.textContent = tour;
-        tournamentSelect.appendChild(opt);
-      });
-      if ([...tournamentSelect.options].some(option => option.value === previousValue)) {
-        tournamentSelect.value = previousValue;
-      } else {
-        tournamentSelect.value = "";
-      }
-    })
-    .catch(error => {
-      // Optionally handle errors
+    filtered.forEach(tour => {
+      const opt = document.createElement('option');
+      opt.value = tour.name;
+      opt.textContent = tour.name;
+      tournamentSelect.appendChild(opt);
     });
+
+    // Try to restore previous selection if possible
+    if ([...tournamentSelect.options].some(option => option.value === previousValue)) {
+      tournamentSelect.value = previousValue;
+    } else {
+      tournamentSelect.value = "";
+    }
 }
 
-document.getElementById('circuit-select-surfaces-bubble').addEventListener('change', updateTournaments);
-document.getElementById('year-select-surfaces-bubble').addEventListener('change', updateTournaments);
-document.getElementById('tournament-select-surfaces-bubble').addEventListener('change', updateTournaments);
+
+document.getElementById('circuit-select-surfaces-bubble').addEventListener('change', updateYearAndTournaments);
+document.getElementById('year-select-surfaces-bubble').addEventListener('change', updateYearAndTournaments);
+document.getElementById('tournament-select-surfaces-bubble').addEventListener('change', updateYearAndTournaments);
+document.getElementById('surface-select-bubble').addEventListener('change', updateYearAndTournaments);
 
 document.getElementById('year-select-surfaces-bubble').dispatchEvent(new Event('change'));
 

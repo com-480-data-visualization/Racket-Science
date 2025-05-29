@@ -189,30 +189,31 @@ nav a:hover:not(.active) {
     background-color: #333;
 }
 
-/* Podium Styles */
 .scoreboard {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    height: auto;
-    margin: 2rem auto;
-    max-width: 1000px;
-  }
-  
-  .scoreboard__podiums {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    width: 100%;
-  }
-  
-  .scoreboard__podium {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .scoreboard__podium-base {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  margin: 2rem auto;
+  max-width: 1000px;
+  height: auto;
+}
+
+.scoreboard__podium {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scoreboard__podiums {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+}
+
+.scoreboard__podium-base {
     width: 100px;
     background-color: #BB4915;
     color: white;
@@ -222,37 +223,20 @@ nav a:hover:not(.active) {
     border-radius: 8px 8px 0 0;
     position: relative;
   }
-  
-  .scoreboard__podium-base--first {
-    height: 250px;
-  }
-  
-  .scoreboard__podium-base--second {
-    height: 200px;
-  }
-  
-  .scoreboard__podium-base--third {
-    height: 150px;
-  }
-  
-  .scoreboard__podium-rank {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .scoreboard__podium-number {
-    margin-top: 0.5rem;
-    text-align: center;
-    font-weight: bold;
-  }
-  
-  .scoreboard__podium-number small {
-    display: block;
-    font-size: 0.9rem;
-    color: #333;
-  }
 
-  /* Podium Colors */
+.scoreboard__podium-base--first {
+  height: 250px;
+}
+
+.scoreboard__podium-base--second {
+  height: 200px;
+}
+
+.scoreboard__podium-base--third {
+  height: 150px;
+}
+
+/* Podium Colors */
 .scoreboard__podium-base--first {
     background-color: #fbc531;  /* Gold */
   }
@@ -264,6 +248,80 @@ nav a:hover:not(.active) {
   .scoreboard__podium-base--third {
     background-color: #e17055;  /* Bronze */
   }
+
+  .scoreboard__podium-rank {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+.photo-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.podium-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ccc;
+}
+
+/* Surface-specific borders */
+.clay-border .podium-photo {
+  border: 5px solid #824A2C;
+}
+
+.grass-border .podium-photo {
+  border: 5px solid #2e7d32;
+}
+
+.hard-border .podium-photo {
+  border: 5px solid #0D47A1;
+}
+
+/* Medal Styles */
+.medal {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+}
+
+
+.medal.gold {
+  background-color: #fbc531;
+}
+
+.medal.silver {
+  background-color: #dcdde1;
+}
+
+.medal.bronze {
+  background-color: #e17055;
+}
+
+.scoreboard__podium-number {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.scoreboard__podium-number small {
+  display: block;
+  font-size: 0.9rem;
+  color: #555;
+}
 
   .bubble-chart {
     position: relative;
@@ -538,3 +596,34 @@ nav a:hover:not(.active) {
   border-radius: 4px;
   background-color: white;
 }
+.photo-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Medal style */
+.medal {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 30px;
+  height: 30px;
+  font-size: 1rem;
+  border-radius: 50%;
+  border: 2px solid white; /* Optional: white border around medal */
+}
+
+/* Colors for each place */
+.medal.gold {
+  background-color: gold;
+}
+
+.medal.silver {
+  background-color: silver;
+}
+
+.medal.bronze {
+  background-color: #cd7f32; /* bronze */
+}
+
+
