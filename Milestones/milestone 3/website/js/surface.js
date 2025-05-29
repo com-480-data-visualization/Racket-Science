@@ -8,11 +8,6 @@ years.forEach(year => {
   select.appendChild(option);
 });
 
-function getSurfaceCsvPath(year, surface, circuit) {
-  let surfaceLower = surface.toLowerCase();
-  return `results/surfaces/${year}/${circuit}/overall_goat_surfaces/wins_${surfaceLower}_${year}.csv`;
-}
-
 function updateBubbleChartForSurface() {
   const year = document.getElementById("year-select-surfaces-bubble").value; 
   const surface = document.getElementById("surface-select-bubble").value;

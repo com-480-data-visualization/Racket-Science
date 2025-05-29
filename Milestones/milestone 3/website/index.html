@@ -545,29 +545,18 @@ document.querySelectorAll('nav a').forEach(link => {
 
   <section class="chart-container top-chart" id="over_the_years-services">
       <div class="chart-header">
-          <select id="year-select2">
-              <option value="Overall years">Overall years</option>
-              <option value="2024">2024</option>
-              <option value="2023">2023</option>
-              <option value="2022">2022</option>
-              <option value="2021">2021</option>
-              <option value="2020">2020</option>
-              <option value="2019">2019</option>
-              <option value="2018">2018</option>
-              <option value="2017">2017</option>
-              <option value="2016">2016</option>
-              <option value="2015">2015</option>
-              <option value="2014">2014</option>
-              <option value="2013">2013</option>
-              <option value="2012">2012</option>
+        <select id="category-select-services-bubble">
+            <option value="Select a Category">Select a Category</option>
+            <option value="Ace Rate">Ace Rate</option>
+            <option value="Break Point Save %">Break Point Save %</option>
+            <option value="First Serve %">First Serve %</option>
+            <option value="First Serve Win %">First Serve Win %</option>
+            <option value="Second Serve Win %">Second Serve Win %</option>
           </select>
-      
-          <select id="tournament-select2">
-              <option value="Overall tournaments">Overall tournaments</option>
-              <option>tournament1</option>
-              <option>tournament2</option>
-              <option>tournament3</option>
-          </select>
+        <select id="year-select-services-bubble">
+            <option value="Overall years">Overall years</option>
+        </select>
+          
       </div>
 
       <div class="chart-content">
@@ -575,6 +564,10 @@ document.querySelectorAll('nav a').forEach(link => {
           <div id="bubble-prompt-services" class="bubble-prompt">
               <span role="img" aria-label="Trophy" style="font-size:2.2rem;">🏆</span>
               Let’s see who are the <b>top 15 players</b> in Services!
+          </div>
+          <div id="bubble-prompt-no-data-services" class="bubble-prompt" style="display:none;">
+              <span role="img" aria-label="Sad face" style="font-size:2.2rem;">😔</span>
+              Sorry, we don’t have data for the requested selection.
           </div>
           <svg class="bubbleChart" id="bubbleChart-services" width="500" height="400"></svg>
 
@@ -675,9 +668,6 @@ document.querySelectorAll('nav a').forEach(link => {
         </select>
         <select id="year-select-net">
           <option value="Overall years">Select years</option>
-        </select>
-        <select id="tournament-select-net">
-          <option value="Overall tournaments">Overall tournaments</option>
         </select>
       </div>
 
@@ -902,6 +892,7 @@ document.querySelectorAll('nav a').forEach(link => {
 <script src="js/main.js"></script>
 <script src="js/surface.js"></script>
 <script src="js/net.js"></script>
+<script src="js/services.js"></script>
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
