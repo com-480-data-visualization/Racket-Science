@@ -3,11 +3,15 @@ const selectBubble = document.getElementById("year-select-surfaces-bubble");
 const selectPodium = document.getElementById("year-select-surfaces-podiums");
 
 years.forEach(year => {
-  const option = document.createElement("option");
-  option.value = year;
-  option.text = year;
-  selectBubble.appendChild(option);
-  selectPodium.appendChild(option);
+  const optionBubble = document.createElement("option");
+  optionBubble.value = year;
+  optionBubble.text = year;
+  selectBubble.appendChild(optionBubble);
+
+  const optionPodium = document.createElement("option");
+  optionPodium.value = year;
+  optionPodium.text = year;
+  selectPodium.appendChild(optionPodium);
 });
 
 function updateBubbleChartForSurface() {
@@ -58,7 +62,6 @@ function updateBubbleChartForSurface() {
     });
 }
 
-// This function updates the podium display for surfaces
 function updatePodiumSurfaces(data, containerId = "scoreboard-podiums-surfaces", category = "") {
   const el = document.getElementById(containerId);
 
@@ -113,8 +116,6 @@ function updateSurfacesPodiumDisplay() {
     document.getElementById(containerId).innerHTML = '<div style="text-align:center;">No data</div>';
     return;
   }
-
-  document.getElementById(containerId).innerHTML = '<div style="text-align:center;">Loading...</div>';
 
   d3.csv(csvPath).then(function(data) {
     if (!data || data.length < 3) {
@@ -197,6 +198,7 @@ document.getElementById('surface-select-bubble').addEventListener('change', upda
 document.getElementById('year-select-surfaces-bubble').dispatchEvent(new Event('change'));
 
 function csvToBubbleDataSurface(csv, valueCol) {
+  console.log(csv, 'csv for surface')
   return {
     name: "Players",
     children: csv

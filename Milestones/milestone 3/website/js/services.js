@@ -6,12 +6,17 @@ const serviceYears = [
 
 const serviceSelectBubble = document.getElementById("year-select-services-bubble");
 const serviceSelectPodium = document.getElementById("year-select-services-podium");
-serviceYears.forEach(year => {
-  const option = document.createElement("option");
-  option.value = year;
-  option.text = year;
-  serviceSelectBubble.appendChild(option);
-  serviceSelectPodium.appendChild(option);
+
+years.forEach(year => {
+  const optionBubble = document.createElement("option");
+  optionBubble.value = year;
+  optionBubble.text = year;
+  serviceSelectBubble.appendChild(optionBubble);
+
+  const optionPodium = document.createElement("option");
+  optionPodium.value = year;
+  optionPodium.text = year;
+  serviceSelectPodium.appendChild(optionPodium);
 });
 
 function getServiceCsvPath(year, category) {
@@ -135,7 +140,6 @@ function updateServicesPodiumDisplay() {
     return;
   }
 
-  document.getElementById(containerId).innerHTML = '<div style="text-align:center;">Loading...</div>';
 
   d3.csv(csvPath).then(function(data) {
     if (!data || data.length < 3) {
