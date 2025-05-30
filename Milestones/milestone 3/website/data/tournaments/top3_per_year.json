@@ -1,0 +1,310 @@
+{
+  "1998": [
+    {
+      "name": "Marcelo Rios",
+      "wins": 69
+    },
+    {
+      "name": "Andre Agassi",
+      "wins": 68
+    },
+    {
+      "name": "Pete Sampras",
+      "wins": 61
+    }
+  ],
+  "1999": [
+    {
+      "name": "Andre Agassi",
+      "wins": 63
+    },
+    {
+      "name": "Yevgeny Kafelnikov",
+      "wins": 62
+    },
+    {
+      "name": "Nicolas Lapentti",
+      "wins": 58
+    }
+  ],
+  "2000": [
+    {
+      "name": "Magnus Norman",
+      "wins": 69
+    },
+    {
+      "name": "Marat Safin",
+      "wins": 68
+    },
+    {
+      "name": "Yevgeny Kafelnikov",
+      "wins": 67
+    }
+  ],
+  "2001": [
+    {
+      "name": "Lleyton Hewitt",
+      "wins": 79
+    },
+    {
+      "name": "Yevgeny Kafelnikov",
+      "wins": 69
+    },
+    {
+      "name": "Gustavo Kuerten",
+      "wins": 60
+    }
+  ],
+  "2002": [
+    {
+      "name": "Lleyton Hewitt",
+      "wins": 62
+    },
+    {
+      "name": "Roger Federer",
+      "wins": 59
+    },
+    {
+      "name": "Carlos Moya",
+      "wins": 58
+    }
+  ],
+  "2003": [
+    {
+      "name": "Roger Federer",
+      "wins": 79
+    },
+    {
+      "name": "Andy Roddick",
+      "wins": 72
+    },
+    {
+      "name": "Rainer Schuettler",
+      "wins": 70
+    }
+  ],
+  "2004": [
+    {
+      "name": "Roger Federer",
+      "wins": 75
+    },
+    {
+      "name": "Andy Roddick",
+      "wins": 74
+    },
+    {
+      "name": "Lleyton Hewitt",
+      "wins": 68
+    }
+  ],
+  "2005": [
+    {
+      "name": "Roger Federer",
+      "wins": 81
+    },
+    {
+      "name": "Rafael Nadal",
+      "wins": 79
+    },
+    {
+      "name": "Andy Roddick",
+      "wins": 59
+    }
+  ],
+  "2006": [
+    {
+      "name": "Roger Federer",
+      "wins": 92
+    },
+    {
+      "name": "Nikolay Davydenko",
+      "wins": 70
+    },
+    {
+      "name": "James Blake",
+      "wins": 60
+    }
+  ],
+  "2007": [
+    {
+      "name": "Rafael Nadal",
+      "wins": 71
+    },
+    {
+      "name": "Roger Federer",
+      "wins": 69
+    },
+    {
+      "name": "Novak Djokovic",
+      "wins": 68
+    }
+  ],
+  "2008": [
+    {
+      "name": "Rafael Nadal",
+      "wins": 82
+    },
+    {
+      "name": "Roger Federer",
+      "wins": 67
+    },
+    {
+      "name": "Novak Djokovic",
+      "wins": 64
+    }
+  ],
+  "2009": [
+    {
+      "name": "Novak Djokovic",
+      "wins": 78
+    },
+    {
+      "name": "Rafael Nadal",
+      "wins": 68
+    },
+    {
+      "name": "Andy Murray",
+      "wins": 66
+    }
+  ],
+  "2010": [
+    {
+      "name": "Rafael Nadal",
+      "wins": 71
+    },
+    {
+      "name": "Roger Federer",
+      "wins": 66
+    },
+    {
+      "name": "Novak Djokovic",
+      "wins": 63
+    }
+  ],
+  "2011": [
+    {
+      "name": "Novak Djokovic",
+      "wins": 72
+    },
+    {
+      "name": "Rafael Nadal",
+      "wins": 70
+    },
+    {
+      "name": "Roger Federer",
+      "wins": 64
+    }
+  ],
+  "2012": [
+    {
+      "name": "David Ferrer",
+      "wins": 76
+    },
+    {
+      "name": "Novak Djokovic",
+      "wins": 75
+    },
+    {
+      "name": "Roger Federer",
+      "wins": 74
+    }
+  ],
+  "2013": [
+    {
+      "name": "Rafael Nadal",
+      "wins": 76
+    },
+    {
+      "name": "Novak Djokovic",
+      "wins": 74
+    },
+    {
+      "name": "David Ferrer",
+      "wins": 63
+    }
+  ],
+  "2014": [
+    {
+      "name": "Roger Federer",
+      "wins": 74
+    },
+    {
+      "name": "Novak Djokovic",
+      "wins": 65
+    },
+    {
+      "name": "Andy Murray",
+      "wins": 60
+    }
+  ],
+  "2015": [
+    {
+      "name": "Novak Djokovic",
+      "wins": 83
+    },
+    {
+      "name": "Andy Murray",
+      "wins": 71
+    },
+    {
+      "name": "Roger Federer",
+      "wins": 63
+    }
+  ],
+  "2016": [
+    {
+      "name": "Andy Murray",
+      "wins": 80
+    },
+    {
+      "name": "Novak Djokovic",
+      "wins": 66
+    },
+    {
+      "name": "Dominic Thiem",
+      "wins": 60
+    }
+  ],
+  "2017": [
+    {
+      "name": "Rafael Nadal",
+      "wins": 68
+    },
+    {
+      "name": "David Goffin",
+      "wins": 59
+    },
+    {
+      "name": "Alexander Zverev",
+      "wins": 57
+    }
+  ],
+  "2018": [
+    {
+      "name": "Alexander Zverev",
+      "wins": 60
+    },
+    {
+      "name": "Dominic Thiem",
+      "wins": 54
+    },
+    {
+      "name": "Novak Djokovic",
+      "wins": 53
+    }
+  ],
+  "2019": [
+    {
+      "name": "Rafael Nadal",
+      "wins": 60
+    },
+    {
+      "name": "Daniil Medvedev",
+      "wins": 59
+    },
+    {
+      "name": "Novak Djokovic",
+      "wins": 58
+    }
+  ]
+}
