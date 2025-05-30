@@ -15,27 +15,32 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const order = [1, 0, 2];
-    const medalClasses = ['silver', 'gold', 'bronze'];
+    const ranks = [2, 1, 3];
     const baseClasses = ['second', 'first', 'third'];
     const heights = [200, 250, 150] 
 
-    scoreboard.innerHTML = order.map((i, idx) => {
-      const player = players[i];
-      const medalClass = medalClasses[idx];
-      const height = heights[idx]
-      const rank = order[idx] + 1;
-      const baseClass = baseClasses[idx];
-      return `
-      <div class="scoreboard__podium js-podium" data-height="${height}px">
+    const podiumHtml = order.map((i, idx) => {
+    const player = players[i];
+    const rank = ranks[idx];
+    const baseClass = baseClasses[idx];
+    const height = heights[idx];
+
+    return `
+      <div class="scoreboard__podium scoreboard__podium--${baseClass} js-podium" data-height="${height}px">
         <div class="scoreboard__podium-base scoreboard__podium-base--${baseClass}">
           <div class="scoreboard__podium-rank">${rank}</div>
         </div>
-        <div class="scoreboard__podium-number">
-          ${player.name}
-        </div>
+        <div class="scoreboard__podium-number">${player.name}</div>
       </div>
     `;
-    }).join('');
+  }).join('');
+
+  scoreboard.innerHTML = `
+    <div class="scoreboard__podiums">
+      ${podiumHtml}
+    </div>
+  `;
+      
   }
 
   async function updatePodium() {
