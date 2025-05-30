@@ -6,16 +6,21 @@ const serviceYears = [
 
 const serviceSelectBubble = document.getElementById("year-select-services-bubble");
 const serviceSelectPodium = document.getElementById("year-select-services-podium");
+
 serviceYears.forEach(year => {
-  const option = document.createElement("option");
-  option.value = year;
-  option.text = year;
-  serviceSelectBubble.appendChild(option);
-  serviceSelectPodium.appendChild(option);
+  const optionBubbleServices = document.createElement("option");
+  optionBubbleServices.value = year;
+  optionBubbleServices.text = year;
+  serviceSelectBubble.appendChild(optionBubbleServices);
+
+  const optionPodium = document.createElement("option");
+  optionPodium.value = year;
+  optionPodium.text = year;
+  serviceSelectPodium.appendChild(optionPodium);
 });
 
 function getServiceCsvPath(year, category) {
-  if (year === "Overall years") {
+  if (year === "overall_years") {
     return `data/services/overall_years_${category}.csv`;
   }
   return `data/services/${year}_${category}.csv`;
@@ -135,7 +140,6 @@ function updateServicesPodiumDisplay() {
     return;
   }
 
-  document.getElementById(containerId).innerHTML = '<div style="text-align:center;">Loading...</div>';
 
   d3.csv(csvPath).then(function(data) {
     if (!data || data.length < 3) {
@@ -146,9 +150,10 @@ function updateServicesPodiumDisplay() {
   })
 }
 
-// Event listeners
 document.getElementById("year-select-services-podium").addEventListener("change", updateServicesPodiumDisplay);
 document.getElementById("category-select-services-podium").addEventListener("change", updateServicesPodiumDisplay);
+document.getElementById('year-select-services-podium').dispatchEvent(new Event('change'));
 
-// Optionally, run once at start to populate podium if defaults are set
+
 updateServicesPodiumDisplay();
+

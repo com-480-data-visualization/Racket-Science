@@ -2,21 +2,24 @@ const bubbleSvg = d3.select("#bubbleChart-doubles");
 let lastYear = null;
 let lastSurface = null;
 let lastData = null;
+let bubbleChartDrawn = false;
 
-function loadDoublesData(year, surface) {
+let selectedYear = null;
+let selectedSurface = null;
+
+function loadDoublesData(year = selectedYear, surface = selectedSurface) {
   if (!year || !surface || year === "Select Year" || surface === "Select Surface") {
     showPlaceholder();
     return;
   }
 
+  // If data already matches, just refresh visuals
   if (year === lastYear && surface === lastSurface && lastData) {
-    updateBubbleChart(lastData);
-    updatePodium(lastData);
+    refreshVisuals();
     return;
   }
 
   const filePath = `data/doubles/doubles_${year}_${surface}.json`;
-  console.log("Trying to load:", filePath);
 
   d3.json(filePath).then(data => {
     if (!data || data.length === 0) throw new Error("Empty data");
@@ -25,94 +28,145 @@ function loadDoublesData(year, surface) {
     lastSurface = surface;
     lastData = data;
 
+    bubbleChartDrawn = false; // Set false only for new data
     updateBubbleChart(data);
     updatePodium(data);
   }).catch(() => {
+    lastData = null;
     bubbleSvg.selectAll("*").remove();
-    document.getElementById("scoreboard-doubles").innerHTML =
-      `<div class="bubble-prompt" style="text-align: center;">
+    bubbleChartDrawn = false;
+
+    const chartEl = document.getElementById("bubbleChart-doubles");
+    if (chartEl) chartEl.style.display = "none";
+
+    const placeholderEl = document.getElementById("bubble-placeholder-doubles");
+    if (placeholderEl) {
+        placeholderEl.style.display = "block";
+        placeholderEl.innerHTML = `
         <p><strong style="color: #c0392b;">No data found for ${year} on ${surface} 🐐</strong></p>
-      </div>`;
-  });
+        `;
+    }
+
+    // ✅ HIDE the initial podium prompt
+    const podiumPlaceholder = document.getElementById("podium-placeholder-doubles");
+    if (podiumPlaceholder) {
+        podiumPlaceholder.style.display = "none";
+    }
+
+    // ✅ Show podium error message
+    document.getElementById("scoreboard-doubles").innerHTML = `
+        <div class="bubble-prompt" style="text-align: center;">
+        <p><strong style="color: #c0392b;">No data found for ${year} on ${surface} 🐐</strong></p>
+        </div>`;
+    });
+
 }
+
+
 
 function showPlaceholder() {
   document.getElementById("bubble-placeholder-doubles").style.display = "block";
-  document.getElementById("bubbleChart-doubles").style.display = "none";
   document.getElementById("podium-placeholder-doubles").style.display = "block";
-  bubbleSvg.selectAll("*").remove();
   document.getElementById("scoreboard-doubles").innerHTML = "";
+  bubbleChartDrawn = false;
 }
 
 function updateBubbleChart(data) {
-  document.getElementById("bubble-placeholder-doubles").style.display = "none";
-  document.getElementById("bubbleChart-doubles").style.display = "block";
-  bubbleSvg.selectAll("*").remove();
+    const chartEl = document.getElementById("bubbleChart-doubles");
+    const placeholderEl = document.getElementById("bubble-placeholder-doubles");
 
-  const width = +bubbleSvg.attr("width");
-  const height = +bubbleSvg.attr("height");
 
-  const pack = d3.pack().size([width, height]).padding(5);
-  const root = d3.hierarchy({ children: data }).sum(d => Math.pow(d.size, 1.5));
-  const nodes = pack(root).leaves();
-  const color = d3.scaleOrdinal(d3.schemeCategory10);
+    if (bubbleChartDrawn && chartEl.style.display === "block" && !bubbleSvg.selectAll("circle").empty()) return;
 
-  const bubbles = bubbleSvg.selectAll("g")
-    .data(nodes)
-    .enter().append("g")
-    .attr("transform", d => `translate(${d.x},${d.y})`);
+    placeholderEl.style.display = "none";
+    chartEl.style.display = "block";
 
-  bubbles.append("circle")
-    .attr("r", d => d.r)
-    .attr("fill", (d, i) => color(i))
-    .on("mouseover", function (event, d) {
-      d3.select(this)
-        .transition()
-        .duration(150)
-        .attr("r", d.r * 1.15);
+    let width = bubbleSvg.node().clientWidth;
+    let height = bubbleSvg.node().clientHeight;
 
-      const index = data.findIndex(p => p.name === d.data.name);
-      const rank = index >= 0 ? index + 1 : "N/A";
+    if (width === 0 || height === 0) {
+        setTimeout(() => updateBubbleChart(data), 100);
+        return;
+    }
 
-      d3.select("#tooltip")
-        .style("display", "block")
-        .html(`<strong>${d.data.name}</strong><br>Wins: ${d.data.size}<br>Rank: #${rank}`);
-    })
-    .on("mousemove", function (event) {
-      d3.select("#tooltip")
-        .style("left", (event.pageX + 10) + "px")
-        .style("top", (event.pageY - 28) + "px");
-    })
-    .on("mouseout", function () {
-      d3.select(this)
-        .transition()
-        .duration(150)
-        .attr("r", d => d.r);
-      d3.select("#tooltip").style("display", "none");
-    });
+    bubbleSvg.selectAll("*").remove();
 
-  bubbles.append("text")
-    .attr("dy", ".3em")
-    .attr("text-anchor", "middle")
-    .style("font-size", d => Math.max(d.r / 3.5, 10))
-    .text(d => d.data.name.split(" ")[0]);
+    const pack = d3.pack().size([width, height]).padding(5);
+    const root = d3.hierarchy({ children: data }).sum(d => Math.pow(d.size, 1.5));
+    const nodes = pack(root).leaves();
+    const color = d3.scaleOrdinal(d3.schemeCategory10);
+
+    const bubbles = bubbleSvg.selectAll("g")
+        .data(nodes)
+        .enter().append("g")
+        .attr("transform", d => `translate(${d.x},${d.y})`);
+
+    bubbles.append("circle")
+        .attr("r", d => d.r)
+        .attr("fill", (d, i) => color(i))
+        .on("mouseover", function (event, d) {
+        d3.select(this)
+            .transition()
+            .duration(150)
+            .attr("r", d.r * 1.15);
+
+        const index = data.findIndex(p => p.name === d.data.name);
+        const rank = index >= 0 ? index + 1 : "N/A";
+
+        d3.select("#tooltip")
+            .style("display", "block")
+            .html(`<strong>${d.data.name}</strong><br>Wins: ${d.data.size}<br>Rank: #${rank}`);
+        })
+        .on("mousemove", function (event) {
+        d3.select("#tooltip")
+            .style("left", (event.pageX + 10) + "px")
+            .style("top", (event.pageY - 28) + "px");
+        })
+        .on("mouseout", function () {
+        d3.select(this)
+            .transition()
+            .duration(150)
+            .attr("r", d => d.r);
+        d3.select("#tooltip").style("display", "none");
+        });
+
+    bubbles.append("text")
+        .attr("dy", ".3em")
+        .attr("text-anchor", "middle")
+        .style("font-size", d => Math.max(d.r / 3.5, 10))
+        .text(d => d.data.name.split(" ")[0]);
+
+    bubbleChartDrawn = true;
 }
 
+
 function updatePodium(data) {
-  const top3 = [data[1], data[0], data[2]];
-    const classes = ['second', 'first', 'third'];
-    const displayRanks = [2, 1, 3]; // Actual podium labels to display
+  if (!data || data.length < 3) {
+    document.getElementById("podium-placeholder-doubles").style.display = "block";
+    document.getElementById("scoreboard-doubles").innerHTML =
+      `<div class="bubble-prompt" style="text-align: center;">
+        <p><strong style="color: #c0392b;">Not enough data for podium display 🐐</strong></p>
+      </div>`;
+    return;
+  }
 
+  // Sort players by size descending
+  const sorted = [...data].sort((a, b) => b.size - a.size);
 
-    const podiumHTML = top3.map((player, i) => `
+  // Take the top 3 unique players only
+  const topThree = sorted.slice(0, 3);
+
+  const classes = ['first', 'second', 'third'];
+  const displayRanks = [1, 2, 3];
+
+  const podiumHTML = topThree.map((player, i) => `
     <div class="scoreboard__podium scoreboard__podium--${classes[i]} js-podium">
-        <div class="scoreboard__podium-base scoreboard__podium-base--${classes[i]}">
+      <div class="scoreboard__podium-base scoreboard__podium-base--${classes[i]}">
         <div class="scoreboard__podium-rank">${displayRanks[i]}</div>
-        </div>
-        <div class="scoreboard__podium-number">${player.name}</div>
+      </div>
+      <div class="scoreboard__podium-number">${player.name}</div>
     </div>
-    `).join('');
-
+  `).join('');
 
   const scoreboard = document.getElementById("scoreboard-doubles");
   scoreboard.className = `scoreboard__podiums podium-${lastSurface}`;
@@ -123,16 +177,29 @@ function updatePodium(data) {
 
 
 
+function refreshVisuals() {
+  if (lastData) {
+    updateBubbleChart(lastData);
+    updatePodium(lastData);
+  }
+}
+
 function setupDoublesListeners() {
   const podiumYear = document.getElementById("year-select2-podium");
   const podiumSurface = document.getElementById("surface-select-doubles-podium");
   const bubbleYear = document.getElementById("year-select2-bubbles");
   const bubbleSurface = document.getElementById("surface-select-doubles-bubbles");
 
-  function getValues(y, s) {
-    const year = y.value;
-    const surface = s.value;
-    loadDoublesData(year, surface);
+  function getValues(yearEl, surfaceEl) {
+    selectedYear = yearEl.value;
+    selectedSurface = surfaceEl.value;
+
+    podiumYear.value = selectedYear;
+    podiumSurface.value = selectedSurface;
+    bubbleYear.value = selectedYear;
+    bubbleSurface.value = selectedSurface;
+
+    loadDoublesData(selectedYear, selectedSurface);
     handleBackgroundUpdate();
   }
 
@@ -153,16 +220,28 @@ const backgroundImages = [
 
 function rotateBackground() {
   stopBackgroundRotation();
-  doublesSection.style.backgroundImage = `url('${backgroundImages[currentImageIndex]}')`;
-  doublesSection.style.backgroundSize = "cover";
-  doublesSection.style.backgroundPosition = "center";
+  const headerInner = document.querySelector(".doubles-header-inner");
+
+  updateRotationBackgroundAndTitle();
 
   backgroundInterval = setInterval(() => {
     currentImageIndex = (currentImageIndex + 1) % backgroundImages.length;
+    updateRotationBackgroundAndTitle();
+  }, 3000);
+
+  function updateRotationBackgroundAndTitle() {
+    const surfaceTypes = ['clay', 'grass', 'hard'];
+    const currentSurface = surfaceTypes[currentImageIndex];
+
     doublesSection.style.backgroundImage = `url('${backgroundImages[currentImageIndex]}')`;
     doublesSection.style.backgroundSize = "cover";
     doublesSection.style.backgroundPosition = "center";
-  }, 3000);
+
+    if (headerInner) {
+      headerInner.classList.remove("clay", "grass", "hard");
+      headerInner.classList.add(currentSurface);
+    }
+  }
 }
 
 function stopBackgroundRotation() {
@@ -191,7 +270,6 @@ function handleBackgroundUpdate() {
     doublesSection.style.backgroundPosition = "center";
   }
 
-  // ✅ Add this block HERE:
   const headerInner = document.querySelector(".doubles-header-inner");
   if (headerInner) {
     headerInner.classList.remove("clay", "grass", "hard");
@@ -200,7 +278,6 @@ function handleBackgroundUpdate() {
     }
   }
 }
-
 
 document.addEventListener("DOMContentLoaded", () => {
   setupDoublesListeners();
@@ -215,4 +292,55 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     handleBackgroundUpdate();
   }
+
+  const bubbleSection = document.getElementById("over_the_years-doubles");
+  const bubbleChartContainer = document.getElementById("bubbleChart-doubles");
+
+  // IntersectionObserver for bubble section
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const width = bubbleChartContainer.clientWidth;
+        const height = bubbleChartContainer.clientHeight;
+
+        if (
+          width > 0 && height > 0 &&
+          lastData &&
+          selectedYear && selectedSurface &&
+          selectedYear !== "Select Year" && selectedSurface !== "Select Surface"
+        ) {
+          updateBubbleChart(lastData);
+        }
+      }
+    });
+  }, {
+    root: null,
+    threshold: 0.4
+  });
+
+  observer.observe(bubbleSection);
+
+  // ✅ MutationObserver for chart reappearance
+  const visibilityObserver = new MutationObserver(() => {
+    const isVisible = bubbleChartContainer.offsetParent !== null;
+    const width = bubbleChartContainer.clientWidth;
+    const height = bubbleChartContainer.clientHeight;
+
+    if (
+      isVisible &&
+      width > 0 &&
+      height > 0 &&
+      !bubbleChartDrawn &&
+      lastData &&
+      selectedYear && selectedSurface &&
+      selectedYear !== "Select Year" && selectedSurface !== "Select Surface"
+    ) {
+      updateBubbleChart(lastData);
+    }
+  });
+
+  visibilityObserver.observe(bubbleChartContainer, {
+    attributes: true,
+    attributeFilter: ["style", "class"]
+  });
 });

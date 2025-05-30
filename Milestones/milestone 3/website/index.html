@@ -204,9 +204,7 @@ document.querySelectorAll('nav a').forEach(link => {
   </div>
 </section>
 
-<!-- ===========================
-  MODIFIED HTML FOR DOUBLES GOAT SECTION
-=========================== -->
+<!-- DOUBLES GOAT SECTION -->
 <section id="doubles">  
   <div style="height: 95px"></div>
     <div class="doubles-header">
@@ -220,9 +218,7 @@ document.querySelectorAll('nav a').forEach(link => {
   <main class="charts-wrapper">
     <div class="top-charts">
 
-      <!-- ===========================
-        PODIUM SECTION (UNIQUE IDs)
-      =========================== -->
+      <!-- PODIUM SECTION -->
       <section class="chart-container top-chart" id="podium-doubles">
         <div class="chart-header">
           <select id="year-select2-podium" class="dropdown">
@@ -259,7 +255,6 @@ document.querySelectorAll('nav a').forEach(link => {
         </div>
 
         <div class="chart-content">
-          <h2>Podium</h2>
           <div id="podium-placeholder-doubles" class="bubble-prompt" style="text-align: center;">
             <p><strong>Please select a year and surface to view the top 3 GOATs 🐐</strong></p>
           </div>
@@ -271,13 +266,10 @@ document.querySelectorAll('nav a').forEach(link => {
         </div>
       </section>
 
-      <!-- ===========================
-        BUBBLE CHART SECTION (UNIQUE IDs)
-      =========================== -->
+      <!-- BUBBLE CHART SECTION -->
       <section class="chart-container top-chart" id="over_the_years-doubles">
         <div class="chart-header">
           <select id="year-select2-bubbles" class="dropdown">
-            <option value="Select Year">Select year</option>
             <option value="Select Year">Select year</option>
             <option value="2020">2020</option>
             <option value="2019">2019</option>
@@ -311,7 +303,6 @@ document.querySelectorAll('nav a').forEach(link => {
         </div>
 
         <div class="chart-content">
-          <h2>Evolution over the years</h2>
           <div id="bubble-placeholder-doubles" class="bubble-prompt" style="text-align: center;">
             <p><strong>Please select a year and surface to view the top 10 GOATs 🐐</strong></p>
           </div>
@@ -399,6 +390,7 @@ document.querySelectorAll('nav a').forEach(link => {
         </select>
         </div>
     
+        
         <div class="chart-content">
             <h2>Surfaces Evolution over the years</h2>
             <div id="bubble-prompt-surfaces" class="bubble-prompt">
@@ -493,7 +485,7 @@ document.querySelectorAll('nav a').forEach(link => {
               <span role="img" aria-label="Sad face" style="font-size:2.2rem;"></span>
               Sorry, we don’t have data for the requested selection.
           </div>
-          <svg class="bubbleChart" id="bubbleChart-services" width="500" height="400"></svg>
+          <svg class="bubbleChart" id="bubbleChart-services" width="500" height="400" style="display: none;"></svg>
 
       </div>
 
@@ -509,89 +501,64 @@ document.querySelectorAll('nav a').forEach(link => {
   <div style="height: 95px"></div>
   <header>
     <h1>Net GOAT</h1>
-</header>
-
+    
+  </header>
 
   <main class="charts-wrapper">
 
       <section class="chart-container top-chart" id="podium-net">
           <div class="chart-header">
-          <select id="year-select" class="dropdown">
-              <option value="Overall years">Overall years</option>
-              <option value="2024">2024</option>
-              <option value="2023">2023</option>
-              <option value="2022">2022</option>
-              <option value="2021">2021</option>
-              <option value="2020">2020</option>
-              <option value="2019">2019</option>
-              <option value="2018">2018</option>
-              <option value="2017">2017</option>
-              <option value="2016">2016</option>
-              <option value="2015">2015</option>
-              <option value="2014">2014</option>
-              <option value="2013">2013</option>
-              <option value="2012">2012</option>
-          </select>
-      
-          
-          <select id="tournament-select">
-              <option value="Overall tournaments">Overall tournaments</option>
-          </select>
+            <select id="circuit-select-net-podium" class="dropdown">
+              <option value="Select Circuit">Select a circuit</option>
+              <option value="w">WTA - Women</option>
+              <option value="m">ATP - Men</option>
+            </select>
+            <select id="category-select-net-podium" class="dropdown">
+              <option value="net points">Net Points</option>
+              <option value="approach">Approach</option>
+              <option value="net points rallies">Net Points Rallies</option>
+              <option value="approach rallies">Approach Rallies</option>
+            </select>
+            <select id="subcategory-select-net-podium" class="dropdown">
+              <option value="net_efficiency">Net Efficiency</option>
+              <option value="passing_shot">Passing Shot</option>
+            </select>
+            <select id="year-select-net-podium" class="dropdown">
+              <option value="Select year">Select year</option>
+            </select>
           </div>
       
-          <div class="chart-content">
+           <div class="chart-content">
               <h2>Podium Net</h2>
-              <div class="scoreboard">
-                  <div class="scoreboard__podiums">
-                    <div class="scoreboard__podium js-podium" data-height="200px">
-                      <div class="scoreboard__podium-base scoreboard__podium-base--second">
-                        <div class="scoreboard__podium-rank">2</div>
-                      </div>
-                      <div class="scoreboard__podium-number">
-                        Novak Djokovic
-                      </div>
-                    </div>
-                    <div class="scoreboard__podium js-podium" data-height="250px">
-                      <div class="scoreboard__podium-base scoreboard__podium-base--first">
-                        <div class="scoreboard__podium-rank">1</div>
-                      </div>
-                      <div class="scoreboard__podium-number">
-                        Roger Federer
-                      </div>
-                    </div>
-                    <div class="scoreboard__podium js-podium" data-height="150px">
-                      <div class="scoreboard__podium-base scoreboard__podium-base--third">
-                        <div class="scoreboard__podium-rank">3</div>
-                      </div>
-                      <div class="scoreboard__podium-number">
-                        Rafael Nadal
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div class="scoreboard__podiums" id="scoreboard-podiums-net"></div>
+              <div id="podium-placeholder-net" class="bubble-prompt" style="text-align: center;">
+                <p><strong>Please select a circuit, category, and year to view the top 3 GOATs 🐐</strong></p>
               </div>
-          </div>
+              <div id="podium-prompt-no-data-net" class="bubble-prompt" style="display:none;">
+                <p><strong>Sorry, we don’t have data for the requested selection.</strong></p>
+              </div>
+            </div>
       </section>
       
     <section class="chart-container top-chart" id="over_the_years-net">
       <div class="chart-header">
-        <select id="circuit-select-net" class="dropdown">
+        <select id="circuit-select-net-bubble" class="dropdown">
           <option value="Select Circuit">Select a circuit</option>
           <option value="w">WTA - Women</option>
           <option value="m">ATP - Men</option>
         </select>
-        <select id="category-select-net" class="dropdown">
+        <select id="category-select-net-bubble" class="dropdown">
           <option value="net points">Net Points</option>
           <option value="approach">Approach</option>
           <option value="net points rallies">Net Points Rallies</option>
           <option value="approach rallies">Approach Rallies</option>
         </select>
-        <select id="subcategory-select-net" class="dropdown">
+        <select id="subcategory-select-net-bubble" class="dropdown">
           <option value="net_efficiency">Net Efficiency</option>
           <option value="passing_shot">Passing Shot</option>
         </select>
-        <select id="year-select-net" class="dropdown">
-          <option value="Overall years">Select years</option>
+        <select id="year-select-net-bubble" class="dropdown">
+          <option value="Select year">Select year</option>
         </select>
       </div>
 
@@ -599,13 +566,13 @@ document.querySelectorAll('nav a').forEach(link => {
         <h2>Net Evolution over the years</h2>
         <div id="bubble-prompt-net" class="bubble-prompt">
           <span role="img" aria-label="Trophy" style="font-size:2.2rem;"></span>
-              <p><strong>Please select a circuit, category, subcategory and year to view the top 15 GOATs 🐐</strong></p>
+              <p><strong>Please select a year and category to view the top 15 GOATs 🐐</strong></p>
         </div>
         <div id="bubble-prompt-no-data-net" class="bubble-prompt" style="display:none;">
           <span role="img" aria-label="Sad face" style="font-size:2.2rem;"></span>
           Sorry, we don’t have data for the requested selection.
         </div>
-        <svg class="bubbleChart" id="bubbleChart-net" width="500" height="400"></svg>
+        <svg class="bubbleChart" id="bubbleChart-net" width="500" height="400" ></svg>
       </div>
     </section>
       <div class="nav-dots">
@@ -802,103 +769,13 @@ document.querySelectorAll('nav a').forEach(link => {
 <script src="js/goat_poll.js"></script>
 <script src="js/main.js"></script>
 <script src="js/surface.js"></script>
-<script src="js/net.js"></script>
-<script src="js/services.js"></script>
-<script src="https://d3js.org/d3.v7.min.js"></script>
 <script src="js/doubles.js"></script>
+<script src="js/services.js"></script>
+<script src="js/net.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="js/loadGeneral.js"></script>
 <script src="js/chart.js"></script>
 <script src="js/tournament.js"></script>
-
-
-<script>
-  const overlay = document.getElementById('transition-overlay');
-  const ball = document.getElementById('bouncing-ball');
-
-  function animateBounceAndNavigate(url) {
-    overlay.style.display = 'block';
-
-    let x = 0;
-    let y = 0;
-    let vx = 12; // X speed
-    let vy = 9; // Y speed
-    const ballSize = 60;
-
-    const screenW = window.innerWidth;
-    const screenH = window.innerHeight;
-
-    const interval = setInterval(() => {
-      x += vx;
-      y += vy;
-
-      if (x + ballSize >= screenW || x <= 0) vx *= -1;
-      if (y + ballSize >= screenH || y <= 0) vy *= -1;
-
-      ball.style.left = `${x}px`;
-      ball.style.top = `${y}px`;
-    }, 16); // ~60fps
-
-    // Stop after 2 seconds and navigate
-    setTimeout(() => {
-      clearInterval(interval);
-      window.location.href = url;
-    }, 2000);
-  }
-
-  document.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', function (e) {
-      const href = this.getAttribute('href');
-
-      // Allow internal scroll (like #main-content)
-      if (href && href.startsWith('#')) return;
-
-      // Only animate for internal page navigations
-      if (this.href && this.href.startsWith(window.location.origin)) {
-        e.preventDefault();
-        animateBounceAndNavigate(this.href);
-      }
-    });
-  });
-</script>
-
-<div id="tooltip" style="
-  position: absolute;
-  pointer-events: none;
-  background: rgba(20,20,20,0.95);
-  color: white;
-  padding: 6px 10px;
-  border-radius: 6px;
-  font-size: 15px;
-  font-family: sans-serif;
-  z-index: 10;
-  display: none;
-"></div>
-
-<script>
-
-const sections = document.querySelectorAll("section[id]");
-const navLinks = document.querySelectorAll("nav a");
-
-function activateNavOnScroll() {
-  let scrollPos = window.scrollY + 80; 
-
-  sections.forEach(section => {
-    const top = section.offsetTop;
-    const height = section.offsetHeight;
-    const id = section.getAttribute("id");
-
-    if (scrollPos >= top && scrollPos < top + height) {
-      navLinks.forEach(link => {
-        link.classList.toggle("active", link.getAttribute("href") === "#" + id);
-      });
-    }
-  });
-}
-
-window.addEventListener("scroll", activateNavOnScroll);
-window.addEventListener("DOMContentLoaded", activateNavOnScroll);
-</script>
 
 </body>
 </html>

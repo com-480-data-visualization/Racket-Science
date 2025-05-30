@@ -1,8 +1,10 @@
 function goToChart(chartIndex, section) {
-  // Only find .top-chart inside the right section
-  console.log(chartIndex, section)
   const charts = document.querySelectorAll(`#${section} .top-chart`);
   const dots = document.querySelectorAll(`#${section} .dot`);
+
+  if (dots[chartIndex - 1].classList.contains('active')) {
+    return;
+  }
 
   charts.forEach((chart, index) => {
     chart.style.display = (index === chartIndex - 1) ? 'flex' : 'none';
@@ -24,11 +26,11 @@ function goToChart(chartIndex, section) {
     }
   });
 
-
   dots.forEach((dot, index) => {
     dot.classList.toggle('active', index === chartIndex - 1);
   });
 }
+
 
 document.addEventListener("DOMContentLoaded", function () {
   goToChart(1, 'global');
