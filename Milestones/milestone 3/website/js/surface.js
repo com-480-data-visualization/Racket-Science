@@ -87,7 +87,7 @@ function updatePodiumSurfaces(data, containerId = "scoreboard-podiums-surfaces",
 
 
 function updateSurfacesPodiumDisplay() {
-  const year = document.getElementById("year-select-surfaces-tpodiums").value;
+  const year = document.getElementById("year-select-surfaces-podiums").value;
   const surface = document.getElementById("surface-select-podiums").value;
   const circuit = document.getElementById("circuit-select-podiums").value;
   const tournament = document.getElementById("tournament-select-surfaces-podiums").value;
