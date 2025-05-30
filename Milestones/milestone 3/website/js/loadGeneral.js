@@ -37,11 +37,11 @@ document.addEventListener("DOMContentLoaded", () => {
   async function updatePodium(year) {
     try {
       if (year === "Overall years") {
-        const data = await fetchPodiumData("../data/general/top3_overall.json");
+        const data = await fetchPodiumData("data/general/top3_overall.json");
         const players = data.global.overall;
         renderPodium(players);
       } else {
-        const data = await fetchPodiumData("../data/general/top3_per_year.json");
+        const data = await fetchPodiumData("data/general/top3_per_year.json");
         const players = data.global[year].overall;
         renderPodium(players);
       }
@@ -75,7 +75,7 @@ function loadGlobalData(year) {
     return;
   }
 
-  const filePath = `../data/general/top15_jsons/top15_overall_${year}.json`;
+  const filePath = `data/general/top15_jsons/top15_overall_${year}.json`;
   console.log("Trying to load:", filePath);
 
   d3.json(filePath).then(data => {
