@@ -49,8 +49,8 @@ Please, fill the following sections about your project.
 
 ## Milestone 3 (30th May, 5pm)
 
-Our Final Website page can be found \href{https://com-480-data-visualization.github.io/Racket-Science/Milestones/milestone%203/website/index.html}{here}
-**80% of the final grade**
+Our Final Website page can be found [here]([https://snap.stanford.edu/data/](https://com-480-data-visualization.github.io/Racket-Science/Milestones/milestone%203/website/index.html))
+**80% of the final grade** 
 
 
 ## Late policy
