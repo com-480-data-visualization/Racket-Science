@@ -727,3 +727,17 @@ nav a:hover:not(.active) {
   font-weight: bold;
   font-size: 3rem;
 }
+
+.tournament-explanation {
+  max-width: 610px;
+  font-size: 1.25rem;
+  color: #444;
+  margin-top: 1.75rem; 
+}
+
+.tournament-explanation h3 {
+  margin-top: 0.5rem;
+  color: #406487;
+  font-weight: bold;
+  font-size: 3rem;
+}

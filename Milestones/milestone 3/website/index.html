@@ -54,114 +54,126 @@ document.querySelectorAll('nav a').forEach(link => {
     <h1>Overall GOAT</h1>
   </header>
   <main class="charts-wrapper">
-      <div class="top-charts">
-          <section class="chart-container top-chart" id="podium-global">
-              <div class="chart-header">
-              <select id="year-select" class="dropdown">
-                  <option value="Overall years">Overall years</option>
-                  <option value="2019">2019</option>
-                  <option value="2018">2018</option>
-                  <option value="2017">2017</option>
-                  <option value="2016">2016</option>
-                  <option value="2015">2015</option>
-                  <option value="2014">2014</option>
-                  <option value="2013">2013</option>
-                  <option value="2012">2012</option>
-                  <option value="2011">2011</option>
-                  <option value="2010">2010</option>
-                  <option value="2009">2009</option>
-                  <option value="2008">2008</option>
-                  <option value="2007">2007</option>
-                  <option value="2006">2006</option>
-                  <option value="2005">2005</option>
-                  <option value="2004">2004</option>
-                  <option value="2003">2003</option>
-                  <option value="2002">2002</option>
-                  <option value="2001">2001</option>
-                  <option value="2000">2000</option>
-              </select>
-              </div>
-              <h2>Podium</h2>
-                <div class="scoreboard" id="scoreboard-global"></div>
-          </section>
+  <div class="podium-and-text-row">
+    <section class="chart-container top-chart" id="podium-global">
+            <div class="chart-header">
+            <select id="year-select" class="dropdown">
+                <option value="Overall years">Overall years</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+                <option value="2009">2009</option>
+                <option value="2008">2008</option>
+                <option value="2007">2007</option>
+                <option value="2006">2006</option>
+                <option value="2005">2005</option>
+                <option value="2004">2004</option>
+                <option value="2003">2003</option>
+                <option value="2002">2002</option>
+                <option value="2001">2001</option>
+                <option value="2000">2000</option>
+            </select>
+            </div>
+            <h2>Podium</h2>
+              <div class="scoreboard" id="scoreboard-global"></div>
+        </section>
 
-          <section class="chart-container top-chart" id="over_the_years-global">
-              <div class="chart-header">
-                  <select id="year-select2" class="dropdown">
-                      <option value="Overall years">Overall years</option>
-                      <option value="2024">2024</option>
-                      <option value="2023">2023</option>
-                      <option value="2022">2022</option>
-                      <option value="2021">2021</option>
-                      <option value="2020">2020</option>
-                      <option value="2019">2019</option>
-                      <option value="2018">2018</option>
-                      <option value="2017">2017</option>
-                      <option value="2016">2016</option>
-                      <option value="2015">2015</option>
-                      <option value="2014">2014</option>
-                      <option value="2013">2013</option>
-                      <option value="2012">2012</option>
-                  </select>
-              
-                  <select id="tournament-select2" class="dropdown">
-                      <option value="Overall tournaments">Overall tournaments</option>
-                      <option>tournament1</option>
-                      <option>tournament2</option>
-                      <option>tournament3</option>
-                  </select>
-              </div>
+    <section class="chart-container top-chart" id="over_the_years-global">
+        <div class="chart-header">
+            <select id="year-select-global-bubble" class="dropdown">
+                <option value="Select Year">Select year</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+                <option value="2009">2009</option>
+                <option value="2008">2008</option>
+                <option value="2007">2007</option>
+                <option value="2006">2006</option>
+                <option value="2005">2005</option>
+                <option value="2004">2004</option>
+                <option value="2003">2003</option>
+                <option value="2002">2002</option>
+                <option value="2001">2001</option>
+                <option value="2000">2000</option>
+            </select>
+        </div>
 
-          
-              <div class="chart-content">
-                  <h2>Evolution over the years</h2>
-                  <div id="bubble-prompt-global" class="bubble-prompt">
-                    <span role="img" aria-label="Trophy" style="font-size:2.2rem;">🏆</span>
-                    Let’s see who are the <b>top 15 players</b> !
-                  </div>
-                  <svg class="bubbleChart" id="bubbleChart-global" width="500" height="400"></svg>
-              </div>
-          </section>
-
-          <section class="chart-container top-chart" id="radar-chart-section-global">
-              <div class="chart-header">
-                  <select id="year-select3" class="dropdown">
-                      <option value="Overall years">Overall years</option>
-                      <option value="2019">2019</option>
-                      <option value="2018">2018</option>
-                      <option value="2017">2017</option>
-                      <option value="2016">2016</option>
-                      <option value="2015">2015</option>
-                      <option value="2014">2014</option>
-                      <option value="2013">2013</option>
-                      <option value="2012">2012</option>
-                      <option value="2011">2011</option>
-                      <option value="2010">2010</option>
-                      <option value="2009">2009</option>
-                      <option value="2008">2008</option>
-                      <option value="2007">2007</option>
-                      <option value="2006">2006</option>
-                      <option value="2005">2005</option>
-                      <option value="2004">2004</option>
-                      <option value="2003">2003</option>
-                      <option value="2002">2002</option>
-                      <option value="2001">2001</option>
-                      <option value="2000">2000</option>
-                  </select>
-              </div>
-
-              <div class="chart-content">
-                  <h2>Top Players' Performance</h2>
-                  <canvas id="radarCanvas" width="450" height="450"></canvas>
-              </div>
-            </section>
-
-            <div class="nav-dots">
-              <span class="dot" onclick="goToChart(1, 'global')"></span>
-              <span class="dot" onclick="goToChart(2, 'global')"></span>
-              <span class="dot" onclick="goToChart(3, 'global')"></span>
+        <div class="chart-content">
+          <h2>Evolution over the years</h2>
+          <div id="bubble-prompt-global" class="bubble-prompt" style="text-align: center;">
+            <p><strong>Please select a year to view the top 15 GOATs 🐐</strong></p>
           </div>
-      </div>
+          <div id="bubble-prompt-no-data-global" class="bubble-prompt" style="display: none; text-align: center;">
+            <p><strong>No data available for this selection. 😢</strong></p>
+          </div>
+          <svg class="bubbleChart" id="bubbleChart-global" width="500" height="400" style="display: none;"></svg>
+        </div>
+    </section>
+
+    <section class="chart-container top-chart" id="radar-chart-section-global">
+        <div class="chart-header">
+            <select id="year-select3" class="dropdown">
+                <option value="Overall years">Overall years</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+                <option value="2009">2009</option>
+                <option value="2008">2008</option>
+                <option value="2007">2007</option>
+                <option value="2006">2006</option>
+                <option value="2005">2005</option>
+                <option value="2004">2004</option>
+                <option value="2003">2003</option>
+                <option value="2002">2002</option>
+                <option value="2001">2001</option>
+                <option value="2000">2000</option>
+            </select>
+        </div>
+
+        <div class="chart-content">
+            <h2>Top Players' Performance</h2>
+            <canvas id="radarCanvas" width="450" height="450"></canvas>
+        </div>
+      </section>
+    <aside class="tournament-explanation">
+      <h3>What makes a true GOAT?</h3>
+      <p>
+        The GOAT (Greatest of All Time) title isn't just about stats—it’s about legacy. We look at more than wins: consistency across years, domination against the best, and all-around performance.
+      </p>
+      <p>
+        This section brings together global data, from podium placements to skill radar charts, to visualize who stood above all over time. Let’s explore what makes the legends… legendary.
+      </p>
+    </aside>
+  </div>
+
+  <div class="nav-dots">
+    <span class="dot" onclick="goToChart(1, 'global')"></span>
+    <span class="dot" onclick="goToChart(2, 'global')"></span>
+    <span class="dot" onclick="goToChart(3, 'global')"></span>
+  </div>
+</main>
+
 
       
 
@@ -797,7 +809,7 @@ document.querySelectorAll('nav a').forEach(link => {
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="js/loadGeneral.js"></script>
 <script src="js/chart.js"></script>
-<script src="js/tournamentPodium.js"></script>
+<script src="js/tournament.js"></script>
 
 
 <script>

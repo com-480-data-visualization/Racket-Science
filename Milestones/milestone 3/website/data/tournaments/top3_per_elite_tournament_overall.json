@@ -1,0 +1,184 @@
+{
+  "Australian Open": [
+    {
+      "name": "Roger Federer",
+      "wins": 98
+    },
+    {
+      "name": "Novak Djokovic",
+      "wins": 68
+    },
+    {
+      "name": "Rafael Nadal",
+      "wins": 61
+    }
+  ],
+  "Canada Masters": [
+    {
+      "name": "Rafael Nadal",
+      "wins": 39
+    },
+    {
+      "name": "Novak Djokovic",
+      "wins": 37
+    },
+    {
+      "name": "Roger Federer",
+      "wins": 35
+    }
+  ],
+  "Cincinnati Masters": [
+    {
+      "name": "Roger Federer",
+      "wins": 48
+    },
+    {
+      "name": "Novak Djokovic",
+      "wins": 35
+    },
+    {
+      "name": "Andy Murray",
+      "wins": 31
+    }
+  ],
+  "Indian Wells Masters": [
+    {
+      "name": "Roger Federer",
+      "wins": 69
+    },
+    {
+      "name": "Rafael Nadal",
+      "wins": 55
+    },
+    {
+      "name": "Novak Djokovic",
+      "wins": 51
+    }
+  ],
+  "Madrid Masters": [
+    {
+      "name": "Rafael Nadal",
+      "wins": 54
+    },
+    {
+      "name": "Roger Federer",
+      "wins": 37
+    },
+    {
+      "name": "Novak Djokovic",
+      "wins": 30
+    }
+  ],
+  "Miami Masters": [
+    {
+      "name": "Roger Federer",
+      "wins": 56
+    },
+    {
+      "name": "Novak Djokovic",
+      "wins": 46
+    },
+    {
+      "name": "Rafael Nadal",
+      "wins": 42
+    }
+  ],
+  "Monte Carlo Masters": [
+    {
+      "name": "Rafael Nadal",
+      "wins": 71
+    },
+    {
+      "name": "Novak Djokovic",
+      "wins": 34
+    },
+    {
+      "name": "Juan Carlos Ferrero",
+      "wins": 31
+    }
+  ],
+  "Paris Masters": [
+    {
+      "name": "Novak Djokovic",
+      "wins": 37
+    },
+    {
+      "name": "Tomas Berdych",
+      "wins": 27
+    },
+    {
+      "name": "Marat Safin",
+      "wins": 25
+    }
+  ],
+  "Roland Garros": [
+    {
+      "name": "Rafael Nadal",
+      "wins": 93
+    },
+    {
+      "name": "Roger Federer",
+      "wins": 70
+    },
+    {
+      "name": "Novak Djokovic",
+      "wins": 69
+    }
+  ],
+  "Rome Masters": [
+    {
+      "name": "Rafael Nadal",
+      "wins": 61
+    },
+    {
+      "name": "Novak Djokovic",
+      "wins": 50
+    },
+    {
+      "name": "Roger Federer",
+      "wins": 34
+    }
+  ],
+  "Shanghai Masters": [
+    {
+      "name": "Novak Djokovic",
+      "wins": 34
+    },
+    {
+      "name": "Andy Murray",
+      "wins": 25
+    },
+    {
+      "name": "Roger Federer",
+      "wins": 23
+    }
+  ],
+  "US Open": [
+    {
+      "name": "Roger Federer",
+      "wins": 91
+    },
+    {
+      "name": "Novak Djokovic",
+      "wins": 67
+    },
+    {
+      "name": "Rafael Nadal",
+      "wins": 62
+    }
+  ],
+  "Wimbledon": [
+    {
+      "name": "Roger Federer",
+      "wins": 102
+    },
+    {
+      "name": "Novak Djokovic",
+      "wins": 72
+    },
+    {
+      "name": "Andy Murray",
+      "wins": 57
+    }
+  ]
+}

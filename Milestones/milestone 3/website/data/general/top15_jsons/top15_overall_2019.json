@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Rafael Nadal",
+    "size": 60
+  },
+  {
+    "name": "Daniil Medvedev",
+    "size": 59
+  },
+  {
+    "name": "Novak Djokovic",
+    "size": 58
+  },
+  {
+    "name": "Stefanos Tsitsipas",
+    "size": 55
+  },
+  {
+    "name": "Roger Federer",
+    "size": 55
+  },
+  {
+    "name": "Dominic Thiem",
+    "size": 50
+  },
+  {
+    "name": "Alexander Zverev",
+    "size": 44
+  },
+  {
+    "name": "Matteo Berrettini",
+    "size": 43
+  },
+  {
+    "name": "Alex De Minaur",
+    "size": 42
+  },
+  {
+    "name": "Roberto Bautista Agut",
+    "size": 42
+  },
+  {
+    "name": "Diego Schwartzman",
+    "size": 40
+  },
+  {
+    "name": "Denis Shapovalov",
+    "size": 39
+  },
+  {
+    "name": "Andrey Rublev",
+    "size": 38
+  },
+  {
+    "name": "Gael Monfils",
+    "size": 37
+  },
+  {
+    "name": "David Goffin",
+    "size": 37
+  }
+]

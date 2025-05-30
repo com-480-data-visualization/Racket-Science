@@ -10,9 +10,7 @@ function goToChart(chartIndex, section) {
     if (index === chartIndex - 1) {
       chart.querySelectorAll('.bubbleChart').forEach(svgEl => {
         d3.select(svgEl).selectAll("*").remove();
-        if (section === "global") {
-          drawBubbleChart(svgEl, bubbleDataGlobal);
-        } else if (section === "tournament") {
+        if (section === "tournament") {
           drawBubbleChart(svgEl, bubbleDataDoubles);
         }
       });
