@@ -21,9 +21,9 @@ function updateBubbleChartForSurface() {
   const circuit = document.getElementById("circuit-select-surfaces-bubble").value;
   const tournament = document.getElementById("tournament-select-surfaces-bubble").value;
   console.log('hey')
-  console.log(tournament)
   console.log('hey')
   const prompt = document.getElementById('bubble-prompt-surfaces');
+  console.log(prompt)
   const noDataPrompt = document.getElementById('bubble-prompt-no-data-surfaces');
   const svgEl = document.getElementById('bubbleChart-surfaces');
 

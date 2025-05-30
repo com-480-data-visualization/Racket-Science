@@ -515,47 +515,45 @@ document.querySelectorAll('nav a').forEach(link => {
   </main>
 </section>
 
-
 <section id="net"> 
   <div style="height: 95px"></div>
   <header>
     <h1>Net GOAT</h1>
-</header>
-
+    
+  </header>
 
   <main class="charts-wrapper">
 
       <section class="chart-container top-chart" id="podium-net">
           <div class="chart-header">
-          <select id="circuit-select-net-podium" class="dropdown">
-            <option value="Select Circuit">Select a circuit</option>
-            <option value="w">WTA - Women</option>
-            <option value="m">ATP - Men</option>
-          </select>
-          <select id="category-select-net-podium" class="dropdown">
-            <option value="net points">Net Points</option>
-            <option value="approach">Approach</option>
-            <option value="net points rallies">Net Points Rallies</option>
-            <option value="approach rallies">Approach Rallies</option>
-          </select>
-          <select id="subcategory-select-net-podium" class="dropdown">
-            <option value="net_efficiency">Net Efficiency</option>
-            <option value="passing_shot">Passing Shot</option>
-          </select>
-          <select id="year-select-net-podium" class="dropdown">
-            <option value="Overall years">Select years</option>
-          </select>
+            <select id="circuit-select-net-podium" class="dropdown">
+              <option value="Select Circuit">Select a circuit</option>
+              <option value="w">WTA - Women</option>
+              <option value="m">ATP - Men</option>
+            </select>
+            <select id="category-select-net-podium" class="dropdown">
+              <option value="net points">Net Points</option>
+              <option value="approach">Approach</option>
+              <option value="net points rallies">Net Points Rallies</option>
+              <option value="approach rallies">Approach Rallies</option>
+            </select>
+            <select id="subcategory-select-net-podium" class="dropdown">
+              <option value="net_efficiency">Net Efficiency</option>
+              <option value="passing_shot">Passing Shot</option>
+            </select>
+            <select id="year-select-net-podium" class="dropdown">
+              <option value="Select year">Select year</option>
+            </select>
           </div>
       
            <div class="chart-content">
               <h2>Podium Net</h2>
               <div class="scoreboard__podiums" id="scoreboard-podiums-net"></div>
               <div id="podium-placeholder-net" class="bubble-prompt" style="text-align: center;">
-                <p><strong>Please select a circuit, category, and year to view the top 3 at the net</strong></p>
+                <p><strong>Please select a circuit, category, and year to view the top 3 GOATs 🐐</strong></p>
               </div>
               <div id="podium-prompt-no-data-net" class="bubble-prompt" style="display:none;">
-                <span role="img" aria-label="Sad face" style="font-size:2.2rem;"></span>
-                Sorry, we don’t have data for the requested selection.
+                <p><strong>Sorry, we don’t have data for the requested selection.</strong></p>
               </div>
             </div>
       </section>
@@ -578,7 +576,8 @@ document.querySelectorAll('nav a').forEach(link => {
           <option value="passing_shot">Passing Shot</option>
         </select>
         <select id="year-select-net-bubble" class="dropdown">
-          <option value="Overall years">Overall years</option>
+          <option value="Select year">Select year</option>
+        </select>
       </div>
 
       <div class="chart-content">
@@ -591,7 +590,7 @@ document.querySelectorAll('nav a').forEach(link => {
           <span role="img" aria-label="Sad face" style="font-size:2.2rem;"></span>
           Sorry, we don’t have data for the requested selection.
         </div>
-        <svg class="bubbleChart" id="bubbleChart-net" width="500" height="400"></svg>
+        <svg class="bubbleChart" id="bubbleChart-net" width="500" height="400" ></svg>
       </div>
     </section>
       <div class="nav-dots">
@@ -788,9 +787,9 @@ document.querySelectorAll('nav a').forEach(link => {
 <script src="js/goat_poll.js"></script>
 <script src="js/main.js"></script>
 <script src="js/surface.js"></script>
-<script src="js/net.js"></script>
 <script src="js/doubles.js"></script>
 <script src="js/services.js"></script>
+<script src="js/net.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="js/loadGeneral.js"></script>
 <script src="js/chart.js"></script>
