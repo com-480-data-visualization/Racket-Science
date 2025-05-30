@@ -7,11 +7,11 @@ const serviceYears = [
 const serviceSelectBubble = document.getElementById("year-select-services-bubble");
 const serviceSelectPodium = document.getElementById("year-select-services-podium");
 
-years.forEach(year => {
-  const optionBubble = document.createElement("option");
-  optionBubble.value = year;
-  optionBubble.text = year;
-  serviceSelectBubble.appendChild(optionBubble);
+serviceYears.forEach(year => {
+  const optionBubbleServices = document.createElement("option");
+  optionBubbleServices.value = year;
+  optionBubbleServices.text = year;
+  serviceSelectBubble.appendChild(optionBubbleServices);
 
   const optionPodium = document.createElement("option");
   optionPodium.value = year;
@@ -20,7 +20,7 @@ years.forEach(year => {
 });
 
 function getServiceCsvPath(year, category) {
-  if (year === "Overall years") {
+  if (year === "overall_years") {
     return `data/services/overall_years_${category}.csv`;
   }
   return `data/services/${year}_${category}.csv`;
@@ -150,9 +150,9 @@ function updateServicesPodiumDisplay() {
   })
 }
 
-// Event listeners
 document.getElementById("year-select-services-podium").addEventListener("change", updateServicesPodiumDisplay);
 document.getElementById("category-select-services-podium").addEventListener("change", updateServicesPodiumDisplay);
+document.getElementById('year-select-services-podium').dispatchEvent(new Event('change'));
 
-// Optionally, run once at start to populate podium if defaults are set
+
 updateServicesPodiumDisplay();

@@ -2,9 +2,9 @@ function goToChart(chartIndex, section) {
   const charts = document.querySelectorAll(`#${section} .top-chart`);
   const dots = document.querySelectorAll(`#${section} .dot`);
 
-  if (dots[chartIndex - 1].classList.contains('active')) {
-    return;
-  }
+  //if (dots[chartIndex - 1].classList.contains('active')) {
+  //  return;
+  //}
 
   charts.forEach((chart, index) => {
     chart.style.display = (index === chartIndex - 1) ? 'flex' : 'none';
