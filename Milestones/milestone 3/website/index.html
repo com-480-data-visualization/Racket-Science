@@ -450,15 +450,16 @@ document.querySelectorAll('nav a').forEach(link => {
 
 <section id="services">
   <div style="height: 95px"></div>
-  <header>
-    <h1>Services GOAT</h1>
-  </header>
-
+  <div class="services-header">
+    <div class="services-header-inner">
+      <h1 id="services-title">Services GOAT</h1>
+    </div>
+  </div>
   <main class="charts-wrapper">
 
   <div class="podium-and-text-row" id="text-wrapper-services">
 
-    <aside class="services-explanation">
+    <div class="info-box">
         <h3>Why Serving Matters?</h3>
         <p>
           Serving is one of the most decisive skills in tennis. The greatest servers combine power, accuracy, and nerves of steel, often turning matches in their favor with just a few key points.
@@ -466,7 +467,7 @@ document.querySelectorAll('nav a').forEach(link => {
         <p>
           To identify the legends of serving, we analyzed key stats: Ace Rate, First Serve %, First Serve Win %, Second Serve Win %, and Break Point Save %. Only players with at least 30 matches are included, so the rankings reflect real consistency. By comparing these metrics, we highlight not just the flashy servers, but those who consistently dominated with their serve and made it a cornerstone of their success.
         </p>
-    </aside>
+      </div>
     <section class="chart-container top-chart" id="podium-services">
         <div class="chart-header">
         <select id="category-select-services-podium" class="dropdown">
@@ -633,6 +634,7 @@ document.querySelectorAll('nav a').forEach(link => {
 </section>
 
 <section id="tournament">
+  <div style="height: 95px"></div>
   <header>
     <h1>Tournament GOAT</h1>
   </header>

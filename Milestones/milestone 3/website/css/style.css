@@ -711,7 +711,7 @@ nav a:hover:not(.active) {
 
 .services-explanation {
   max-width: 610px;
-  font-size: 1.45rem;
+  font-size: 2rem;
   color: #444;
   margin-top: 1.75rem; 
 }
@@ -841,3 +841,25 @@ nav a:hover:not(.active) {
   box-sizing: border-box;
   overflow-x: auto;
 }
+
+
+
+.services-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.services-header-inner {
+  text-align: center;
+  padding: 10px 30px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.4s;
+}
+
+.services-header-inner.clay { background-color: #d86f45; color: #fff; }
+.services-header-inner.grass { background-color: #4caf50; color: white; }
+.services-header-inner.hard { background-color: #1e88e5; color: white; }

@@ -86,9 +86,6 @@ function amplifyServiceValue(value, min, max) {
     return 10 + 90 * (value - min) / (max - min);
 }
 
-document.getElementById("year-select-services-bubble").addEventListener("change", updateBubbleChartForServices);
-document.getElementById("category-select-services-bubble").addEventListener("change", updateBubbleChartForServices);
-document.getElementById('year-select-services-bubble').dispatchEvent(new Event('change'));
 
 function getServiceCsvPath(year, category) {
   if (!category) return null;
@@ -98,24 +95,24 @@ function getServiceCsvPath(year, category) {
 
 function updatePodiumServices(data, containerId = "scoreboard-podiums-services", category = "") {
   const el = document.getElementById(containerId);
-
+  
   if (!data || data.length < 3) {
     el.innerHTML = '<div style="text-align:center;">Not enough data for podium</div>';
     return;
   }
-
+  
   const sorted = data.slice().sort((a, b) => +b[category] - +a[category]);
   const top3 = [sorted[1], sorted[0], sorted[2]];
   const classes = ['second', 'first', 'third'];
   const displayRanks = [2, 1, 3];
-
+  
   const podiumHTML = top3.map((player, i) => `
-    <div class="scoreboard__podium scoreboard__podium--${classes[i]} js-podium">
-      <div class="scoreboard__podium-base scoreboard__podium-base--${classes[i]}">
-        <div class="scoreboard__podium-rank">${displayRanks[i]}</div>
-      </div>
-      <div class="scoreboard__podium-number">${player.Player}</div>
-    </div>
+  <div class="scoreboard__podium scoreboard__podium--${classes[i]} js-podium">
+  <div class="scoreboard__podium-base scoreboard__podium-base--${classes[i]}">
+  <div class="scoreboard__podium-rank">${displayRanks[i]}</div>
+  </div>
+  <div class="scoreboard__podium-number">${player.Player}</div>
+  </div>
   `).join('');
   el.innerHTML = podiumHTML;
 }
@@ -126,21 +123,21 @@ function updateServicesPodiumDisplay() {
   const category = document.getElementById("category-select-services-podium").value;
   const containerId = "scoreboard-podiums-services";
   const placeholder = document.getElementById("podium-placeholder-services");
-
+  
   if (!category || category === 'Select a Category') {
     document.getElementById(containerId).innerHTML = '';
     placeholder.style.display = 'block';
     return;
   }
   placeholder.style.display = 'none';
-
+  
   const csvPath = getServiceCsvPath(year, category);
   if (!csvPath) {
     document.getElementById(containerId).innerHTML = '<div style="text-align:center;">No data</div>';
     return;
   }
-
-
+  
+  
   d3.csv(csvPath).then(function(data) {
     if (!data || data.length < 3) {
       updatePodiumServices(null, containerId, category);
@@ -150,10 +147,60 @@ function updateServicesPodiumDisplay() {
   })
 }
 
+
 document.getElementById("year-select-services-podium").addEventListener("change", updateServicesPodiumDisplay);
 document.getElementById("category-select-services-podium").addEventListener("change", updateServicesPodiumDisplay);
 document.getElementById('year-select-services-podium').dispatchEvent(new Event('change'));
 
+document.getElementById("year-select-services-bubble").addEventListener("change", updateBubbleChartForServices);
+document.getElementById("category-select-services-bubble").addEventListener("change", updateBubbleChartForServices);
+document.getElementById('year-select-services-bubble').dispatchEvent(new Event('change'));
 
 updateServicesPodiumDisplay();
+const serviceBackgroundImages = [
+  'images/service_clay.png',
+  'images/service_grass.png',
+  'images/service_hard.png'
+];
+const surfaceTypes = ['clay', 'grass', 'hard'];
+const surfaceTitles = [
+  "Services GOAT",
+  "Services GOAT",
+  "Services GOAT"
+];
 
+let currentServiceImageIndex = 0;
+let serviceBackgroundInterval = null;
+
+const servicesSection = document.getElementById("services");
+const headerInner = document.querySelector(".services-header-inner");
+const servicesTitle = document.getElementById("services-title");
+
+function rotateServiceBackground() {
+  updateServiceBackgroundAndTitle();
+  serviceBackgroundInterval = setInterval(() => {
+    currentServiceImageIndex = (currentServiceImageIndex + 1) % serviceBackgroundImages.length;
+    updateServiceBackgroundAndTitle();
+  }, 3000);
+}
+
+function updateServiceBackgroundAndTitle() {
+  // Update background image
+  servicesSection.style.backgroundImage = `url('${serviceBackgroundImages[currentServiceImageIndex]}')`;
+  servicesSection.style.backgroundSize = "cover";
+  servicesSection.style.backgroundPosition = "center";
+
+  // Update header color/class
+  if (headerInner) {
+    headerInner.classList.remove("clay", "grass", "hard");
+    headerInner.classList.add(surfaceTypes[currentServiceImageIndex]);
+  }
+
+  // Update the title text (optional)
+  if (servicesTitle) {
+    servicesTitle.textContent = surfaceTitles[currentServiceImageIndex];
+  }
+}
+
+// Start rotation on page load
+rotateServiceBackground();
