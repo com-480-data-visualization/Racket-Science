@@ -1,0 +1,3826 @@
+{
+  "1998": {
+    "Australian Open": [
+      {
+        "name": "Petr Korda",
+        "wins": 7
+      },
+      {
+        "name": "Marcelo Rios",
+        "wins": 6
+      },
+      {
+        "name": "Karol Kucera",
+        "wins": 5
+      }
+    ],
+    "Canada Masters": [
+      {
+        "name": "Patrick Rafter",
+        "wins": 5
+      },
+      {
+        "name": "Richard Krajicek",
+        "wins": 4
+      },
+      {
+        "name": "Andre Agassi",
+        "wins": 3
+      }
+    ],
+    "Cincinnati Masters": [
+      {
+        "name": "Patrick Rafter",
+        "wins": 5
+      },
+      {
+        "name": "Pete Sampras",
+        "wins": 4
+      },
+      {
+        "name": "Magnus Larsson",
+        "wins": 4
+      }
+    ],
+    "Indian Wells Masters": [
+      {
+        "name": "Marcelo Rios",
+        "wins": 5
+      },
+      {
+        "name": "Jan Michael Gambill",
+        "wins": 4
+      },
+      {
+        "name": "Thomas Muster",
+        "wins": 4
+      }
+    ],
+    "Miami Masters": [
+      {
+        "name": "Marcelo Rios",
+        "wins": 6
+      },
+      {
+        "name": "Andre Agassi",
+        "wins": 5
+      },
+      {
+        "name": "Alex Corretja",
+        "wins": 4
+      }
+    ],
+    "Monte Carlo Masters": [
+      {
+        "name": "Carlos Moya",
+        "wins": 6
+      },
+      {
+        "name": "Cedric Pioline",
+        "wins": 5
+      },
+      {
+        "name": "Alberto Berasategui",
+        "wins": 4
+      }
+    ],
+    "Paris Masters": [
+      {
+        "name": "Greg Rusedski",
+        "wins": 5
+      },
+      {
+        "name": "Todd Martin",
+        "wins": 4
+      },
+      {
+        "name": "Pete Sampras",
+        "wins": 4
+      }
+    ],
+    "Roland Garros": [
+      {
+        "name": "Carlos Moya",
+        "wins": 7
+      },
+      {
+        "name": "Alex Corretja",
+        "wins": 6
+      },
+      {
+        "name": "Cedric Pioline",
+        "wins": 5
+      }
+    ],
+    "Rome Masters": [
+      {
+        "name": "Marcelo Rios",
+        "wins": 6
+      },
+      {
+        "name": "Albert Costa",
+        "wins": 5
+      },
+      {
+        "name": "Alberto Berasategui",
+        "wins": 4
+      }
+    ],
+    "US Open": [
+      {
+        "name": "Patrick Rafter",
+        "wins": 7
+      },
+      {
+        "name": "Mark Philippoussis",
+        "wins": 6
+      },
+      {
+        "name": "Carlos Moya",
+        "wins": 5
+      }
+    ],
+    "Wimbledon": [
+      {
+        "name": "Pete Sampras",
+        "wins": 7
+      },
+      {
+        "name": "Goran Ivanisevic",
+        "wins": 6
+      },
+      {
+        "name": "Richard Krajicek",
+        "wins": 5
+      }
+    ]
+  },
+  "1999": {
+    "Australian Open": [
+      {
+        "name": "Yevgeny Kafelnikov",
+        "wins": 7
+      },
+      {
+        "name": "Thomas Enqvist",
+        "wins": 6
+      },
+      {
+        "name": "Nicolas Lapentti",
+        "wins": 5
+      }
+    ],
+    "Canada Masters": [
+      {
+        "name": "Thomas Johansson",
+        "wins": 6
+      },
+      {
+        "name": "Yevgeny Kafelnikov",
+        "wins": 4
+      },
+      {
+        "name": "Nicolas Kiefer",
+        "wins": 4
+      }
+    ],
+    "Cincinnati Masters": [
+      {
+        "name": "Pete Sampras",
+        "wins": 5
+      },
+      {
+        "name": "Patrick Rafter",
+        "wins": 4
+      },
+      {
+        "name": "Andre Agassi",
+        "wins": 3
+      }
+    ],
+    "Indian Wells Masters": [
+      {
+        "name": "Mark Philippoussis",
+        "wins": 6
+      },
+      {
+        "name": "Chris Woodruff",
+        "wins": 4
+      },
+      {
+        "name": "Gustavo Kuerten",
+        "wins": 4
+      }
+    ],
+    "Miami Masters": [
+      {
+        "name": "Richard Krajicek",
+        "wins": 6
+      },
+      {
+        "name": "Sebastien Grosjean",
+        "wins": 6
+      },
+      {
+        "name": "Dominik Hrbaty",
+        "wins": 4
+      }
+    ],
+    "Monte Carlo Masters": [
+      {
+        "name": "Gustavo Kuerten",
+        "wins": 6
+      },
+      {
+        "name": "Jerome Golmard",
+        "wins": 4
+      },
+      {
+        "name": "Marcelo Rios",
+        "wins": 4
+      }
+    ],
+    "Paris Masters": [
+      {
+        "name": "Andre Agassi",
+        "wins": 5
+      },
+      {
+        "name": "Marat Safin",
+        "wins": 5
+      },
+      {
+        "name": "Michael Chang",
+        "wins": 4
+      }
+    ],
+    "Roland Garros": [
+      {
+        "name": "Andre Agassi",
+        "wins": 7
+      },
+      {
+        "name": "Andrei Medvedev",
+        "wins": 6
+      },
+      {
+        "name": "Dominik Hrbaty",
+        "wins": 5
+      }
+    ],
+    "Rome Masters": [
+      {
+        "name": "Gustavo Kuerten",
+        "wins": 6
+      },
+      {
+        "name": "Patrick Rafter",
+        "wins": 5
+      },
+      {
+        "name": "Alex Corretja",
+        "wins": 4
+      }
+    ],
+    "US Open": [
+      {
+        "name": "Andre Agassi",
+        "wins": 7
+      },
+      {
+        "name": "Todd Martin",
+        "wins": 6
+      },
+      {
+        "name": "Cedric Pioline",
+        "wins": 5
+      }
+    ],
+    "Wimbledon": [
+      {
+        "name": "Pete Sampras",
+        "wins": 7
+      },
+      {
+        "name": "Andre Agassi",
+        "wins": 6
+      },
+      {
+        "name": "Patrick Rafter",
+        "wins": 5
+      }
+    ]
+  },
+  "2000": {
+    "Australian Open": [
+      {
+        "name": "Andre Agassi",
+        "wins": 7
+      },
+      {
+        "name": "Yevgeny Kafelnikov",
+        "wins": 6
+      },
+      {
+        "name": "Magnus Norman",
+        "wins": 5
+      }
+    ],
+    "Canada Masters": [
+      {
+        "name": "Marat Safin",
+        "wins": 6
+      },
+      {
+        "name": "Harel Levy",
+        "wins": 5
+      },
+      {
+        "name": "Jiri Novak",
+        "wins": 4
+      }
+    ],
+    "Cincinnati Masters": [
+      {
+        "name": "Thomas Enqvist",
+        "wins": 6
+      },
+      {
+        "name": "Tim Henman",
+        "wins": 5
+      },
+      {
+        "name": "Arnaud Clement",
+        "wins": 4
+      }
+    ],
+    "Indian Wells Masters": [
+      {
+        "name": "Alex Corretja",
+        "wins": 6
+      },
+      {
+        "name": "Thomas Enqvist",
+        "wins": 5
+      },
+      {
+        "name": "Mark Philippoussis",
+        "wins": 4
+      }
+    ],
+    "Miami Masters": [
+      {
+        "name": "Pete Sampras",
+        "wins": 6
+      },
+      {
+        "name": "Gustavo Kuerten",
+        "wins": 5
+      },
+      {
+        "name": "Andre Agassi",
+        "wins": 4
+      }
+    ],
+    "Monte Carlo Masters": [
+      {
+        "name": "Cedric Pioline",
+        "wins": 6
+      },
+      {
+        "name": "Dominik Hrbaty",
+        "wins": 5
+      },
+      {
+        "name": "Gaston Gaudio",
+        "wins": 4
+      }
+    ],
+    "Paris Masters": [
+      {
+        "name": "Marat Safin",
+        "wins": 5
+      },
+      {
+        "name": "Mark Philippoussis",
+        "wins": 4
+      },
+      {
+        "name": "Albert Costa",
+        "wins": 3
+      }
+    ],
+    "Roland Garros": [
+      {
+        "name": "Gustavo Kuerten",
+        "wins": 7
+      },
+      {
+        "name": "Magnus Norman",
+        "wins": 6
+      },
+      {
+        "name": "Franco Squillari",
+        "wins": 5
+      }
+    ],
+    "Rome Masters": [
+      {
+        "name": "Magnus Norman",
+        "wins": 6
+      },
+      {
+        "name": "Gustavo Kuerten",
+        "wins": 5
+      },
+      {
+        "name": "Alex Corretja",
+        "wins": 4
+      }
+    ],
+    "US Open": [
+      {
+        "name": "Marat Safin",
+        "wins": 7
+      },
+      {
+        "name": "Pete Sampras",
+        "wins": 6
+      },
+      {
+        "name": "Lleyton Hewitt",
+        "wins": 5
+      }
+    ],
+    "Wimbledon": [
+      {
+        "name": "Pete Sampras",
+        "wins": 7
+      },
+      {
+        "name": "Patrick Rafter",
+        "wins": 6
+      },
+      {
+        "name": "Andre Agassi",
+        "wins": 5
+      }
+    ]
+  },
+  "2001": {
+    "Australian Open": [
+      {
+        "name": "Andre Agassi",
+        "wins": 7
+      },
+      {
+        "name": "Arnaud Clement",
+        "wins": 6
+      },
+      {
+        "name": "Patrick Rafter",
+        "wins": 5
+      }
+    ],
+    "Canada Masters": [
+      {
+        "name": "Andrei Pavel",
+        "wins": 6
+      },
+      {
+        "name": "Patrick Rafter",
+        "wins": 5
+      },
+      {
+        "name": "Fabrice Santoro",
+        "wins": 4
+      }
+    ],
+    "Cincinnati Masters": [
+      {
+        "name": "Gustavo Kuerten",
+        "wins": 6
+      },
+      {
+        "name": "Patrick Rafter",
+        "wins": 5
+      },
+      {
+        "name": "Lleyton Hewitt",
+        "wins": 4
+      }
+    ],
+    "Indian Wells Masters": [
+      {
+        "name": "Andre Agassi",
+        "wins": 6
+      },
+      {
+        "name": "Pete Sampras",
+        "wins": 5
+      },
+      {
+        "name": "Lleyton Hewitt",
+        "wins": 4
+      }
+    ],
+    "Miami Masters": [
+      {
+        "name": "Andre Agassi",
+        "wins": 6
+      },
+      {
+        "name": "Jan Michael Gambill",
+        "wins": 5
+      },
+      {
+        "name": "Andy Roddick",
+        "wins": 4
+      }
+    ],
+    "Monte Carlo Masters": [
+      {
+        "name": "Gustavo Kuerten",
+        "wins": 6
+      },
+      {
+        "name": "Hicham Arazi",
+        "wins": 5
+      },
+      {
+        "name": "Guillermo Coria",
+        "wins": 4
+      }
+    ],
+    "Paris Masters": [
+      {
+        "name": "Sebastien Grosjean",
+        "wins": 5
+      },
+      {
+        "name": "Yevgeny Kafelnikov",
+        "wins": 4
+      },
+      {
+        "name": "Andreas Vinciguerra",
+        "wins": 4
+      }
+    ],
+    "Roland Garros": [
+      {
+        "name": "Gustavo Kuerten",
+        "wins": 7
+      },
+      {
+        "name": "Alex Corretja",
+        "wins": 6
+      },
+      {
+        "name": "Juan Carlos Ferrero",
+        "wins": 5
+      }
+    ],
+    "Rome Masters": [
+      {
+        "name": "Juan Carlos Ferrero",
+        "wins": 6
+      },
+      {
+        "name": "Gustavo Kuerten",
+        "wins": 5
+      },
+      {
+        "name": "Andreas Vinciguerra",
+        "wins": 4
+      }
+    ],
+    "US Open": [
+      {
+        "name": "Lleyton Hewitt",
+        "wins": 7
+      },
+      {
+        "name": "Pete Sampras",
+        "wins": 6
+      },
+      {
+        "name": "Marat Safin",
+        "wins": 5
+      }
+    ],
+    "Wimbledon": [
+      {
+        "name": "Goran Ivanisevic",
+        "wins": 7
+      },
+      {
+        "name": "Patrick Rafter",
+        "wins": 6
+      },
+      {
+        "name": "Andre Agassi",
+        "wins": 5
+      }
+    ]
+  },
+  "2002": {
+    "Australian Open": [
+      {
+        "name": "Thomas Johansson",
+        "wins": 7
+      },
+      {
+        "name": "Marat Safin",
+        "wins": 6
+      },
+      {
+        "name": "Jiri Novak",
+        "wins": 5
+      }
+    ],
+    "Canada Masters": [
+      {
+        "name": "Guillermo Canas",
+        "wins": 6
+      },
+      {
+        "name": "Andy Roddick",
+        "wins": 5
+      },
+      {
+        "name": "Jiri Novak",
+        "wins": 4
+      }
+    ],
+    "Cincinnati Masters": [
+      {
+        "name": "Carlos Moya",
+        "wins": 6
+      },
+      {
+        "name": "Lleyton Hewitt",
+        "wins": 5
+      },
+      {
+        "name": "Fernando Gonzalez",
+        "wins": 4
+      }
+    ],
+    "Indian Wells Masters": [
+      {
+        "name": "Lleyton Hewitt",
+        "wins": 6
+      },
+      {
+        "name": "Tim Henman",
+        "wins": 5
+      },
+      {
+        "name": "Pete Sampras",
+        "wins": 4
+      }
+    ],
+    "Madrid Masters": [
+      {
+        "name": "Andre Agassi",
+        "wins": 5
+      },
+      {
+        "name": "Jiri Novak",
+        "wins": 4
+      },
+      {
+        "name": "Fabrice Santoro",
+        "wins": 4
+      }
+    ],
+    "Miami Masters": [
+      {
+        "name": "Andre Agassi",
+        "wins": 6
+      },
+      {
+        "name": "Roger Federer",
+        "wins": 5
+      },
+      {
+        "name": "Juan Ignacio Chela",
+        "wins": 4
+      }
+    ],
+    "Monte Carlo Masters": [
+      {
+        "name": "Juan Carlos Ferrero",
+        "wins": 6
+      },
+      {
+        "name": "Carlos Moya",
+        "wins": 5
+      },
+      {
+        "name": "Sebastien Grosjean",
+        "wins": 4
+      }
+    ],
+    "Paris Masters": [
+      {
+        "name": "Marat Safin",
+        "wins": 5
+      },
+      {
+        "name": "Paradorn Srichaphan",
+        "wins": 4
+      },
+      {
+        "name": "Lleyton Hewitt",
+        "wins": 4
+      }
+    ],
+    "Roland Garros": [
+      {
+        "name": "Albert Costa",
+        "wins": 7
+      },
+      {
+        "name": "Juan Carlos Ferrero",
+        "wins": 6
+      },
+      {
+        "name": "Alex Corretja",
+        "wins": 5
+      }
+    ],
+    "Rome Masters": [
+      {
+        "name": "Andre Agassi",
+        "wins": 6
+      },
+      {
+        "name": "Tommy Haas",
+        "wins": 5
+      },
+      {
+        "name": "Andy Roddick",
+        "wins": 4
+      }
+    ],
+    "US Open": [
+      {
+        "name": "Pete Sampras",
+        "wins": 7
+      },
+      {
+        "name": "Andre Agassi",
+        "wins": 6
+      },
+      {
+        "name": "Lleyton Hewitt",
+        "wins": 5
+      }
+    ],
+    "Wimbledon": [
+      {
+        "name": "Lleyton Hewitt",
+        "wins": 7
+      },
+      {
+        "name": "David Nalbandian",
+        "wins": 6
+      },
+      {
+        "name": "Tim Henman",
+        "wins": 5
+      }
+    ]
+  },
+  "2003": {
+    "Australian Open": [
+      {
+        "name": "Andre Agassi",
+        "wins": 7
+      },
+      {
+        "name": "Rainer Schuettler",
+        "wins": 6
+      },
+      {
+        "name": "Andy Roddick",
+        "wins": 5
+      }
+    ],
+    "Canada Masters": [
+      {
+        "name": "Andy Roddick",
+        "wins": 6
+      },
+      {
+        "name": "David Nalbandian",
+        "wins": 5
+      },
+      {
+        "name": "Rainer Schuettler",
+        "wins": 4
+      }
+    ],
+    "Cincinnati Masters": [
+      {
+        "name": "Andy Roddick",
+        "wins": 6
+      },
+      {
+        "name": "Mardy Fish",
+        "wins": 5
+      },
+      {
+        "name": "Max Mirnyi",
+        "wins": 4
+      }
+    ],
+    "Indian Wells Masters": [
+      {
+        "name": "Lleyton Hewitt",
+        "wins": 6
+      },
+      {
+        "name": "Gustavo Kuerten",
+        "wins": 5
+      },
+      {
+        "name": "Rainer Schuettler",
+        "wins": 4
+      }
+    ],
+    "Madrid Masters": [
+      {
+        "name": "Juan Carlos Ferrero",
+        "wins": 5
+      },
+      {
+        "name": "Nicolas Massu",
+        "wins": 5
+      },
+      {
+        "name": "Feliciano Lopez",
+        "wins": 3
+      }
+    ],
+    "Miami Masters": [
+      {
+        "name": "Andre Agassi",
+        "wins": 6
+      },
+      {
+        "name": "Carlos Moya",
+        "wins": 5
+      },
+      {
+        "name": "Albert Costa",
+        "wins": 4
+      }
+    ],
+    "Monte Carlo Masters": [
+      {
+        "name": "Juan Carlos Ferrero",
+        "wins": 6
+      },
+      {
+        "name": "Guillermo Coria",
+        "wins": 5
+      },
+      {
+        "name": "Carlos Moya",
+        "wins": 4
+      }
+    ],
+    "Paris Masters": [
+      {
+        "name": "Tim Henman",
+        "wins": 6
+      },
+      {
+        "name": "Andrei Pavel",
+        "wins": 5
+      },
+      {
+        "name": "Andy Roddick",
+        "wins": 3
+      }
+    ],
+    "Roland Garros": [
+      {
+        "name": "Juan Carlos Ferrero",
+        "wins": 7
+      },
+      {
+        "name": "Martin Verkerk",
+        "wins": 6
+      },
+      {
+        "name": "Albert Costa",
+        "wins": 5
+      }
+    ],
+    "Rome Masters": [
+      {
+        "name": "Felix Mantilla",
+        "wins": 6
+      },
+      {
+        "name": "Roger Federer",
+        "wins": 5
+      },
+      {
+        "name": "Juan Carlos Ferrero",
+        "wins": 4
+      }
+    ],
+    "US Open": [
+      {
+        "name": "Andy Roddick",
+        "wins": 7
+      },
+      {
+        "name": "Juan Carlos Ferrero",
+        "wins": 6
+      },
+      {
+        "name": "Andre Agassi",
+        "wins": 5
+      }
+    ],
+    "Wimbledon": [
+      {
+        "name": "Roger Federer",
+        "wins": 7
+      },
+      {
+        "name": "Mark Philippoussis",
+        "wins": 6
+      },
+      {
+        "name": "Andy Roddick",
+        "wins": 5
+      }
+    ]
+  },
+  "2004": {
+    "Australian Open": [
+      {
+        "name": "Roger Federer",
+        "wins": 7
+      },
+      {
+        "name": "Marat Safin",
+        "wins": 6
+      },
+      {
+        "name": "Andre Agassi",
+        "wins": 5
+      }
+    ],
+    "Canada Masters": [
+      {
+        "name": "Roger Federer",
+        "wins": 6
+      },
+      {
+        "name": "Andy Roddick",
+        "wins": 5
+      },
+      {
+        "name": "Nicolas Kiefer",
+        "wins": 4
+      }
+    ],
+    "Cincinnati Masters": [
+      {
+        "name": "Andre Agassi",
+        "wins": 6
+      },
+      {
+        "name": "Lleyton Hewitt",
+        "wins": 5
+      },
+      {
+        "name": "Andy Roddick",
+        "wins": 4
+      }
+    ],
+    "Indian Wells Masters": [
+      {
+        "name": "Roger Federer",
+        "wins": 6
+      },
+      {
+        "name": "Tim Henman",
+        "wins": 5
+      },
+      {
+        "name": "Irakli Labadze",
+        "wins": 5
+      }
+    ],
+    "Madrid Masters": [
+      {
+        "name": "Marat Safin",
+        "wins": 5
+      },
+      {
+        "name": "Ivan Ljubicic",
+        "wins": 4
+      },
+      {
+        "name": "David Nalbandian",
+        "wins": 4
+      }
+    ],
+    "Miami Masters": [
+      {
+        "name": "Andy Roddick",
+        "wins": 6
+      },
+      {
+        "name": "Vincent Spadea",
+        "wins": 5
+      },
+      {
+        "name": "Guillermo Coria",
+        "wins": 5
+      }
+    ],
+    "Monte Carlo Masters": [
+      {
+        "name": "Guillermo Coria",
+        "wins": 6
+      },
+      {
+        "name": "Rainer Schuettler",
+        "wins": 5
+      },
+      {
+        "name": "Carlos Moya",
+        "wins": 4
+      }
+    ],
+    "Paris Masters": [
+      {
+        "name": "Marat Safin",
+        "wins": 5
+      },
+      {
+        "name": "Radek Stepanek",
+        "wins": 5
+      },
+      {
+        "name": "Max Mirnyi",
+        "wins": 4
+      }
+    ],
+    "Roland Garros": [
+      {
+        "name": "Gaston Gaudio",
+        "wins": 7
+      },
+      {
+        "name": "Guillermo Coria",
+        "wins": 6
+      },
+      {
+        "name": "David Nalbandian",
+        "wins": 5
+      }
+    ],
+    "Rome Masters": [
+      {
+        "name": "Carlos Moya",
+        "wins": 6
+      },
+      {
+        "name": "David Nalbandian",
+        "wins": 5
+      },
+      {
+        "name": "Albert Costa",
+        "wins": 4
+      }
+    ],
+    "US Open": [
+      {
+        "name": "Roger Federer",
+        "wins": 7
+      },
+      {
+        "name": "Lleyton Hewitt",
+        "wins": 6
+      },
+      {
+        "name": "Joachim Johansson",
+        "wins": 5
+      }
+    ],
+    "Wimbledon": [
+      {
+        "name": "Roger Federer",
+        "wins": 7
+      },
+      {
+        "name": "Andy Roddick",
+        "wins": 6
+      },
+      {
+        "name": "Mario Ancic",
+        "wins": 5
+      }
+    ]
+  },
+  "2005": {
+    "Australian Open": [
+      {
+        "name": "Marat Safin",
+        "wins": 7
+      },
+      {
+        "name": "Lleyton Hewitt",
+        "wins": 6
+      },
+      {
+        "name": "Andy Roddick",
+        "wins": 5
+      }
+    ],
+    "Canada Masters": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 6
+      },
+      {
+        "name": "Andre Agassi",
+        "wins": 5
+      },
+      {
+        "name": "Greg Rusedski",
+        "wins": 4
+      }
+    ],
+    "Cincinnati Masters": [
+      {
+        "name": "Roger Federer",
+        "wins": 6
+      },
+      {
+        "name": "Andy Roddick",
+        "wins": 5
+      },
+      {
+        "name": "Lleyton Hewitt",
+        "wins": 4
+      }
+    ],
+    "Indian Wells Masters": [
+      {
+        "name": "Roger Federer",
+        "wins": 6
+      },
+      {
+        "name": "Lleyton Hewitt",
+        "wins": 5
+      },
+      {
+        "name": "Andy Roddick",
+        "wins": 4
+      }
+    ],
+    "Madrid Masters": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 5
+      },
+      {
+        "name": "Ivan Ljubicic",
+        "wins": 4
+      },
+      {
+        "name": "David Nalbandian",
+        "wins": 3
+      }
+    ],
+    "Miami Masters": [
+      {
+        "name": "Roger Federer",
+        "wins": 6
+      },
+      {
+        "name": "Rafael Nadal",
+        "wins": 5
+      },
+      {
+        "name": "David Ferrer",
+        "wins": 5
+      }
+    ],
+    "Monte Carlo Masters": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 6
+      },
+      {
+        "name": "Guillermo Coria",
+        "wins": 5
+      },
+      {
+        "name": "Juan Carlos Ferrero",
+        "wins": 4
+      }
+    ],
+    "Paris Masters": [
+      {
+        "name": "Tomas Berdych",
+        "wins": 6
+      },
+      {
+        "name": "Ivan Ljubicic",
+        "wins": 4
+      },
+      {
+        "name": "Andy Roddick",
+        "wins": 3
+      }
+    ],
+    "Roland Garros": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 7
+      },
+      {
+        "name": "Mariano Puerta",
+        "wins": 6
+      },
+      {
+        "name": "Nikolay Davydenko",
+        "wins": 5
+      }
+    ],
+    "Rome Masters": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 6
+      },
+      {
+        "name": "Guillermo Coria",
+        "wins": 5
+      },
+      {
+        "name": "Andre Agassi",
+        "wins": 4
+      }
+    ],
+    "US Open": [
+      {
+        "name": "Roger Federer",
+        "wins": 7
+      },
+      {
+        "name": "Andre Agassi",
+        "wins": 6
+      },
+      {
+        "name": "Lleyton Hewitt",
+        "wins": 5
+      }
+    ],
+    "Wimbledon": [
+      {
+        "name": "Roger Federer",
+        "wins": 7
+      },
+      {
+        "name": "Andy Roddick",
+        "wins": 6
+      },
+      {
+        "name": "Lleyton Hewitt",
+        "wins": 5
+      }
+    ]
+  },
+  "2006": {
+    "Australian Open": [
+      {
+        "name": "Roger Federer",
+        "wins": 7
+      },
+      {
+        "name": "Marcos Baghdatis",
+        "wins": 6
+      },
+      {
+        "name": "David Nalbandian",
+        "wins": 5
+      }
+    ],
+    "Canada Masters": [
+      {
+        "name": "Roger Federer",
+        "wins": 6
+      },
+      {
+        "name": "Richard Gasquet",
+        "wins": 5
+      },
+      {
+        "name": "Andy Murray",
+        "wins": 4
+      }
+    ],
+    "Cincinnati Masters": [
+      {
+        "name": "Andy Roddick",
+        "wins": 6
+      },
+      {
+        "name": "Juan Carlos Ferrero",
+        "wins": 5
+      },
+      {
+        "name": "Fernando Gonzalez",
+        "wins": 4
+      }
+    ],
+    "Indian Wells Masters": [
+      {
+        "name": "Roger Federer",
+        "wins": 6
+      },
+      {
+        "name": "Paradorn Srichaphan",
+        "wins": 5
+      },
+      {
+        "name": "James Blake",
+        "wins": 5
+      }
+    ],
+    "Madrid Masters": [
+      {
+        "name": "Roger Federer",
+        "wins": 5
+      },
+      {
+        "name": "Fernando Gonzalez",
+        "wins": 4
+      },
+      {
+        "name": "David Nalbandian",
+        "wins": 3
+      }
+    ],
+    "Miami Masters": [
+      {
+        "name": "Roger Federer",
+        "wins": 6
+      },
+      {
+        "name": "Ivan Ljubicic",
+        "wins": 5
+      },
+      {
+        "name": "Agustin Calleri",
+        "wins": 4
+      }
+    ],
+    "Monte Carlo Masters": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 6
+      },
+      {
+        "name": "Roger Federer",
+        "wins": 5
+      },
+      {
+        "name": "Fernando Gonzalez",
+        "wins": 4
+      }
+    ],
+    "Paris Masters": [
+      {
+        "name": "Nikolay Davydenko",
+        "wins": 5
+      },
+      {
+        "name": "Dominik Hrbaty",
+        "wins": 4
+      },
+      {
+        "name": "Marat Safin",
+        "wins": 3
+      }
+    ],
+    "Roland Garros": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 7
+      },
+      {
+        "name": "Roger Federer",
+        "wins": 6
+      },
+      {
+        "name": "David Nalbandian",
+        "wins": 5
+      }
+    ],
+    "Rome Masters": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 6
+      },
+      {
+        "name": "Roger Federer",
+        "wins": 5
+      },
+      {
+        "name": "David Nalbandian",
+        "wins": 4
+      }
+    ],
+    "US Open": [
+      {
+        "name": "Roger Federer",
+        "wins": 7
+      },
+      {
+        "name": "Andy Roddick",
+        "wins": 6
+      },
+      {
+        "name": "Mikhail Youzhny",
+        "wins": 5
+      }
+    ],
+    "Wimbledon": [
+      {
+        "name": "Roger Federer",
+        "wins": 7
+      },
+      {
+        "name": "Rafael Nadal",
+        "wins": 6
+      },
+      {
+        "name": "Jonas Bjorkman",
+        "wins": 5
+      }
+    ]
+  },
+  "2007": {
+    "Australian Open": [
+      {
+        "name": "Roger Federer",
+        "wins": 7
+      },
+      {
+        "name": "Fernando Gonzalez",
+        "wins": 6
+      },
+      {
+        "name": "Andy Roddick",
+        "wins": 5
+      }
+    ],
+    "Canada Masters": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 5
+      },
+      {
+        "name": "Roger Federer",
+        "wins": 4
+      },
+      {
+        "name": "Radek Stepanek",
+        "wins": 4
+      }
+    ],
+    "Cincinnati Masters": [
+      {
+        "name": "James Blake",
+        "wins": 5
+      },
+      {
+        "name": "Roger Federer",
+        "wins": 5
+      },
+      {
+        "name": "Lleyton Hewitt",
+        "wins": 4
+      }
+    ],
+    "Indian Wells Masters": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 6
+      },
+      {
+        "name": "Novak Djokovic",
+        "wins": 5
+      },
+      {
+        "name": "Andy Murray",
+        "wins": 4
+      }
+    ],
+    "Madrid Masters": [
+      {
+        "name": "David Nalbandian",
+        "wins": 6
+      },
+      {
+        "name": "Nicolas Kiefer",
+        "wins": 4
+      },
+      {
+        "name": "Roger Federer",
+        "wins": 4
+      }
+    ],
+    "Miami Masters": [
+      {
+        "name": "Guillermo Canas",
+        "wins": 6
+      },
+      {
+        "name": "Novak Djokovic",
+        "wins": 6
+      },
+      {
+        "name": "Andy Murray",
+        "wins": 4
+      }
+    ],
+    "Monte Carlo Masters": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 5
+      },
+      {
+        "name": "Roger Federer",
+        "wins": 4
+      },
+      {
+        "name": "Tomas Berdych",
+        "wins": 4
+      }
+    ],
+    "Paris Masters": [
+      {
+        "name": "David Nalbandian",
+        "wins": 6
+      },
+      {
+        "name": "Rafael Nadal",
+        "wins": 4
+      },
+      {
+        "name": "Marcos Baghdatis",
+        "wins": 4
+      }
+    ],
+    "Roland Garros": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 7
+      },
+      {
+        "name": "Roger Federer",
+        "wins": 6
+      },
+      {
+        "name": "Nikolay Davydenko",
+        "wins": 5
+      }
+    ],
+    "Rome Masters": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 5
+      },
+      {
+        "name": "Filippo Volandri",
+        "wins": 4
+      },
+      {
+        "name": "Fernando Gonzalez",
+        "wins": 4
+      }
+    ],
+    "US Open": [
+      {
+        "name": "Roger Federer",
+        "wins": 7
+      },
+      {
+        "name": "Novak Djokovic",
+        "wins": 6
+      },
+      {
+        "name": "David Ferrer",
+        "wins": 5
+      }
+    ],
+    "Wimbledon": [
+      {
+        "name": "Roger Federer",
+        "wins": 7
+      },
+      {
+        "name": "Rafael Nadal",
+        "wins": 6
+      },
+      {
+        "name": "Novak Djokovic",
+        "wins": 5
+      }
+    ]
+  },
+  "2008": {
+    "Australian Open": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 7
+      },
+      {
+        "name": "Jo Wilfried Tsonga",
+        "wins": 6
+      },
+      {
+        "name": "Rafael Nadal",
+        "wins": 5
+      }
+    ],
+    "Canada Masters": [
+      {
+        "name": "Nicolas Kiefer",
+        "wins": 5
+      },
+      {
+        "name": "Rafael Nadal",
+        "wins": 5
+      },
+      {
+        "name": "Gilles Simon",
+        "wins": 4
+      }
+    ],
+    "Cincinnati Masters": [
+      {
+        "name": "Andy Murray",
+        "wins": 5
+      },
+      {
+        "name": "Novak Djokovic",
+        "wins": 4
+      },
+      {
+        "name": "Ivo Karlovic",
+        "wins": 4
+      }
+    ],
+    "Indian Wells Masters": [
+      {
+        "name": "Mardy Fish",
+        "wins": 6
+      },
+      {
+        "name": "Novak Djokovic",
+        "wins": 6
+      },
+      {
+        "name": "Rafael Nadal",
+        "wins": 4
+      }
+    ],
+    "Madrid Masters": [
+      {
+        "name": "Andy Murray",
+        "wins": 5
+      },
+      {
+        "name": "Gilles Simon",
+        "wins": 5
+      },
+      {
+        "name": "Feliciano Lopez",
+        "wins": 3
+      }
+    ],
+    "Miami Masters": [
+      {
+        "name": "Nikolay Davydenko",
+        "wins": 6
+      },
+      {
+        "name": "Rafael Nadal",
+        "wins": 5
+      },
+      {
+        "name": "Andy Roddick",
+        "wins": 4
+      }
+    ],
+    "Monte Carlo Masters": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 5
+      },
+      {
+        "name": "Roger Federer",
+        "wins": 4
+      },
+      {
+        "name": "Igor Andreev",
+        "wins": 3
+      }
+    ],
+    "Paris Masters": [
+      {
+        "name": "Jo Wilfried Tsonga",
+        "wins": 5
+      },
+      {
+        "name": "David Nalbandian",
+        "wins": 4
+      },
+      {
+        "name": "James Blake",
+        "wins": 3
+      }
+    ],
+    "Roland Garros": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 7
+      },
+      {
+        "name": "Roger Federer",
+        "wins": 6
+      },
+      {
+        "name": "Gael Monfils",
+        "wins": 5
+      }
+    ],
+    "Rome Masters": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 5
+      },
+      {
+        "name": "Stanislas Wawrinka",
+        "wins": 5
+      },
+      {
+        "name": "Radek Stepanek",
+        "wins": 4
+      }
+    ],
+    "US Open": [
+      {
+        "name": "Roger Federer",
+        "wins": 7
+      },
+      {
+        "name": "Andy Murray",
+        "wins": 6
+      },
+      {
+        "name": "Novak Djokovic",
+        "wins": 5
+      }
+    ],
+    "Wimbledon": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 7
+      },
+      {
+        "name": "Roger Federer",
+        "wins": 6
+      },
+      {
+        "name": "Marat Safin",
+        "wins": 5
+      }
+    ]
+  },
+  "2009": {
+    "Australian Open": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 7
+      },
+      {
+        "name": "Roger Federer",
+        "wins": 6
+      },
+      {
+        "name": "Andy Roddick",
+        "wins": 5
+      }
+    ],
+    "Canada Masters": [
+      {
+        "name": "Andy Murray",
+        "wins": 5
+      },
+      {
+        "name": "Juan Martin Del Potro",
+        "wins": 4
+      },
+      {
+        "name": "Andy Roddick",
+        "wins": 3
+      }
+    ],
+    "Cincinnati Masters": [
+      {
+        "name": "Roger Federer",
+        "wins": 5
+      },
+      {
+        "name": "Novak Djokovic",
+        "wins": 4
+      },
+      {
+        "name": "Andy Murray",
+        "wins": 3
+      }
+    ],
+    "Indian Wells Masters": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 6
+      },
+      {
+        "name": "Andy Murray",
+        "wins": 5
+      },
+      {
+        "name": "Andy Roddick",
+        "wins": 4
+      }
+    ],
+    "Madrid Masters": [
+      {
+        "name": "Roger Federer",
+        "wins": 5
+      },
+      {
+        "name": "Rafael Nadal",
+        "wins": 4
+      },
+      {
+        "name": "Ivan Ljubicic",
+        "wins": 3
+      }
+    ],
+    "Miami Masters": [
+      {
+        "name": "Andy Murray",
+        "wins": 6
+      },
+      {
+        "name": "Novak Djokovic",
+        "wins": 5
+      },
+      {
+        "name": "Juan Martin Del Potro",
+        "wins": 4
+      }
+    ],
+    "Monte Carlo Masters": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 5
+      },
+      {
+        "name": "Stanislas Wawrinka",
+        "wins": 4
+      },
+      {
+        "name": "Novak Djokovic",
+        "wins": 4
+      }
+    ],
+    "Paris Masters": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 5
+      },
+      {
+        "name": "Gael Monfils",
+        "wins": 4
+      },
+      {
+        "name": "Radek Stepanek",
+        "wins": 3
+      }
+    ],
+    "Roland Garros": [
+      {
+        "name": "Roger Federer",
+        "wins": 7
+      },
+      {
+        "name": "Robin Soderling",
+        "wins": 6
+      },
+      {
+        "name": "Fernando Gonzalez",
+        "wins": 5
+      }
+    ],
+    "Rome Masters": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 5
+      },
+      {
+        "name": "Novak Djokovic",
+        "wins": 4
+      },
+      {
+        "name": "Fernando Gonzalez",
+        "wins": 4
+      }
+    ],
+    "Shanghai Masters": [
+      {
+        "name": "Nikolay Davydenko",
+        "wins": 5
+      },
+      {
+        "name": "Rafael Nadal",
+        "wins": 4
+      },
+      {
+        "name": "Feliciano Lopez",
+        "wins": 4
+      }
+    ],
+    "US Open": [
+      {
+        "name": "Juan Martin Del Potro",
+        "wins": 7
+      },
+      {
+        "name": "Roger Federer",
+        "wins": 6
+      },
+      {
+        "name": "Novak Djokovic",
+        "wins": 5
+      }
+    ],
+    "Wimbledon": [
+      {
+        "name": "Roger Federer",
+        "wins": 7
+      },
+      {
+        "name": "Andy Roddick",
+        "wins": 6
+      },
+      {
+        "name": "Andy Murray",
+        "wins": 5
+      }
+    ]
+  },
+  "2010": {
+    "Australian Open": [
+      {
+        "name": "Roger Federer",
+        "wins": 7
+      },
+      {
+        "name": "Andy Murray",
+        "wins": 6
+      },
+      {
+        "name": "Jo Wilfried Tsonga",
+        "wins": 5
+      }
+    ],
+    "Canada Masters": [
+      {
+        "name": "Andy Murray",
+        "wins": 5
+      },
+      {
+        "name": "Roger Federer",
+        "wins": 4
+      },
+      {
+        "name": "David Nalbandian",
+        "wins": 3
+      }
+    ],
+    "Cincinnati Masters": [
+      {
+        "name": "Mardy Fish",
+        "wins": 5
+      },
+      {
+        "name": "Roger Federer",
+        "wins": 5
+      },
+      {
+        "name": "Andy Roddick",
+        "wins": 4
+      }
+    ],
+    "Indian Wells Masters": [
+      {
+        "name": "Ivan Ljubicic",
+        "wins": 6
+      },
+      {
+        "name": "Andy Roddick",
+        "wins": 5
+      },
+      {
+        "name": "Rafael Nadal",
+        "wins": 4
+      }
+    ],
+    "Madrid Masters": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 5
+      },
+      {
+        "name": "Nicolas Almagro",
+        "wins": 4
+      },
+      {
+        "name": "Roger Federer",
+        "wins": 4
+      }
+    ],
+    "Miami Masters": [
+      {
+        "name": "Andy Roddick",
+        "wins": 6
+      },
+      {
+        "name": "Tomas Berdych",
+        "wins": 5
+      },
+      {
+        "name": "Rafael Nadal",
+        "wins": 4
+      }
+    ],
+    "Monte Carlo Masters": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 5
+      },
+      {
+        "name": "Fernando Verdasco",
+        "wins": 4
+      },
+      {
+        "name": "David Ferrer",
+        "wins": 4
+      }
+    ],
+    "Paris Masters": [
+      {
+        "name": "Robin Soderling",
+        "wins": 5
+      },
+      {
+        "name": "Michael Llodra",
+        "wins": 4
+      },
+      {
+        "name": "Gael Monfils",
+        "wins": 4
+      }
+    ],
+    "Roland Garros": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 7
+      },
+      {
+        "name": "Robin Soderling",
+        "wins": 6
+      },
+      {
+        "name": "Jurgen Melzer",
+        "wins": 5
+      }
+    ],
+    "Rome Masters": [
+      {
+        "name": "David Ferrer",
+        "wins": 5
+      },
+      {
+        "name": "Rafael Nadal",
+        "wins": 5
+      },
+      {
+        "name": "Ernests Gulbis",
+        "wins": 4
+      }
+    ],
+    "Shanghai Masters": [
+      {
+        "name": "Andy Murray",
+        "wins": 5
+      },
+      {
+        "name": "Roger Federer",
+        "wins": 4
+      },
+      {
+        "name": "Juan Monaco",
+        "wins": 4
+      }
+    ],
+    "US Open": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 7
+      },
+      {
+        "name": "Novak Djokovic",
+        "wins": 6
+      },
+      {
+        "name": "Mikhail Youzhny",
+        "wins": 5
+      }
+    ],
+    "Wimbledon": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 7
+      },
+      {
+        "name": "Tomas Berdych",
+        "wins": 6
+      },
+      {
+        "name": "Andy Murray",
+        "wins": 5
+      }
+    ]
+  },
+  "2011": {
+    "Australian Open": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 7
+      },
+      {
+        "name": "Andy Murray",
+        "wins": 6
+      },
+      {
+        "name": "David Ferrer",
+        "wins": 5
+      }
+    ],
+    "Canada Masters": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 5
+      },
+      {
+        "name": "Jo Wilfried Tsonga",
+        "wins": 4
+      },
+      {
+        "name": "Mardy Fish",
+        "wins": 4
+      }
+    ],
+    "Cincinnati Masters": [
+      {
+        "name": "Andy Murray",
+        "wins": 5
+      },
+      {
+        "name": "Novak Djokovic",
+        "wins": 4
+      },
+      {
+        "name": "Gilles Simon",
+        "wins": 3
+      }
+    ],
+    "Indian Wells Masters": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 6
+      },
+      {
+        "name": "Rafael Nadal",
+        "wins": 5
+      },
+      {
+        "name": "Juan Martin Del Potro",
+        "wins": 5
+      }
+    ],
+    "Madrid Masters": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 5
+      },
+      {
+        "name": "Thomaz Bellucci",
+        "wins": 4
+      },
+      {
+        "name": "Rafael Nadal",
+        "wins": 4
+      }
+    ],
+    "Miami Masters": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 6
+      },
+      {
+        "name": "Rafael Nadal",
+        "wins": 5
+      },
+      {
+        "name": "Kevin Anderson",
+        "wins": 4
+      }
+    ],
+    "Monte Carlo Masters": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 5
+      },
+      {
+        "name": "David Ferrer",
+        "wins": 4
+      },
+      {
+        "name": "Andy Murray",
+        "wins": 3
+      }
+    ],
+    "Paris Masters": [
+      {
+        "name": "Roger Federer",
+        "wins": 5
+      },
+      {
+        "name": "John Isner",
+        "wins": 4
+      },
+      {
+        "name": "Jo Wilfried Tsonga",
+        "wins": 4
+      }
+    ],
+    "Roland Garros": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 7
+      },
+      {
+        "name": "Roger Federer",
+        "wins": 6
+      },
+      {
+        "name": "Andy Murray",
+        "wins": 5
+      }
+    ],
+    "Rome Masters": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 5
+      },
+      {
+        "name": "Richard Gasquet",
+        "wins": 4
+      },
+      {
+        "name": "Rafael Nadal",
+        "wins": 4
+      }
+    ],
+    "Shanghai Masters": [
+      {
+        "name": "Andy Murray",
+        "wins": 5
+      },
+      {
+        "name": "Feliciano Lopez",
+        "wins": 4
+      },
+      {
+        "name": "Kei Nishikori",
+        "wins": 4
+      }
+    ],
+    "US Open": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 7
+      },
+      {
+        "name": "Rafael Nadal",
+        "wins": 6
+      },
+      {
+        "name": "Andy Murray",
+        "wins": 5
+      }
+    ],
+    "Wimbledon": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 7
+      },
+      {
+        "name": "Rafael Nadal",
+        "wins": 6
+      },
+      {
+        "name": "Andy Murray",
+        "wins": 5
+      }
+    ]
+  },
+  "2012": {
+    "Australian Open": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 7
+      },
+      {
+        "name": "Rafael Nadal",
+        "wins": 6
+      },
+      {
+        "name": "Andy Murray",
+        "wins": 5
+      }
+    ],
+    "Canada Masters": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 5
+      },
+      {
+        "name": "Richard Gasquet",
+        "wins": 4
+      },
+      {
+        "name": "Janko Tipsarevic",
+        "wins": 3
+      }
+    ],
+    "Cincinnati Masters": [
+      {
+        "name": "Roger Federer",
+        "wins": 5
+      },
+      {
+        "name": "Stanislas Wawrinka",
+        "wins": 4
+      },
+      {
+        "name": "Novak Djokovic",
+        "wins": 4
+      }
+    ],
+    "Indian Wells Masters": [
+      {
+        "name": "Roger Federer",
+        "wins": 6
+      },
+      {
+        "name": "John Isner",
+        "wins": 5
+      },
+      {
+        "name": "David Nalbandian",
+        "wins": 4
+      }
+    ],
+    "Madrid Masters": [
+      {
+        "name": "Roger Federer",
+        "wins": 5
+      },
+      {
+        "name": "Tomas Berdych",
+        "wins": 4
+      },
+      {
+        "name": "Juan Martin Del Potro",
+        "wins": 4
+      }
+    ],
+    "Miami Masters": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 6
+      },
+      {
+        "name": "Andy Murray",
+        "wins": 5
+      },
+      {
+        "name": "Juan Monaco",
+        "wins": 4
+      }
+    ],
+    "Monte Carlo Masters": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 5
+      },
+      {
+        "name": "Novak Djokovic",
+        "wins": 4
+      },
+      {
+        "name": "Gilles Simon",
+        "wins": 4
+      }
+    ],
+    "Paris Masters": [
+      {
+        "name": "David Ferrer",
+        "wins": 5
+      },
+      {
+        "name": "Jerzy Janowicz",
+        "wins": 5
+      },
+      {
+        "name": "Gilles Simon",
+        "wins": 4
+      }
+    ],
+    "Roland Garros": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 7
+      },
+      {
+        "name": "Novak Djokovic",
+        "wins": 6
+      },
+      {
+        "name": "David Ferrer",
+        "wins": 5
+      }
+    ],
+    "Rome Masters": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 5
+      },
+      {
+        "name": "Novak Djokovic",
+        "wins": 4
+      },
+      {
+        "name": "Andreas Seppi",
+        "wins": 3
+      }
+    ],
+    "Shanghai Masters": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 5
+      },
+      {
+        "name": "Andy Murray",
+        "wins": 4
+      },
+      {
+        "name": "Marin Cilic",
+        "wins": 3
+      }
+    ],
+    "US Open": [
+      {
+        "name": "Andy Murray",
+        "wins": 7
+      },
+      {
+        "name": "Novak Djokovic",
+        "wins": 6
+      },
+      {
+        "name": "David Ferrer",
+        "wins": 5
+      }
+    ],
+    "Wimbledon": [
+      {
+        "name": "Roger Federer",
+        "wins": 7
+      },
+      {
+        "name": "Andy Murray",
+        "wins": 6
+      },
+      {
+        "name": "Jo Wilfried Tsonga",
+        "wins": 5
+      }
+    ]
+  },
+  "2013": {
+    "Australian Open": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 7
+      },
+      {
+        "name": "Andy Murray",
+        "wins": 6
+      },
+      {
+        "name": "David Ferrer",
+        "wins": 5
+      }
+    ],
+    "Canada Masters": [
+      {
+        "name": "Milos Raonic",
+        "wins": 5
+      },
+      {
+        "name": "Rafael Nadal",
+        "wins": 5
+      },
+      {
+        "name": "Vasek Pospisil",
+        "wins": 4
+      }
+    ],
+    "Cincinnati Masters": [
+      {
+        "name": "John Isner",
+        "wins": 5
+      },
+      {
+        "name": "Rafael Nadal",
+        "wins": 5
+      },
+      {
+        "name": "Dmitry Tursunov",
+        "wins": 3
+      }
+    ],
+    "Indian Wells Masters": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 6
+      },
+      {
+        "name": "Juan Martin Del Potro",
+        "wins": 5
+      },
+      {
+        "name": "Kevin Anderson",
+        "wins": 4
+      }
+    ],
+    "Madrid Masters": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 5
+      },
+      {
+        "name": "Stanislas Wawrinka",
+        "wins": 5
+      },
+      {
+        "name": "Pablo Andujar",
+        "wins": 4
+      }
+    ],
+    "Miami Masters": [
+      {
+        "name": "Andy Murray",
+        "wins": 6
+      },
+      {
+        "name": "David Ferrer",
+        "wins": 5
+      },
+      {
+        "name": "Jurgen Melzer",
+        "wins": 4
+      }
+    ],
+    "Monte Carlo Masters": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 5
+      },
+      {
+        "name": "Rafael Nadal",
+        "wins": 4
+      },
+      {
+        "name": "Fabio Fognini",
+        "wins": 4
+      }
+    ],
+    "Paris Masters": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 5
+      },
+      {
+        "name": "David Ferrer",
+        "wins": 4
+      },
+      {
+        "name": "Rafael Nadal",
+        "wins": 3
+      }
+    ],
+    "Roland Garros": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 7
+      },
+      {
+        "name": "David Ferrer",
+        "wins": 6
+      },
+      {
+        "name": "Jo Wilfried Tsonga",
+        "wins": 5
+      }
+    ],
+    "Rome Masters": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 5
+      },
+      {
+        "name": "Roger Federer",
+        "wins": 4
+      },
+      {
+        "name": "Benoit Paire",
+        "wins": 4
+      }
+    ],
+    "Shanghai Masters": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 5
+      },
+      {
+        "name": "Juan Martin Del Potro",
+        "wins": 4
+      },
+      {
+        "name": "Florian Mayer",
+        "wins": 3
+      }
+    ],
+    "US Open": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 7
+      },
+      {
+        "name": "Novak Djokovic",
+        "wins": 6
+      },
+      {
+        "name": "Richard Gasquet",
+        "wins": 5
+      }
+    ],
+    "Wimbledon": [
+      {
+        "name": "Andy Murray",
+        "wins": 7
+      },
+      {
+        "name": "Novak Djokovic",
+        "wins": 6
+      },
+      {
+        "name": "Jerzy Janowicz",
+        "wins": 5
+      }
+    ]
+  },
+  "2014": {
+    "Australian Open": [
+      {
+        "name": "Stanislas Wawrinka",
+        "wins": 7
+      },
+      {
+        "name": "Rafael Nadal",
+        "wins": 6
+      },
+      {
+        "name": "Roger Federer",
+        "wins": 5
+      }
+    ],
+    "Canada Masters": [
+      {
+        "name": "Jo Wilfried Tsonga",
+        "wins": 6
+      },
+      {
+        "name": "Roger Federer",
+        "wins": 4
+      },
+      {
+        "name": "Feliciano Lopez",
+        "wins": 4
+      }
+    ],
+    "Cincinnati Masters": [
+      {
+        "name": "Roger Federer",
+        "wins": 5
+      },
+      {
+        "name": "Julien Benneteau",
+        "wins": 4
+      },
+      {
+        "name": "David Ferrer",
+        "wins": 4
+      }
+    ],
+    "Indian Wells Masters": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 6
+      },
+      {
+        "name": "Roger Federer",
+        "wins": 5
+      },
+      {
+        "name": "Alexandr Dolgopolov",
+        "wins": 4
+      }
+    ],
+    "Madrid Masters": [
+      {
+        "name": "Kei Nishikori",
+        "wins": 5
+      },
+      {
+        "name": "Rafael Nadal",
+        "wins": 5
+      },
+      {
+        "name": "Roberto Bautista Agut",
+        "wins": 4
+      }
+    ],
+    "Miami Masters": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 6
+      },
+      {
+        "name": "Rafael Nadal",
+        "wins": 5
+      },
+      {
+        "name": "Kei Nishikori",
+        "wins": 4
+      }
+    ],
+    "Monte Carlo Masters": [
+      {
+        "name": "Stanislas Wawrinka",
+        "wins": 5
+      },
+      {
+        "name": "Roger Federer",
+        "wins": 4
+      },
+      {
+        "name": "David Ferrer",
+        "wins": 3
+      }
+    ],
+    "Paris Masters": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 5
+      },
+      {
+        "name": "Milos Raonic",
+        "wins": 4
+      },
+      {
+        "name": "Kei Nishikori",
+        "wins": 3
+      }
+    ],
+    "Roland Garros": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 7
+      },
+      {
+        "name": "Novak Djokovic",
+        "wins": 6
+      },
+      {
+        "name": "Andy Murray",
+        "wins": 5
+      }
+    ],
+    "Rome Masters": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 5
+      },
+      {
+        "name": "Rafael Nadal",
+        "wins": 4
+      },
+      {
+        "name": "Grigor Dimitrov",
+        "wins": 4
+      }
+    ],
+    "Shanghai Masters": [
+      {
+        "name": "Gilles Simon",
+        "wins": 5
+      },
+      {
+        "name": "Roger Federer",
+        "wins": 5
+      },
+      {
+        "name": "Feliciano Lopez",
+        "wins": 4
+      }
+    ],
+    "US Open": [
+      {
+        "name": "Marin Cilic",
+        "wins": 7
+      },
+      {
+        "name": "Kei Nishikori",
+        "wins": 6
+      },
+      {
+        "name": "Novak Djokovic",
+        "wins": 5
+      }
+    ],
+    "Wimbledon": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 7
+      },
+      {
+        "name": "Roger Federer",
+        "wins": 6
+      },
+      {
+        "name": "Grigor Dimitrov",
+        "wins": 5
+      }
+    ]
+  },
+  "2015": {
+    "Australian Open": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 7
+      },
+      {
+        "name": "Andy Murray",
+        "wins": 6
+      },
+      {
+        "name": "Stanislas Wawrinka",
+        "wins": 5
+      }
+    ],
+    "Canada Masters": [
+      {
+        "name": "Andy Murray",
+        "wins": 5
+      },
+      {
+        "name": "Novak Djokovic",
+        "wins": 4
+      },
+      {
+        "name": "Jeremy Chardy",
+        "wins": 4
+      }
+    ],
+    "Cincinnati Masters": [
+      {
+        "name": "Roger Federer",
+        "wins": 5
+      },
+      {
+        "name": "Novak Djokovic",
+        "wins": 4
+      },
+      {
+        "name": "Alexandr Dolgopolov",
+        "wins": 3
+      }
+    ],
+    "Indian Wells Masters": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 6
+      },
+      {
+        "name": "Roger Federer",
+        "wins": 5
+      },
+      {
+        "name": "Andy Murray",
+        "wins": 4
+      }
+    ],
+    "Madrid Masters": [
+      {
+        "name": "Andy Murray",
+        "wins": 5
+      },
+      {
+        "name": "Rafael Nadal",
+        "wins": 4
+      },
+      {
+        "name": "Grigor Dimitrov",
+        "wins": 3
+      }
+    ],
+    "Miami Masters": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 6
+      },
+      {
+        "name": "Andy Murray",
+        "wins": 5
+      },
+      {
+        "name": "Dominic Thiem",
+        "wins": 4
+      }
+    ],
+    "Monte Carlo Masters": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 5
+      },
+      {
+        "name": "Tomas Berdych",
+        "wins": 4
+      },
+      {
+        "name": "Gael Monfils",
+        "wins": 4
+      }
+    ],
+    "Paris Masters": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 5
+      },
+      {
+        "name": "Andy Murray",
+        "wins": 4
+      },
+      {
+        "name": "David Ferrer",
+        "wins": 3
+      }
+    ],
+    "Roland Garros": [
+      {
+        "name": "Stanislas Wawrinka",
+        "wins": 7
+      },
+      {
+        "name": "Novak Djokovic",
+        "wins": 6
+      },
+      {
+        "name": "Andy Murray",
+        "wins": 5
+      }
+    ],
+    "Rome Masters": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 5
+      },
+      {
+        "name": "Roger Federer",
+        "wins": 4
+      },
+      {
+        "name": "David Ferrer",
+        "wins": 3
+      }
+    ],
+    "Shanghai Masters": [
+      {
+        "name": "Jo Wilfried Tsonga",
+        "wins": 5
+      },
+      {
+        "name": "Novak Djokovic",
+        "wins": 5
+      },
+      {
+        "name": "Andy Murray",
+        "wins": 3
+      }
+    ],
+    "US Open": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 7
+      },
+      {
+        "name": "Roger Federer",
+        "wins": 6
+      },
+      {
+        "name": "Marin Cilic",
+        "wins": 5
+      }
+    ],
+    "Wimbledon": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 7
+      },
+      {
+        "name": "Roger Federer",
+        "wins": 6
+      },
+      {
+        "name": "Andy Murray",
+        "wins": 5
+      }
+    ]
+  },
+  "2016": {
+    "Australian Open": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 7
+      },
+      {
+        "name": "Andy Murray",
+        "wins": 6
+      },
+      {
+        "name": "Milos Raonic",
+        "wins": 5
+      }
+    ],
+    "Canada Masters": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 5
+      },
+      {
+        "name": "Kei Nishikori",
+        "wins": 4
+      },
+      {
+        "name": "Gael Monfils",
+        "wins": 4
+      }
+    ],
+    "Cincinnati Masters": [
+      {
+        "name": "Marin Cilic",
+        "wins": 6
+      },
+      {
+        "name": "Grigor Dimitrov",
+        "wins": 4
+      },
+      {
+        "name": "Andy Murray",
+        "wins": 4
+      }
+    ],
+    "Indian Wells Masters": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 6
+      },
+      {
+        "name": "Milos Raonic",
+        "wins": 5
+      },
+      {
+        "name": "David Goffin",
+        "wins": 4
+      }
+    ],
+    "Madrid Masters": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 5
+      },
+      {
+        "name": "Andy Murray",
+        "wins": 4
+      },
+      {
+        "name": "Joao Sousa",
+        "wins": 3
+      }
+    ],
+    "Miami Masters": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 6
+      },
+      {
+        "name": "Kei Nishikori",
+        "wins": 5
+      },
+      {
+        "name": "David Goffin",
+        "wins": 4
+      }
+    ],
+    "Monte Carlo Masters": [
+      {
+        "name": "Gael Monfils",
+        "wins": 5
+      },
+      {
+        "name": "Rafael Nadal",
+        "wins": 5
+      },
+      {
+        "name": "Andy Murray",
+        "wins": 3
+      }
+    ],
+    "Paris Masters": [
+      {
+        "name": "Andy Murray",
+        "wins": 5
+      },
+      {
+        "name": "John Isner",
+        "wins": 5
+      },
+      {
+        "name": "Jack Sock",
+        "wins": 3
+      }
+    ],
+    "Roland Garros": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 7
+      },
+      {
+        "name": "Andy Murray",
+        "wins": 6
+      },
+      {
+        "name": "Dominic Thiem",
+        "wins": 5
+      }
+    ],
+    "Rome Masters": [
+      {
+        "name": "Andy Murray",
+        "wins": 5
+      },
+      {
+        "name": "Novak Djokovic",
+        "wins": 4
+      },
+      {
+        "name": "David Goffin",
+        "wins": 3
+      }
+    ],
+    "Shanghai Masters": [
+      {
+        "name": "Andy Murray",
+        "wins": 5
+      },
+      {
+        "name": "Roberto Bautista Agut",
+        "wins": 5
+      },
+      {
+        "name": "Gilles Simon",
+        "wins": 4
+      }
+    ],
+    "Wimbledon": [
+      {
+        "name": "Andy Murray",
+        "wins": 7
+      },
+      {
+        "name": "Milos Raonic",
+        "wins": 6
+      },
+      {
+        "name": "Roger Federer",
+        "wins": 5
+      }
+    ]
+  },
+  "2017": {
+    "Australian Open": [
+      {
+        "name": "Roger Federer",
+        "wins": 7
+      },
+      {
+        "name": "Rafael Nadal",
+        "wins": 6
+      },
+      {
+        "name": "Grigor Dimitrov",
+        "wins": 5
+      }
+    ],
+    "Canada Masters": [
+      {
+        "name": "Alexander Zverev",
+        "wins": 5
+      },
+      {
+        "name": "Robin Haase",
+        "wins": 4
+      },
+      {
+        "name": "Roger Federer",
+        "wins": 4
+      }
+    ],
+    "Cincinnati Masters": [
+      {
+        "name": "Grigor Dimitrov",
+        "wins": 5
+      },
+      {
+        "name": "Nick Kyrgios",
+        "wins": 5
+      },
+      {
+        "name": "David Ferrer",
+        "wins": 4
+      }
+    ],
+    "Indian Wells Masters": [
+      {
+        "name": "Roger Federer",
+        "wins": 6
+      },
+      {
+        "name": "Stan Wawrinka",
+        "wins": 5
+      },
+      {
+        "name": "Jack Sock",
+        "wins": 4
+      }
+    ],
+    "Madrid Masters": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 5
+      },
+      {
+        "name": "Pablo Cuevas",
+        "wins": 4
+      },
+      {
+        "name": "Dominic Thiem",
+        "wins": 4
+      }
+    ],
+    "Miami Masters": [
+      {
+        "name": "Roger Federer",
+        "wins": 6
+      },
+      {
+        "name": "Rafael Nadal",
+        "wins": 5
+      },
+      {
+        "name": "Fabio Fognini",
+        "wins": 5
+      }
+    ],
+    "Monte Carlo Masters": [
+      {
+        "name": "Albert Ramos",
+        "wins": 5
+      },
+      {
+        "name": "Rafael Nadal",
+        "wins": 5
+      },
+      {
+        "name": "David Goffin",
+        "wins": 4
+      }
+    ],
+    "Paris Masters": [
+      {
+        "name": "Filip Krajinovic",
+        "wins": 5
+      },
+      {
+        "name": "Jack Sock",
+        "wins": 5
+      },
+      {
+        "name": "Julien Benneteau",
+        "wins": 4
+      }
+    ],
+    "Roland Garros": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 7
+      },
+      {
+        "name": "Stan Wawrinka",
+        "wins": 6
+      },
+      {
+        "name": "Andy Murray",
+        "wins": 5
+      }
+    ],
+    "Rome Masters": [
+      {
+        "name": "Alexander Zverev",
+        "wins": 6
+      },
+      {
+        "name": "Novak Djokovic",
+        "wins": 4
+      },
+      {
+        "name": "John Isner",
+        "wins": 4
+      }
+    ],
+    "Shanghai Masters": [
+      {
+        "name": "Roger Federer",
+        "wins": 5
+      },
+      {
+        "name": "Rafael Nadal",
+        "wins": 4
+      },
+      {
+        "name": "Juan Martin del Potro",
+        "wins": 4
+      }
+    ],
+    "US Open": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 7
+      },
+      {
+        "name": "Kevin Anderson",
+        "wins": 6
+      },
+      {
+        "name": "Juan Martin del Potro",
+        "wins": 5
+      }
+    ],
+    "Wimbledon": [
+      {
+        "name": "Roger Federer",
+        "wins": 7
+      },
+      {
+        "name": "Marin Cilic",
+        "wins": 6
+      },
+      {
+        "name": "Sam Querrey",
+        "wins": 5
+      }
+    ]
+  },
+  "2018": {
+    "Australian Open": [
+      {
+        "name": "Roger Federer",
+        "wins": 7
+      },
+      {
+        "name": "Marin Cilic",
+        "wins": 6
+      },
+      {
+        "name": "Hyeon Chung",
+        "wins": 5
+      }
+    ],
+    "Canada Masters": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 5
+      },
+      {
+        "name": "Stefanos Tsitsipas",
+        "wins": 5
+      },
+      {
+        "name": "Karen Khachanov",
+        "wins": 4
+      }
+    ],
+    "Cincinnati Masters": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 6
+      },
+      {
+        "name": "Roger Federer",
+        "wins": 4
+      },
+      {
+        "name": "David Goffin",
+        "wins": 4
+      }
+    ],
+    "Indian Wells Masters": [
+      {
+        "name": "Juan Martin del Potro",
+        "wins": 6
+      },
+      {
+        "name": "Roger Federer",
+        "wins": 5
+      },
+      {
+        "name": "Borna Coric",
+        "wins": 5
+      }
+    ],
+    "Madrid Masters": [
+      {
+        "name": "Alexander Zverev",
+        "wins": 5
+      },
+      {
+        "name": "Dominic Thiem",
+        "wins": 4
+      },
+      {
+        "name": "Denis Shapovalov",
+        "wins": 4
+      }
+    ],
+    "Miami Masters": [
+      {
+        "name": "John Isner",
+        "wins": 6
+      },
+      {
+        "name": "Alexander Zverev",
+        "wins": 5
+      },
+      {
+        "name": "Juan Martin del Potro",
+        "wins": 4
+      }
+    ],
+    "Monte Carlo Masters": [
+      {
+        "name": "Kei Nishikori",
+        "wins": 5
+      },
+      {
+        "name": "Rafael Nadal",
+        "wins": 5
+      },
+      {
+        "name": "Alexander Zverev",
+        "wins": 3
+      }
+    ],
+    "Paris Masters": [
+      {
+        "name": "Karen Khachanov",
+        "wins": 6
+      },
+      {
+        "name": "Novak Djokovic",
+        "wins": 4
+      },
+      {
+        "name": "Dominic Thiem",
+        "wins": 3
+      }
+    ],
+    "Roland Garros": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 7
+      },
+      {
+        "name": "Dominic Thiem",
+        "wins": 6
+      },
+      {
+        "name": "Juan Martin del Potro",
+        "wins": 5
+      }
+    ],
+    "Rome Masters": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 5
+      },
+      {
+        "name": "Novak Djokovic",
+        "wins": 4
+      },
+      {
+        "name": "Alexander Zverev",
+        "wins": 4
+      }
+    ],
+    "Shanghai Masters": [
+      {
+        "name": "Borna Coric",
+        "wins": 5
+      },
+      {
+        "name": "Novak Djokovic",
+        "wins": 5
+      },
+      {
+        "name": "Alexander Zverev",
+        "wins": 3
+      }
+    ],
+    "US Open": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 7
+      },
+      {
+        "name": "Juan Martin del Potro",
+        "wins": 6
+      },
+      {
+        "name": "Kei Nishikori",
+        "wins": 5
+      }
+    ],
+    "Wimbledon": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 7
+      },
+      {
+        "name": "Kevin Anderson",
+        "wins": 6
+      },
+      {
+        "name": "John Isner",
+        "wins": 5
+      }
+    ]
+  },
+  "2019": {
+    "Australian Open": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 7
+      },
+      {
+        "name": "Rafael Nadal",
+        "wins": 6
+      },
+      {
+        "name": "Lucas Pouille",
+        "wins": 5
+      }
+    ],
+    "Canada Masters": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 5
+      },
+      {
+        "name": "Gael Monfils",
+        "wins": 4
+      },
+      {
+        "name": "Daniil Medvedev",
+        "wins": 4
+      }
+    ],
+    "Cincinnati Masters": [
+      {
+        "name": "Daniil Medvedev",
+        "wins": 6
+      },
+      {
+        "name": "David Goffin",
+        "wins": 5
+      },
+      {
+        "name": "Richard Gasquet",
+        "wins": 4
+      }
+    ],
+    "Indian Wells Masters": [
+      {
+        "name": "Dominic Thiem",
+        "wins": 6
+      },
+      {
+        "name": "Roger Federer",
+        "wins": 5
+      },
+      {
+        "name": "Hubert Hurkacz",
+        "wins": 4
+      }
+    ],
+    "Madrid Masters": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 5
+      },
+      {
+        "name": "Stefanos Tsitsipas",
+        "wins": 4
+      },
+      {
+        "name": "Dominic Thiem",
+        "wins": 3
+      }
+    ],
+    "Miami Masters": [
+      {
+        "name": "Roger Federer",
+        "wins": 6
+      },
+      {
+        "name": "John Isner",
+        "wins": 5
+      },
+      {
+        "name": "Felix Auger Aliassime",
+        "wins": 5
+      }
+    ],
+    "Monte Carlo Masters": [
+      {
+        "name": "Fabio Fognini",
+        "wins": 6
+      },
+      {
+        "name": "Dusan Lajovic",
+        "wins": 5
+      },
+      {
+        "name": "Daniil Medvedev",
+        "wins": 4
+      }
+    ],
+    "Paris Masters": [
+      {
+        "name": "Denis Shapovalov",
+        "wins": 5
+      },
+      {
+        "name": "Novak Djokovic",
+        "wins": 5
+      },
+      {
+        "name": "Grigor Dimitrov",
+        "wins": 4
+      }
+    ],
+    "Roland Garros": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 7
+      },
+      {
+        "name": "Dominic Thiem",
+        "wins": 6
+      },
+      {
+        "name": "Novak Djokovic",
+        "wins": 5
+      }
+    ],
+    "Rome Masters": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 5
+      },
+      {
+        "name": "Novak Djokovic",
+        "wins": 4
+      },
+      {
+        "name": "Diego Schwartzman",
+        "wins": 4
+      }
+    ],
+    "Shanghai Masters": [
+      {
+        "name": "Daniil Medvedev",
+        "wins": 5
+      },
+      {
+        "name": "Matteo Berrettini",
+        "wins": 4
+      },
+      {
+        "name": "Alexander Zverev",
+        "wins": 4
+      }
+    ],
+    "US Open": [
+      {
+        "name": "Rafael Nadal",
+        "wins": 7
+      },
+      {
+        "name": "Daniil Medvedev",
+        "wins": 6
+      },
+      {
+        "name": "Grigor Dimitrov",
+        "wins": 5
+      }
+    ],
+    "Wimbledon": [
+      {
+        "name": "Novak Djokovic",
+        "wins": 7
+      },
+      {
+        "name": "Roger Federer",
+        "wins": 6
+      },
+      {
+        "name": "Rafael Nadal",
+        "wins": 5
+      }
+    ]
+  }
+}
