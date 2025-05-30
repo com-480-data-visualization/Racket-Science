@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Rafael Nadal",
+    "size": 82
+  },
+  {
+    "name": "Roger Federer",
+    "size": 67
+  },
+  {
+    "name": "Novak Djokovic",
+    "size": 64
+  },
+  {
+    "name": "Andy Murray",
+    "size": 58
+  },
+  {
+    "name": "Nikolay Davydenko",
+    "size": 56
+  },
+  {
+    "name": "Gilles Simon",
+    "size": 52
+  },
+  {
+    "name": "Andy Roddick",
+    "size": 50
+  },
+  {
+    "name": "James Blake",
+    "size": 48
+  },
+  {
+    "name": "Fernando Verdasco",
+    "size": 47
+  },
+  {
+    "name": "Juan Martin Del Potro",
+    "size": 46
+  },
+  {
+    "name": "David Nalbandian",
+    "size": 44
+  },
+  {
+    "name": "Robin Soderling",
+    "size": 44
+  },
+  {
+    "name": "David Ferrer",
+    "size": 44
+  },
+  {
+    "name": "Igor Andreev",
+    "size": 43
+  },
+  {
+    "name": "Fernando Gonzalez",
+    "size": 40
+  }
+]
