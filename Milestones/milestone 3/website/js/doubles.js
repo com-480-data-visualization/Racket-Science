@@ -150,35 +150,23 @@ function updatePodium(data) {
     return;
   }
 
+  // Sort players by size descending
   const sorted = [...data].sort((a, b) => b.size - a.size);
 
-  const podiumGroups = [];
-  let rank = 1;
-
-  for (let i = 0; i < sorted.length && podiumGroups.length < 3; i++) {
-    const current = sorted[i];
-    const prevGroup = podiumGroups[podiumGroups.length - 1];
-
-    if (!prevGroup || current.size !== prevGroup[0].size) {
-      podiumGroups.push([current]);
-    } else {
-      prevGroup.push(current);
-    }
-  }
+  // Take the top 3 unique players only
+  const topThree = sorted.slice(0, 3);
 
   const classes = ['first', 'second', 'third'];
   const displayRanks = [1, 2, 3];
 
-  const podiumHTML = podiumGroups.map((group, i) => {
-    return group.map(player => `
-      <div class="scoreboard__podium scoreboard__podium--${classes[i]} js-podium">
-        <div class="scoreboard__podium-base scoreboard__podium-base--${classes[i]}">
-          <div class="scoreboard__podium-rank">${displayRanks[i]}</div>
-        </div>
-        <div class="scoreboard__podium-number">${player.name}</div>
+  const podiumHTML = topThree.map((player, i) => `
+    <div class="scoreboard__podium scoreboard__podium--${classes[i]} js-podium">
+      <div class="scoreboard__podium-base scoreboard__podium-base--${classes[i]}">
+        <div class="scoreboard__podium-rank">${displayRanks[i]}</div>
       </div>
-    `).join('');
-  }).join('');
+      <div class="scoreboard__podium-number">${player.name}</div>
+    </div>
+  `).join('');
 
   const scoreboard = document.getElementById("scoreboard-doubles");
   scoreboard.className = `scoreboard__podiums podium-${lastSurface}`;
@@ -186,6 +174,7 @@ function updatePodium(data) {
 
   document.getElementById("podium-placeholder-doubles").style.display = "none";
 }
+
 
 
 function refreshVisuals() {
