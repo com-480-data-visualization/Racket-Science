@@ -14,17 +14,13 @@ html {
 
 }
 
-/*header {
-    margin-top: 80px;
-    background-color: rgba(220, 219, 219, 0.624); 
-    border: 2px solid #7a7a79;
-    border-radius: 40px;
-    padding: 0rem 2rem;
-    margin: 1rem auto;
-    text-align: center;
-    width: fit-content;
-    max-width: 80%;
-}*/
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem;
+}
+
 
 .overall-header {
   width: 100%;
@@ -34,6 +30,22 @@ html {
 }
 
 .overall-header-inner {
+  text-align: center;
+  padding: 10px 30px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.4s;
+}
+
+.tournament-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem;
+}
+
+.tournament-header-inner {
   text-align: center;
   padding: 10px 30px;
   border-radius: 20px;
