@@ -19,7 +19,7 @@ document.querySelectorAll('nav a').forEach(link => {
 
   <section id="cover">
         <video autoplay loop muted playsinline id="cover-video">
-            <source src="tennis_court3.mp4" type="video/mp4">
+            <source src="tennis_court3_smaller.mp4" type="video/mp4">
         </video>
         <div class="cover-content">
             <h1>Racket Science</h1>
@@ -85,6 +85,7 @@ document.querySelectorAll('nav a').forEach(link => {
             </div>
             <h2>Podium</h2>
               <div class="scoreboard" id="scoreboard-global"></div>
+    
         </section>
 
     <section class="chart-container top-chart" id="over_the_years-global">
@@ -119,10 +120,11 @@ document.querySelectorAll('nav a').forEach(link => {
           <div id="bubble-prompt-global" class="bubble-prompt" style="text-align: center;">
             <p><strong>Please select a year to view the top 15 GOATs 🐐</strong></p>
           </div>
-          <div id="bubble-prompt-no-data-global" class="bubble-prompt" style="display: none; text-align: center;">
-            <p><strong>No data available for this selection. 😢</strong></p>
+          <div id="podium-prompt-no-data-global" class="bubble-prompt" style="display:none;">
+              <span role="img" aria-label="Sad face" style="font-size:2.2rem;"></span>
+              Sorry, we don’t have data for the requested selection.
           </div>
-          <svg class="bubbleChart" id="bubbleChart-global" width="300" height="250" style="display: none;"></svg>
+          <svg class="bubbleChart" id="bubbleChart-global" width="500" height="400" style="display: none;"></svg>
         </div>
     </section>
 
@@ -451,15 +453,16 @@ document.querySelectorAll('nav a').forEach(link => {
 
 <section id="services">
   <div style="height: 95px"></div>
-  <header>
-    <h1>Services GOAT</h1>
-  </header>
-
+  <div class="services-header">
+    <div class="services-header-inner">
+      <h1 id="services-title">Services GOAT</h1>
+    </div>
+  </div>
   <main class="charts-wrapper">
 
   <div class="podium-and-text-row" id="text-wrapper-services">
 
-    <aside class="services-explanation">
+    <div class="info-box">
         <h3>Why Serving Matters?</h3>
         <p>
           Serving is one of the most decisive skills in tennis. The greatest servers combine power, accuracy, and nerves of steel, often turning matches in their favor with just a few key points.
@@ -467,7 +470,7 @@ document.querySelectorAll('nav a').forEach(link => {
         <p>
           To identify the legends of serving, we analyzed key stats: Ace Rate, First Serve %, First Serve Win %, Second Serve Win %, and Break Point Save %. Only players with at least 30 matches are included, so the rankings reflect real consistency. By comparing these metrics, we highlight not just the flashy servers, but those who consistently dominated with their serve and made it a cornerstone of their success.
         </p>
-    </aside>
+      </div>
     <section class="chart-container top-chart" id="podium-services">
         <div class="chart-header">
         <select id="category-select-services-podium" class="dropdown">
@@ -539,6 +542,7 @@ document.querySelectorAll('nav a').forEach(link => {
   </header>
 
   <main class="charts-wrapper">
+    <div class="podium-and-text-row" id="text-wrapper-services">
 
       <section class="chart-container top-chart" id="podium-net">
           <div class="chart-header">
@@ -607,6 +611,24 @@ document.querySelectorAll('nav a').forEach(link => {
         <svg class="bubbleChart" id="bubbleChart-net" width="500" height="400" ></svg>
       </div>
     </section>
+
+      <aside class="net-explanation">
+        <h3>Why Net Play Matters?</h3>
+        <p>
+          Net play can be a real game-changer in tennis, demanding quick instincts and great tactics. We analyzed four key categories to capture all the ways players use the net:
+        </p>
+        <ul>
+          <li><strong>Net Points</strong>: Finishing points at the net, showing overall net effectiveness.</li>
+          <li><strong>Approach</strong>: Moving forward after an approach shot, highlighting aggressive tactics.</li>
+          <li><strong>Net Points Rallies</strong>: Rallies where a player comes to the net during the point, reflecting dynamic play.</li>
+          <li><strong>Approach Rallies</strong>: Rallies starting with or involving an approach shot, emphasizing tactical net use.</li>
+        </ul>
+        <p>
+          For each, you can look at <strong>Net Efficiency</strong> (the % of net points won) or <strong>Passing Shots</strong> (how well a player handles being attacked at the net). Stats are available overall or year by year, revealing both all-time skill and progression over time.
+        </p>
+      </aside>
+      </div>
+
       <div class="nav-dots">
       <span class="dot" onclick="goToChart(1, 'net')"></span>
       <span class="dot" onclick="goToChart(2, 'net')"></span>
@@ -616,6 +638,8 @@ document.querySelectorAll('nav a').forEach(link => {
 
 <section id="tournament">
 <div class="overall-header">
+  <div style="height: 95px"></div>
+<div class="tournament-header">
     <div class="tournament-header-inner">
       <h1 id="tournament-title">Tournament GOAT</h1>
     </div>
@@ -834,8 +858,8 @@ document.querySelectorAll('nav a').forEach(link => {
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="js/loadGeneral.js"></script>
 <script src="js/chart.js"></script>
-<script src="js/tournament.js"></script>
 <div id="tooltip"></div>
+<script src="js/tournament.js"></script>
 
 </body>
 </html>

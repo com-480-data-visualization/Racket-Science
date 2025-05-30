@@ -75,7 +75,6 @@ function updateBubbleChart(data) {
     const chartEl = document.getElementById("bubbleChart-doubles");
     const placeholderEl = document.getElementById("bubble-placeholder-doubles");
 
-
     if (bubbleChartDrawn && chartEl.style.display === "block" && !bubbleSvg.selectAll("circle").empty()) return;
 
     placeholderEl.style.display = "none";
@@ -91,8 +90,20 @@ function updateBubbleChart(data) {
 
     bubbleSvg.selectAll("*").remove();
 
-    const pack = d3.pack().size([width, height]).padding(5);
-    const root = d3.hierarchy({ children: data }).sum(d => Math.pow(d.size, 1.5));
+    const min = d3.min(data, d => d.size);
+    const max = d3.max(data, d => d.size);
+
+    function amplifyServiceValue(value, min, max) {
+      return 100 + 500 * (value - min) / (max - min); 
+    }
+
+    const amplifiedData = data.map(d => ({
+      ...d,
+      bubbleSize: amplifyServiceValue(d.size, min, max)
+    }));
+
+    const pack = d3.pack().size([width, height]).padding(10); // can adjust padding
+    const root = d3.hierarchy({ children: amplifiedData }).sum(d => d.bubbleSize);
     const nodes = pack(root).leaves();
     const color = d3.scaleOrdinal(d3.schemeCategory10);
 
