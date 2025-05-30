@@ -620,7 +620,8 @@ document.querySelectorAll('nav a').forEach(link => {
 
 
   <main class="charts-wrapper">
-    <div class="top-charts">
+    <div class="podium-and-text-row">
+      
       <section class="chart-container top-chart" id="podium-tournament">
         <div class="chart-header">
           <select id="tournament-year-select" class="dropdown">
@@ -667,7 +668,6 @@ document.querySelectorAll('nav a').forEach(link => {
         <h2>Podium</h2>
         <div class="scoreboard" id="scoreboard-tournament"></div>
       </section>
-    </div>
       
       <!-- Chart 2 Container -->
       <section class="chart-container top-chart" id="over_the_years-tournament">
@@ -722,9 +722,18 @@ document.querySelectorAll('nav a').forEach(link => {
               </div>
               <svg class="bubbleChart" id="bubbleChart-tournament" width="500" height="400"></svg>
           </div>
-          
-      
         </section>
+        <aside class="tournament-explanation">
+          <h3>Understanding Tournament Greatness</h3>
+          <p>
+            The Tournament GOAT analysis focuses on player performances in the most prestigious tennis events, evaluating consistency, peak achievements, and evolution over the years.
+          </p>
+          <p>
+            Explore how top players shaped the tournaments and see who dominated the courts season after season.
+          </p>
+        </aside>
+        </div>
+
         <div class="nav-dots">
         <span class="dot" onclick="goToChart(1, 'tournament')"></span>
         <span class="dot" onclick="goToChart(2, 'tournament')"></span>
