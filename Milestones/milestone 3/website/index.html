@@ -19,7 +19,7 @@ document.querySelectorAll('nav a').forEach(link => {
 
   <section id="cover">
         <video autoplay loop muted playsinline id="cover-video">
-            <source src="tennis_court3.mp4" type="video/mp4">
+            <source src="tennis_court3_smaller.mp4" type="video/mp4">
         </video>
         <div class="cover-content">
             <h1>Racket Science</h1>
@@ -85,6 +85,7 @@ document.querySelectorAll('nav a').forEach(link => {
             </div>
             <h2>Podium</h2>
               <div class="scoreboard" id="scoreboard-global"></div>
+    
         </section>
 
     <section class="chart-container top-chart" id="over_the_years-global">
@@ -119,10 +120,11 @@ document.querySelectorAll('nav a').forEach(link => {
           <div id="bubble-prompt-global" class="bubble-prompt" style="text-align: center;">
             <p><strong>Please select a year to view the top 15 GOATs 🐐</strong></p>
           </div>
-          <div id="bubble-prompt-no-data-global" class="bubble-prompt" style="display: none; text-align: center;">
-            <p><strong>No data available for this selection. 😢</strong></p>
+          <div id="podium-prompt-no-data-global" class="bubble-prompt" style="display:none;">
+              <span role="img" aria-label="Sad face" style="font-size:2.2rem;"></span>
+              Sorry, we don’t have data for the requested selection.
           </div>
-          <svg class="bubbleChart" id="bubbleChart-global" width="300" height="250" style="display: none;"></svg>
+          <svg class="bubbleChart" id="bubbleChart-global" width="500" height="400" style="display: none;"></svg>
         </div>
     </section>
 
@@ -856,7 +858,6 @@ document.querySelectorAll('nav a').forEach(link => {
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="js/loadGeneral.js"></script>
 <script src="js/chart.js"></script>
-<script src="js/tournamentPodium.js"></script>
 <div id="tooltip"></div>
 <script src="js/tournament.js"></script>
 

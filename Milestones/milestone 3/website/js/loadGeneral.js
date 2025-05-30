@@ -108,8 +108,22 @@ function updateGlobalBubbleChart(data) {
   const width = +globalSvg.attr("width");
   const height = +globalSvg.attr("height");
 
+  // Amplify size ONLY for bubble display
+  const min = d3.min(data, d => d.size);
+  console.log(min)
+  const max = d3.max(data, d => d.size);
+  function amplifyServiceValue(value, min, max) {
+      return 100 + 400 * (value - min) / (max - min);
+  }
+  // Keep original size as .size, add .bubbleSize for display
+  const amplifiedData = data.map(d => ({
+    ...d,
+    bubbleSize: amplifyServiceValue(d.size, min, max)
+  }));
+
   const pack = d3.pack().size([width, height]).padding(5);
-  const root = d3.hierarchy({ children: data }).sum(d => Math.pow(d.size, 1.5));
+  // Use bubbleSize for radius calculation
+  const root = d3.hierarchy({ children: amplifiedData }).sum(d => d.bubbleSize);
   const nodes = pack(root).leaves();
   const color = d3.scaleOrdinal(d3.schemeSet2);
 
@@ -127,6 +141,7 @@ function updateGlobalBubbleChart(data) {
         .duration(150)
         .attr("r", d.r * 1.15);
 
+      // d.data.size is still the ORIGINAL score
       const index = data.findIndex(p => p.name === d.data.name);
       const rank = index >= 0 ? index + 1 : "N/A";
 
@@ -153,6 +168,7 @@ function updateGlobalBubbleChart(data) {
     .style("font-size", d => Math.max(d.r / 3.5, 10))
     .text(d => d.data.name.split(" ")[0]);
 }
+
 
 
 document.addEventListener("DOMContentLoaded", function () {
