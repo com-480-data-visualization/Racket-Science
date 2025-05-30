@@ -715,11 +715,21 @@ document.querySelectorAll('nav a').forEach(link => {
                   <option value="2000">2000</option>
               </select>
           
-              <select id="tournament-select2" class="dropdown">
-                  <option value="Overall tournaments">Overall tournaments</option>
-                  <option>tournament1</option>
-                  <option>tournament2</option>
-                  <option>tournament3</option>
+              <select id="tournament-name-select-bubble" class="dropdown">
+                <option value="Select Tournament">Select Tournament</option>
+                <option value="Australian Open">Australian Open</option>
+                <option value="Roland Garros">Roland Garros</option>
+                <option value="Wimbledon">Wimbledon</option>
+                <option value="US Open">US Open</option>
+                <option value="Indian Wells Masters">Indian Wells Masters</option>
+                <option value="Miami Masters">Miami Masters</option>
+                <option value="Monte Carlo Masters">Monte Carlo Masters</option>
+                <option value="Madrid Masters">Madrid Masters</option>
+                <option value="Rome Masters">Rome Masters</option>
+                <option value="Canada Masters">Canada Masters</option>
+                <option value="Cincinnati Masters">Cincinnati Masters</option>
+                <option value="Shanghai Masters">Shanghai Masters</option>
+                <option value="Paris Masters">Paris Masters</option>
               </select>
           </div>
       
@@ -727,7 +737,7 @@ document.querySelectorAll('nav a').forEach(link => {
               <h2>Tournament Evolution over the years</h2>
               <div id="bubble-prompt-tournament" class="bubble-prompt">
                   <span role="img" aria-label="Trophy" style="font-size:2.2rem;">🏆</span>
-                  Let’s see who are the <b>top 15 players</b> in the tournaments!
+                  Let’s see who are the <b>top 15 players</b> for each tournament!
               </div>
               <svg class="bubbleChart" id="bubbleChart-tournament" width="500" height="400"></svg>
           </div>

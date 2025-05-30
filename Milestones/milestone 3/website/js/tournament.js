@@ -82,3 +82,122 @@ document.addEventListener("DOMContentLoaded", () => {
   yearSelect.addEventListener("change", updatePodium);
   tournamentSelect.addEventListener("change", updatePodium);
 });
+
+const tournamentSvg = d3.select("#bubbleChart-tournament");
+let tournamentDataCache = null;
+
+function loadTournamentJSON() {
+  const filePath = `../data/tournaments/top15_per_elite_tournament_per_year.json`;
+  console.log("Loading full tournament dataset:", filePath);
+
+  return d3.json(filePath).then(data => {
+    tournamentDataCache = data;
+    return data;
+  }).catch(error => {
+    console.error("Failed to load tournament data:", error);
+    return null;
+  });
+}
+
+function loadTournamentData(year, tournament) {
+  if (!year || year === "Select Year" || !tournament || tournament === "Select Tournament") {
+    showTournamentPlaceholder();
+    return;
+  }
+
+  if (!tournamentDataCache) {
+    showTournamentPlaceholder();
+    return;
+  }
+
+  const yearData = tournamentDataCache[year];
+  if (!yearData || !yearData[tournament]) {
+    showTournamentPlaceholder();
+    document.getElementById("scoreboard-tournament").innerHTML =
+      `<div class="bubble-prompt" style="text-align: center;">
+        <p><strong style="color: #c0392b;">No data for ${tournament} in ${year} 🐐</strong></p>
+      </div>`;
+    return;
+  }
+
+  updateTournamentBubbleChart(yearData[tournament]);
+}
+
+function showTournamentPlaceholder() {
+  document.getElementById("bubble-prompt-tournament").style.display = "block";
+  document.getElementById("bubbleChart-tournament").style.display = "none";
+  tournamentSvg.selectAll("*").remove();
+  document.getElementById("scoreboard-tournament").innerHTML = "";
+}
+
+function updateTournamentBubbleChart(data) {
+  console.log('Updating Tournament Bubble Chart');
+  document.getElementById("bubble-prompt-tournament").style.display = "none";
+  document.getElementById("bubbleChart-tournament").style.display = "block";
+  tournamentSvg.selectAll("*").remove();
+
+  const width = +tournamentSvg.attr("width");
+  const height = +tournamentSvg.attr("height");
+
+  const pack = d3.pack().size([width, height]).padding(5);
+  const root = d3.hierarchy({ children: data }).sum(d => Math.pow(d.size, 1.5));
+  const nodes = pack(root).leaves();
+  const color = d3.scaleOrdinal(d3.schemeSet2);
+
+  const bubbles = tournamentSvg.selectAll("g")
+    .data(nodes)
+    .enter().append("g")
+    .attr("transform", d => `translate(${d.x},${d.y})`);
+
+  bubbles.append("circle")
+    .attr("r", d => d.r)
+    .attr("fill", (d, i) => color(i))
+    .on("mouseover", function (event, d) {
+      d3.select(this)
+        .transition()
+        .duration(150)
+        .attr("r", d.r * 1.15);
+
+      const index = data.findIndex(p => p.name === d.data.name);
+      const rank = index >= 0 ? index + 1 : "N/A";
+
+      d3.select("#tooltip")
+        .style("display", "block")
+        .html(`<strong>${d.data.name}</strong><br>Score: ${d.data.size}<br>Rank: #${rank}`);
+    })
+    .on("mousemove", function (event) {
+      d3.select("#tooltip")
+        .style("left", (event.pageX + 10) + "px")
+        .style("top", (event.pageY - 28) + "px");
+    })
+    .on("mouseout", function () {
+      d3.select(this)
+        .transition()
+        .duration(150)
+        .attr("r", d => d.r);
+      d3.select("#tooltip").style("display", "none");
+    });
+
+  bubbles.append("text")
+    .attr("dy", ".3em")
+    .attr("text-anchor", "middle")
+    .style("font-size", d => Math.max(d.r / 3.5, 10))
+    .text(d => d.data.name.split(" ")[0]);
+}
+
+// Sync dropdowns
+document.addEventListener("DOMContentLoaded", async function () {
+  await loadTournamentJSON();
+
+  const yearSelect = document.getElementById("year-select-tournament-bubble");
+  const tournamentSelect = document.getElementById("tournament-name-select-bubble");
+
+  function handleDropdownChange() {
+    const year = yearSelect.value;
+    const tournament = tournamentSelect.value;
+    loadTournamentData(year, tournament);
+  }
+
+  yearSelect.addEventListener("change", handleDropdownChange);
+  tournamentSelect.addEventListener("change", handleDropdownChange);
+});
