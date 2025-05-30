@@ -54,14 +54,18 @@ document.addEventListener("DOMContentLoaded", () => {
         // All tournaments, overall years
         const data = await fetchData("../data/tournaments/top3_overall.json");
         players = data;
-      } else if (tournament === "All") {
+      } else if (year !== "Overall years" && tournament === "All") {
         // All tournaments, specific year
         const data = await fetchData("../data/tournaments/top3_per_year.json");
         players = data[year];
-      } else {
+      } else if (year !== "Overall years" && tournament !== "All") {
         // Specific tournament and year
         const data = await fetchData("../data/tournaments/top3_per_elite_tournament_per_year.json");
         players = data[year]?.[tournament] || [];
+      } else if (year === "Overall years" && tournament !== "All") {
+        // Specific tournament, all years
+        const data = await fetchData("../data/tournaments/top3_per_elite_tournament_overall.json");
+        players = data[tournament];
       }
 
       renderPodium(players);

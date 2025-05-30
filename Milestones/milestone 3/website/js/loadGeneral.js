@@ -59,3 +59,107 @@ document.addEventListener("DOMContentLoaded", () => {
     updatePodium(yearSelect.value);
   });
 });
+
+const globalSvg = d3.select("#bubbleChart-global");
+let lastGlobalYear = null;
+let lastGlobalData = null;
+
+function loadGlobalData(year) {
+  if (!year || year === "Select Year") {
+    showGlobalPlaceholder();
+    return;
+  }
+
+  if (year === lastGlobalYear && lastGlobalData) {
+    updateGlobalBubbleChart(lastGlobalData);
+    return;
+  }
+
+  const filePath = `../data/general/top15_jsons/top15_overall_${year}.json`;
+  console.log("Trying to load:", filePath);
+
+  d3.json(filePath).then(data => {
+    if (!data || data.length === 0) throw new Error("Empty data");
+
+    lastGlobalYear = year;
+    lastGlobalData = data;
+
+    updateGlobalBubbleChart(data);
+  }).catch(() => {
+    globalSvg.selectAll("*").remove();
+    document.getElementById("scoreboard-global").innerHTML =
+      `<div class="bubble-prompt" style="text-align: center;">
+        <p><strong style="color: #c0392b;">No data found for ${year} 🐐</strong></p>
+      </div>`;
+  });
+}
+
+function showGlobalPlaceholder() {
+  document.getElementById("bubble-prompt-global").style.display = "block";
+  document.getElementById("bubbleChart-global").style.display = "none";
+  globalSvg.selectAll("*").remove();
+}
+
+function updateGlobalBubbleChart(data) {
+  console.log('Updating Bubble Chart')
+  document.getElementById("bubble-prompt-global").style.display = "none";
+  document.getElementById("bubbleChart-global").style.display = "block";
+  globalSvg.selectAll("*").remove();
+
+  const width = +globalSvg.attr("width");
+  const height = +globalSvg.attr("height");
+
+  const pack = d3.pack().size([width, height]).padding(5);
+  const root = d3.hierarchy({ children: data }).sum(d => Math.pow(d.size, 1.5));
+  const nodes = pack(root).leaves();
+  const color = d3.scaleOrdinal(d3.schemeSet2);
+
+  const bubbles = globalSvg.selectAll("g")
+    .data(nodes)
+    .enter().append("g")
+    .attr("transform", d => `translate(${d.x},${d.y})`);
+
+  bubbles.append("circle")
+    .attr("r", d => d.r)
+    .attr("fill", (d, i) => color(i))
+    .on("mouseover", function (event, d) {
+      d3.select(this)
+        .transition()
+        .duration(150)
+        .attr("r", d.r * 1.15);
+
+      const index = data.findIndex(p => p.name === d.data.name);
+      const rank = index >= 0 ? index + 1 : "N/A";
+
+      d3.select("#tooltip")
+        .style("display", "block")
+        .html(`<strong>${d.data.name}</strong><br>Score: ${d.data.size}<br>Rank: #${rank}`);
+    })
+    .on("mousemove", function (event) {
+      d3.select("#tooltip")
+        .style("left", (event.pageX + 10) + "px")
+        .style("top", (event.pageY - 28) + "px");
+    })
+    .on("mouseout", function () {
+      d3.select(this)
+        .transition()
+        .duration(150)
+        .attr("r", d => d.r);
+      d3.select("#tooltip").style("display", "none");
+    });
+
+  bubbles.append("text")
+    .attr("dy", ".3em")
+    .attr("text-anchor", "middle")
+    .style("font-size", d => Math.max(d.r / 3.5, 10))
+    .text(d => d.data.name.split(" ")[0]);
+}
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("year-select-global-bubble").addEventListener("change", function () {
+    const year = this.value;
+    console.log('I am here !');
+    loadGlobalData(year);
+  });
+});

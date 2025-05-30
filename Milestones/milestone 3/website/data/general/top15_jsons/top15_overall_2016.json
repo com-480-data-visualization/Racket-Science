@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Murray",
+    "size": 80
+  },
+  {
+    "name": "Djokovic",
+    "size": 66
+  },
+  {
+    "name": "Thiem",
+    "size": 60
+  },
+  {
+    "name": "Nishikori",
+    "size": 58
+  },
+  {
+    "name": "Raonic",
+    "size": 52
+  },
+  {
+    "name": "Bautista",
+    "size": 51
+  },
+  {
+    "name": "Cilic",
+    "size": 49
+  },
+  {
+    "name": "Goffin",
+    "size": 49
+  },
+  {
+    "name": "Wawrinka",
+    "size": 46
+  },
+  {
+    "name": "Monfils",
+    "size": 44
+  },
+  {
+    "name": "Zverev",
+    "size": 44
+  },
+  {
+    "name": "Carreno",
+    "size": 41
+  },
+  {
+    "name": "Kyrgios",
+    "size": 40
+  },
+  {
+    "name": "Berdych",
+    "size": 40
+  },
+  {
+    "name": "Dimitrov",
+    "size": 40
+  }
+]
