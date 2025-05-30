@@ -728,9 +728,8 @@ nav a:hover:not(.active) {
   font-size: 3rem;
 }
 
-/* ✅ Ensures podium and bubble containers are same height */
 .chart-container.top-chart {
-  height: 400px; /* Adjust if needed based on max content */
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -738,32 +737,34 @@ nav a:hover:not(.active) {
   overflow: hidden;
 }
 
-/* ✅ Ensures content inside fills container consistently */
 .chart-content {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-/* ✅ Prevent margin shifts */
-.scoreboard,
-#bubbleChart-doubles {
-  margin-bottom: 0 !important;
-}
-
-/* ✅ Gives even spacing to inner content */
-.chart-content > * {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-/* ✅ Prevent placeholder from collapsing */
-.bubble-prompt {
-  min-height: 120px;
-}
-
-.top-charts {
   position: relative;
+  min-height: 100%;
+}
+
+#bubble-placeholder-doubles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 19%;
+}
+
+
+.bubble-prompt {
+  padding: 1.5rem 1.25rem;
+  background: #f1ebe6d7;
+  border: 2px dashed #bb4915;
+  border-radius: 20px;
+  font-size: 1.45rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #ad3720;
+  box-shadow: 0 4px 20px rgba(179,73,21,0.08);
+  max-width: 90%;
+  text-align: center;
 }

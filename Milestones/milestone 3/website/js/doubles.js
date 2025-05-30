@@ -20,7 +20,6 @@ function loadDoublesData(year = selectedYear, surface = selectedSurface) {
   }
 
   const filePath = `data/doubles/doubles_${year}_${surface}.json`;
-  console.log("Trying to load:", filePath);
 
   d3.json(filePath).then(data => {
     if (!data || data.length === 0) throw new Error("Empty data");
@@ -33,12 +32,34 @@ function loadDoublesData(year = selectedYear, surface = selectedSurface) {
     updateBubbleChart(data);
     updatePodium(data);
   }).catch(() => {
+    lastData = null;
     bubbleSvg.selectAll("*").remove();
-    document.getElementById("scoreboard-doubles").innerHTML =
-      `<div class="bubble-prompt" style="text-align: center;">
+    bubbleChartDrawn = false;
+
+    const chartEl = document.getElementById("bubbleChart-doubles");
+    if (chartEl) chartEl.style.display = "none";
+
+    const placeholderEl = document.getElementById("bubble-placeholder-doubles");
+    if (placeholderEl) {
+        placeholderEl.style.display = "block";
+        placeholderEl.innerHTML = `
         <p><strong style="color: #c0392b;">No data found for ${year} on ${surface} 🐐</strong></p>
-      </div>`;
-  });
+        `;
+    }
+
+    // ✅ HIDE the initial podium prompt
+    const podiumPlaceholder = document.getElementById("podium-placeholder-doubles");
+    if (podiumPlaceholder) {
+        podiumPlaceholder.style.display = "none";
+    }
+
+    // ✅ Show podium error message
+    document.getElementById("scoreboard-doubles").innerHTML = `
+        <div class="bubble-prompt" style="text-align: center;">
+        <p><strong style="color: #c0392b;">No data found for ${year} on ${surface} 🐐</strong></p>
+        </div>`;
+    });
+
 }
 
 
@@ -51,87 +72,113 @@ function showPlaceholder() {
 }
 
 function updateBubbleChart(data) {
-  const chartEl = document.getElementById("bubbleChart-doubles");
-  const placeholderEl = document.getElementById("bubble-placeholder-doubles");
+    const chartEl = document.getElementById("bubbleChart-doubles");
+    const placeholderEl = document.getElementById("bubble-placeholder-doubles");
 
-  if (bubbleChartDrawn && chartEl.style.display === "block" && !bubbleSvg.selectAll("circle").empty()) return;
 
-  placeholderEl.style.display = "none";
-  chartEl.style.display = "block";
+    if (bubbleChartDrawn && chartEl.style.display === "block" && !bubbleSvg.selectAll("circle").empty()) return;
 
-  let width = bubbleSvg.node().clientWidth;
-  let height = bubbleSvg.node().clientHeight;
+    placeholderEl.style.display = "none";
+    chartEl.style.display = "block";
 
-  if (width === 0 || height === 0) {
-    setTimeout(() => updateBubbleChart(data), 100);
-    return;
-  }
+    let width = bubbleSvg.node().clientWidth;
+    let height = bubbleSvg.node().clientHeight;
 
-  bubbleSvg.selectAll("*").remove();
+    if (width === 0 || height === 0) {
+        setTimeout(() => updateBubbleChart(data), 100);
+        return;
+    }
 
-  const pack = d3.pack().size([width, height]).padding(5);
-  const root = d3.hierarchy({ children: data }).sum(d => Math.pow(d.size, 1.5));
-  const nodes = pack(root).leaves();
-  const color = d3.scaleOrdinal(d3.schemeCategory10);
+    bubbleSvg.selectAll("*").remove();
 
-  const bubbles = bubbleSvg.selectAll("g")
-    .data(nodes)
-    .enter().append("g")
-    .attr("transform", d => `translate(${d.x},${d.y})`);
+    const pack = d3.pack().size([width, height]).padding(5);
+    const root = d3.hierarchy({ children: data }).sum(d => Math.pow(d.size, 1.5));
+    const nodes = pack(root).leaves();
+    const color = d3.scaleOrdinal(d3.schemeCategory10);
 
-  bubbles.append("circle")
-    .attr("r", d => d.r)
-    .attr("fill", (d, i) => color(i))
-    .on("mouseover", function (event, d) {
-      d3.select(this)
-        .transition()
-        .duration(150)
-        .attr("r", d.r * 1.15);
+    const bubbles = bubbleSvg.selectAll("g")
+        .data(nodes)
+        .enter().append("g")
+        .attr("transform", d => `translate(${d.x},${d.y})`);
 
-      const index = data.findIndex(p => p.name === d.data.name);
-      const rank = index >= 0 ? index + 1 : "N/A";
+    bubbles.append("circle")
+        .attr("r", d => d.r)
+        .attr("fill", (d, i) => color(i))
+        .on("mouseover", function (event, d) {
+        d3.select(this)
+            .transition()
+            .duration(150)
+            .attr("r", d.r * 1.15);
 
-      d3.select("#tooltip")
-        .style("display", "block")
-        .html(`<strong>${d.data.name}</strong><br>Wins: ${d.data.size}<br>Rank: #${rank}`);
-    })
-    .on("mousemove", function (event) {
-      d3.select("#tooltip")
-        .style("left", (event.pageX + 10) + "px")
-        .style("top", (event.pageY - 28) + "px");
-    })
-    .on("mouseout", function () {
-      d3.select(this)
-        .transition()
-        .duration(150)
-        .attr("r", d => d.r);
-      d3.select("#tooltip").style("display", "none");
-    });
+        const index = data.findIndex(p => p.name === d.data.name);
+        const rank = index >= 0 ? index + 1 : "N/A";
 
-  bubbles.append("text")
-    .attr("dy", ".3em")
-    .attr("text-anchor", "middle")
-    .style("font-size", d => Math.max(d.r / 3.5, 10))
-    .text(d => d.data.name.split(" ")[0]);
+        d3.select("#tooltip")
+            .style("display", "block")
+            .html(`<strong>${d.data.name}</strong><br>Wins: ${d.data.size}<br>Rank: #${rank}`);
+        })
+        .on("mousemove", function (event) {
+        d3.select("#tooltip")
+            .style("left", (event.pageX + 10) + "px")
+            .style("top", (event.pageY - 28) + "px");
+        })
+        .on("mouseout", function () {
+        d3.select(this)
+            .transition()
+            .duration(150)
+            .attr("r", d => d.r);
+        d3.select("#tooltip").style("display", "none");
+        });
 
-  bubbleChartDrawn = true;
+    bubbles.append("text")
+        .attr("dy", ".3em")
+        .attr("text-anchor", "middle")
+        .style("font-size", d => Math.max(d.r / 3.5, 10))
+        .text(d => d.data.name.split(" ")[0]);
+
+    bubbleChartDrawn = true;
 }
 
 
-
 function updatePodium(data) {
-  const top3 = [data[1], data[0], data[2]];
-  const classes = ['second', 'first', 'third'];
-  const displayRanks = [2, 1, 3];
+  if (!data || data.length < 3) {
+    document.getElementById("podium-placeholder-doubles").style.display = "block";
+    document.getElementById("scoreboard-doubles").innerHTML =
+      `<div class="bubble-prompt" style="text-align: center;">
+        <p><strong style="color: #c0392b;">Not enough data for podium display 🐐</strong></p>
+      </div>`;
+    return;
+  }
 
-  const podiumHTML = top3.map((player, i) => `
-    <div class="scoreboard__podium scoreboard__podium--${classes[i]} js-podium">
+  const sorted = [...data].sort((a, b) => b.size - a.size);
+
+  const podiumGroups = [];
+  let rank = 1;
+
+  for (let i = 0; i < sorted.length && podiumGroups.length < 3; i++) {
+    const current = sorted[i];
+    const prevGroup = podiumGroups[podiumGroups.length - 1];
+
+    if (!prevGroup || current.size !== prevGroup[0].size) {
+      podiumGroups.push([current]);
+    } else {
+      prevGroup.push(current);
+    }
+  }
+
+  const classes = ['first', 'second', 'third'];
+  const displayRanks = [1, 2, 3];
+
+  const podiumHTML = podiumGroups.map((group, i) => {
+    return group.map(player => `
+      <div class="scoreboard__podium scoreboard__podium--${classes[i]} js-podium">
         <div class="scoreboard__podium-base scoreboard__podium-base--${classes[i]}">
-        <div class="scoreboard__podium-rank">${displayRanks[i]}</div>
+          <div class="scoreboard__podium-rank">${displayRanks[i]}</div>
         </div>
         <div class="scoreboard__podium-number">${player.name}</div>
-    </div>
+      </div>
     `).join('');
+  }).join('');
 
   const scoreboard = document.getElementById("scoreboard-doubles");
   scoreboard.className = `scoreboard__podiums podium-${lastSurface}`;
@@ -139,6 +186,7 @@ function updatePodium(data) {
 
   document.getElementById("podium-placeholder-doubles").style.display = "none";
 }
+
 
 function refreshVisuals() {
   if (lastData) {
