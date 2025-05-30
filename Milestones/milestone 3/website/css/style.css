@@ -709,14 +709,14 @@ nav a:hover:not(.active) {
 
 .podium-and-text-row {
   display: flex;
-  gap: 2rem;
+  gap: 0rem;
   align-items: flex-start;
-  margin-bottom: 2rem;
+  margin-bottom: 1.75rem;
 }
 
 .surface-explanation {
   max-width: 610px;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: #444;
   margin-top: 1.75rem; 
 }

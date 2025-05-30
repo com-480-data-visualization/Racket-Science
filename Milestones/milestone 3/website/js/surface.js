@@ -2,11 +2,12 @@ const years = ["2024","2023","2022","2021","2020","2019","2018","2017","2016","2
 const selectBubble = document.getElementById("year-select-surfaces-bubble");
 const selectPodium = document.getElementById("year-select-surfaces-podiums");
 
+
 years.forEach(year => {
-  const optionBubble = document.createElement("option");
-  optionBubble.value = year;
-  optionBubble.text = year;
-  selectBubble.appendChild(optionBubble);
+  const optionBubbleSurface = document.createElement("option");
+  optionBubbleSurface.value = year;
+  optionBubbleSurface.text = year;
+  selectBubble.appendChild(optionBubbleSurface);
 
   const optionPodium = document.createElement("option");
   optionPodium.value = year;
@@ -64,7 +65,6 @@ function updateBubbleChartForSurface() {
 
 function updatePodiumSurfaces(data, containerId = "scoreboard-podiums-surfaces", category = "") {
   const el = document.getElementById(containerId);
-
   if (!data || data.length < 3) {
     el.innerHTML = '<div style="text-align:center;">Not enough data for podium</div>';
     return;
@@ -74,7 +74,6 @@ function updatePodiumSurfaces(data, containerId = "scoreboard-podiums-surfaces",
   const top3 = [sorted[1], sorted[0], sorted[2]];
   const classes = ['second', 'first', 'third'];
   const displayRanks = [2, 1, 3];
-
   const podiumHTML = top3.map((player, i) => `
     <div class="scoreboard__podium scoreboard__podium--${classes[i]} js-podium">
       <div class="scoreboard__podium-base scoreboard__podium-base--${classes[i]}">
@@ -86,7 +85,6 @@ function updatePodiumSurfaces(data, containerId = "scoreboard-podiums-surfaces",
   el.innerHTML = podiumHTML;
 }
 
-// This function loads the data and triggers the update
 function updateSurfacesPodiumDisplay() {
   const year = document.getElementById("year-select-surfaces-podiums").value;
   const surface = document.getElementById("surface-select-podiums").value;
@@ -96,16 +94,12 @@ function updateSurfacesPodiumDisplay() {
   const prompt = document.getElementById("podium-placeholder-surfaces");
   const noDataPrompt = document.getElementById('podium-prompt-no-data-surfaces');
 
-
-  // You can adjust the following if logic depending on which selectors are required to be set.
   if (year === 'Overall years' || surface === 'Select Surface' || circuit === 'Select Circuit') {
     document.getElementById(containerId).innerHTML = '';
     prompt.style.display = 'block';
     return;
   }
   prompt.style.display = 'none';
-
-  // You need a function that returns the path to your CSV based on these selections
   let csvPath;
   if (!tournament || tournament === "" || tournament === "Overall tournaments") {
     csvPath = `/data/surfaces/${year}/${circuit}/overall_goat_surfaces/wins_${surface.toLowerCase()}_${year}.csv`;
@@ -116,25 +110,20 @@ function updateSurfacesPodiumDisplay() {
     document.getElementById(containerId).innerHTML = '<div style="text-align:center;">No data</div>';
     return;
   }
-
   d3.csv(csvPath).then(function(data) {
     if (!data || data.length < 3) {
       updatePodiumSurfaces(null, containerId, surface); // Or your relevant category
       return;
     }
-    // For surfaces, the "category" is likely the surface (or maybe a stat column name)
-    // Adjust as needed depending on your CSV columns
     updatePodiumSurfaces(data, containerId, surface);
   });
 }
 
-// Event listeners
 document.getElementById("year-select-surfaces-podiums").addEventListener("change", updateSurfacesPodiumDisplay);
 document.getElementById("surface-select-podiums").addEventListener("change", updateSurfacesPodiumDisplay);
 document.getElementById("circuit-select-podiums").addEventListener("change", updateSurfacesPodiumDisplay);
 document.getElementById("tournament-select-surfaces-podiums").addEventListener("change", updateSurfacesPodiumDisplay);
 
-// Optionally, run once at start to populate podium if defaults are set
 updateSurfacesPodiumDisplay();
 
 document.getElementById("year-select-surfaces-bubble").addEventListener("change", updateBubbleChartForSurface);
@@ -209,6 +198,46 @@ function csvToBubbleDataSurface(csv, valueCol) {
     }))
   };
 }
+
+function updatePodiumTournaments() {
+  const year = document.getElementById('year-select-surfaces-podiums').value;
+  const circuit = document.getElementById('circuit-select-podiums').value;
+  const surface = document.getElementById('surface-select-podiums').value;
+  const tournamentSelect = document.getElementById('tournament-select-surfaces-podiums');
+  const previousValue = tournamentSelect.value;
+
+  tournamentSelect.innerHTML = '<option value="Overall tournaments">Overall tournaments</option>';
+
+  if (!year || !circuit || !surface ||
+      year === 'Overall years' ||
+      circuit === 'Select Circuit' ||
+      surface === 'Select Surface') {
+    return;
+  }
+
+  const filtered = allTournaments.filter(t =>
+    t.year === year &&
+    t.circuit === circuit &&
+    t.surface === surface
+  );
+
+  filtered.forEach(tour => {
+    const opt = document.createElement('option');
+    opt.value = tour.name;
+    opt.textContent = tour.name;
+    tournamentSelect.appendChild(opt);
+  });
+
+  if ([...tournamentSelect.options].some(option => option.value === previousValue)) {
+    tournamentSelect.value = previousValue;
+  } else {
+    tournamentSelect.value = "Overall tournaments";
+  }
+}
+document.getElementById('circuit-select-podiums').addEventListener('change', updatePodiumTournaments);
+document.getElementById('surface-select-podiums').addEventListener('change', updatePodiumTournaments);
+document.getElementById('year-select-surfaces-podiums').addEventListener('change', updatePodiumTournaments);
+
 
 
 /**
