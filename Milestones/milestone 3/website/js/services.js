@@ -84,7 +84,7 @@ function amplifyServiceValue(value, min, max) {
 document.getElementById("year-select-services-bubble").addEventListener("change", updateBubbleChartForServices);
 document.getElementById("category-select-services-bubble").addEventListener("change", updateBubbleChartForServices);
 document.getElementById('year-select-services-bubble').dispatchEvent(new Event('change'));
-// Utility: Path for CSV
+
 function getServiceCsvPath(year, category) {
   if (!category) return null;
   if (!year) return `data/services/overall_years_${category}.csv`;
@@ -109,7 +109,7 @@ function updatePodiumServices(data, containerId = "scoreboard-podiums-services",
       <div class="scoreboard__podium-base scoreboard__podium-base--${classes[i]}">
         <div class="scoreboard__podium-rank">${displayRanks[i]}</div>
       </div>
-      <div class="scoreboard__podium-number">${player.Player || player.name}</div>
+      <div class="scoreboard__podium-number">${player.Player}</div>
     </div>
   `).join('');
   el.innerHTML = podiumHTML;

@@ -325,79 +325,40 @@ document.querySelectorAll('nav a').forEach(link => {
     <section class="chart-container top-chart" id="podium-surfaces">
         <div class="chart-header">
 
-        <select id="players-select-podiums">
-            <option value="Select Surface">Select a circuit</option>
-            <option value="wta">WTA - Women</option>
-            <option value="apt">ATP - Men</option>
-        </select>
+          <select id="circuit-select-podiums">
+              <option value="Select Circuit">Select a circuit</option>
+              <option value="wta">WTA - Women</option>
+              <option value="apt">ATP - Men</option>
+          </select>
 
-        <select id="surface-select-podiums">
-            <option value="Select Surface">Select Surface</option>
-            <option value="Grass">Grass</option>
-            <option value="Hard">Hard</option>
-            <option value="Clay">Clay</option>
-        </select>
+          <select id="surface-select-podiums">
+              <option value="Select Surface">Select Surface</option>
+              <option value="Grass">Grass</option>
+              <option value="Hard">Hard</option>
+              <option value="Clay">Clay</option>
+          </select>
 
-        <select id="year-select-surfaces-podiums">
-            <option value="Overall years">Overall years</option>
-            <option value="2024">2024</option>
-            <option value="2023">2023</option>
-            <option value="2022">2022</option>
-            <option value="2021">2021</option>
-            <option value="2020">2020</option>
-            <option value="2019">2019</option>
-            <option value="2018">2018</option>
-            <option value="2017">2017</option>
-            <option value="2016">2016</option>
-            <option value="2015">2015</option>
-            <option value="2014">2014</option>
-            <option value="2013">2013</option>
-            <option value="2012">2012</option>
-        </select>
-    
-        
-        <select id="tournament-select-surfaces-podiums">
-            <option value="Overall tournaments">Overall tournaments</option>
-            <option>tournament1</option>
-            <option>tournament2</option>
-            <option>tournament3</option>
-        </select>
+          <select id="year-select-surfaces-podiums">
+              <option value="Overall years">Overall years</option>
+          </select>
+      
+          
+          <select id="tournament-select-surfaces-podiums">
+              <option value="Overall tournaments">Overall tournaments</option>
+          </select>
         </div>
-    
         <div class="chart-content">
-        <h2>Podium</h2>
-        <div class="scoreboard">
-        <div class="scoreboard__podium">
-          <div class="photo-container">
-            <img src="images/djokovic.png" alt="Novak Djokovic" class="podium-photo">
-            <div class="medal silver">2</div>
+          <h2>Podium Services</h2>
+          <div class="scoreboard__podiums" id="scoreboard-podiums-surfaces"></div>
+          <div id="podium-placeholder-surfaces" class="bubble-prompt" style="text-align: center;">
+              <p><strong>Please select a circuit, surface, and year to view the top 3 GOATs 🐐</strong></p>
           </div>
-          <div class="scoreboard__podium-number">
-            Novak Djokovic
-          </div>
-        </div>
-
-        <div class="scoreboard__podium">
-          <div class="photo-container">
-            <img src="images/federer.png" alt="Roger Federer" class="podium-photo">
-            <div class="medal gold">1</div>
-          </div>
-          <div class="scoreboard__podium-number">
-            Roger Federer
+          <div id="podium-prompt-no-data-surfaces" class="bubble-prompt" style="display:none;">
+              <span role="img" aria-label="Sad face" style="font-size:2.2rem;"></span>
+              Sorry, we don’t have data for the requested selection.
           </div>
         </div>
-
-        <div class="scoreboard__podium">
-          <div class="photo-container">
-            <img src="images/nadal.png" alt="Rafael Nadal" class="podium-photo">
-            <div class="medal bronze">3</div>
-          </div>
-          <div class="scoreboard__podium-number">
-            Rafael Nadal
-          </div>
-        </div>
-      </div>
-
+      
 
     </section>
 
