@@ -240,26 +240,15 @@ document.getElementById('year-select-surfaces-podiums').addEventListener('change
 
 
 
-/**
- * Surface-Specific Theming 
- * Dynamically applies themed backgrounds and podium styles for:
- * - Clay
- * - Grass
- * - Hard
- *
- * Also rotates these themes every 4 seconds by default
- * until the user makes a surface selection.
- */
-
 document.addEventListener('DOMContentLoaded', function () {
   const surfaceDropdown = document.getElementById('surface-select-podiums');
   const surfacesSection = document.getElementById('surfaces');
-  const podiumBases = document.querySelectorAll('#podium-surfaces .scoreboard__podium-base');
+  const podiumContainer = document.getElementById('scoreboard-podiums-surfaces');
 
   let surfaceRotationInterval;
   let userHasSelectedSurface = false;
 
-  // List of themes and their CSS class suffixes
+  // Define the surface themes
   const surfaceThemes = [
     { name: 'Clay', class: 'clay-theme', podiumClass: 'scoreboard__podium-base--clay' },
     { name: 'Grass', class: 'grass-theme', podiumClass: 'scoreboard__podium-base--grass' },
@@ -267,7 +256,29 @@ document.addEventListener('DOMContentLoaded', function () {
   ];
 
   /**
-   * Rotate background and podium themes every 4 seconds until user selection
+   * Removes all theme classes from background and podiums
+   */
+  const headerInner = document.querySelector('.surfaces-header-inner');
+
+  function clearThemes() {
+    surfacesSection.classList.remove(...surfaceThemes.map(t => t.class));
+    const podiums = podiumContainer.querySelectorAll('.scoreboard__podium-base');
+    podiums.forEach(podium =>
+      podium.classList.remove(...surfaceThemes.map(t => t.podiumClass))
+    );
+    headerInner.classList.remove('clay', 'grass', 'hard'); // ← fix for title background
+  }
+
+  function applyTheme(theme) {
+    surfacesSection.classList.add(theme.class);
+    const podiums = podiumContainer.querySelectorAll('.scoreboard__podium-base');
+    podiums.forEach(podium => podium.classList.add(theme.podiumClass));
+    headerInner.classList.add(theme.name.toLowerCase()); // ← fix for title background
+  }
+
+
+  /**
+   * Rotate themes every 3 seconds
    */
   function rotateSurfaceBackground() {
     let index = 0;
@@ -278,43 +289,36 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
       }
 
-      // Remove all themed classes
-      surfacesSection.classList.remove(...surfaceThemes.map(t => t.class));
-      podiumBases.forEach(podium =>
-        podium.classList.remove(...surfaceThemes.map(t => t.podiumClass))
-      );
-
-      // Apply the current theme
-      const current = surfaceThemes[index];
-      surfacesSection.classList.add(current.class);
-      podiumBases.forEach(podium => podium.classList.add(current.podiumClass));
+      clearThemes();
+      applyTheme(surfaceThemes[index]);
 
       index = (index + 1) % surfaceThemes.length;
-    }, 4000);
+    }, 3000);
   }
 
-  rotateSurfaceBackground(); // Start rotation on page load
+  rotateSurfaceBackground(); // Begin rotation on load
 
   /**
-   * When user selects a surface manually, stop rotation and apply theme
+   * When user selects a surface, stop rotation and apply selection
    */
   surfaceDropdown.addEventListener('change', function () {
     const selectedSurface = this.value;
-    userHasSelectedSurface = true; // 🛑 Stop the rotation
-    clearInterval(surfaceRotationInterval);
 
-    // Reset all classes first
-    surfacesSection.classList.remove(...surfaceThemes.map(t => t.class));
-    podiumBases.forEach(podium =>
-      podium.classList.remove(...surfaceThemes.map(t => t.podiumClass))
-    );
-
-    // Apply selected theme
-    const selectedTheme = surfaceThemes.find(t => t.name === selectedSurface);
-    if (selectedTheme) {
-      surfacesSection.classList.add(selectedTheme.class);
-      podiumBases.forEach(podium => podium.classList.add(selectedTheme.podiumClass));
+    // If user picks the default option, resume rotation
+    if (selectedSurface === 'Select Surface') {
+      userHasSelectedSurface = false;
+      clearThemes();
+      rotateSurfaceBackground();
+      return;
     }
+
+    // Otherwise apply the selected theme and stop rotation
+    const selectedTheme = surfaceThemes.find(t => t.name === selectedSurface);
+    if (!selectedTheme) return;
+
+    userHasSelectedSurface = true;
+    clearInterval(surfaceRotationInterval);
+    clearThemes();
+    applyTheme(selectedTheme);
   });
 });
-

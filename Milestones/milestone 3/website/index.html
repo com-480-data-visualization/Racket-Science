@@ -214,7 +214,6 @@ document.querySelectorAll('nav a').forEach(link => {
   </div>
 
   <main class="charts-wrapper">
-    <!-- FLEX WRAPPER -->
     <div class="doubles-flex-wrapper">
       
       <!-- LEFT INFO BOX -->
@@ -276,7 +275,6 @@ document.querySelectorAll('nav a').forEach(link => {
               </div>
               <div class="scoreboard">
                 <div class="scoreboard__podiums" id="scoreboard-doubles">
-                  <!-- Dynamic content will be injected here -->
                 </div>
               </div>
             </div>
@@ -333,18 +331,20 @@ document.querySelectorAll('nav a').forEach(link => {
           <span class="dot" onclick="goToChart(2, 'doubles')"></span>
         </div>
 
-      </div> <!-- end of charts-content -->
+      </div> 
 
-    </div> <!-- end of doubles-flex-wrapper -->
+    </div> 
   </main>
 </section>
 
-
+<!-- SURFACE GOAT SECTION -->
 <section id="surfaces">
 <div style="height: 95px"></div>
-<header>
-    <h1>Surfaces GOAT</h1>
-</header>
+<div class="surfaces-header">
+    <div class="surfaces-header-inner">
+      <h1 id="surfaces-title">Surfaces GOAT</h1>
+    </div>
+  </div>
 <main class="charts-wrapper">
   <div class="podium-and-text-row" id="text-wrapper-surface">
     <section class="chart-container top-chart" id="podium-surfaces">
