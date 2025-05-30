@@ -776,6 +776,8 @@ nav a:hover:not(.active) {
   max-width: 300px;
   text-align: left;
   word-break: break-word;
+}
+
 .doubles-flex-wrapper {
   display: flex;
   gap: 40px;
@@ -801,8 +803,6 @@ nav a:hover:not(.active) {
   font-size: 3rem;
 }
 
-
-
 .info-box p {
   font-size: 1rem;
   color: #444;
@@ -825,5 +825,4 @@ nav a:hover:not(.active) {
   max-width: 100%;
   box-sizing: border-box;
   overflow-x: auto;
-}
 }
