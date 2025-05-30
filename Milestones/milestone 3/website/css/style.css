@@ -233,6 +233,8 @@ nav a:hover:not(.active) {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  max-width: 100%;
+  box-sizing: border-box;
   gap: 2rem; /* consistent spacing */
 }
 
@@ -767,4 +769,53 @@ nav a:hover:not(.active) {
   box-shadow: 0 4px 20px rgba(179,73,21,0.08);
   max-width: 90%;
   text-align: center;
+}
+
+.doubles-flex-wrapper {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.info-box {
+  background-color: rgba(255, 255, 255, 0.92);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  width: 55%;
+  color: #444;
+  line-height: 1.6;
+  transition: all 0.3s ease-in-out;
+}
+
+.info-box h3 {
+  margin-top: 0.5rem;
+  color: #406487;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.info-box p {
+  font-size: 1rem;
+  color: #444;
+}
+
+.charts-content {
+  width: 63%;
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.doubles-flex-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+#scoreboard-doubles, #bubbleChart-doubles {
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: auto;
 }

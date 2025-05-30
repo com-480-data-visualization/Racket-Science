@@ -219,119 +219,142 @@ document.querySelectorAll('nav a').forEach(link => {
   </div>
 </section>
 
+
 <!-- DOUBLES GOAT SECTION -->
 <section id="doubles">  
   <div style="height: 95px"></div>
-    <div class="doubles-header">
-      <div class="doubles-header-inner">
-        <h1 id="doubles-title">Doubles GOAT</h1>
-      </div>
+  <div class="doubles-header">
+    <div class="doubles-header-inner">
+      <h1 id="doubles-title">Doubles GOAT</h1>
     </div>
-
-
+  </div>
 
   <main class="charts-wrapper">
-    <div class="top-charts">
+    <!-- FLEX WRAPPER -->
+    <div class="doubles-flex-wrapper">
+      
+      <!-- LEFT INFO BOX -->
+      <div class="info-box">
+        <h3>Why Doubles Matter?</h3>
+        <p>
+          In tennis, the spotlight often shines on singles, but doubles is where teamwork, strategy, and chemistry take center stage. Winning in doubles isn’t just about individual brilliance—it’s about synchrony, trust, and perfect coordination between partners. Great doubles players know when to lead, when to support, and how to adapt their game for the team.
 
-      <!-- PODIUM SECTION -->
-      <section class="chart-container top-chart" id="podium-doubles">
-        <div class="chart-header">
-          <select id="year-select2-podium" class="dropdown">
-            <option value="Select Year">Select year</option>
-            <option value="2020">2020</option>
-            <option value="2019">2019</option>
-            <option value="2018">2018</option>
-            <option value="2017">2017</option>
-            <option value="2016">2016</option>
-            <option value="2015">2015</option>
-            <option value="2014">2014</option>
-            <option value="2013">2013</option>
-            <option value="2012">2012</option>
-            <option value="2011">2011</option>
-            <option value="2010">2010</option>
-            <option value="2009">2009</option>
-            <option value="2008">2008</option>
-            <option value="2007">2007</option>
-            <option value="2006">2006</option>
-            <option value="2005">2005</option>
-            <option value="2004">2004</option>
-            <option value="2003">2003</option>
-            <option value="2002">2002</option>
-            <option value="2001">2001</option>
-            <option value="2000">2000</option>
-          </select>
+          That’s why we created a dedicated ranking for doubles legends. Instead of merging singles and doubles performances, we highlight those who have truly mastered the art of playing as one half of a whole—players who’ve risen to the top through relentless teamwork and consistent excellence.
 
-          <select id="surface-select-doubles-podium" class="dropdown">
-            <option value="Select Surface">Select Surface</option>
-            <option value="clay">Clay</option>
-            <option value="hard">Hard</option>
-            <option value="grass">Grass</option>
-          </select>
-        </div>
+          By celebrating doubles success separately, we give these athletes the recognition they deserve and help fans appreciate a form of tennis that’s as thrilling, tactical, and elite as any singles showdown.
+        </p>
+      </div>
 
-        <div class="chart-content">
-          <div id="podium-placeholder-doubles" class="bubble-prompt" style="text-align: center;">
-            <p><strong>Please select a year and surface to view the top 3 GOATs 🐐</strong></p>
-          </div>
-          <div class="scoreboard">
-            <div class="scoreboard__podiums" id="scoreboard-doubles">
-              <!-- Dynamic content will be injected here -->
+      <!-- RIGHT CHART CONTENT -->
+      <div class="charts-content">
+
+        <div class="top-charts">
+
+          <!-- PODIUM SECTION -->
+          <section class="chart-container top-chart" id="podium-doubles">
+            <div class="chart-header">
+              <select id="year-select2-podium" class="dropdown">
+                <option value="Select Year">Select year</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+                <option value="2009">2009</option>
+                <option value="2008">2008</option>
+                <option value="2007">2007</option>
+                <option value="2006">2006</option>
+                <option value="2005">2005</option>
+                <option value="2004">2004</option>
+                <option value="2003">2003</option>
+                <option value="2002">2002</option>
+                <option value="2001">2001</option>
+                <option value="2000">2000</option>
+              </select>
+
+              <select id="surface-select-doubles-podium" class="dropdown">
+                <option value="Select Surface">Select Surface</option>
+                <option value="clay">Clay</option>
+                <option value="hard">Hard</option>
+                <option value="grass">Grass</option>
+              </select>
             </div>
-          </div>
+
+            <div class="chart-content">
+              <div id="podium-placeholder-doubles" class="bubble-prompt" style="text-align: center;">
+                <p><strong>Please select a year and surface to view the top 3 GOATs 🐐</strong></p>
+              </div>
+              <div class="scoreboard">
+                <div class="scoreboard__podiums" id="scoreboard-doubles">
+                  <!-- Dynamic content will be injected here -->
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- BUBBLE CHART SECTION -->
+          <section class="chart-container top-chart" id="over_the_years-doubles">
+            <div class="chart-header">
+              <select id="year-select2-bubbles" class="dropdown">
+                <option value="Select Year">Select year</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+                <option value="2009">2009</option>
+                <option value="2008">2008</option>
+                <option value="2007">2007</option>
+                <option value="2006">2006</option>
+                <option value="2005">2005</option>
+                <option value="2004">2004</option>
+                <option value="2003">2003</option>
+                <option value="2002">2002</option>
+                <option value="2001">2001</option>
+                <option value="2000">2000</option>
+              </select>
+
+              <select id="surface-select-doubles-bubbles" class="dropdown">
+                <option value="Select Surface">Select Surface</option>
+                <option value="clay">Clay</option>
+                <option value="hard">Hard</option>
+                <option value="grass">Grass</option>
+              </select>
+            </div>
+
+            <div class="chart-content">
+              <div id="bubble-placeholder-doubles" class="bubble-prompt" style="text-align: center;">
+                <p><strong>Please select a year and surface to view the top 10 GOATs 🐐</strong></p>
+              </div>
+              <svg class="bubbleChart" id="bubbleChart-doubles" width="500" height="400" style="display: none;"></svg>
+            </div>
+          </section>
+
         </div>
-      </section>
 
-      <!-- BUBBLE CHART SECTION -->
-      <section class="chart-container top-chart" id="over_the_years-doubles">
-        <div class="chart-header">
-          <select id="year-select2-bubbles" class="dropdown">
-            <option value="Select Year">Select year</option>
-            <option value="2020">2020</option>
-            <option value="2019">2019</option>
-            <option value="2018">2018</option>
-            <option value="2017">2017</option>
-            <option value="2016">2016</option>
-            <option value="2015">2015</option>
-            <option value="2014">2014</option>
-            <option value="2013">2013</option>
-            <option value="2012">2012</option>
-            <option value="2011">2011</option>
-            <option value="2010">2010</option>
-            <option value="2009">2009</option>
-            <option value="2008">2008</option>
-            <option value="2007">2007</option>
-            <option value="2006">2006</option>
-            <option value="2005">2005</option>
-            <option value="2004">2004</option>
-            <option value="2003">2003</option>
-            <option value="2002">2002</option>
-            <option value="2001">2001</option>
-            <option value="2000">2000</option>
-          </select>
-
-          <select id="surface-select-doubles-bubbles" class="dropdown">
-            <option value="Select Surface">Select Surface</option>
-            <option value="clay">Clay</option>
-            <option value="hard">Hard</option>
-            <option value="grass">Grass</option>
-          </select>
+        <div class="nav-dots">
+          <span class="dot" onclick="goToChart(1, 'doubles')"></span>
+          <span class="dot" onclick="goToChart(2, 'doubles')"></span>
         </div>
 
-        <div class="chart-content">
-          <div id="bubble-placeholder-doubles" class="bubble-prompt" style="text-align: center;">
-            <p><strong>Please select a year and surface to view the top 10 GOATs 🐐</strong></p>
-          </div>
-          <svg class="bubbleChart" id="bubbleChart-doubles" width="500" height="400" style="display: none;"></svg>
-        </div>
-      </section>
+      </div> <!-- end of charts-content -->
 
-    </div>
-    <div class="nav-dots">
-      <span class="dot" onclick="goToChart(1, 'doubles')"></span>
-      <span class="dot" onclick="goToChart(2, 'doubles')"></span>
-    </div>
+    </div> <!-- end of doubles-flex-wrapper -->
   </main>
 </section>
+
 
 <section id="surfaces">
 <div style="height: 95px"></div>
