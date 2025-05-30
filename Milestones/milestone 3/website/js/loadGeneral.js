@@ -101,7 +101,6 @@ function showGlobalPlaceholder() {
 }
 
 function updateGlobalBubbleChart(data) {
-  console.log('Updating Bubble Chart')
   document.getElementById("bubble-prompt-global").style.display = "none";
   document.getElementById("bubbleChart-global").style.display = "block";
   globalSvg.selectAll("*").remove();
@@ -159,7 +158,6 @@ function updateGlobalBubbleChart(data) {
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("year-select-global-bubble").addEventListener("change", function () {
     const year = this.value;
-    console.log('I am here !');
     loadGlobalData(year);
   });
 });
