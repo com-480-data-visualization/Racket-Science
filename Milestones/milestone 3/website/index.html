@@ -59,6 +59,11 @@ document.querySelectorAll('nav a').forEach(link => {
               <div class="chart-header">
               <select id="year-select" class="dropdown">
                   <option value="Overall years">Overall years</option>
+                  <option value="2024">2024</option>
+                  <option value="2023">2023</option>
+                  <option value="2022">2022</option>
+                  <option value="2021">2021</option>
+                  <option value="2020">2020</option>
                   <option value="2019">2019</option>
                   <option value="2018">2018</option>
                   <option value="2017">2017</option>
@@ -67,22 +72,51 @@ document.querySelectorAll('nav a').forEach(link => {
                   <option value="2014">2014</option>
                   <option value="2013">2013</option>
                   <option value="2012">2012</option>
-                  <option value="2011">2011</option>
-                  <option value="2010">2010</option>
-                  <option value="2009">2009</option>
-                  <option value="2008">2008</option>
-                  <option value="2007">2007</option>
-                  <option value="2006">2006</option>
-                  <option value="2005">2005</option>
-                  <option value="2004">2004</option>
-                  <option value="2003">2003</option>
-                  <option value="2002">2002</option>
-                  <option value="2001">2001</option>
-                  <option value="2000">2000</option>
+              </select>
+          
+              <select id="tournament-select" class="dropdown">
+                  <option value="Overall tournaments">Overall tournaments</option>
+                  <option>tournament1</option>
+                  <option>tournament2</option>
+                  <option>tournament3</option>
               </select>
               </div>
+          
+              <div class="chart-content">
               <h2>Podium</h2>
-                <div class="scoreboard" id="scoreboard-global"></div>
+              <div class="scoreboard">
+              <div class="scoreboard__podium">
+                <div class="photo-container">
+                  <img src="images/djokovic.png" alt="Novak Djokovic" class="podium-photo">
+                  <div class="medal silver">2</div>
+                </div>
+                <div class="scoreboard__podium-number">
+                  Novak Djokovic
+                </div>
+              </div>
+
+              <div class="scoreboard__podium">
+                <div class="photo-container">
+                  <img src="images/federer.png" alt="Roger Federer" class="podium-photo">
+                  <div class="medal gold">1</div>
+                </div>
+                <div class="scoreboard__podium-number">
+                  Roger Federer
+                </div>
+              </div>
+
+              <div class="scoreboard__podium">
+                <div class="photo-container">
+                  <img src="images/nadal.png" alt="Rafael Nadal" class="podium-photo">
+                  <div class="medal bronze">3</div>
+                </div>
+                <div class="scoreboard__podium-number">
+                  Rafael Nadal
+                </div>
+              </div>
+            </div>
+
+              </div>
           </section>
 
           <section class="chart-container top-chart" id="over_the_years-global">
@@ -125,8 +159,13 @@ document.querySelectorAll('nav a').forEach(link => {
 
           <section class="chart-container top-chart" id="radar-chart-section-global">
               <div class="chart-header">
-                  <select id="year-select3" class="dropdown">
+                  <select id="year-select2" class="dropdown">
                       <option value="Overall years">Overall years</option>
+                      <option value="2024">2024</option>
+                      <option value="2023">2023</option>
+                      <option value="2022">2022</option>
+                      <option value="2021">2021</option>
+                      <option value="2020">2020</option>
                       <option value="2019">2019</option>
                       <option value="2018">2018</option>
                       <option value="2017">2017</option>
@@ -135,24 +174,12 @@ document.querySelectorAll('nav a').forEach(link => {
                       <option value="2014">2014</option>
                       <option value="2013">2013</option>
                       <option value="2012">2012</option>
-                      <option value="2011">2011</option>
-                      <option value="2010">2010</option>
-                      <option value="2009">2009</option>
-                      <option value="2008">2008</option>
-                      <option value="2007">2007</option>
-                      <option value="2006">2006</option>
-                      <option value="2005">2005</option>
-                      <option value="2004">2004</option>
-                      <option value="2003">2003</option>
-                      <option value="2002">2002</option>
-                      <option value="2001">2001</option>
-                      <option value="2000">2000</option>
                   </select>
               </div>
 
               <div class="chart-content">
                   <h2>Top Players' Performance</h2>
-                  <canvas id="radarCanvas" width="450" height="450"></canvas>
+                  <canvas id="radarCanvas" width="350" height="350"></canvas>
               </div>
             </section>
 
@@ -192,9 +219,7 @@ document.querySelectorAll('nav a').forEach(link => {
   </div>
 </section>
 
-<!-- ===========================
-  MODIFIED HTML FOR DOUBLES GOAT SECTION
-=========================== -->
+<!-- DOUBLES GOAT SECTION -->
 <section id="doubles">  
   <div style="height: 95px"></div>
     <div class="doubles-header">
@@ -208,9 +233,7 @@ document.querySelectorAll('nav a').forEach(link => {
   <main class="charts-wrapper">
     <div class="top-charts">
 
-      <!-- ===========================
-        PODIUM SECTION (UNIQUE IDs)
-      =========================== -->
+      <!-- PODIUM SECTION -->
       <section class="chart-container top-chart" id="podium-doubles">
         <div class="chart-header">
           <select id="year-select2-podium" class="dropdown">
@@ -259,9 +282,7 @@ document.querySelectorAll('nav a').forEach(link => {
         </div>
       </section>
 
-      <!-- ===========================
-        BUBBLE CHART SECTION (UNIQUE IDs)
-      =========================== -->
+      <!-- BUBBLE CHART SECTION -->
       <section class="chart-container top-chart" id="over_the_years-doubles">
         <div class="chart-header">
           <select id="year-select2-bubbles" class="dropdown">
@@ -315,53 +336,88 @@ document.querySelectorAll('nav a').forEach(link => {
   </main>
 </section>
 
-<section id="surfaces">
-<div style="height: 95px"></div>
-<header>
-    <h1>Surfaces GOAT</h1>
-</header>
+
 <main class="charts-wrapper">
-  <div class="podium-and-text-row">
+
     <section class="chart-container top-chart" id="podium-surfaces">
         <div class="chart-header">
 
-          <select id="circuit-select-podiums">
-              <option value="Select Circuit">Select a circuit</option>
-              <option value="wta">WTA - Women</option>
-              <option value="apt">ATP - Men</option>
-          </select>
+        <select id="players-select-podiums">
+            <option value="Select Surface">Select a circuit</option>
+            <option value="wta">WTA - Women</option>
+            <option value="apt">ATP - Men</option>
+        </select>
 
-          <select id="surface-select-podiums">
-              <option value="Select Surface">Select Surface</option>
-              <option value="Grass">Grass</option>
-              <option value="Hard">Hard</option>
-              <option value="Clay">Clay</option>
-          </select>
+        <select id="surface-select-podiums">
+            <option value="Select Surface">Select Surface</option>
+            <option value="Grass">Grass</option>
+            <option value="Hard">Hard</option>
+            <option value="Clay">Clay</option>
+        </select>
 
-          <select id="year-select-surfaces-podiums">
-              <option value="Overall years">Overall years</option>
-          </select>
-      
-          
-          <select id="tournament-select-surfaces-podiums">
-              <option value="Overall tournaments">Overall tournaments</option>
-          </select>
+        <select id="year-select-surfaces-podiums">
+            <option value="Overall years">Overall years</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+            <option value="2013">2013</option>
+            <option value="2012">2012</option>
+        </select>
+    
+        
+        <select id="tournament-select-surfaces-podiums">
+            <option value="Overall tournaments">Overall tournaments</option>
+            <option>tournament1</option>
+            <option>tournament2</option>
+            <option>tournament3</option>
+        </select>
         </div>
+    
         <div class="chart-content">
-          <h2>Podium Services</h2>
-          <div class="scoreboard__podiums" id="scoreboard-podiums-surfaces"></div>
-          <div id="podium-placeholder-surfaces" class="bubble-prompt" style="text-align: center;">
-              <p><strong>Please select a circuit, surface, and year to view the top 3 GOATs 🐐</strong></p>
+        <h2>Podium</h2>
+        <div class="scoreboard">
+        <div class="scoreboard__podium">
+          <div class="photo-container">
+            <img src="images/djokovic.png" alt="Novak Djokovic" class="podium-photo">
+            <div class="medal silver">2</div>
           </div>
-          <div id="podium-prompt-no-data-surfaces" class="bubble-prompt" style="display:none;">
-              <span role="img" aria-label="Sad face" style="font-size:2.2rem;"></span>
-              Sorry, we don’t have data for the requested selection.
+          <div class="scoreboard__podium-number">
+            Novak Djokovic
           </div>
         </div>
-      
+
+        <div class="scoreboard__podium">
+          <div class="photo-container">
+            <img src="images/federer.png" alt="Roger Federer" class="podium-photo">
+            <div class="medal gold">1</div>
+          </div>
+          <div class="scoreboard__podium-number">
+            Roger Federer
+          </div>
+        </div>
+
+        <div class="scoreboard__podium">
+          <div class="photo-container">
+            <img src="images/nadal.png" alt="Rafael Nadal" class="podium-photo">
+            <div class="medal bronze">3</div>
+          </div>
+          <div class="scoreboard__podium-number">
+            Rafael Nadal
+          </div>
+        </div>
+      </div>
+
 
     </section>
-
+    
     <section class="chart-container top-chart" id="over_the_years-surfaces">
         <div class="chart-header">
 
@@ -390,11 +446,11 @@ document.querySelectorAll('nav a').forEach(link => {
         <div class="chart-content">
             <h2>Surfaces Evolution over the years</h2>
             <div id="bubble-prompt-surfaces" class="bubble-prompt">
-              <span role="img" aria-label="Trophy" style="font-size:2.2rem;"></span>
-              <p><strong>Please select a circuit, surface and year to view the top 15 GOATs 🐐</strong></p>
+              <span role="img" aria-label="Trophy" style="font-size:2.2rem;">🏆</span>
+              Let’s see who are the <b>top 15 players</b> in the chosen surface!
             </div>
             <div id="bubble-prompt-no-data-surfaces" class="bubble-prompt" style="display:none;">
-              <span role="img" aria-label="Sad face" style="font-size:2.2rem;"></span>
+              <span role="img" aria-label="Sad face" style="font-size:2.2rem;">😔</span>
               Sorry, we don’t have data for the requested selection.
             </div>
 
@@ -403,21 +459,10 @@ document.querySelectorAll('nav a').forEach(link => {
 
     
       </section>
-      <aside class="surface-explanation">
-      <h3>Why surfaces matter?</h3>
-      <p>
-        In tennis, true greatness isn’t just about racking up victories, it’s about shining on every surface: hard, grass, and clay. Each court brings its own challenges and tests different skills. That’s why, instead of just looking at overall wins, we created separate rankings for each surface, one for grass, one for hard, and one for clay.
-      </p>
-      <p>
-        By focusing on the number of games won on each court type, we highlight the players who mastered every environment. This way, our analysis celebrates not just champions of a single surface, but those who truly proved themselves as legends wherever the game is played.
-      </p>
-    </aside>
-  </div>
-  <div class="nav-dots">
-  <span class="dot" onclick="goToChart(1, 'surfaces')"></span>
-  <span class="dot active" onclick="goToChart(2, 'surfaces')"></span>
-  </div>
-      
+      <div class="nav-dots">
+      <span class="dot" onclick="goToChart(1, 'surfaces')"></span>
+      <span class="dot active" onclick="goToChart(2, 'surfaces')"></span>
+      </div>
 </main>
 
 </section>
@@ -432,54 +477,98 @@ document.querySelectorAll('nav a').forEach(link => {
 
   <section class="chart-container top-chart" id="podium-services">
       <div class="chart-header">
-      <select id="category-select-services-podium" class="dropdown">
-            <option value="Select a Category">Select a Category</option>
-            <option value="Ace Rate">Ace Rate</option>
-            <option value="Break Point Save %">Break Point Save %</option>
-            <option value="First Serve %">First Serve %</option>
-            <option value="First Serve Win %">First Serve Win %</option>
-            <option value="Second Serve Win %">Second Serve Win %</option>
-      </select>
-      <select id="year-select-services-podium" class="dropdown">
-          <option value="overall_years">Overall years</option>
+      <select id="year-select" class="dropdown">
+          <option value="Overall years">Overall years</option>
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+          <option value="2018">2018</option>
+          <option value="2017">2017</option>
+          <option value="2016">2016</option>
+          <option value="2015">2015</option>
+          <option value="2014">2014</option>
+          <option value="2013">2013</option>
+          <option value="2012">2012</option>
       </select>
 
+      
+      <select id="tournament-select" class="dropdown">
+          <option value="Overall tournaments">Overall tournaments</option>
+          <option>tournament1</option>
+          <option>tournament2</option>
+          <option>tournament3</option>
+      </select>
       </div>
 
       <div class="chart-content">
-        <h2>Podium Services</h2>
-        <div class="scoreboard__podiums" id="scoreboard-podiums-services"></div>
-        <div id="podium-placeholder-services" class="bubble-prompt" style="text-align: center;">
-            <p><strong>Please select a year and category to view the top 3 GOATs 🐐</strong></p>
-        </div>
+          <h2>Podium Services</h2>
+          <div class="scoreboard">
+              <div class="scoreboard__podiums">
+                <div class="scoreboard__podium js-podium" data-height="200px">
+                  <div class="scoreboard__podium-base scoreboard__podium-base--second">
+                    <div class="scoreboard__podium-rank">2</div>
+                  </div>
+                  <div class="scoreboard__podium-number">
+                    John Isner
+                  </div>
+                </div>
+                <div class="scoreboard__podium js-podium" data-height="250px">
+                  <div class="scoreboard__podium-base scoreboard__podium-base--first">
+                    <div class="scoreboard__podium-rank">1</div>
+                  </div>
+                  <div class="scoreboard__podium-number">
+                    Ivo Karlovic
+                  </div>
+                </div>
+                <div class="scoreboard__podium js-podium" data-height="150px">
+                  <div class="scoreboard__podium-base scoreboard__podium-base--third">
+                    <div class="scoreboard__podium-rank">3</div>
+                  </div>
+                  <div class="scoreboard__podium-number">
+                    Roger Federer
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
   </section>
 
   <section class="chart-container top-chart" id="over_the_years-services">
       <div class="chart-header">
-        <select id="category-select-services-bubble" class="dropdown">
-            <option value="Select a Category">Select a Category</option>
-            <option value="Ace Rate">Ace Rate</option>
-            <option value="Break Point Save %">Break Point Save %</option>
-            <option value="First Serve %">First Serve %</option>
-            <option value="First Serve Win %">First Serve Win %</option>
-            <option value="Second Serve Win %">Second Serve Win %</option>
+          <select id="year-select2" class="dropdown">
+              <option value="Overall years">Overall years</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+              <option value="2012">2012</option>
           </select>
-        <select id="year-select-services-bubble" class="dropdown">
-            <option value="overall_years">Overall years</option>
-        </select>
-          
+      
+          <select id="tournament-select2" class="dropdown">
+              <option value="Overall tournaments">Overall tournaments</option>
+              <option>tournament1</option>
+              <option>tournament2</option>
+              <option>tournament3</option>
+          </select>
       </div>
 
       <div class="chart-content">
           <h2>Services Evolution over the years</h2>
           <div id="bubble-prompt-services" class="bubble-prompt">
-              <span role="img" aria-label="Trophy" style="font-size:2.2rem;"></span>
-              <p><strong>Please select a year and category to view the top 15 GOATs 🐐</strong></p>
-          </div>
-          <div id="bubble-prompt-no-data-services" class="bubble-prompt" style="display:none;">
-              <span role="img" aria-label="Sad face" style="font-size:2.2rem;"></span>
-              Sorry, we don’t have data for the requested selection.
+              <span role="img" aria-label="Trophy" style="font-size:2.2rem;">🏆</span>
+              Let’s see who are the <b>top 15 players</b> in Services!
           </div>
           <svg class="bubbleChart" id="bubbleChart-services" width="500" height="400"></svg>
 
@@ -579,18 +668,20 @@ document.querySelectorAll('nav a').forEach(link => {
           <option value="passing_shot">Passing Shot</option>
         </select>
         <select id="year-select-net" class="dropdown">
-          <option value="Overall years">Select years</option>
+          <option value="Overall years">Overall years</option>
+        <select id="tournament-select-net" class="dropdown">
+          <option value="Overall tournaments">Overall tournaments</option>
         </select>
       </div>
 
       <div class="chart-content">
         <h2>Net Evolution over the years</h2>
         <div id="bubble-prompt-net" class="bubble-prompt">
-          <span role="img" aria-label="Trophy" style="font-size:2.2rem;"></span>
-              <p><strong>Please select a circuit, category, subcategory and year to view the top 15 GOATs 🐐</strong></p>
+          <span role="img" aria-label="Trophy" style="font-size:2.2rem;">🏆</span>
+          Let’s see who are the <b>top 15 players</b> in Net!
         </div>
         <div id="bubble-prompt-no-data-net" class="bubble-prompt" style="display:none;">
-          <span role="img" aria-label="Sad face" style="font-size:2.2rem;"></span>
+          <span role="img" aria-label="Sad face" style="font-size:2.2rem;">😔</span>
           Sorry, we don’t have data for the requested selection.
         </div>
         <svg class="bubbleChart" id="bubbleChart-net" width="500" height="400"></svg>
@@ -805,12 +896,8 @@ document.querySelectorAll('nav a').forEach(link => {
 <script src="js/main.js"></script>
 <script src="js/surface.js"></script>
 <script src="js/net.js"></script>
-<script src="js/services.js"></script>
-<script src="https://d3js.org/d3.v7.min.js"></script>
 <script src="js/doubles.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="js/loadGeneral.js"></script>
-<script src="js/chart.js"></script>
 
 
 <script>

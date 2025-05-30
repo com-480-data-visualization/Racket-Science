@@ -2,16 +2,20 @@ const bubbleSvg = d3.select("#bubbleChart-doubles");
 let lastYear = null;
 let lastSurface = null;
 let lastData = null;
+let bubbleChartDrawn = false;
 
-function loadDoublesData(year, surface) {
+let selectedYear = null;
+let selectedSurface = null;
+
+function loadDoublesData(year = selectedYear, surface = selectedSurface) {
   if (!year || !surface || year === "Select Year" || surface === "Select Surface") {
     showPlaceholder();
     return;
   }
 
+  // If data already matches, just refresh visuals
   if (year === lastYear && surface === lastSurface && lastData) {
-    updateBubbleChart(lastData);
-    updatePodium(lastData);
+    refreshVisuals();
     return;
   }
 
@@ -25,6 +29,7 @@ function loadDoublesData(year, surface) {
     lastSurface = surface;
     lastData = data;
 
+    bubbleChartDrawn = false; // Set false only for new data
     updateBubbleChart(data);
     updatePodium(data);
   }).catch(() => {
@@ -36,21 +41,34 @@ function loadDoublesData(year, surface) {
   });
 }
 
+
+
 function showPlaceholder() {
   document.getElementById("bubble-placeholder-doubles").style.display = "block";
-  document.getElementById("bubbleChart-doubles").style.display = "none";
   document.getElementById("podium-placeholder-doubles").style.display = "block";
-  bubbleSvg.selectAll("*").remove();
   document.getElementById("scoreboard-doubles").innerHTML = "";
+  bubbleChartDrawn = false;
 }
 
 function updateBubbleChart(data) {
-  document.getElementById("bubble-placeholder-doubles").style.display = "none";
-  document.getElementById("bubbleChart-doubles").style.display = "block";
-  bubbleSvg.selectAll("*").remove();
+  const chartEl = document.getElementById("bubbleChart-doubles");
+  const placeholderEl = document.getElementById("bubble-placeholder-doubles");
 
-  const width = +bubbleSvg.attr("width");
-  const height = +bubbleSvg.attr("height");
+  if (bubbleChartDrawn && chartEl.style.display === "block") return;
+
+  placeholderEl.style.display = "none";
+  chartEl.style.display = "block";
+
+  let width = bubbleSvg.node().clientWidth;
+  let height = bubbleSvg.node().clientHeight;
+
+  // Defer drawing if size is not ready
+  if (width === 0 || height === 0) {
+    setTimeout(() => updateBubbleChart(data), 100);
+    return;
+  }
+
+  bubbleSvg.selectAll("*").remove();
 
   const pack = d3.pack().size([width, height]).padding(5);
   const root = d3.hierarchy({ children: data }).sum(d => Math.pow(d.size, 1.5));
@@ -96,15 +114,18 @@ function updateBubbleChart(data) {
     .attr("text-anchor", "middle")
     .style("font-size", d => Math.max(d.r / 3.5, 10))
     .text(d => d.data.name.split(" ")[0]);
+
+  // ✅ Only set this after successful draw
+  bubbleChartDrawn = true;
 }
+
 
 function updatePodium(data) {
   const top3 = [data[1], data[0], data[2]];
-    const classes = ['second', 'first', 'third'];
-    const displayRanks = [2, 1, 3]; // Actual podium labels to display
+  const classes = ['second', 'first', 'third'];
+  const displayRanks = [2, 1, 3];
 
-
-    const podiumHTML = top3.map((player, i) => `
+  const podiumHTML = top3.map((player, i) => `
     <div class="scoreboard__podium scoreboard__podium--${classes[i]} js-podium">
         <div class="scoreboard__podium-base scoreboard__podium-base--${classes[i]}">
         <div class="scoreboard__podium-rank">${displayRanks[i]}</div>
@@ -113,7 +134,6 @@ function updatePodium(data) {
     </div>
     `).join('');
 
-
   const scoreboard = document.getElementById("scoreboard-doubles");
   scoreboard.className = `scoreboard__podiums podium-${lastSurface}`;
   scoreboard.innerHTML = podiumHTML;
@@ -121,7 +141,12 @@ function updatePodium(data) {
   document.getElementById("podium-placeholder-doubles").style.display = "none";
 }
 
-
+function refreshVisuals() {
+  if (lastData) {
+    updateBubbleChart(lastData);
+    updatePodium(lastData);
+  }
+}
 
 function setupDoublesListeners() {
   const podiumYear = document.getElementById("year-select2-podium");
@@ -129,10 +154,16 @@ function setupDoublesListeners() {
   const bubbleYear = document.getElementById("year-select2-bubbles");
   const bubbleSurface = document.getElementById("surface-select-doubles-bubbles");
 
-  function getValues(y, s) {
-    const year = y.value;
-    const surface = s.value;
-    loadDoublesData(year, surface);
+  function getValues(yearEl, surfaceEl) {
+    selectedYear = yearEl.value;
+    selectedSurface = surfaceEl.value;
+
+    podiumYear.value = selectedYear;
+    podiumSurface.value = selectedSurface;
+    bubbleYear.value = selectedYear;
+    bubbleSurface.value = selectedSurface;
+
+    loadDoublesData(selectedYear, selectedSurface);
     handleBackgroundUpdate();
   }
 
@@ -153,16 +184,28 @@ const backgroundImages = [
 
 function rotateBackground() {
   stopBackgroundRotation();
-  doublesSection.style.backgroundImage = `url('${backgroundImages[currentImageIndex]}')`;
-  doublesSection.style.backgroundSize = "cover";
-  doublesSection.style.backgroundPosition = "center";
+  const headerInner = document.querySelector(".doubles-header-inner");
+
+  updateRotationBackgroundAndTitle();
 
   backgroundInterval = setInterval(() => {
     currentImageIndex = (currentImageIndex + 1) % backgroundImages.length;
+    updateRotationBackgroundAndTitle();
+  }, 3000);
+
+  function updateRotationBackgroundAndTitle() {
+    const surfaceTypes = ['clay', 'grass', 'hard'];
+    const currentSurface = surfaceTypes[currentImageIndex];
+
     doublesSection.style.backgroundImage = `url('${backgroundImages[currentImageIndex]}')`;
     doublesSection.style.backgroundSize = "cover";
     doublesSection.style.backgroundPosition = "center";
-  }, 3000);
+
+    if (headerInner) {
+      headerInner.classList.remove("clay", "grass", "hard");
+      headerInner.classList.add(currentSurface);
+    }
+  }
 }
 
 function stopBackgroundRotation() {
@@ -191,7 +234,6 @@ function handleBackgroundUpdate() {
     doublesSection.style.backgroundPosition = "center";
   }
 
-  // ✅ Add this block HERE:
   const headerInner = document.querySelector(".doubles-header-inner");
   if (headerInner) {
     headerInner.classList.remove("clay", "grass", "hard");
@@ -200,7 +242,6 @@ function handleBackgroundUpdate() {
     }
   }
 }
-
 
 document.addEventListener("DOMContentLoaded", () => {
   setupDoublesListeners();
@@ -215,4 +256,55 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     handleBackgroundUpdate();
   }
+
+  const bubbleSection = document.getElementById("over_the_years-doubles");
+  const bubbleChartContainer = document.getElementById("bubbleChart-doubles");
+
+  // IntersectionObserver for bubble section
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const width = bubbleChartContainer.clientWidth;
+        const height = bubbleChartContainer.clientHeight;
+
+        if (
+          width > 0 && height > 0 &&
+          lastData &&
+          selectedYear && selectedSurface &&
+          selectedYear !== "Select Year" && selectedSurface !== "Select Surface"
+        ) {
+          updateBubbleChart(lastData);
+        }
+      }
+    });
+  }, {
+    root: null,
+    threshold: 0.4
+  });
+
+  observer.observe(bubbleSection);
+
+  // ✅ MutationObserver for chart reappearance
+  const visibilityObserver = new MutationObserver(() => {
+    const isVisible = bubbleChartContainer.offsetParent !== null;
+    const width = bubbleChartContainer.clientWidth;
+    const height = bubbleChartContainer.clientHeight;
+
+    if (
+      isVisible &&
+      width > 0 &&
+      height > 0 &&
+      !bubbleChartDrawn &&
+      lastData &&
+      selectedYear && selectedSurface &&
+      selectedYear !== "Select Year" && selectedSurface !== "Select Surface"
+    ) {
+      updateBubbleChart(lastData);
+    }
+  });
+
+  visibilityObserver.observe(bubbleChartContainer, {
+    attributes: true,
+    attributeFilter: ["style", "class"]
+  });
 });
