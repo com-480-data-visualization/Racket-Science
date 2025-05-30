@@ -50,9 +50,11 @@ document.querySelectorAll('nav a').forEach(link => {
 
 <section id="global">
   <div style="height: 95px"></div>
-  <header>
-    <h1>Overall GOAT</h1>
-  </header>
+  <div class="overall-header">
+    <div class="overall-header-inner">
+      <h1 id="overall-title">Overall GOAT</h1>
+    </div>
+  </div>
   <main class="charts-wrapper">
   <div class="podium-and-text-row">
     <section class="chart-container top-chart" id="podium-global">
@@ -214,7 +216,6 @@ document.querySelectorAll('nav a').forEach(link => {
   </div>
 
   <main class="charts-wrapper">
-    <!-- FLEX WRAPPER -->
     <div class="doubles-flex-wrapper">
       
       <!-- LEFT INFO BOX -->
@@ -276,7 +277,6 @@ document.querySelectorAll('nav a').forEach(link => {
               </div>
               <div class="scoreboard">
                 <div class="scoreboard__podiums" id="scoreboard-doubles">
-                  <!-- Dynamic content will be injected here -->
                 </div>
               </div>
             </div>
@@ -333,18 +333,20 @@ document.querySelectorAll('nav a').forEach(link => {
           <span class="dot" onclick="goToChart(2, 'doubles')"></span>
         </div>
 
-      </div> <!-- end of charts-content -->
+      </div> 
 
-    </div> <!-- end of doubles-flex-wrapper -->
+    </div> 
   </main>
 </section>
 
-
+<!-- SURFACE GOAT SECTION -->
 <section id="surfaces">
 <div style="height: 95px"></div>
-<header>
-    <h1>Surfaces GOAT</h1>
-</header>
+<div class="surfaces-header">
+    <div class="surfaces-header-inner">
+      <h1 id="surfaces-title">Surfaces GOAT</h1>
+    </div>
+  </div>
 <main class="charts-wrapper">
   <div class="podium-and-text-row" id="text-wrapper-surface">
     <section class="chart-container top-chart" id="podium-surfaces">
@@ -635,13 +637,16 @@ document.querySelectorAll('nav a').forEach(link => {
 
 <section id="tournament">
   <div style="height: 95px"></div>
-  <header>
-    <h1>Tournament GOAT</h1>
-  </header>
+<div class="tournament-header">
+    <div class="tournament-header-inner">
+      <h1 id="tournament-title">Tournament GOAT</h1>
+    </div>
+  </div>
 
 
   <main class="charts-wrapper">
-    <div class="top-charts">
+    <div class="podium-and-text-row">
+      
       <section class="chart-container top-chart" id="podium-tournament">
         <div class="chart-header">
           <select id="tournament-year-select" class="dropdown">
@@ -688,7 +693,6 @@ document.querySelectorAll('nav a').forEach(link => {
         <h2>Podium</h2>
         <div class="scoreboard" id="scoreboard-tournament"></div>
       </section>
-    </div>
       
       <!-- Chart 2 Container -->
       <section class="chart-container top-chart" id="over_the_years-tournament">
@@ -743,9 +747,18 @@ document.querySelectorAll('nav a').forEach(link => {
               </div>
               <svg class="bubbleChart" id="bubbleChart-tournament" width="500" height="400"></svg>
           </div>
-          
-      
         </section>
+        <aside class="tournament-explanation">
+          <h3>Understanding Tournament Greatness</h3>
+          <p>
+            The Tournament GOAT analysis focuses on player performances in the most prestigious tennis events, evaluating consistency, peak achievements, and evolution over the years.
+          </p>
+          <p>
+            Explore how top players shaped the tournaments and see who dominated the courts season after season.
+          </p>
+        </aside>
+        </div>
+
         <div class="nav-dots">
         <span class="dot" onclick="goToChart(1, 'tournament')"></span>
         <span class="dot" onclick="goToChart(2, 'tournament')"></span>
