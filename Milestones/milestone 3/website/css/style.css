@@ -18,9 +18,9 @@ header {
     margin-top: 80px;
 
 
-    background-color: rgba(179, 70, 46, 0.624); 
-    border: 2px solid #b3472e;
-    border-radius: 20px;
+    background-color: rgba(220, 219, 219, 0.624); 
+    border: 2px solid #7a7a79;
+    border-radius: 40px;
     padding: 0rem 2rem;
     margin: 1rem auto;
     text-align: center;
@@ -698,3 +698,33 @@ nav a:hover:not(.active) {
 .scoreboard__podium-base--first  { height: 250px; }
 .scoreboard__podium-base--second { height: 200px; }
 .scoreboard__podium-base--third  { height: 150px; }
+
+
+#surfaces .chart-container.top-chart {
+  margin-left: 0;
+  margin-right: auto;
+  display: block;
+  width: 600px;         /* Or any width you want */
+  /* Optional: remove any centering if present globally */
+}
+
+.podium-and-text-row {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.surface-explanation {
+  max-width: 610px;
+  font-size: 1.25rem;
+  color: #444;
+  margin-top: 1.5rem; /* Align nicely with the podium header */
+}
+
+.surface-explanation h3 {
+  margin-top: 0.5rem;
+  color: #406487;
+  font-weight: bold;
+  font-size: 3rem;
+}

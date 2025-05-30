@@ -5,7 +5,7 @@ const serviceYears = [
 ];
 
 const serviceSelectBubble = document.getElementById("year-select-services-bubble");
-const serviceSelectPodium = document.getElementById("year-select-services-bubble");
+const serviceSelectPodium = document.getElementById("year-select-services-podium");
 serviceYears.forEach(year => {
   const option = document.createElement("option");
   option.value = year;
@@ -84,15 +84,23 @@ function amplifyServiceValue(value, min, max) {
 document.getElementById("year-select-services-bubble").addEventListener("change", updateBubbleChartForServices);
 document.getElementById("category-select-services-bubble").addEventListener("change", updateBubbleChartForServices);
 document.getElementById('year-select-services-bubble').dispatchEvent(new Event('change'));
+// Utility: Path for CSV
+function getServiceCsvPath(year, category) {
+  if (!category) return null;
+  if (!year) return `data/services/overall_years_${category}.csv`;
+  return `data/services/${year}_${category}.csv`;
+}
 
-function updatePodiumServices(data, containerId = "scoreboard-podiums-services") {
-  // Ensure there are at least 3 players
+function updatePodiumServices(data, containerId = "scoreboard-podiums-services", category = "") {
+  const el = document.getElementById(containerId);
+
   if (!data || data.length < 3) {
-    document.getElementById(containerId).innerHTML = '<div style="text-align:center;">Not enough data for podium</div>';
+    el.innerHTML = '<div style="text-align:center;">Not enough data for podium</div>';
     return;
   }
 
-  const top3 = [data[1], data[0], data[2]];
+  const sorted = data.slice().sort((a, b) => +b[category] - +a[category]);
+  const top3 = [sorted[1], sorted[0], sorted[2]];
   const classes = ['second', 'first', 'third'];
   const displayRanks = [2, 1, 3];
 
@@ -102,9 +110,45 @@ function updatePodiumServices(data, containerId = "scoreboard-podiums-services")
         <div class="scoreboard__podium-rank">${displayRanks[i]}</div>
       </div>
       <div class="scoreboard__podium-number">${player.Player || player.name}</div>
-      <div class="scoreboard__podium-value">${player.value !== undefined ? Number(player.value).toFixed(2) : ''}</div>
     </div>
   `).join('');
-
-  document.getElementById(containerId).innerHTML = podiumHTML;
+  el.innerHTML = podiumHTML;
 }
+
+
+function updateServicesPodiumDisplay() {
+  const year = document.getElementById("year-select-services-podium").value;
+  const category = document.getElementById("category-select-services-podium").value;
+  const containerId = "scoreboard-podiums-services";
+  const placeholder = document.getElementById("podium-placeholder-services");
+
+  if (!category || category === 'Select a Category') {
+    document.getElementById(containerId).innerHTML = '';
+    placeholder.style.display = 'block';
+    return;
+  }
+  placeholder.style.display = 'none';
+
+  const csvPath = getServiceCsvPath(year, category);
+  if (!csvPath) {
+    document.getElementById(containerId).innerHTML = '<div style="text-align:center;">No data</div>';
+    return;
+  }
+
+  document.getElementById(containerId).innerHTML = '<div style="text-align:center;">Loading...</div>';
+
+  d3.csv(csvPath).then(function(data) {
+    if (!data || data.length < 3) {
+      updatePodiumServices(null, containerId, category);
+      return;
+    }
+    updatePodiumServices(data, containerId, category);
+  })
+}
+
+// Event listeners
+document.getElementById("year-select-services-podium").addEventListener("change", updateServicesPodiumDisplay);
+document.getElementById("category-select-services-podium").addEventListener("change", updateServicesPodiumDisplay);
+
+// Optionally, run once at start to populate podium if defaults are set
+updateServicesPodiumDisplay();

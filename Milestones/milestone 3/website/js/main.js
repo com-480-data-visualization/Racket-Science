@@ -12,14 +12,6 @@ function goToChart(chartIndex, section) {
         d3.select(svgEl).selectAll("*").remove();
         if (section === "global") {
           drawBubbleChart(svgEl, bubbleDataGlobal);
-        } else if (section === "doubles") {
-          drawBubbleChart(svgEl, bubbleDataDoubles);
-        } else if (section === "surfaces") {
-          updateBubbleChartForSurface();
-        } else if (section === "services") {
-          updateBubbleChartForServices(); 
-        } else if (section === "net") {
-          updateBubbleChartForNet(); 
         } else if (section === "tournament") {
           drawBubbleChart(svgEl, bubbleDataDoubles);
         }
@@ -143,7 +135,7 @@ function drawBubbleChart(svgEl, data, section, tournament, subcategory) {
         } else if (section === "services") {
           let category = d.data.category.replace('%', '').toLowerCase()
             tooltipText = `<strong>${d.data.name}</strong><br>
-                    has <strong>${d.data.percentage}</strong>% of success in ${category} counting ${d.data.nb_matches} matches`;
+                    has <strong>${d.data.percentage}</strong>% of success in ${category} over ${d.data.nb_matches} matches`;
         } else if (section === 'net') {
           let subcategory = d.data.valueCol.replace(/_/g, ' '); 
           
