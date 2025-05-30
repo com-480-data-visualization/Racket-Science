@@ -339,7 +339,7 @@ document.querySelectorAll('nav a').forEach(link => {
     <h1>Surfaces GOAT</h1>
 </header>
 <main class="charts-wrapper">
-  <div class="podium-and-text-row">
+  <div class="podium-and-text-row" id="text-wrapper-surface">
     <section class="chart-container top-chart" id="podium-surfaces">
         <div class="chart-header">
 
@@ -449,65 +449,76 @@ document.querySelectorAll('nav a').forEach(link => {
 
   <main class="charts-wrapper">
 
-  <section class="chart-container top-chart" id="podium-services">
-      <div class="chart-header">
-      <select id="category-select-services-podium" class="dropdown">
-            <option value="Select a Category">Select a Category</option>
-            <option value="Ace Rate">Ace Rate</option>
-            <option value="Break Point Save %">Break Point Save %</option>
-            <option value="First Serve %">First Serve %</option>
-            <option value="First Serve Win %">First Serve Win %</option>
-            <option value="Second Serve Win %">Second Serve Win %</option>
-      </select>
-      <select id="year-select-services-podium" class="dropdown">
-          <option value="overall_years">Overall years</option>
-      </select>
+  <div class="podium-and-text-row" id="text-wrapper-services">
 
-      </div>
-
-      <div class="chart-content">
-        <h2>Podium Services</h2>
-        <div class="scoreboard__podiums" id="scoreboard-podiums-services"></div>
-        <div id="podium-placeholder-services" class="bubble-prompt" style="text-align: center;">
-            <p><strong>Please select a year and category to view the top 3 GOATs 🐐</strong></p>
-        </div>
-      </div>
-  </section>
-
-  <section class="chart-container top-chart" id="over_the_years-services">
-      <div class="chart-header">
-        <select id="category-select-services-bubble" class="dropdown">
-            <option value="Select a Category">Select a Category</option>
-            <option value="Ace Rate">Ace Rate</option>
-            <option value="Break Point Save %">Break Point Save %</option>
-            <option value="First Serve %">First Serve %</option>
-            <option value="First Serve Win %">First Serve Win %</option>
-            <option value="Second Serve Win %">Second Serve Win %</option>
-          </select>
-        <select id="year-select-services-bubble" class="dropdown">
+    <aside class="services-explanation">
+        <h3>Why Serving Matters?</h3>
+        <p>
+          Serving is one of the most decisive skills in tennis. The greatest servers combine power, accuracy, and nerves of steel, often turning matches in their favor with just a few key points.
+        </p>
+        <p>
+          To identify the legends of serving, we analyzed key stats: Ace Rate, First Serve %, First Serve Win %, Second Serve Win %, and Break Point Save %. Only players with at least 30 matches are included, so the rankings reflect real consistency. By comparing these metrics, we highlight not just the flashy servers, but those who consistently dominated with their serve and made it a cornerstone of their success.
+        </p>
+    </aside>
+    <section class="chart-container top-chart" id="podium-services">
+        <div class="chart-header">
+        <select id="category-select-services-podium" class="dropdown">
+              <option value="Select a Category">Select a Category</option>
+              <option value="Ace Rate">Ace Rate</option>
+              <option value="Break Point Save %">Break Point Save %</option>
+              <option value="First Serve %">First Serve %</option>
+              <option value="First Serve Win %">First Serve Win %</option>
+              <option value="Second Serve Win %">Second Serve Win %</option>
+        </select>
+        <select id="year-select-services-podium" class="dropdown">
             <option value="overall_years">Overall years</option>
         </select>
-          
-      </div>
 
-      <div class="chart-content">
-          <h2>Services Evolution over the years</h2>
-          <div id="bubble-prompt-services" class="bubble-prompt">
-              <span role="img" aria-label="Trophy" style="font-size:2.2rem;"></span>
-              <p><strong>Please select a year and category to view the top 15 GOATs 🐐</strong></p>
+        </div>
+
+        <div class="chart-content">
+          <h2>Podium Services</h2>
+          <div class="scoreboard__podiums" id="scoreboard-podiums-services"></div>
+          <div id="podium-placeholder-services" class="bubble-prompt" style="text-align: center;">
+              <p><strong>Please select a year and category to view the top 3 GOATs 🐐</strong></p>
           </div>
-          <div id="bubble-prompt-no-data-services" class="bubble-prompt" style="display:none;">
-              <span role="img" aria-label="Sad face" style="font-size:2.2rem;"></span>
-              Sorry, we don’t have data for the requested selection.
-          </div>
-          <svg class="bubbleChart" id="bubbleChart-services" width="500" height="400" style="display: none;"></svg>
-
-      </div>
-
+        </div>
     </section>
+
+    <section class="chart-container top-chart" id="over_the_years-services">
+        <div class="chart-header">
+          <select id="category-select-services-bubble" class="dropdown">
+              <option value="Select a Category">Select a Category</option>
+              <option value="Ace Rate">Ace Rate</option>
+              <option value="Break Point Save %">Break Point Save %</option>
+              <option value="First Serve %">First Serve %</option>
+              <option value="First Serve Win %">First Serve Win %</option>
+              <option value="Second Serve Win %">Second Serve Win %</option>
+            </select>
+          <select id="year-select-services-bubble" class="dropdown">
+              <option value="overall_years">Overall years</option>
+          </select>
+            
+        </div>
+
+        <div class="chart-content">
+            <h2>Services Evolution over the years</h2>
+            <div id="bubble-prompt-services" class="bubble-prompt">
+                <p><strong>Please select a year and category to view the top 15 GOATs 🐐</strong></p>
+            </div>
+            <div id="bubble-prompt-no-data-services" class="bubble-prompt" style="display:none;">
+                <p><strong>Sorry, we don’t have data for the requested selection.</strong></p>
+            </div>
+            <svg class="bubbleChart" id="bubbleChart-services" width="500" height="400" style="display: none;"></svg>
+
+        </div>
+      </section>
+      
+      
+  </div>
     <div class="nav-dots">
-    <span class="dot" onclick="goToChart(1, 'services')"></span>
-    <span class="dot" onclick="goToChart(2, 'services')"></span>
+      <span class="dot" onclick="goToChart(1, 'services')"></span>
+      <span class="dot" onclick="goToChart(2, 'services')"></span>
     </div>
   </main>
 </section>
@@ -580,11 +591,9 @@ document.querySelectorAll('nav a').forEach(link => {
       <div class="chart-content">
         <h2>Net Evolution over the years</h2>
         <div id="bubble-prompt-net" class="bubble-prompt">
-          <span role="img" aria-label="Trophy" style="font-size:2.2rem;"></span>
-              <p><strong>Please select a year and category to view the top 15 GOATs 🐐</strong></p>
+              <p><strong>Please select a circuit, category, and year to view the top 15 GOATs 🐐</strong></p>
         </div>
         <div id="bubble-prompt-no-data-net" class="bubble-prompt" style="display:none;">
-          <span role="img" aria-label="Sad face" style="font-size:2.2rem;"></span>
           Sorry, we don’t have data for the requested selection.
         </div>
         <svg class="bubbleChart" id="bubbleChart-net" width="500" height="400" ></svg>
@@ -791,6 +800,7 @@ document.querySelectorAll('nav a').forEach(link => {
 <script src="js/loadGeneral.js"></script>
 <script src="js/chart.js"></script>
 <script src="js/tournamentPodium.js"></script>
+<div id="tooltip"></div>
 
 </body>
 </html>

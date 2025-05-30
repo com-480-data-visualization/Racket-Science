@@ -83,8 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-function drawBubbleChart(svgEl, data, section, tournament, subcategory) {
-  console.log(svgEl)
+function drawBubbleChart(svgEl, data, section, tournament) {
   const width = +svgEl.getAttribute("width") || 500;
   const height = +svgEl.getAttribute("height") || 400;
   d3.select(svgEl).selectAll("*").remove();
@@ -118,15 +117,15 @@ function drawBubbleChart(svgEl, data, section, tournament, subcategory) {
         d3.select(this)
           .transition()
           .duration(200)
-          .attr("r", d.r * 1.5);
+          .attr("r", d.r*1.5);
 
         const currentYear = document.getElementById("year-select-surfaces-bubble").value;
         const currentSurface = document.getElementById("surface-select-bubble").value;
 
         let tooltipText = '';
         if (section === "surfaces") {
-          
           if (!tournament){
+            console.log('tooltiptext')
             tooltipText = `<strong>${d.data.name}</strong><br>
                          won <strong>${d.data.value}</strong> matches on <strong>${currentSurface}</strong> in <strong>${currentYear}</strong>`;
           } else {
@@ -147,7 +146,7 @@ function drawBubbleChart(svgEl, data, section, tournament, subcategory) {
         } else {
           tooltipText = `<strong>${d.data.name}</strong>: ${d.data.value}`;
         }
-
+        console.log(tooltipText)
         tooltip.style("display", "block").html(tooltipText);
     })
     .on("mousemove", function(event) {
