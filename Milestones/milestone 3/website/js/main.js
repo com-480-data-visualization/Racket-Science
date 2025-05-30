@@ -12,9 +12,6 @@ function goToChart(chartIndex, section) {
     if (index === chartIndex - 1) {
       chart.querySelectorAll('.bubbleChart').forEach(svgEl => {
         d3.select(svgEl).selectAll("*").remove();
-        if (section === "tournament") {
-          drawBubbleChart(svgEl, bubbleDataDoubles);
-        }
       });
       chart.querySelectorAll('.js-podium').forEach(function(podium) {
         const height = podium.getAttribute("data-height");
