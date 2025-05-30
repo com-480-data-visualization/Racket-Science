@@ -54,7 +54,7 @@ function updateBubbleChart(data) {
   const chartEl = document.getElementById("bubbleChart-doubles");
   const placeholderEl = document.getElementById("bubble-placeholder-doubles");
 
-  if (bubbleChartDrawn && chartEl.style.display === "block") return;
+  if (bubbleChartDrawn && chartEl.style.display === "block" && !bubbleSvg.selectAll("circle").empty()) return;
 
   placeholderEl.style.display = "none";
   chartEl.style.display = "block";
@@ -62,7 +62,6 @@ function updateBubbleChart(data) {
   let width = bubbleSvg.node().clientWidth;
   let height = bubbleSvg.node().clientHeight;
 
-  // Defer drawing if size is not ready
   if (width === 0 || height === 0) {
     setTimeout(() => updateBubbleChart(data), 100);
     return;
@@ -115,9 +114,9 @@ function updateBubbleChart(data) {
     .style("font-size", d => Math.max(d.r / 3.5, 10))
     .text(d => d.data.name.split(" ")[0]);
 
-  // ✅ Only set this after successful draw
   bubbleChartDrawn = true;
 }
+
 
 
 function updatePodium(data) {
