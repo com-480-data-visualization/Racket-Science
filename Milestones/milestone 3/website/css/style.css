@@ -723,6 +723,21 @@ nav a:hover:not(.active) {
   font-size: 3rem;
 }
 
+.net-explanation {
+  max-width: 610px;
+  font-size: 1.35rem;
+  color: #444;
+  margin-top: 1.75rem; 
+}
+
+.net-explanation h3 {
+  margin-top: 0.5rem;
+  color: #406487;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+
 
 #bubble-placeholder-doubles {
   display: flex;

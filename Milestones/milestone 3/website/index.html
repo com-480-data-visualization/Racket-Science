@@ -538,6 +538,7 @@ document.querySelectorAll('nav a').forEach(link => {
   </header>
 
   <main class="charts-wrapper">
+    <div class="podium-and-text-row" id="text-wrapper-services">
 
       <section class="chart-container top-chart" id="podium-net">
           <div class="chart-header">
@@ -606,6 +607,24 @@ document.querySelectorAll('nav a').forEach(link => {
         <svg class="bubbleChart" id="bubbleChart-net" width="500" height="400" ></svg>
       </div>
     </section>
+
+      <aside class="net-explanation">
+        <h3>Why Net Play Matters?</h3>
+        <p>
+          Net play can be a real game-changer in tennis, demanding quick instincts and great tactics. We analyzed four key categories to capture all the ways players use the net:
+        </p>
+        <ul>
+          <li><strong>Net Points</strong>: Finishing points at the net, showing overall net effectiveness.</li>
+          <li><strong>Approach</strong>: Moving forward after an approach shot, highlighting aggressive tactics.</li>
+          <li><strong>Net Points Rallies</strong>: Rallies where a player comes to the net during the point, reflecting dynamic play.</li>
+          <li><strong>Approach Rallies</strong>: Rallies starting with or involving an approach shot, emphasizing tactical net use.</li>
+        </ul>
+        <p>
+          For each, you can look at <strong>Net Efficiency</strong> (the % of net points won) or <strong>Passing Shots</strong> (how well a player handles being attacked at the net). Stats are available overall or year by year, revealing both all-time skill and progression over time.
+        </p>
+      </aside>
+      </div>
+
       <div class="nav-dots">
       <span class="dot" onclick="goToChart(1, 'net')"></span>
       <span class="dot" onclick="goToChart(2, 'net')"></span>

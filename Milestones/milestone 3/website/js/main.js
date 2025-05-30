@@ -139,7 +139,7 @@ function drawBubbleChart(svgEl, data, section, tournament) {
           let subcategory = d.data.valueCol.replace(/_/g, ' '); 
           
           tooltipText = `<strong>${d.data.name}</strong><br>
-                    has <strong>${d.data.percentage}</strong>% of success in ${subcategory}`;
+                has a <strong>${d.data.percentage}%</strong> success rate in ${subcategory}.`;
 
         } else {
           tooltipText = `<strong>${d.data.name}</strong>: ${d.data.value}`;
